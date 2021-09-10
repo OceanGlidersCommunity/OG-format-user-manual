@@ -13,7 +13,7 @@ The team will analyse the issue formaly. If the issue is not detailed enough or 
 If the issue is accepted for review, then the team will study it and provide an answer. The issue can lead to a modification of the format or not. 
 If there is no consensus on the solution, the suggested solution will be rejected and the format will remain unchanged. However, a new branch can be created to demonstrate the benefit of the solution. The same issue can be submitted again with demo.
 
-## How an accepted issue will impact the OG format
-Any accepted issue will be consider in the future version of the OG format.
+## How an accepted issue will impact the OG format or vocabulary collections?
+Any accepted issue will be consider in the future version of the OG format and vocabulary collections.
 The format will be released every year with the accepted issue.
-The release is planned in January each year. Issues accepted in September will be implemented into the new format.
+The release is planned in January each year. Issues accepted in September should be implemented into the new format.
