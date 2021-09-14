@@ -1,4 +1,4 @@
-# OG format-user-manual
+# OceanGliders format-user-manual
 Here we review issues related to OceanGliders format and vocabularies.
 A discussion section is also avaible for any question or comment related to OG format and vocabularies.
 
