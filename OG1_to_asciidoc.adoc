@@ -1,0 +1,939 @@
+[cols=",",options="header",]
+|===========================================================================================
+|[[_heading=h.2p2csry]]image:figures/image1.png[image,width=164,height=144] a|
+OceanGliders 1.0
+
+Harmonizing format across OceanGliders
+
+Terms of References
+
+|===========================================================================================
+
+[[_heading=h.gjdgxs]]__Drafted: Victor Turpin – 13/12/2019__
+
+_Edited: Daniel Hayes -18/12/2019_
+
+_Reviewed: data format harmonization working group – 07/05/2020_
+
+_Reviewed: Victor Turpin – 17/11/2020_
+
+_Edited: Justin Buck/Emma Slater – 26/11/2020_
+
+_Edited: Thierry Carval – 17/03/2021_
+
+_Finalized and proposed: data format harmonization group – _
+
+_Endorsed: OceanGliders Steering Team –_
+
+*Table of Contents*
+
+[[_heading=h.1fob9te]]__This document has been endorsed by the OceanGliders steering team, the OceanGliders data management task team and the following OceanGliders Data Assembly Centers: __
+
+_IOOS/glider DAC (USA), _
+
+_Coriolis (France), _
+
+_BODC (UK), _
+
+_IMOS/AODN (Australia),_
+
+_SOCIB (Spain), _
+
+_C-IOOS (Canada), _
+
+_EMODNET Physics (EU),_
+
+* [[background]]
+= Background
+
+The OceanGliders program brings together marine scientists and glider operators from all over the world who observe the long-term physical, biogeochemical, biological ocean processes, and phenomena relevant for societal applications. It allows active coordination and strengthening the roles of gliders in the ocean observation programs worldwide and contributes to the present international efforts for ocean observation for climate, ocean health and real time services.
+
+The program oversees the monitoring of global glider activity, a prerequisite for active coordination. By sharing requirements, efforts and scientific knowledge needed for glider data collection OceanGliders aims to continuously develop the network by supporting the dissemination of glider data in global databases, in real-time and delayed mode, for a wider community.
+
+The OceanGliders program was created about 10 years after the popularization of the use of gliders by ocean scientists. With no common rules on format, data mangers from Australia, USA and Europe processed 3 regional formats that are not interoperable.
+
+Harmonization toward interoperability within the 3 current formats and other networks is a recommendation from the OceanGliders steering team in order to strengthen the network, reach the FAIR principles (Findable, Accessible, Interoperable, Reusable) adopted by GOOS (Global Ocean Observing System), and better monitor the program activity.
+
+* [[objectives]]
+= Objectives
+
+This document defines the requirements of the future OceanGliders harmonized format, here after OG1.0, and the agenda toward achievements.
+
+* [[og1.0-general-conventions]]
+= OG1.0 General conventions
+
+* ____________________________________________________________________________________________________________
+The required granularity of the data set is the glider mission, starting from deployment at sea to recovery.
+____________________________________________________________________________________________________________
+* ________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+Data are recorded as a trajectory Discrete Geometry, using NetCDF system and following CF 1.8footnote:[http://cfconventions.org/Data/cf-conventions/cf-conventions-1.8/cf-conventions.html#trajectory-data] (Climate and Forecast) specifications. Each data file contains a series of dive cycles representing the mission of the glider. It can be produced in near real time after every glider transmission and revised later into a recovery-mode (when glider on shore and any data gaps filled in) or a delayed-mode (after rigorous QC) version.
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+* _______________________________________
+Format follows the ACDD 1.3 convention.
+_______________________________________
+* ___________________________________________
+Variables are identified in capital letters
+___________________________________________
+* _______________________________________
+Attributes are identified in lower case
+_______________________________________
+* _________________________________________________________________________________________________________________________________________________________________________________________________________
+Vocabulary collections will be hosted in different places (NERC Vocabulary Server -NVS, OceanOPS, ICES, etc). The OceanGliders data management team will manage(additions, update, etc.) the collections.
+_________________________________________________________________________________________________________________________________________________________________________________________________________
+* _______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+OG1.0 overseen the following parameters: CTD measurements, Oxygen measurements, Optical fluorescence, and backscatter measurements. Other types of measurements (intermediate parameters, technical measurements, other variables) not framed by OG1.0 could be included in OG1.0 data files. No control will be applied to those measurements.
+_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+* ________________________________________________________________
+GPS variables and along track positioning variable are mandatory
+________________________________________________________________
+* ______________________________________________________________________________________________________________________________________________________________
+Interpolation methodologies used to compute along track positioning variables, phases and QC needs publishing as a best practice documents under strict rules.
+______________________________________________________________________________________________________________________________________________________________
+* ______________________________________________________________________
+A list of mandatory metadata describing the data set is defined below.
+______________________________________________________________________
+* ________________________________________________________________________________________________________________
+It is highly encouraged to use a unique resource identifier (uri) to increase machine to machine communications.
+________________________________________________________________________________________________________________
+* _________________________________________________________
+3 recommendations level have been defined for attributes:
+_________________________________________________________
+
+* _______________________________________________________________________
+Mandatory: Minimum metadata set to be compliant with OG1.0 requirement.
+_______________________________________________________________________
+* ________________________________________________________________
+Highly desirable: Worth having for complete use of the data set.
+________________________________________________________________
+* ___________________________________________
+Suggested: If the information is available.
+___________________________________________
+
+* [[global-attributes]]
+= Global attributes
+
+The global attribute section is used for data discovery. The following global attributes should appear in the global section. The NetCDF Climate and Forecast (CF) Metadata Conventions are available from: http://cfconventions.org/Data/cf-conventions/cf-conventions-1.7/cf-conventions.html#trajectory-data[_http://cfconventions.org/Data/cf-conventions/cf-conventions-1.8/cf-conventions.html#trajectory-data_]
+
+[cols=",,,",options="header",]
+|=====================================================================================================================================================================================================================================================================================
+|*Global attribute* |*Definition* |*Requirement status* |*Format or fixed value*
+|title |A short phrase or sentence describing the dataset. |mandatory |“OceanGliders trajectory file”
+|platform a|
+Name of the platform(s) that supported the sensors data used to create this data set or product.
+
+http://vocab.nerc.ac.uk/collection/L06/current/[_http://vocab.nerc.ac.uk/collection/L06/current/_]
+
+ |mandatory |“Autonomous Underwater Vehicle”
+|platform_vocabulary |Controlled vocabulary for the names used in the "platform" attribute. |mandatory |http://vocab.nerc.ac.uk/collection/L06/current/27/[_http://vocab.nerc.ac.uk/collection/L06/current/27/_]
+|wmoid |Wmo identifier |mandatory |
+|id a|
+Formatted mission name: <platform_code>_<start_date>_<data_mode>
+
+* _________________________________________
+Example: sverdrup_20200512T001245_delayed
+_________________________________________
+* ______________________________________
+Example: SL287_20180715T012451_delayed
+______________________________________
+* _______________________________
+Example: p202_20150923T150451_R
+_______________________________
+
+ |mandatory |
+|naming_authority a|
+Name of the institution who provide the id
+
+* _____________
+Example: IOOS
+_____________
+* _____________
+Example: IMOS
+_____________
+* _________________
+Example: Coriolis
+_________________
+
+ |highly desirable |
+|institution a|
+The name of the institution where the original data was produced.
+
+* _____________________________
+Example: Texas A-M University
+_____________________________
+* _____________
+Example: IMOS
+_____________
+* _______________
+Example: PLOCAN
+_______________
+
+ |highly desirable |
+|internal_mission_identifier a|
+The mission identifier used by the institution principally responsible for originating this data
+
+* __________________________________
+Example: sverdrup_20200512_delayed
+__________________________________
+* ________________________
+Example: Forster20201109
+________________________
+* ___________________
+Example: Estoc_2015
+___________________
+
+ |highly desirable |
+|geospatial_lat_min |Describes a simple lower latitude limit |suggested |decimal degree
+|geospatial_lat_max |Describes a simple upper latitude limit |suggested |decimal degree
+|geospatial_lon_min |Describes a simple longitude limit |suggested |decimal degree
+|geospatial_lon_max |Describes a simple longitude limit |suggested |decimal degree
+|geospatial_vertical_min |Describes the numerically smaller vertical limit. |suggested |meter depth
+|geospatial_ vertical_max |Describes the numerically larger vertical limit |suggested |meter depth
+|time_coverage_start | | |iso 8601
+|time_coverage_end | | |iso 8601
+|site |The name of the regular sample line or area. |highly desirable |
+|site_vocabulary |Controlled vocabulary of the names used in the “site” attribute |highly desirable |To be define
+|program |The overarching program(s) of which the dataset is a part. A program consists of a set (or portfolio) of related and possibly interdependent projects that meet an overarching objective. |Highly desirable |
+|project |The name of the project(s) principally responsible for originating this data. Multiple projects can be separated by commas |suggested |
+|network |The name of the networks this deployment is part of. Multiple networks can be separated by commas. |suggested |
+|contributor_name |Name of the contributors to the glider mission. Multiple contributors are separated by commas. |PI name is mandatory |
+|contributor_email |Email if the contributors to the glider mission. Multiple contributors’ emails are separated by commas. |PI email is mandatory |
+|contributor_id |Unique id of the contributors to the glider mission. Multiple contributors’ ids are separated by commas. |highly desirable |
+|contributor_role |Role of the contributors to the glider mission. Multiple contributors’ roles are separated by commas. |PI vocabulary is mandatory |
+|contributor_role_vocabulary |Controlled vocabulary for the roles used in the "contributors_role". Multiple contributors’ roles and vocabularies are separated by commas. |PI vocabulary is mandatory |https://orcid.org/[_https://orcid.org/_]
+|agency |Name of agencies involved in the glider mission. Multiple agencies are separated by commas. |operating agency is mandatory |
+|agency_role |Role of the agencies involved in the glider mission. Multiple agencies’ roles are separated by comma. |operating agency role is mandatory |
+|agency_role_vocabulary |The controlled vocabulary of the role used in the agency’s role. Multiple vocabularies are separated by commas. |operating agency vocabulary is mandatory |http://vocab.nerc.ac.uk/collection/C86/current/[_http://vocab.nerc.ac.uk/collection/C86/current/_]
+|agency_id |code of the agency involved in the glider mission. Multiple ids are separated by comma. |highly desirable |
+|agency_id_vocabulary |url to the repository of the id |highly desirable |EMDO, ROR, etc.
+|uri |Other universal resource identifiers relevant to be linked to this dataset. Multiple uris are separated by comma. |suggested |EDIOS, CSR, EDMERP, EDMED, CDI, ICES, etc.
+|data_url |url link to OG1.0 data file |mandatory |
+|doi |The digital object identifier of the OG1.0 data file |highly desirable |
+|rtqc_method |The method used by DAC to apply real time quality control to the data set |mandatory |
+|rtqc_method_doi |The digital object identifier of the methodology used to apply real time quality control to the data set. |mandatory |
+|web_link |url that provides useful information about anything related to the glider mission. Multiple urls are separated by commas. |suggested |
+|comment |Miscellaneous information about the data or methods used to produce it. |suggested |
+|date_created |date of creation of this data set |mandatory |iso 8601
+|featuresType |Description of a single feature with this discrete sampling geometry |mandatory |trajectory
+|Conventions |A comma-separated list of the conventions that are followed by the dataset. For files that follow this version of ACDD, include the string 'ACDD-1.3' |highly desirable |CF-1.8, ACDD-1.3, OG-1.0
+|=====================================================================================================================================================================================================================================================================================
+
+Note about program, networks and sites : The image below describe the architecture of the GOOS/OceanOPS data base.
+
+image:figures/image2.png[image,width=515,height=171]
+
+Example 1 :
+
+* ________________________________________________
+platform (i.e. glider mission) = kraken_20210205
+________________________________________________
+* ________________________________
+Programme = MOOSE glider program
+________________________________
+* ____________________________
+Sites = MOOSE_T00, MOOSET_02
+____________________________
+* ______________________________________________
+Networks = “MOOSE, BOON, Water Transformation”
+______________________________________________
+
+Example 2 :
+
+* ___________________________________
+platform : sdeep09_sdeep04_20200929
+___________________________________
+* __________________________________
+Programme : SOCIB Glider Programme
+__________________________________
+* _______________
+Sites : Canales
+_______________
+* ______________
+Network : BOON
+______________
+
+Example 3 :
+
+* __________
+platform :
+__________
+* _________________________________________
+Programme : NOAA Hurricane Glider program
+_________________________________________
+* _______
+Sites :
+_______
+* _________
+Network :
+_________
+
+Example 4 :
+
+* __________
+platform :
+__________
+* __________________________________
+Programme : SCRIPPS glider program
+__________________________________
+* _______
+Sites :
+_______
+* _________
+Network :
+_________
+
+Example 5 :
+
+* __________
+platform :
+__________
+* _______________
+Programme : OOI
+_______________
+* _______
+Sites :
+_______
+* _________
+Network :
+_________
+
+Example 6 :
+
+* __________
+platform :
+__________
+* _______________________________
+Programme : IMOS glider program
+_______________________________
+* _______
+Sites :
+_______
+* _________
+Network :
+_________
+
+Example 7 :
+
+* __________
+platform :
+__________
+* ___________________
+Programme : BODC...
+___________________
+* _______
+Sites :
+_______
+* ___________________
+Network : Alter_ECO
+___________________
+* [[dimension-and-definition]]
+= Dimension and definition
+
+[cols=",,",options="header",]
+|=================================================================================================================================================================================================================================================================
+|*Name* |*Definition* |*Comment*
+|N_MEASUREMENTS |N_MEASUREMENTS= unlimited; |Number of recorded locations.
+|N_PARAM |N_PARAM = <int value>; |Number of parameters measured or calculated for a pressure sample. Examples :(pressure, temperature) : N_PARAM = 2 (pressure, temperature, salinity) : N_PARAM = 3 (pressure, temperature, conductivity, salinity) : N_PARAM = 4
+|N_SENSOR |N_SENSOR = <int value>; |Number of sensors mounted on the float and used to measure the parameters.
+|=================================================================================================================================================================================================================================================================
+
+* [[location-variables]]
+= Location variables
+** [[gps-variables]]
+== GPS variables
+
+OG1.0 requirements cover the GPS variables delivered by the glider when at the sea surface.
+
+* ____________________________________________________________________________________________________________
+OG1.0 requirement for GPS variables: The table below describes mandatory GPS variables and their attributes.
+____________________________________________________________________________________________________________
+
+[cols=",,",options="header",]
+|============================================================
+|*VARIABLE NAME* |*variable attributes* |*requirement status*
+|LATITUDE_GPS a|
+double LATITUDE_GPS(N_MEASUREMENTS)
+
+LATITUDE_GPS:long_name = “latitude of each gps locations”;
+
+LATITUDE_GPS:unit = “decimal degree north”;
+
+LATITUDE_GPS:FillValue = “-9999.9”;
+
+LATITUDE_GPS:valid_min = “-90”;
+
+LATITUDE_GPS:valid_max = “90”;
+
+LATITUDE_GPS:ancillary_variables = "LATITUDE_GPS_QC"
+
+ |mandatory
+|LONGITUDE_GPS a|
+double LONGITUDE_GPS(N_MEASUREMENTS)
+
+LONGITUDE_GPS:long_name = “longitude of each gps locations”;
+
+LONGITUDE_GPS:unit = “decimal degree east”;
+
+LONGITUDE_GPS:FillValue = “-9999.9”;
+
+LONGITUDE_GPS:valid_min = “-180”;
+
+LONGITUDE_GPS:valid_max = “180” ;
+
+LONGIITUDE_GPS:ancillary_variables = "LONGITUDE_GPS_QC"
+
+ |mandatory
+|TIME_GPS a|
+double TIME_GPS(N_MEASUREMENTS)
+
+TIME_GPS:long_name = “time of each gps locations”;
+
+TIME _GPS:unit = “seconds since 1970-01-01T00:00:00Z”;
+
+TIME_GPS:valid_min = “1e9”;
+
+TIME_GPS:valid_max = “4e9” ;
+
+TIME _GPS:FillValue = “-1”;
+
+TIME_GPS:ancillary_variables = “TIME_GPS_QC”
+
+ |mandatory
+|============================================================
+
+* [[along-track-positioning-variables]]
+== Along track positioning variables
+
+OG1.0 requirements cover positioning variables geolocating any scientific measurements made by the glider during its mission.
+
+* _______________________________________________________________________________________________________________________________
+OG1.0 requirement for positioning variable: The table below describes the mandatory positioning variables and their attributes.
+_______________________________________________________________________________________________________________________________
+
+[cols=",,",options="header",]
+|========================================================================
+|*VARIABLE NAME* |*variable attributes* |*requirement status*
+|LATITUDE a|
+double LATITUDE (N_MEASUREMENTS)
+
+LATITUDE:long_name = “latitude of each measurements and gps locations”;
+
+LATITUDE:standard_name = “latitude”;
+
+LATITUDE:unit = “decimal degrees_north”;
+
+LATITUDE:FillValue = “-9999.9” ;
+
+LATITUDE:valid_min = “-90” ;
+
+LATITUDE:valid_max = “90” ;
+
+LATITUDE:interpolation_methodology = “”;
+
+LATITUDE:interpolation_methodology_vocabulary = “”;
+
+LATITUDE:interpolation_methodology_doi = “”;
+
+ |mandatory
+|LONGITUDE a|
+double LONGITUDE (N_MEASUREMENTS)
+
+LONGITUDE:long_name = “longitude of each measurements and gps locations”;
+
+LONGITUDE:standard_name = “longitude”;
+
+LONGITUDE:unit = “decimal degrees_east”;
+
+LONGITUDE:FillValue = “-9999.9” ;
+
+LONGITUDE:valid_min = “-180” ;
+
+LONGITUDE:valid_max = “180” ;
+
+LONGITUDE:interpolation_methodology = “”;
+
+LONGITUDE:interpolation_methodology_vocabulary = “”;
+
+LONGITUDE:interpolation_methodology_doi = “”;
+
+ |mandatory
+|TIME a|
+double TIME (N_MEASUREMENTS)
+
+TIME:long_name = “time of measurement and gps location”;
+
+TIME:standard_name = “time”;
+
+TIME:unit = “seconds since 1970-01-01T00:00:00Z”;
+
+TIME:FillValue = “-1”;
+
+TIME:interpolation_methodology = “”;
+
+TIME:interpolation_methodology_vocabulary = “”;
+
+TIME:interpolation_methodology_doi = “”;
+
+ |mandatory
+|========================================================================
+
+Interpolation methodologies need publishing as a best practice document separately to the OG1.0 terms of reference.
+
+* [[general-information]]
+= General information
+
+In this following section, two options, “encapsulate variable” and “individual variable” are proposed to store the general information.
+
+* [[trajectory-name]]
+== Trajectory name
+
+[cols=",,",options="header",]
+|===========================================================================================================================
+|*VARIABLE NAME* |*variable attributes* |*requirement status*
+|TRAJECTORY a|
+string TRAJECTORY
+
+TRAJECTORY:cf_role = "trajectory_id"
+
+TRAJECTORY:long_name = “trajectory name”;
+
+TRAJECTORY:data_mode_vocabulary = “”;
+
+ a|
+mandatory
+
+Value: <platform_code>_<start_date>
+
+Where <platform_code> refers to the name of the glider, <start_date> refers to the deployment start UTC date under iso 8601,
+
+Ex : eltanin_20210909T1605
+
+If the glider has no <platform_code> use <platform_serial_number> instead to create the TRAJECTORY
+
+Ex.: sp042_20210218T2325
+
+|===========================================================================================================================
+
+* [[platform-information]]
+== Platform information
+
+[cols=",,",options="header",]
+|========================================================================================
+|*VARIABLE NAME* |*variable attributes* |*requirement status*
+|PLATFORM_TYPE a|
+string PLATFORM_TYPE
+
+PLATFORM_TYPE:long_name: “type of glider”;
+
+PLATFORM_TYPE:platform_type_vocabulary = “”;
+
+ |mandatory
+|PLATFORM_MODEL a|
+string PLATFORM_MODEL
+
+PLATFORM_MODEL:long_name: “model of the glider”;
+
+PLATFORM_MODEL:platform_model_vocabulary = “”;
+
+ |mandatory
+|WMO_IDENTIFIER a|
+string WMO_IDENTIFIER
+
+WMO_IDENTIFIER:long_name = “wmo id”;
+
+ |mandatory
+|PLATFORM_SERIAL_NUMBER a|
+string PLATFORM_SERIAL_NUMBER
+
+PLATFORM_SERIAL_NUMBER:long_name = “glider serial number”;
+
+ |highly desirable
+|PLATFORM_CODE a|
+string PLATFORM_CODE
+
+PLATFORM_CODE:long_name = “nickname of the glider”;
+
+ |highly desirable
+|PLATFORM_DEPTH_RATING a|
+integer PLATFORM_DEPTH_RATING
+
+PLATFORM_DEPTH_RATING:long_name = “depth limit in meters of the glider for this mission”;
+
+PLATFORM_DEPTH_RATING:convention = “positive value expected - e.g. 100m depth = 100”;
+
+ |highly desirable
+|ICES_CODE a|
+string ICES_CODE
+
+ICES_CODE:long_name = “ICES code” ;
+
+ICES_CODE :ices_code_vocabulary = “” ;
+
+ |highly desirable
+|PLATFORM_MAKER a|
+string PLATFORM_MAKER
+
+PLATFORM_MAKER:long_name = “glider manufacturer”;
+
+PLATFORM_MAKER:platform_maker_vocabulary = “”;
+
+ |suggested
+|========================================================================================
+
+* [[deployment-information]]
+== Deployment information
+
+[cols=",,",options="header",]
+|============================================================
+|*VARIABLE NAME* |*variable attributes* |*requirement status*
+|DEPLOYMENT_DATE a|
+string DEPLOYMENT_DATE
+
+long_name = “date of deployment”;
+
+ |mandatory
+|DEPLOYMENT_LATITUDE a|
+string DEPLOYMENT_LATITUDE
+
+DEPLOYMENT_LATITUDE:long_name = “latitude of deployment”;
+
+ |mandatory
+|DEPLOYMENT_LONGITUDE a|
+string DEPLOYMENT_LONGITUDE
+
+long_name = “longitude of deployment”;
+
+ |mandatory
+|============================================================
+
+* [[section]]
+==
+
+* [[field-comparison-information]]
+== Field comparison information
+
+[cols=",,",options="header",]
+|=========================================================================================================================================
+|*VARIABLE NAME* |*variable attributes* |*requirement status*
+|FIELD_COMPARISON_REFERENCE a|
+String FIELD_COMPARISON_REFERENCE:
+
+FIELD_COMPARISON_REFERENCE:long_name = “links (uri or url) to supplementary data that can provide field comparison for platform sensors.”;
+
+FIELD_COMPARISON_REFERENCE:comment = “multiple links are separated by a comma”
+
+ |highly desirable
+|=========================================================================================================================================
+
+Note: FIELD_COMAPRISON_REFERENCE is applicable to deployment, recovery, and delayed versions.
+
+* [[hardware-information]]
+== Hardware information
+
+[cols=",,",options="header",]
+|=============================================================================
+|*VARIABLE NAME* |*variable attributes* |*requirement status*
+|GLIDER_FIRMWARE_VERSION a|
+string GLIDER_FIRMWARE_VERSION
+
+GLIDER_FIRMWARE_VERSION:long_name = “version of the internal glider firmware”;
+
+ |highly desirable
+|LANDSTATION_VERSION a|
+string LANDSTATION_VERSION
+
+LANDSTATION_VERSION:long_name = “version of the server on shore”;
+
+ |highly desirable
+|BATTERY_TYPE a|
+string BATTERY_TYPE
+
+BATTERY_TYPE:long_name = “type of the battery”;
+
+BATTERY_TYPE:battery_type_vocabulary = “”;
+
+ |suggested
+|BATTERY_PACK a|
+string BATTERY_PACK
+
+BATTERY_PACK:long_name = “battery packaging”;
+
+ |suggested
+|=============================================================================
+
+* [[telecom-information]]
+== Telecom information
+
+[cols=",,",options="header",]
+|===============================================================================
+|*VARIABLE NAME* |*variable attributes* |*requirement status*
+|TELECOM_TYPE a|
+string TELECOM_TYPE
+
+TELECOM_TYPE:long_name = “type of telecommunication systems used by the glider”;
+
+TELECOM_TYPE:telecom_type_vocabulary = “”;
+
+ |highly desirable
+|TRACKING_SYSTEM a|
+string TRACKING_SYSTEM
+
+TRACKING_SYSTEM:long_name = “type of tracking systems used by the glider”;
+
+TRACKING_SYSTEM:tracking_system_vocabulary = “”;
+
+ |highly desirable
+|===============================================================================
+
+* [[phase-variable]]
+= Phase variable
+
+PHASE describes the glider behaviors when at sea. The different behaviors are described in the phase vocabulary (ascent, descent, surfacing, parking, inflexion, etc.)
+
+Note that the vocabulary will be fully described and implemented in the control vocabulary tool during the implementation phase.
+
+Phase calculation methodologies need publishing as a best practice document separately to the OG1.0 terms of reference.
+
+The tables below describe the mandatory information to PHASE stored in two ways.
+
+[cols=",,",options="header",]
+|=============================================================
+|*VARIABLES NAME* |*variable attributes* |*requirement status*
+|PHASE a|
+Byte PHASE(N_MEASUREMENTS)
+
+PHASE:long_name = “behavior of the glider at sea”;
+
+PHASE:phase_vocabulary: “url to phase vocab list”;
+
+PHASE:phase_calculation_method = “”;
+
+PHASE:phase_calculation_method_vocabulary = “”;
+
+PHASE:phase_calculation_method_doi = “”;
+
+PHASE: ancillary_variables = "PHASE_QC"
+
+ |Highly desirable
+|PHASE_QC a|
+Byte PHASE_QC(N_MEASUREMENTS)
+
+PHASE_QC:long_name = "quality flag";
+
+ |Highly desirable
+|=============================================================
+
+Note 1: For simple case, PHASE calculation is relatively easy. But in some cases, PHASE calculation remains difficult. When code will be available publicly and described in some published best practices, PHASE will become mandatory. Note 2: Quality control of the PHASE could be useful to manage the difficult cases.
+
+Note 3: PHASE is used to derived data product (profile, trajectory profiles, gridded product) from OG1.0 data sets. It is recommended to include PHASE when possible.
+
+* [[sensor-information]]
+= Sensor information
+
+A sensor is a device used to measure a physical parameter. Sensor outputs are provided in parameter counts and need to be converted in parameter physical units using a calibration equation. This conversion can be done onboard the float or during the decoding process.
+
+This section contains information about the sensors of the glider. Each ocean state variable to be recorded must be described with its own sensor. Gears with multiple sensors (i.e. CTD) should consider separated sensors in particular if there is not a unique serial number and calibration date for the sensors.
+
+[cols=",,",options="header",]
+|=======================================================================================================================================================================
+|*VARIABLE NAME* |*variable attributes* |*requirement status*
+|SENSOR a|
+string SENSOR(N_SENSOR)
+
+SENSOR:long_name = “Terms describing sensor types”;
+
+SENSOR:sensor_vocabulary = “”;
+
+ |mandatory
+|SENSOR_MAKER a|
+string SENSOR_MAKER(N_SENSOR) SENSOR_MAKER:long_name = “manufacturer of the sensor”;
+
+SENSOR_MAKER:sensor_maker_vocabulary =“”;
+
+ |highly desirable
+|SENSOR_MODEL a|
+string SENSOR_MODEL(N_SENSOR)
+
+SENSOR_MODEL:long_name = “model of the sensor”;
+
+SENSOR_MODEL:sensor_model_vocabulary = “”;
+
+ |Highly desirable
+|SENSOR_SERIAL_NUMBER a|
+string SENSOR_SERIAL_NUMBER(N_SENSOR)
+
+SENSOR_SERIAL_NUMBER:long_name = “serial number of the sensor”;
+
+ |highly desirable
+|SENSOR_CALIBRATION_DATE |string SENSOR_CALIBRATION_DATE(N_SENSOR) SENSOR_CALIBRATION_DATE:long_name = “date of calibration of the sensor”; |highly desirable - ISO 8601
+|=======================================================================================================================================================================
+
+* [[parameters-information]]
+= Parameter’s information
+
+A parameter is a measurement of a physical phenomenon; it can be provided by a sensor (in sensor counts or in physical units) or computed (derived) from other parameters. A sensor can measure 1 to N parameter(s). A parameter can be measured by 1 or N sensor(s).
+
+This section contains information about the parameters measured by the glider or derived from glider measurements.
+
+[cols=",,",options="header",]
+|=======================================================================================================================================
+|*VARIABLE NAME* |*variable attributes* |*requirement status*
+|PARAMETER a|
+string PARAMETER(N_PARAM)
+
+PARAMETER:long_name = “"name of parameter computed from glider measurements”;
+
+PARAMETER:parameter_vocabulary = “https://vocab.nerc.ac.uk/collection/OG1/current/[_https://vocab.nerc.ac.uk/collection/OG1/current/_]”;
+
+ |mandatory
+|PARAMETER_SENSOR a|
+string PARAMETER_SENSOR(N_PARAM)
+
+PARAMETER_SENSOR:long_name = “”;
+
+ |mandatory
+|PARAMETER_UNITS a|
+string PARAMETER_UNITS(N_PARAM) PARAMETER_UNITS:long_name = “”;
+
+PARAMETER_UNITS:parameter_units_vocabulary = “”;
+
+ |highly desirable
+|=======================================================================================================================================
+
+* [[geophysical-variables]]
+= Geophysical variables
+
+[cols=",,",options="header",]
+|==========================================================================================================================
+|*VARIABLE NAME* |*variable attributes* |*requirement status*
+|<PARAM> a|
+float <PARAM>(N_MEASUREMENT);
+
+<PARAM>:long_name = "<X>"; <PARAM>:standard_name = “<X>";
+
+<PARAM>:vocabulary = “http://vocab.nerc.ac.uk/collection/OG1/current/[_http://vocab.nerc.ac.uk/collection/OG1/current/_] ";
+
+<PARAM>:_FillValue = <X>;
+
+<PARAM>:units = "<X>";
+
+<PARAM>:ancillary_variables = "PARAM_QC"
+
+ a|
+mandatory
+
+<PARAM> contains the values of a parameter listed in the control vocabulary related to OceanGliders parameters.
+
+<X>: these fields are specified in the control vocabularies.
+
+|<PARAM>_QC a|
+Byte <PARAM>_QC(N_MEASUREMENT); <PARAM>_QC:long_name = "quality flag";
+
+<PARAM>_QC:FillValue = " ";
+
+<PARAM>_QC:RTQC_methodology = “”;
+
+vocabulary = "";
+
+<PARAM>_QC:RTQC_methodology_vocabulary = “”;
+
+<PARAM>_QC:RTQC_methodology_doi = “”;
+
+ |mandatory
+|==========================================================================================================================
+
+Note: It is anticipated to upgrade the ancillary variable related to QC by refining the ancillary variable name like < PARAM >_qc_generic, < PARAM >_qc_spike_test, <PARAM>_qc_land_test, etc.
+
+* [[control-vocabularies]]
+= Control vocabularies
+
+A list of vocabularies of this format are controlled for harmonization across multiple stakeholders. The different collections with hosts and managers are listed below.
+
+Control vocabularies will cover the metadata listed in the table (with a summary of existing candidate vocabularies and proposed governance):
+
+[cols=",,,,",options="header",]
+|===================================================================================================================================================================================
+|*Metadata field* |*Vocabulary exists* |*Link to vocabulary* |*host* |*Possible governance*
+|platform |yes |http://vocab.nerc.ac.uk/collection/L06/current/25/[_http://vocab.nerc.ac.uk/collection/L06/current/25/_] |NVS |OceanGliders
+|oceangliders_site |No |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_OG1 - Vocabulary Collection_] |NVS |OceanOPS
+|contributors_role |No |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_OG1 - Vocabulary Collection_] |NVS |OceanGliders
+|agencies_role |No |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_OG1 - Vocabulary Collection_] |NVS |OceanGliders
+|agencies_id |Yes |https://edmo.seadatanet.org/[_https://edmo.seadatanet.org/_] |Maris |SeaDataNet
+|naming_authority |Yes |https://edmo.seadatanet.org/[_https://edmo.seadatanet.org/_] |Maris |SeaDataNet
+|institution |Yes |https://edmo.seadatanet.org/[_https://edmo.seadatanet.org/_] |Maris |SeaDataNet
+|rtqc_method |No |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_OG1 - Vocabulary Collection_] |? |OceanGliders
+|phase_calculation_methodology |No |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_OG1 - Vocabulary Collection_] |? |OceanGliders
+|platform_type |No |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_OG1 - Vocabulary Collection_] |NVS |OceanGliders
+|platform_model |Yes |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_OG1 - Vocabulary Collection_] |NVS |OceanGliders
+|ICES_code |Yes |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_OG1 - Vocabulary Collection_] |? (ICES / NVS) |ICES
+|platform_maker |Yes |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_OG1 - Vocabulary Collection_] |NVS |OceanGliders
+|battery_type |No |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_OG1 - Vocabulary Collection_] |NVS |OceanGliders
+|telecom_type |No |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_OG1 - Vocabulary Collection_] |NVS |OceanGliders
+|tracking_system |No |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_OG1 - Vocabulary Collection_] |NVS |OceanGliders
+|sensor_model |Yes |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_OG1 - Vocabulary Collection_] |NVS |OceanGliders
+|data_mode |No |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_OG1 - Vocabulary Collection_] |? |OceanGliders
+|phase |No |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_OG1 - Vocabulary Collection_] |NVS |OceanGliders
+|variable names |Yes |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_OG1 - Vocabulary Collection_] |NVS |OceanGliders
+|===================================================================================================================================================================================
+
+_Notes:_
+
+* _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+Units are a special case to be discussed because the convention in GOOS is UD units which are a conflation of observed property and measurement scale. UD units are available in spreadsheet form but not on a vocabulary server. Efforts are on-going in the internal community to harmonize a common unit's vocabulary.
+_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+* _________________________________________________________________________________________________________________________________________________________________
+A sustainable model to resource the development and on-going maintenance of vocabularies will need to be identified during the implementation phase of the OG1.0.
+_________________________________________________________________________________________________________________________________________________________________
+
+Vocabularies will be fully defined during the implementation phase of the OG1.0. The current version of the vocabulary collections are available here : https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_OG1 - Vocabulary Collection_]
+
+* [[best-practices]]
+= Best practices
+
+[[_heading=h.3whwml4]]Methodologies used to compute OG1.0 format need publishing as best practices document in the IODE Ocean Best Practice repository (https://repository.oceanbestpractices.org/[_https://repository.oceanbestpractices.org/_]) under the community “OceanGliders” and the collection “data management”. It covers the following topic:
+
+* ___________________________
+Interpolation methodologies
+___________________________
+* _____________________________
+PHASE computing methodologies
+_____________________________
+* __________________
+RTQC methodologies
+__________________
+
+Methodologies should describe the computation methods used by DAC to produce the data set. Methodologies should have a DOI and be labialized as “OceanGliders practices” by the OceanGliders data management task team.
+
+* [[evolution-process-inclusion-of-new-variables.]]
+= Evolution process, inclusion of new variables.
+
+Management of evolution of the format will be organized by the OceanGliders data management team.
+
+* [[reporting]]
+= Reporting
+
+Meeting will be organized (every 6 months?) with DACs to report about the implementation process until September 2023.
+
+* [[agenda]]
+= Agenda
+
+__Agreement on the Term of Reference__: 3 months – Jan 2021 – March 2021
+
+A proposal will be delivered by the working group on December 14^th^ for endorsement by the OceanGliders steering committee.
+
+The OG1.0 ToR will be addressed to the OceanGliders community for question and feedback for a period of 3 months.
+
+Our working group will agree on a final version of the common format.
+
+__Implementation phase__: 18 months – April 2021 to Oct 2022
+
+During the implementation phase, operators, DACs and GDACs will develop tools and procedures to produce real time gliders data files compliant with OG1.0 requirements described in the ToR.
+
+Regular meetings (frequency to be discussed) will be organized by the data management task team and DACs to evaluate progress in the different steps of the implementation phase.
+
+The OceanGliders data management team will agree on vocabulary collection
+
+_Operational phase:_ 3 months – Oct 2022 to Dec 2023
+
+2 years after agreement on the Terms of Reference OG1.0 will become the unique format for the OceanGliders program.
+
+[[_heading=h.1egqt2p]]Glider missions not delivering OG1.0 will not be considered as part of the OceanGliders program. It will be encouraged that legacy files be converted and added to OceanGliders final repository
