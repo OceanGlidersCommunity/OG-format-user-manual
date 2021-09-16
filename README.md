@@ -1,3 +1,5 @@
+![ OceanGliders Logo](logo-ocean-gliders.png "OceanGliders Logo")
+
 # OceanGliders format-user-manual
 Here we review issues related to OceanGliders format and vocabularies.
 A discussion section is also available for any question or comment related to OG format and vocabularies.
