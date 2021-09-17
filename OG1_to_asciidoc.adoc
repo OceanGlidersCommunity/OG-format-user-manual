@@ -9,6 +9,7 @@ Terms of References
 
 |===========================================================================================
 
+
 [[_heading=h.gjdgxs]]__Drafted: Victor Turpin – 13/12/2019__
 
 _Edited: Daniel Hayes -18/12/2019_
@@ -43,8 +44,10 @@ _C-IOOS (Canada), _
 
 _EMODNET Physics (EU),_
 
+////
 * [[background]]
-= Background
+////
+== Background
 
 The OceanGliders program brings together marine scientists and glider operators from all over the world who observe the long-term physical, biogeochemical, biological ocean processes, and phenomena relevant for societal applications. It allows active coordination and strengthening the roles of gliders in the ocean observation programs worldwide and contributes to the present international efforts for ocean observation for climate, ocean health and real time services.
 
@@ -54,63 +57,42 @@ The OceanGliders program was created about 10 years after the popularization of 
 
 Harmonization toward interoperability within the 3 current formats and other networks is a recommendation from the OceanGliders steering team in order to strengthen the network, reach the FAIR principles (Findable, Accessible, Interoperable, Reusable) adopted by GOOS (Global Ocean Observing System), and better monitor the program activity.
 
+////
 * [[objectives]]
 = Objectives
+////
+== Objectives
 
 This document defines the requirements of the future OceanGliders harmonized format, here after OG1.0, and the agenda toward achievements.
 
+////
 * [[og1.0-general-conventions]]
 = OG1.0 General conventions
+////
+== OG1.0 General conventions
 
-* ____________________________________________________________________________________________________________
-The required granularity of the data set is the glider mission, starting from deployment at sea to recovery.
-____________________________________________________________________________________________________________
-* ________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
-Data are recorded as a trajectory Discrete Geometry, using NetCDF system and following CF 1.8footnote:[http://cfconventions.org/Data/cf-conventions/cf-conventions-1.8/cf-conventions.html#trajectory-data] (Climate and Forecast) specifications. Each data file contains a series of dive cycles representing the mission of the glider. It can be produced in near real time after every glider transmission and revised later into a recovery-mode (when glider on shore and any data gaps filled in) or a delayed-mode (after rigorous QC) version.
-________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
-* _______________________________________
-Format follows the ACDD 1.3 convention.
-_______________________________________
-* ___________________________________________
-Variables are identified in capital letters
-___________________________________________
-* _______________________________________
-Attributes are identified in lower case
-_______________________________________
-* _________________________________________________________________________________________________________________________________________________________________________________________________________
-Vocabulary collections will be hosted in different places (NERC Vocabulary Server -NVS, OceanOPS, ICES, etc). The OceanGliders data management team will manage(additions, update, etc.) the collections.
-_________________________________________________________________________________________________________________________________________________________________________________________________________
-* _______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
-OG1.0 overseen the following parameters: CTD measurements, Oxygen measurements, Optical fluorescence, and backscatter measurements. Other types of measurements (intermediate parameters, technical measurements, other variables) not framed by OG1.0 could be included in OG1.0 data files. No control will be applied to those measurements.
-_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
-* ________________________________________________________________
-GPS variables and along track positioning variable are mandatory
-________________________________________________________________
-* ______________________________________________________________________________________________________________________________________________________________
-Interpolation methodologies used to compute along track positioning variables, phases and QC needs publishing as a best practice documents under strict rules.
-______________________________________________________________________________________________________________________________________________________________
-* ______________________________________________________________________
-A list of mandatory metadata describing the data set is defined below.
-______________________________________________________________________
-* ________________________________________________________________________________________________________________
-It is highly encouraged to use a unique resource identifier (uri) to increase machine to machine communications.
-________________________________________________________________________________________________________________
-* _________________________________________________________
-3 recommendations level have been defined for attributes:
-_________________________________________________________
+* The required granularity of the data set is the glider mission, starting from deployment at sea to recovery.
+* Data are recorded as a trajectory Discrete Geometry, using NetCDF system and following CF 1.8footnote:[http://cfconventions.org/Data/cf-conventions/cf-conventions-1.8/cf-conventions.html#trajectory-data] (Climate and Forecast) specifications. Each data file contains a series of dive cycles representing the mission of the glider. It can be produced in near real time after every glider transmission and revised later into a recovery-mode (when glider on shore and any data gaps filled in) or a delayed-mode (after rigorous QC) version.
+* Format follows the ACDD 1.3 convention.
+* Variables are identified in capital letters
+* Attributes are identified in lower case
+* Vocabulary collections will be hosted in different places (NERC Vocabulary Server -NVS, OceanOPS, ICES, etc). The OceanGliders data management team will manage(additions, update, etc.) the collections.
+* OG1.0 overseen the following parameters: CTD measurements, Oxygen measurements, Optical fluorescence, and backscatter measurements. Other types of measurements (intermediate parameters, technical measurements, other variables) not framed by OG1.0 could be included in OG1.0 data files. No control will be applied to those measurements.
+* GPS variables and along track positioning variable are mandatory
+* Interpolation methodologies used to compute along track positioning variables, phases and QC needs publishing as a best practice documents under strict rules.
+* A list of mandatory metadata describing the data set is defined below.
+* It is highly encouraged to use a unique resource identifier (uri) to increase machine to machine communications.
+* 3 recommendations level have been defined for attributes:
 
-* _______________________________________________________________________
-Mandatory: Minimum metadata set to be compliant with OG1.0 requirement.
-_______________________________________________________________________
-* ________________________________________________________________
-Highly desirable: Worth having for complete use of the data set.
-________________________________________________________________
-* ___________________________________________
-Suggested: If the information is available.
-___________________________________________
+  - Mandatory: Minimum metadata set to be compliant with OG1.0 requirement.
+	- Highly desirable: Worth having for complete use of the data set.
+	- Suggested: If the information is available.
 
+////
 * [[global-attributes]]
 = Global attributes
+////
+== Global attributes
 
 The global attribute section is used for data discovery. The following global attributes should appear in the global section. The NetCDF Climate and Forecast (CF) Metadata Conventions are available from: http://cfconventions.org/Data/cf-conventions/cf-conventions-1.7/cf-conventions.html#trajectory-data[_http://cfconventions.org/Data/cf-conventions/cf-conventions-1.8/cf-conventions.html#trajectory-data_]
 
@@ -223,110 +205,58 @@ image:figures/image2.png[image,width=515,height=171]
 
 Example 1 :
 
-* ________________________________________________
-platform (i.e. glider mission) = kraken_20210205
-________________________________________________
-* ________________________________
-Programme = MOOSE glider program
-________________________________
-* ____________________________
-Sites = MOOSE_T00, MOOSET_02
-____________________________
-* ______________________________________________
-Networks = “MOOSE, BOON, Water Transformation”
-______________________________________________
+* platform (i.e. glider mission) = kraken_20210205
+* Programme = MOOSE glider program
+* Sites = MOOSE_T00, MOOSET_02
+* Networks = “MOOSE, BOON, Water Transformation”
 
 Example 2 :
 
-* ___________________________________
-platform : sdeep09_sdeep04_20200929
-___________________________________
-* __________________________________
-Programme : SOCIB Glider Programme
-__________________________________
-* _______________
-Sites : Canales
-_______________
-* ______________
-Network : BOON
-______________
+* platform : sdeep09_sdeep04_20200929
+* Programme : SOCIB Glider Programme
+* Sites : Canales
+* Network : BOON
 
 Example 3 :
 
-* __________
-platform :
-__________
-* _________________________________________
-Programme : NOAA Hurricane Glider program
-_________________________________________
-* _______
-Sites :
-_______
-* _________
-Network :
-_________
+* platform :
+* Programme : NOAA Hurricane Glider program
+* Sites :
+* Network :
 
 Example 4 :
 
-* __________
-platform :
-__________
-* __________________________________
-Programme : SCRIPPS glider program
-__________________________________
-* _______
-Sites :
-_______
-* _________
-Network :
-_________
+* platform :
+* Programme : SCRIPPS glider program
+* Sites : CUGN80
+* Network : Integrated Ocean Observing System (IOOS), Southern California Coastal Ocean Observing System (SCCOOS), California Network Spray Program, Boundary Ocean Observing Network (BOON)
 
 Example 5 :
 
-* __________
-platform :
-__________
-* _______________
-Programme : OOI
-_______________
-* _______
-Sites :
-_______
-* _________
-Network :
-_________
+* platform : 
+* Programme : OOI
+* Sites :
+* Network :
 
 Example 6 :
 
-* __________
-platform :
-__________
-* _______________________________
-Programme : IMOS glider program
-_______________________________
-* _______
-Sites :
-_______
-* _________
-Network :
-_________
+* platform :
+* Programme : IMOS glider program
+* Sites :
+* Network : IMOS
 
 Example 7 :
 
-* __________
-platform :
-__________
-* ___________________
-Programme : BODC...
-___________________
-* _______
-Sites :
-_______
-* ___________________
-Network : Alter_ECO
-___________________
+* platform : stella_20180207
+* Programme : MARS Glider program
+* Sites :
+* Network : Alter_ECO
+
+////
 * [[dimension-and-definition]]
 = Dimension and definition
+////
+== Dimension and Definition
 
 [cols=",,",options="header",]
 |=================================================================================================================================================================================================================================================================
@@ -336,16 +266,20 @@ ___________________
 |N_SENSOR |N_SENSOR = <int value>; |Number of sensors mounted on the float and used to measure the parameters.
 |=================================================================================================================================================================================================================================================================
 
+////
 * [[location-variables]]
 = Location variables
+////
+== Location variables
+////
 ** [[gps-variables]]
 == GPS variables
+////
+=== GPS variables
 
 OG1.0 requirements cover the GPS variables delivered by the glider when at the sea surface.
 
-* ____________________________________________________________________________________________________________
-OG1.0 requirement for GPS variables: The table below describes mandatory GPS variables and their attributes.
-____________________________________________________________________________________________________________
+* OG1.0 requirement for GPS variables: The table below describes mandatory GPS variables and their attributes.
 
 [cols=",,",options="header",]
 |============================================================
@@ -400,14 +334,15 @@ TIME_GPS:ancillary_variables = “TIME_GPS_QC”
  |mandatory
 |============================================================
 
+////
 * [[along-track-positioning-variables]]
+== Along track positioning variables
+////
 == Along track positioning variables
 
 OG1.0 requirements cover positioning variables geolocating any scientific measurements made by the glider during its mission.
 
-* _______________________________________________________________________________________________________________________________
-OG1.0 requirement for positioning variable: The table below describes the mandatory positioning variables and their attributes.
-_______________________________________________________________________________________________________________________________
+* OG1.0 requirement for positioning variable: The table below describes the mandatory positioning variables and their attributes.
 
 [cols=",,",options="header",]
 |========================================================================
@@ -478,13 +413,19 @@ TIME:interpolation_methodology_doi = “”;
 
 Interpolation methodologies need publishing as a best practice document separately to the OG1.0 terms of reference.
 
+////
 * [[general-information]]
 = General information
+////
+== General Information
 
 In this following section, two options, “encapsulate variable” and “individual variable” are proposed to store the general information.
 
+////
 * [[trajectory-name]]
 == Trajectory name
+////
+== Trajectory Name
 
 [cols=",,",options="header",]
 |===========================================================================================================================
@@ -513,8 +454,11 @@ Ex.: sp042_20210218T2325
 
 |===========================================================================================================================
 
+////
 * [[platform-information]]
 == Platform information
+////
+=== Platform information
 
 [cols=",,",options="header",]
 |========================================================================================
@@ -579,8 +523,11 @@ PLATFORM_MAKER:platform_maker_vocabulary = “”;
  |suggested
 |========================================================================================
 
+////
 * [[deployment-information]]
 == Deployment information
+////
+=== Deployment information
 
 [cols=",,",options="header",]
 |============================================================
@@ -608,8 +555,11 @@ long_name = “longitude of deployment”;
 * [[section]]
 ==
 
+////
 * [[field-comparison-information]]
 == Field comparison information
+////
+=== Field comparison information
 
 [cols=",,",options="header",]
 |=========================================================================================================================================
@@ -626,8 +576,11 @@ FIELD_COMPARISON_REFERENCE:comment = “multiple links are separated by a comma�
 
 Note: FIELD_COMAPRISON_REFERENCE is applicable to deployment, recovery, and delayed versions.
 
+////
 * [[hardware-information]]
 == Hardware information
+////
+=== Hardware information
 
 [cols=",,",options="header",]
 |=============================================================================
@@ -660,8 +613,11 @@ BATTERY_PACK:long_name = “battery packaging”;
  |suggested
 |=============================================================================
 
+////
 * [[telecom-information]]
 == Telecom information
+////
+=== Telecom information
 
 [cols=",,",options="header",]
 |===============================================================================
@@ -684,8 +640,11 @@ TRACKING_SYSTEM:tracking_system_vocabulary = “”;
  |highly desirable
 |===============================================================================
 
+////
 * [[phase-variable]]
 = Phase variable
+////
+== Phase variable
 
 PHASE describes the glider behaviors when at sea. The different behaviors are described in the phase vocabulary (ascent, descent, surfacing, parking, inflexion, etc.)
 
@@ -726,8 +685,11 @@ Note 1: For simple case, PHASE calculation is relatively easy. But in some cases
 
 Note 3: PHASE is used to derived data product (profile, trajectory profiles, gridded product) from OG1.0 data sets. It is recommended to include PHASE when possible.
 
+////
 * [[sensor-information]]
 = Sensor information
+////
+== Sensor information
 
 A sensor is a device used to measure a physical parameter. Sensor outputs are provided in parameter counts and need to be converted in parameter physical units using a calibration equation. This conversion can be done onboard the float or during the decoding process.
 
@@ -767,8 +729,11 @@ SENSOR_SERIAL_NUMBER:long_name = “serial number of the sensor”;
 |SENSOR_CALIBRATION_DATE |string SENSOR_CALIBRATION_DATE(N_SENSOR) SENSOR_CALIBRATION_DATE:long_name = “date of calibration of the sensor”; |highly desirable - ISO 8601
 |=======================================================================================================================================================================
 
+////
 * [[parameters-information]]
 = Parameter’s information
+////
+== Parameter’s information
 
 A parameter is a measurement of a physical phenomenon; it can be provided by a sensor (in sensor counts or in physical units) or computed (derived) from other parameters. A sensor can measure 1 to N parameter(s). A parameter can be measured by 1 or N sensor(s).
 
@@ -799,7 +764,10 @@ PARAMETER_UNITS:parameter_units_vocabulary = “”;
  |highly desirable
 |=======================================================================================================================================
 
+////
 * [[geophysical-variables]]
+= Geophysical variables
+////
 = Geophysical variables
 
 [cols=",,",options="header",]
@@ -843,8 +811,11 @@ vocabulary = "";
 
 Note: It is anticipated to upgrade the ancillary variable related to QC by refining the ancillary variable name like < PARAM >_qc_generic, < PARAM >_qc_spike_test, <PARAM>_qc_land_test, etc.
 
+////
 * [[control-vocabularies]]
 = Control vocabularies
+////
+== Control vocabularies
 
 A list of vocabularies of this format are controlled for harmonization across multiple stakeholders. The different collections with hosts and managers are listed below.
 
@@ -886,35 +857,41 @@ ________________________________________________________________________________
 
 Vocabularies will be fully defined during the implementation phase of the OG1.0. The current version of the vocabulary collections are available here : https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_OG1 - Vocabulary Collection_]
 
+////
 * [[best-practices]]
 = Best practices
+////
+== Best practices
 
 [[_heading=h.3whwml4]]Methodologies used to compute OG1.0 format need publishing as best practices document in the IODE Ocean Best Practice repository (https://repository.oceanbestpractices.org/[_https://repository.oceanbestpractices.org/_]) under the community “OceanGliders” and the collection “data management”. It covers the following topic:
 
-* ___________________________
-Interpolation methodologies
-___________________________
-* _____________________________
-PHASE computing methodologies
-_____________________________
-* __________________
-RTQC methodologies
-__________________
+* Interpolation methodologies
+* PHASE computing methodologies
+* RTQC methodologies
 
 Methodologies should describe the computation methods used by DAC to produce the data set. Methodologies should have a DOI and be labialized as “OceanGliders practices” by the OceanGliders data management task team.
 
+////
 * [[evolution-process-inclusion-of-new-variables.]]
 = Evolution process, inclusion of new variables.
+////
+== Evolution process, inclusion of new variables.
 
 Management of evolution of the format will be organized by the OceanGliders data management team.
 
+////
 * [[reporting]]
 = Reporting
+////
+== Reporting
 
 Meeting will be organized (every 6 months?) with DACs to report about the implementation process until September 2023.
 
+////
 * [[agenda]]
 = Agenda
+////
+== Agenda
 
 __Agreement on the Term of Reference__: 3 months – Jan 2021 – March 2021
 
