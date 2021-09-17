@@ -848,12 +848,8 @@ Control vocabularies will cover the metadata listed in the table (with a summary
 
 _Notes:_
 
-* _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
-Units are a special case to be discussed because the convention in GOOS is UD units which are a conflation of observed property and measurement scale. UD units are available in spreadsheet form but not on a vocabulary server. Efforts are on-going in the internal community to harmonize a common unit's vocabulary.
-_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
-* _________________________________________________________________________________________________________________________________________________________________
-A sustainable model to resource the development and on-going maintenance of vocabularies will need to be identified during the implementation phase of the OG1.0.
-_________________________________________________________________________________________________________________________________________________________________
+* Units are a special case to be discussed because the convention in GOOS is UD units which are a conflation of observed property and measurement scale. UD units are available in spreadsheet form but not on a vocabulary server. Efforts are on-going in the internal community to harmonize a common unit's vocabulary.
+* A sustainable model to resource the development and on-going maintenance of vocabularies will need to be identified during the implementation phase of the OG1.0.
 
 Vocabularies will be fully defined during the implementation phase of the OG1.0. The current version of the vocabulary collections are available here : https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_OG1 - Vocabulary Collection_]
 
