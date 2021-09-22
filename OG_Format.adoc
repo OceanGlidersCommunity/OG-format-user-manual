@@ -208,7 +208,7 @@ Example 1:
 * platform (i.e. glider mission) = kraken_20210205
 * Programme = MOOSE glider program
 * Sites = MOOSE_T00, MOOSET_02
-* Networks = “MOOSE, BOON, Water Transformation”
+* Networks = Mediterranean Ocean Observing Systems for the Environment (MOOSE), Boundary Ocean Observing Network (BOON), Water Transformation task team”
 
 Example 2:
 
@@ -219,37 +219,38 @@ Example 2:
 
 Example 3:
 
-* platform :
+* platform : SG669-20210617 
 * Programme : NOAA Hurricane Glider program
-* Sites :
-* Network :
+* Sites : NPR1 (North Puerto Rico 1)
+* Networks : Integrated Ocean Observing System (IOOS), Caribbean Coastal Ocean Observing System (CARICOOS), Boundary Ocean Observing Network (BOON), OceanGliders Storms, AtlantOS 
 
 Example 4:
 
-* platform :
+* platform : sp054-20210406T1719
 * Programme : SCRIPPS glider program
 * Sites : CUGN80
 * Network : Integrated Ocean Observing System (IOOS), Southern California Coastal Ocean Observing System (SCCOOS), California Network Spray Program, Boundary Ocean Observing Network (BOON)
 
 Example 5:
 
-* platform : 
-* Programme : OOI
-* Sites :
-* Network :
+* platform : ce_917-20210730
+* Programme : OOI - Coastal and Endurance array
+* Sites : OOI - Newport Harbor Inshore Line,  OOI - Newport Harbor offshore Line  
+* Network : Ocean Observatories Initiative (OOI), Northwest Association of Networked Ocean Observing Systems (NANOOS), Boundary Ocean Observing Network (BOON)
+
 
 Example 6:
 
-* platform :
-* Programme : IMOS glider program
-* Sites :
+* platform : SL287 - StormBay-15Apr21
+* Programme : Integrated Marine Observing System - Glider
+* Sites : no site
 * Network : IMOS
 
 Example 7:
 
 * platform : stella_20180207
 * Programme : MARS Glider program
-* Sites :
+* Sites : no site
 * Network : Alter_ECO
 
 ////
