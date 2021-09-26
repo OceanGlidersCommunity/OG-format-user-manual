@@ -124,12 +124,14 @@ the community.
 
 This Code of Conduct is adapted from the [Contributor Covenant][homepage],
 version 2.0, available at
-https://www.contributor-covenant.org/version/2/0/code_of_conduct.html.
+https://www.contributor-covenant.org/version/2/0/code_of_conduct.html
+together with [Rust's Code of Conduct][Rust].
 
 Community Impact Guidelines were inspired by [Mozilla's code of conduct
 enforcement ladder](https://github.com/mozilla/diversity).
 
 [homepage]: https://www.contributor-covenant.org
+[rust]: https://www.rust-lang.org/policies/code-of-conduct
 
 For answers to common questions about this code of conduct, see the FAQ at
 https://www.contributor-covenant.org/faq. Translations are available at
