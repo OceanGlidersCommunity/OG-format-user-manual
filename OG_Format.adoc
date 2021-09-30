@@ -103,10 +103,10 @@ The global attribute section is used for data discovery. The following global at
 |platform a|
 Name of the platform(s) that supported the sensors data used to create this data set or product.
 
-http://vocab.nerc.ac.uk/collection/L06/current/[_http://vocab.nerc.ac.uk/collection/L06/current/_]
+https://vocab.nerc.ac.uk/collection/L06/current/[_https://vocab.nerc.ac.uk/collection/L06/current/_]
 
  |mandatory |“Autonomous Underwater Vehicle”
-|platform_vocabulary |Controlled vocabulary for the names used in the "platform" attribute. |mandatory |http://vocab.nerc.ac.uk/collection/L06/current/27/[_http://vocab.nerc.ac.uk/collection/L06/current/27/_]
+|platform_vocabulary |Controlled vocabulary for the names used in the "platform" attribute. |mandatory |https://vocab.nerc.ac.uk/collection/L06/current/27/[_https://vocab.nerc.ac.uk/collection/L06/current/27/_]
 |wmoid |Wmo identifier |mandatory |
 |id a|
 Formatted mission name: <platform_code>_<start_date>_<data_mode>
@@ -184,7 +184,7 @@ ___________________
 |contributor_role_vocabulary |Controlled vocabulary for the roles used in the "contributors_role". Multiple contributors’ roles and vocabularies are separated by commas. |PI vocabulary is mandatory |https://orcid.org/[_https://orcid.org/_]
 |agency |Name of agencies involved in the glider mission. Multiple agencies are separated by commas. |operating agency is mandatory |
 |agency_role |Role of the agencies involved in the glider mission. Multiple agencies’ roles are separated by comma. |operating agency role is mandatory |
-|agency_role_vocabulary |The controlled vocabulary of the role used in the agency’s role. Multiple vocabularies are separated by commas. |operating agency vocabulary is mandatory |http://vocab.nerc.ac.uk/collection/C86/current/[_http://vocab.nerc.ac.uk/collection/C86/current/_]
+|agency_role_vocabulary |The controlled vocabulary of the role used in the agency’s role. Multiple vocabularies are separated by commas. |operating agency vocabulary is mandatory |https://vocab.nerc.ac.uk/collection/C86/current/[_https://vocab.nerc.ac.uk/collection/C86/current/_]
 |agency_id |code of the agency involved in the glider mission. Multiple ids are separated by comma. |highly desirable |
 |agency_id_vocabulary |url to the repository of the id |highly desirable |EMDO, ROR, etc.
 |uri |Other universal resource identifiers relevant to be linked to this dataset. Multiple uris are separated by comma. |suggested |EDIOS, CSR, EDMERP, EDMED, CDI, ICES, etc.
@@ -779,7 +779,7 @@ float <PARAM>(N_MEASUREMENT);
 
 <PARAM>:long_name = "<X>"; <PARAM>:standard_name = “<X>";
 
-<PARAM>:vocabulary = “http://vocab.nerc.ac.uk/collection/OG1/current/[_http://vocab.nerc.ac.uk/collection/OG1/current/_]";
+<PARAM>:vocabulary = “https://vocab.nerc.ac.uk/collection/OG1/current/[_https://vocab.nerc.ac.uk/collection/OG1/current/_]";
 
 <PARAM>:_FillValue = <X>;
 
@@ -825,7 +825,7 @@ Control vocabularies will cover the metadata listed in the table (with a summary
 [cols=",,,,",options="header",]
 |===================================================================================================================================================================================
 |*Metadata field* |*Vocabulary exists* |*Link to vocabulary* |*host* |*Possible governance*
-|platform |yes |http://vocab.nerc.ac.uk/collection/L06/current/25/[_http://vocab.nerc.ac.uk/collection/L06/current/25/_] |NVS |OceanGliders
+|platform |yes |https://vocab.nerc.ac.uk/collection/L06/current/25/[_https://vocab.nerc.ac.uk/collection/L06/current/25/_] |NVS |OceanGliders
 |oceangliders_site |No |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_OG1 - Vocabulary Collection_] |NVS |OceanOPS
 |contributors_role |No |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_OG1 - Vocabulary Collection_] |NVS |OceanGliders
 |agencies_role |No |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_OG1 - Vocabulary Collection_] |NVS |OceanGliders
