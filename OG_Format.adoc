@@ -870,10 +870,10 @@ _Operational phase:_ 3 months – Oct 2022 to Dec 2023
 
 Example 1:
 
-* platform (i.e. glider mission) = kraken_20210205
-* Programme = MOOSE glider program
-* Sites = MOOSE_T00, MOOSET_02
-* Networks = Mediterranean Ocean Observing Systems for the Environment (MOOSE), Boundary Ocean Observing Network (BOON), Water Transformation task team”
+* platform (i.e. glider mission): kraken_20210205
+* Programme: MOOSE glider program
+* Sites: MOOSE_T00, MOOSET_02
+* Networks: Mediterranean Ocean Observing Systems for the Environment (MOOSE), Boundary Ocean Observing Network (BOON), Water Transformation task team”
 
 Example 2:
 
