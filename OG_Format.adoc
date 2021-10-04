@@ -866,54 +866,55 @@ _Operational phase:_ 3 months – Oct 2022 to Dec 2023
 [appendix]
 == Examples
 
-=== Platform, Programme, and Network
+[[ProgramNetworkSite-example]]
+=== Program, network, and site
 
 Example 1:
 
 * platform (i.e. glider mission): kraken_20210205
-* Programme: MOOSE glider program
-* Sites: MOOSE_T00, MOOSET_02
+* Program: MOOSE glider program
+* Site: MOOSE_T00, MOOSET_02
 * Networks: Mediterranean Ocean Observing Systems for the Environment (MOOSE), Boundary Ocean Observing Network (BOON), Water Transformation task team”
 
 Example 2:
 
 * platform: sdeep09_sdeep04_20200929
-* Programme: SOCIB Glider Programme
-* Sites: Canales
+* Program: SOCIB Glider Programme
+* Site: Canales
 * Network: BOON
 
 Example 3:
 
 * platform: SG669-20210617
-* Programme: NOAA Hurricane Glider program
-* Sites: NPR1 (North Puerto Rico 1)
+* Program: NOAA Hurricane Glider program
+* Site: NPR1 (North Puerto Rico 1)
 * Networks: Integrated Ocean Observing System (IOOS), Caribbean Coastal Ocean Observing System (CARICOOS), Boundary Ocean Observing Network (BOON), OceanGliders Storms, AtlantOS
 
 Example 4:
 
 * platform: sp058-20210812T1703
-* Programme: Scripps glider program
-* Sites: CUGN90
+* Program: Scripps glider program
+* Site: CUGN90
 * Network: Integrated Ocean Observing System (IOOS), Southern California Coastal Ocean Observing System (SCCOOS), California Network Spray Program, Boundary Ocean Observing Network (BOON)
 
 Example 5:
 
 * platform: ce_917-20210730
-* Programme: OOI - Coastal and Endurance array
-* Sites: OOI - Newport Harbor Inshore Line,  OOI - Newport Harbor offshore Line
+* Program: OOI - Coastal and Endurance array
+* Site: OOI - Newport Harbor Inshore Line,  OOI - Newport Harbor offshore Line
 * Network: Ocean Observatories Initiative (OOI), Northwest Association of Networked Ocean Observing Systems (NANOOS), Boundary Ocean Observing Network (BOON)
 
 
 Example 6:
 
 * platform: SL287 - StormBay-15Apr21
-* Programme: Integrated Marine Observing System - Glider
-* Sites: no site
+* Program: Integrated Marine Observing System - Glider
+* Site: no site
 * Network: IMOS
 
 Example 7:
 
 * platform: stella_20180207
-* Programme: MARS Glider program
-* Sites: no site
+* Program: MARS Glider program
+* Site: no site
 * Network: Alter_ECO
