@@ -199,59 +199,12 @@ ___________________
 |Conventions |A comma-separated list of the conventions that are followed by the dataset. For files that follow this version of ACDD, include the string 'ACDD-1.3' |highly desirable |CF-1.8, ACDD-1.3, OG-1.0
 |=====================================================================================================================================================================================================================================================================================
 
-Note about program, networks and sites: The image below describe the architecture of the GOOS/OceanOPS data base.
+Note about program, networks, and sites:
+Some examples are provided in <<ProgramNetworkSite-example>>.
+The image below describes the architecture of the GOOS/OceanOPS database.
 
 image:figures/image2.png[image,width=515,height=171]
 
-Example 1:
-
-* platform (i.e. glider mission) = kraken_20210205
-* Programme = MOOSE glider program
-* Sites = MOOSE_T00, MOOSET_02
-* Networks = Mediterranean Ocean Observing Systems for the Environment (MOOSE), Boundary Ocean Observing Network (BOON), Water Transformation task team”
-
-Example 2:
-
-* platform : sdeep09_sdeep04_20200929
-* Programme : SOCIB Glider Programme
-* Sites : Canales
-* Network : BOON
-
-Example 3:
-
-* platform : SG669-20210617 
-* Programme : NOAA Hurricane Glider program
-* Sites : NPR1 (North Puerto Rico 1)
-* Networks : Integrated Ocean Observing System (IOOS), Caribbean Coastal Ocean Observing System (CARICOOS), Boundary Ocean Observing Network (BOON), OceanGliders Storms, AtlantOS 
-
-Example 4:
-
-* platform : sp054-20210406T1719
-* Programme : SCRIPPS glider program
-* Sites : CUGN80
-* Network : Integrated Ocean Observing System (IOOS), Southern California Coastal Ocean Observing System (SCCOOS), California Network Spray Program, Boundary Ocean Observing Network (BOON)
-
-Example 5:
-
-* platform : ce_917-20210730
-* Programme : OOI - Coastal and Endurance array
-* Sites : OOI - Newport Harbor Inshore Line,  OOI - Newport Harbor offshore Line  
-* Network : Ocean Observatories Initiative (OOI), Northwest Association of Networked Ocean Observing Systems (NANOOS), Boundary Ocean Observing Network (BOON)
-
-
-Example 6:
-
-* platform : SL287 - StormBay-15Apr21
-* Programme : Integrated Marine Observing System - Glider
-* Sites : no site
-* Network : IMOS
-
-Example 7:
-
-* platform : stella_20180207
-* Programme : MARS Glider program
-* Sites : no site
-* Network : Alter_ECO
 
 ////
 * [[dimension-and-definition]]
@@ -911,3 +864,59 @@ _Operational phase:_ 3 months – Oct 2022 to Dec 2023
 2 years after agreement on the Terms of Reference OG1.0 will become the unique format for the OceanGliders program.
 
 [[_heading=h.1egqt2p]]Glider missions not delivering OG1.0 will not be considered as part of the OceanGliders program. It will be encouraged that legacy files be converted and added to OceanGliders final repository
+
+[appendix]
+== Examples
+
+[[ProgramNetworkSite-example, Examples using program, network, and site]]
+=== Program, network, and site
+
+Example 1:
+
+* platform (i.e. glider mission): kraken_20210205
+* Program: MOOSE glider program
+* Site: MOOSE_T00, MOOSET_02
+* Networks: Mediterranean Ocean Observing Systems for the Environment (MOOSE), Boundary Ocean Observing Network (BOON), Water Transformation task team”
+
+Example 2:
+
+* platform: sdeep09_sdeep04_20200929
+* Program: SOCIB Glider Programme
+* Site: Canales
+* Network: BOON
+
+Example 3:
+
+* platform: SG669-20210617
+* Program: NOAA Hurricane Glider program
+* Site: NPR1 (North Puerto Rico 1)
+* Networks: Integrated Ocean Observing System (IOOS), Caribbean Coastal Ocean Observing System (CARICOOS), Boundary Ocean Observing Network (BOON), OceanGliders Storms, AtlantOS
+
+Example 4:
+
+* platform: sp058-20210812T1703
+* Program: Scripps glider program
+* Site: CUGN90
+* Network: Integrated Ocean Observing System (IOOS), Southern California Coastal Ocean Observing System (SCCOOS), California Network Spray Program, Boundary Ocean Observing Network (BOON)
+
+Example 5:
+
+* platform: ce_917-20210730
+* Program: OOI - Coastal and Endurance array
+* Site: OOI - Newport Harbor Inshore Line,  OOI - Newport Harbor offshore Line
+* Network: Ocean Observatories Initiative (OOI), Northwest Association of Networked Ocean Observing Systems (NANOOS), Boundary Ocean Observing Network (BOON)
+
+
+Example 6:
+
+* platform: SL287 - StormBay-15Apr21
+* Program: Integrated Marine Observing System - Glider
+* Site: no site
+* Network: IMOS
+
+Example 7:
+
+* platform: stella_20180207
+* Program: MARS Glider program
+* Site: no site
+* Network: Alter_ECO
