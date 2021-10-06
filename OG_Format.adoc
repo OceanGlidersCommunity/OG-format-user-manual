@@ -111,15 +111,11 @@ https://vocab.nerc.ac.uk/collection/L06/current/[_https://vocab.nerc.ac.uk/colle
 |id a|
 Formatted mission name: <platform_code>_<start_date>_<data_mode>
 
-* _________________________________________
-Example: sverdrup_20200512T001245_delayed
-_________________________________________
-* ______________________________________
-Example: SL287_20180715T012451_delayed
-______________________________________
-* _______________________________
-Example: p202_20150923T150451_R
-_______________________________
+Examples:
+
+* sverdrup_20200512T001245_delayed
+* SL287_20180715T012451_delayed
+* p202_20150923T150451_R
 
  |mandatory |
 |naming_authority a|
