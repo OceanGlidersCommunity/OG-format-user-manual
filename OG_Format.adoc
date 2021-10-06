@@ -113,8 +113,8 @@ Formatted mission name: <platform_code>_<start_date>_<data_mode>
 
 Examples:
 
-* sverdrup_20200512T001245_delayed
-* SL287_20180715T012451_delayed
+* sverdrup_20200512T001245_D
+* SL287_20180715T012451_D
 * p202_20150923T150451_R
 
  |mandatory |
