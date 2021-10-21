@@ -195,7 +195,7 @@ ___________________
 |web_link |url that provides useful information about anything related to the glider mission. Multiple urls are separated by commas. |suggested |
 |comment |Miscellaneous information about the data or methods used to produce it. |suggested |
 |date_created |date of creation of this data set |mandatory |iso 8601
-|featuresType |Description of a single feature with this discrete sampling geometry |mandatory |trajectory
+|featureType |Description of a single feature with this discrete sampling geometry |mandatory |trajectory
 |Conventions |A comma-separated list of the conventions that are followed by the dataset. For files that follow this version of ACDD, include the string 'ACDD-1.3' |highly desirable |CF-1.8, ACDD-1.3, OG-1.0
 |=====================================================================================================================================================================================================================================================================================
 
