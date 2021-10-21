@@ -1,0 +1,1411 @@
+[#anchor]####OG1.0 – Control vocabularies
+
+*This document describes the OceanGliders requirements on global
+attributes and variable attributes. This is a first draft that needs
+edition from data management team.*
+
+_Drafted: Victor Turpin – 27/04/2020_
+
+_Complemented: Victor Turpin - 26/08/2021_
+
+_Reviewed:_
+
+_Finalized:_
+
+[#anchor-1]####Overview
+
+Control vocabularies contribute to standardizing the information
+provided by the glider community in the OG1.0 format. It is part of the
+data management strategy to implement the FAIR principles.
+
+The following element of OG1.0 falls under control vocabulary procedure.
+The aim is to manage the content of key elements of the format (variable
+and attribute), to build interoperability within the data providers and
+across networks. It is also required to implement part of the FAIR
+principles.
+
+Each element of each collection listed below are agreed by the
+OceanGliders data management team. It is associated with a “short_name”,
+a “long_name”, a definition, and an uri (unique resource identifier).
+Host and manager of each collection is identified in the table below.
+
+[cols=",,,,",]
+|===
+|*Metadata field* |*Vocabulary exists* |*Link to vocabulary* |*host*
+|*Possible governance*
+
+|link:#_gzm334qf15ax[_platform_] |yes
+|http://vocab.nerc.ac.uk/collection/L06/current/25/[_http://vocab.nerc.ac.uk/collection/L06/current/25/_]
+|NVS |SeaVox
+
+|link:#_wcgz3tnlm891[_site_] |No | |NVS |OceanOPS
+
+|link:#_k5037fhkro59[_contributors_role_] |No | |NVS |OceanGliders
+
+|link:#_6mt06dbkes2l[_agencies_role_] |No | |NVS |OceanGliders
+
+|link:#_2fcny0wzutbl[_agencies_id_] |Yes
+|https://edmo.seadatanet.org/[_https://edmo.seadatanet.org/_] |Maris
+|SeaDataNet
+
+|link:#_yq785e1xz75v[_rtqc_method_] |No | |? |OceanGliders
+
+|link:#_yyy0h0t0nabp[_phase_calculation_method_] |No | |? |OceanGliders
+
+|link:#_a9i45kmkxsz[_platform_type_] |No
+|http://vocab.nerc.ac.uk/collection/L06/current/27/[_http://vocab.nerc.ac.uk/collection/L06/current/27/_]
+|NVS |OceanGliders
+
+|link:#_6apefww83azg[_platform_model_] |Yes
+|http://vocab.nerc.ac.uk/collection/B76/current/[_http://vocab.nerc.ac.uk/collection/B76/current/_]
+|NVS |OceanGliders
+
+|link:#_dnf968hwgv87[_ICES_code_] |Yes
+|https://ocean.ices.dk/codes/ShipCodes.aspx[_https://ocean.ices.dk/codes/ShipCodes.aspx_]
+|ICES, mirrored in NVS C17) |ICES
+
+|link:#_rswzmp9psmxc[_platform_maker_] |Yes
+|http://vocab.nerc.ac.uk/collection/B75/current/[_http://vocab.nerc.ac.uk/collection/B75/current/_]
+|NVS |OceanGliders
+
+|link:#_no2swd2b130[_battery_type_] |No | |NVS |OceanGliders
+
+|link:#_2u578u1wu5ow[_telecom_type_] |No | |NVS |OceanGliders
+
+|link:#_xvte5wz9feo1[_tracking_system_] |No | |NVS |OceanGliders
+
+|link:#_ma03i4ov3nmu[_sensor_model_] |Yes
+|http://vocab.nerc.ac.uk/collection/L22/current/[_http://vocab.nerc.ac.uk/collection/L22/current/_]
+|NVS |OceanGliders
+
+|link:#_qobrmr3dp3h[_data_mode_] |No | |NVS |OceanGliders
+
+|link:#_sx0ncoagdcvt[_phase_] |No | |NVS |OceanGliders
+
+|link:#_jvucaj3xuuyd[_variable names_] |Yes
+|http://vocab.nerc.ac.uk/collection/OG1/current/[_http://vocab.nerc.ac.uk/collection/OG1/current/_]
+|NVS |OceanGliders
+|===
+
+[#anchor-2]####Management of the evolution of OG1.0 controlled
+vocabularies.
+
+The data management board of OceanGliders will maintain its reference
+table autonomously. BODC will complement OG1.0 vocabulary and map it to
+master lists that cover more than the network's needs.
+
+[#anchor-3]####Collections
+
+[#anchor-4]####platform
+
+[cols=",,,,",]
+|===
+|Url |Short_name |Long_name |Definition |Status
+
+|http://vocab.nerc.ac.uk/collection/L06/current/25/[_http://vocab.nerc.ac.uk/collection/L06/current/25/_]
+|Autonomous underwater vehicle |Autonomous underwater vehicle |A
+free-roving platform operating in the water column with propulsion but
+no human operator on board . |approved
+|===
+
+_Master list:_ __
+__http://vocab.nerc.ac.uk/collection/L06/current/[_http://vocab.nerc.ac.uk/collection/L06/current/_]
+
+_Host_: NERC Vocabulary Server
+
+_Management_: OceanGliders
+
+_Note_: “platform” does not refer to a collection but a single value for
+all ocean gliders.
+
+[#anchor-5]####Sites
+
+Sites listed here are under discussion within the data management group.
+This vocabulary collection is not approved yet. The definition of sites
+needs review and agreement
+
+[cols=",,,,",]
+|===
+|Url |Short_name |Long_name |Definition |Status
+
+| |53° North |53° North |LINESTRING (-52.00 53.00,-49.90 53.00) |
+
+| |A05 |Atlantic Ocean 5 |LINESTRING (-14.21 27.62, -13.4 27.92, -15.30
+28.00) |
+
+| |Agulhas, GINA |Gliders in the _Agulhas_ Experiment |POLYGON ((26.50
+-34.50, 27.50 -34.50, 33.00 -29.500, 32.700 -27.80, 32.41 -28.54, 31.15
+-29.80, 30.42 -30.96, 28.46 -32.811, 27.242 -33.574, 26.500 -34.500)) |
+
+| |Alter Eco |Alternative framework to assess marine Ecosystem
+dunctioning in the shelf seas |LINESTRING (2.1 55.2, 2.12 56.5) |
+
+| |AntarcticPeninsula |Antarctic Peninsula |LINESTRING (-65 -64.35, -67
+-63.75) |
+
+| |BaffinDavis |Baffin Davis |LINESTRING (-60.43 66.72, -56.8 67) |
+
+| |Bahamas1 |Bahamas 1 |LINESTRING (-75 25, -75 5) |
+
+| |Bahamas2 |Bahamas 2 |LINESTRING (-74.5 25.4, -76 25.4) |
+
+| |Balearic - Canales C1 |Balearic - Canales C1 |LINESTRING (2.3 39.48,
+1.62 39.15, 1.4 39.14, 1.25 39.1, 1.2 39, 1.1 38.95, 0.1 38.9) |
+
+| |Balearic - NAlgeria C2 |Balearic Island North Algeria C2 |LINESTRING
+(3.15 39. 4.37 37) |
+
+| |Balearic . Sardinia C3 |Balearic . Sardinia C3 |LINESTRING (8.085
+39.8, 4.585 39.83) |
+
+| |Baltic Sea - Saaremaa Line |Baltic Sea - Saaremaa Line |POLYGON
+((144.007 -39.470, 144.183 -39.630, 144.261 -39.852, 144.177 -40.046,
+144.007 -40.216, 144.020 -41.241, 144.652 -41.244, 144.642 -41.127,
+144.606 -41.051, 144.578 -41.004, 144.579 -40.924, 144.660 -40.855,
+144.629 -40.716, 144.650 -40.471, 144.695 -40.364, 144.896 -40.357,
+144.986 -40.395, 145.101 -40.686, 145.231 -40.696, 145.379 -40.806,
+145.512 -40.836, 145.582 -40.882, 145.739 -40.931, 145.908 -41.013,
+146.138 -41.099, 146.368 -41.136, 146.530 -41.104, 146.695 -41.050,
+146.861 -41.006, 146.936 -40.998, 146.984 -40.956, 147.167 -40.979,
+147.234 -40.926, 147.331 -40.909, 147.449 -40.962, 147.533 -40.878,
+147.583 -40.770, 147.622 -40.746, 147.702 -40.784, 147.838 -40.847,
+147.884 -40.783, 147.895 -40.716, 148.022 -40.691, 148.156 -40.710,
+148.253 -40.790, 148.316 -40.890, 148.363 -40.995, 148.315 -41.140,
+148.415 -41.259, 148.529 -41.253, 148.606 -41.252, 148.605 -40.917,
+148.575 -40.480, 148.499 -39.917, 148.453 -39.924, 148.374 -39.982,
+148.331 -40.078, 148.409 -40.203, 148.516 -40.356, 148.547 -40.474,
+148.190 -40.613, 147.979 -40.530, 147.711 -40.321, 147.665 -40.115,
+147.675 -39.819, 147.844 -39.642, 148.015 -39.618, 148.205 -39.844,
+148.453 -39.924, 148.500 -39.917, 148.254 -37.874, 148.014 -37.933,
+147.385 -38.274, 146.862 -38.694, 146.735 -38.751, 146.595 -38.825,
+146.560 -38.921, 146.533 -39.043, 146.509 -39.129, 146.388 -39.188,
+146.266 -39.158,146.189 -39.091, 146.174 -38.930, 146.064 -38.863,
+145.994 -38.938, 145.928 -38.938, 145.886 -38.906, 145.727 -38.689,
+145.650 -38.705, 145.533 -38.681, 145.452 -38.600, 145.331 -38.599,
+145.202 -38.554, 145.022 -38.526, 144.883 -38.535, 144.829 -38.487,
+144.593 -38.330, 144.586 -38.326, 144.440 -38.335, 144.234 -38.439,
+144.083 -38.513, 143.978 -38.619, 144.007 -39.470, 144.007 -39.470)) |
+
+| |BarrowCanyon |Barrow Canyon |POLYGON ((-149.733 72.35, -155.66 73.5,
+-158.483 72.283, -152.15 71.05, -149.733 72.35)) |
+
+| |BassStrait |Bass Strait |POLYGON ((144.007 -39.470, 144.183 -39.630,
+144.261 -39.852, 144.177 -40.046, 144.007 -40.216, 144.020 -41.241,
+144.652 -41.244, 144.642 -41.127, 144.606 -41.051, 144.578 -41.004,
+144.579 -40.924, 144.660 -40.855, 144.629 -40.716, 144.650 -40.471,
+144.695 -40.364, 144.896 -40.357, 144.986 -40.395, 145.101 -40.686,
+145.231 -40.696, 145.379 -40.806, 145.512 -40.836, 145.582 -40.882,
+145.739 -40.931, 145.908 -41.013, 146.138 -41.099, 146.368 -41.136,
+146.530 -41.104, 146.695 -41.050, 146.861 -41.006, 146.936 -40.998,
+146.984 -40.956, 147.167 -40.979, 147.234 -40.926, 147.331 -40.909,
+147.449 -40.962, 147.533 -40.878, 147.583 -40.770, 147.622 -40.746,
+147.702 -40.784, 147.838 -40.847, 147.884 -40.783, 147.895 -40.716,
+148.022 -40.691, 148.156 -40.710, 148.253 -40.790, 148.316 -40.890,
+148.363 -40.995, 148.315 -41.140, 148.415 -41.259, 148.529 -41.253,
+148.606 -41.252, 148.605 -40.917, 148.575 -40.480, 148.499 -39.917,
+148.453 -39.924, 148.374 -39.982, 148.331 -40.078, 148.409 -40.203,
+148.516 -40.356, 148.547 -40.474, 148.190 -40.613, 147.979 -40.530,
+147.711 -40.321, 147.665 -40.115, 147.675 -39.819, 147.844 -39.642,
+148.015 -39.618, 148.205 -39.844, 148.453 -39.924, 148.500 -39.917,
+148.254 -37.874, 148.014 -37.933, 147.385 -38.274, 146.862 -38.694,
+146.735 -38.751, 146.595 -38.825, 146.560 -38.921, 146.533 -39.043,
+146.509 -39.129, 146.388 -39.188, 146.266 -39.158,146.189 -39.091,
+146.174 -38.930, 146.064 -38.863, 145.994 -38.938, 145.928 -38.938,
+145.886 -38.906, 145.727 -38.689, 145.650 -38.705, 145.533 -38.681,
+145.452 -38.600, 145.331 -38.599, 145.202 -38.554, 145.022 -38.526,
+144.883 -38.535, 144.829 -38.487, 144.593 -38.330, 144.586 -38.326,
+144.440 -38.335, 144.234 -38.439, 144.083 -38.513, 143.978 -38.619,
+144.007 -39.470, 144.007 -39.470)) |
+
+| |BATS Glider |Bermuda Atlantic Time-series Study |POLYGON (( -64.6
+32.2, -64.4 32.4, -63.8 31.8, -64.2 31.5, -64.6 32.2 )) |
+
+| |BoB1 |Bay of Bengal 1 |LINESTRING (80.5 5.5, 80.5 2) |
+
+| |BoB2 |Bay of Bengal 2 |LINESTRING (82 8, 85.5 8) |
+
+| |Bonavista section |Bonavista section |LINESTRING (-52.967 48.73,
+-47.95 50.33) |
+
+| |CaboFrio |Cabo Frio |LINESTRING (-41.19 -23.51,-40.61 -23.91) |
+
+| |Calvert Island |Calvert Island |LINESTRING (-128.6 51.4, -128.2
+51.69) |
+
+| |CONVEX |Convex |LINESTRING (17.1 41.42, 18.18 42.3) |
+
+| |Cretan Line |Cretan Line |LINESTRNIG (26.166 35.75, 25 35.78, 23.66
+35.95) |
+
+| |CUGN66 |California Underwater Current Network 66 |LINESTRING (-121.84
+36.9, -125.68 35.08) |
+
+| |CUGN80 |California Underwater Current Network 80 |LINESTRING (-120.48
+34.48, -123.9 32.82) |
+
+| |CUGN90 |California Underwater Current Network 90 |LINESTRING (
+-117.755 33.5, -122.62 31.1) |
+
+| |CUGNAlong |California Underwater Current Network along |LINESTRING
+(-120 32.42-121.15 34.15) |
+
+| |DR1 |Dominican Republic 1 |LINESTRING (-69.1 17.885, -69.66 15.6) |
+
+| |DR2 |Dominican Republic 2 |LINESTRING (-69 15.4, -68.48 17.58) |
+
+| |EAC1 |Eastern Australia Current 1 |POLYGON ((152.770 -33.020, 153.110
+-32.439, 153.690 -31.090, 153.620 -30.350, 153.989 -29.469, 153.489
+-29.399, 153.370 -29.799, 153.230 -30.369, 153.129 -30.799, 153.170
+-30.979, 153.079 -31.229, 153.000 -31.489, 152.850 -31.789, 152.649
+-32.129, 152.620 -32.489, 151.850 -33.069, 151.620 -33.279, 151.300
+-34.029, 151.600 -34.100, 151.850 -34.149, 152.770 -33.020)) |
+
+| |EAC2 |Eastern Australia Current 2 |POLYGON ((151.750 -34.379, 151.950
+-34.039, 152.770 -33.039, 153.230 -32.159, 152.640 -32.109, 152.620
+-32.489, 152.059 -32.899, 151.660 -33.260, 151.430 -33.709, 151.290
+-34.029, 150.980 -34.309, 150.950 -34.489, 151.329 -34.569, 151.600
+-34.639, 151.750 -34.379)) |
+
+| |EAC3 |Eastern Australia Current 3 |POLYGON ((150.600 -36.609, 150.739
+-36.049, 151.670 -34.510, 150.980 -34.359, 150.940 -34.619, 150.800
+-34.889, 150.899 -34.979, 150.800 -35.219, 150.640 -35.239, 150.489
+-35.439, 150.360 -35.719, 150.210 -35.939, 150.180 -36.100, 150.210
+-36.260, 150.120 -36.449, 150.110 -36.590, 150.000 -36.829, 149.969
+-37.069, 150.550 -37.260, 150.600 -36.609)) |
+
+| |EAC27 - inflow |Eastern Australia Current 27 inflow |LINESTRING
+(153.6 -27.51, 154.4 -27.32, 155.2 -27) |
+
+| |EAC36 |Eastern Australia Current 36 |LINESTRING (150.25000000
+-36.25000000,151 -36.39,151.7 -36.5) |
+
+| |EasternLevantine |Eastern Levantine |POLYGON ((32 33,34 33,34 34.9,33
+34.5,32.45 3,32 35, 32 33)) |
+
+| |Fimbul |Fimbul |LINESTRING (5 -69,5 -67) |
+
+| |Fram |Fram Strait |LINESTRING (9 78.833,-7 78.833) |
+
+| |Gimsoy |Gimsoy |LINESTRING (13 68.78, 8.8 70.167) |
+
+| |GIRONA |GIRONA |LINESTRING (3.1 41.5,3.55 40.1) |
+
+| |GoM |Gulf of Mexico |POLYGON ((-85.01 26.80, -87.08 28.25000191,
+-89.47 28.43, -90.4 27.97, -92.93 26, -87.36 25.62, -84.55 24.2, -85
+26.8)) |
+
+| |GreatAustralianBay |Great Australian Bay |POLYGON ((135.503 -35.042,
+135.042 -34.597, 134.946 -33.945, 134.555 -33.546, 134.287 -33.286,
+133.877 -32.738, 133.251 -32.640, 133.137 -32.366, 132.636 -32.125,
+132.259 -32.278, 131.953 -32.069, 131.230 -31.672, 130.445 -31.737,
+129.726 -31.752, 128.892 -31.931, 127.122 -32.375, 126.058 -32.510,
+124.495 -33.126, 124.049 -36.465, 135.537 -36.509, 135.503 -35.042,
+135.503 -35.042)) |
+
+| |GreatBarriereReef |Great Barriere Reef |POLYGON ((142.546 -10.667,
+142.670 -10.734, 142.809 -11.017, 142.915 -11.374, 142.912 -11.743,
+142.994 -11.878, 143.111 -11.859, 143.288 -11.974, 143.172 -12.283,
+143.316 -12.374, 143.335 -12.524, 143.472 -12.610, 143.403 -12.817,
+143.551 -12.833, 143.544 -13.027, 143.544 -13.174, 143.544 -13.311,
+143.594 -13.363, 143.611 -13.424, 143.600 -13.533, 143.557 -13.735,
+143.706 -14.015, 143.754 -14.234, 143.865 -14.439, 143.999 -14.456,
+144.150 -14.343, 144.175 -14.201, 144.220 -14.114, 144.309 -14.141,
+144.327 -14.235, 144.445 -14.202, 144.487 -14.139, 144.545 -14.143,
+144.614 -14.258, 144.670 -14.346, 144.685 -14.481, 144.784 -14.537,
+144.922 -14.588, 145.031 -14.752, 145.241 -14.817, 145.394 -14.970,
+145.393 -15.246, 145.371 -15.554, 145.514 -16.023, 145.559 -16.308,
+145.535 -16.465, 145.762 -16.796, 145.942 -16.828, 146.031 -16.900,
+146.011 -17.051, 146.147 -17.465,146.205 -17.666, 146.346 -18.225,
+146.518 -18.510, 146.758 -18.741, 147.047 -19.139, 147.371 -19.263,
+147.479 -19.275, 147.803 -19.647, 148.075 -19.810, 148.413 -19.915,
+148.916 -19.973, 149.130 -20.001, 149.465 -20.010,150.010
+-20.020,147.081 -13.839,144.893 -10.679,142.546 -10.667,142.546
+-10.667)) |
+
+| |GreenlandSea |Greenland Sea |LINESTRING (2.0 73.50,-7.80 76.40) |
+
+| |GulfStream |Gulf Stream |POLYGON ((-79.32 25.5,-79.333 25.661,-79.086
+26.744,-78.5 27.4,-78.4 29.4,-71 34.5,-66 37,-66 40,-71.25 40,-73.1
+39,-75 35.7,-75.52 35.213,-80.25 31,-80 26.8,-80.072 25.913,-80.122
+25.5,-79.32 25.5)) |
+
+| |Halifax section |Halifax section |LINESTRING (-63.32 44.265, -61.43
+42.48) |
+
+| |Hawaii |Hawaii |LINESTRING (-158 22.75,-157 34.50) |
+
+| |IcelandSea |Iceland Sea |LINESTRING (-10 70.63,-19.6 71) |
+
+| |Isreali Glider Monitoring Area |Isreali Glider Monitoring Area
+|POLYGON ((34.95 32.8,34.65 32.9,34.3 31.9,34.62 31.8,34.95 32.8)) |
+
+| |Kimberley |Kimberley |POLYGON ((120.026 -18.515, 121.675 -18.515,
+121.746 -18.428, 122.047 -18.293, 122.189 -18.158, 122.124 -18.011,
+122.131 -17.758, 122.083 -17.544, 122.064 -17.223, 122.400 -16.879,
+122.511 -16.686, 122.509 -15.011, 120.010 -15.003, 120.026 -18.515,
+120.026 -18.515)) |
+
+| |KW2JVille |Key West to Jaksonville |LINESTRING (-81.83 24.24, -80.62
+24.35, -79.6 25.70, -80 26.1, -79.5 26.73, -79.45 28.00, -79.7 29.60,
+-79.90 30, -80.20 30.3) |
+
+| |Leeuwin |Leewin |POLYGON ((114.906 -34.246, 114.855 -33.735, 114.864
+-33.545, 115.062 -33.424, 115.346 -33.577, 115.609 -33.204, 115.567
+-32.633, 115.615 -32.151, 115.713 -31.974, 115.579 -31.691, 115.367
+-31.340, 115.147 -30.846, 115.050 -30.638, 114.965 -30.349, 114.942
+-30.214, 114.891 -30.026, 114.869 -29.725, 114.816 -29.335, 114.629
+-29.031, 114.535 -28.758, 110.505 -28.783, 110.505 -34.263, 114.906
+-34.246, 114.906 -34.246)) |
+
+| |Line 106 |Line 106 |LINESTRING (129.0633 37.895,129.3683
+37.895,129.6883 37.895,130 37.895,130.315 37.895,130.6283
+37.895,130.9417 37.895,131.2517 37.895,131.5527 37.895) |
+
+| |LineP |Line to PAPA Site |LINESTRING (-125 48.6, -145.00 50) |
+
+| |Lofoten |Lofoten |LINESTRING (15 69.83, -5.00000000 69.83) |
+
+| |MackenzieTrough |Mackenzie Trough |POLYGON (( -134.816 70.366, -136
+71.50, -140.866 71.366, -140.600 69.933, -137.65 69.55, -134.82 70.366))
+|
+
+| |Marica |Marica |LINESTRING (-42.325 -23.63, -41.64 -25) |
+
+| |Mindanao |Mindanao |LINESTRING (126.6 8.15, 130 8.76) |
+
+| |MohnRidge |Mohn Ridge |LINESTRING (4.5 72.2,2 73.50) |
+
+| |Moose_T00 |Mediterranean Ocean Observing System Transect 00
+|LINESTRING (7.3 43.65, 7.92 43.4, 8.68 42.67) |
+
+| |Moose_T02 |Mediterranean Ocean Observing System Transect 02
+|LINESTRING (5.22 43.07,5.21 42.65, 4.67 42.035, 4.15 40.175) |
+
+| |NCalifornia1 |North California 1 |LINESTRING (-124.372 41.05, -130
+41.05) |
+
+| |NEC |North Equatorial Current |LINESTRING (134.31 8.50, 134.30
+17.00,) |
+
+| |NorthWesternAustralia |North Western Australia |POLYGON ((113.437
+-23.001, 113.737 -22.206, 113.864 -21.867, 114.064 -21.640, 115.225
+-21.381, 115.191 -21.110, 115.240 -20.800, 115.370 -20.379, 115.614
+-20.297, 116.188 -20.796, 116.406 -20.582, 116.558 -20.415, 116.858
+-20.328, 117.130 -20.396, 117.175 -20.575, 117.271 -20.674, 117.402
+-20.689, 117.755 -20.537, 117.889 -20.424, 118.133 -20.305, 118.236
+-20.266, 118.371 -20.294, 118.574 -20.260, 118.739 -20.254, 118.831
+-20.130, 118.944 -20.011, 119.059 -19.930, 119.217 -19.907, 119.398
+-19.918, 119.604 -19.986, 119.692 -19.903, 120.052 -19.828, 120.010
+-17.016, 110.003 -17.027, 110.013 -23.013, 113.437 -23.001, 113.437
+-23.001)) |
+
+| |NPR1 |North Puerto Rico 1 |LINESTRING (-66.65 18.9, -67.04 20.57,
+-66.75 21.75) |
+
+| |NPR2 |North Puerto Rico 2 |LINESTRING (-66 18.9, -66 21.75) |
+
+| |NRedSea |North Red Sea |LINESTRING (35 27, 35.60 27.35) |
+
+| |Nvancouver |North Vancouver |LINESTRING (-128.25 50.25, -135.25
+48.25) |
+
+| |NWEuropeSlope |North western European Slope |LINESTRING (-8 56.5, 9.5
+56.5) |
+
+| |OOI - 126W |Ocean Observatories Initiative – 126W |LINESTRING ( -126.
+00 47.92, -126.00 43.50) |
+
+| |OOI - Cape Falcon Line |Ocean Observatories Initiative – Cape Falcon
+Line |LINESTRING (-124.00 45.77, -126.00 45.80) |
+
+| |OOI - Coastal Pionneer Array |Ocean Observatories Initiative –
+Coastal Pionneer Array |POLYGON ((-71.17 39.1,-70 39.1,-70 40.67,-71.17
+40.67,-71.17 39.1)) |
+
+| |OOI - Coos Bay Line |Ocean Observatories Initiative - Coos Bay Line
+|LINESTRING (-124.30 43.50, -126.00 43.50) |
+
+| |OOI - Global Argentina Bassin |Ocean Observatories Initiative –
+Global Argentina Bassin |POLYGON ((-42.88 -42.892,-42.1255
+-42.496,-42.978 -42.4957,-42.88 -42.892)) |
+
+| |OOI - Global Irminger Sea |Ocean Observatories Initiative – Global
+Irminger Sea |POLYGON ((-39.883 59.77,-39.46 60,-39.20 59.95,-39.883
+59.77)) |
+
+| |OOI - Global Southern Ocean |Ocean Observatories Initiative – Global
+Southern Ocean |POLYGON ((-89.5529 -54.1256,-89.9338 -54.0803,-89.24
+-54.47,-89.5529 -54.1256)) |
+
+| |OOI - Global Station Papa |Ocean Observatories Initiative – Global
+Station Papa |POLYGON ((-144.40 50.40,-144.80 50.07, -144.22
+49.95,-144.40 50.40)) |
+
+| |OOI - Gray Harbor Inshore Line |Ocean Observatories Initiative - Gray
+Harbor In shore Line |LINESTRING (-124.27 47.00, -124.96 46.96) |
+
+| |OOI - Gray Harbor Offshore Line |Ocean Observatories Initiative -
+Gray Harbor Offshore Line |LINESTRING (-124.84 46.96, -128.00 46.96,) |
+
+| |OOI - La Push Line |Ocean Observatories Initiative - La Push Line
+|LINESTRING (-124.74 47.91, -126.00 47.91) |
+
+| |OOI - Newport Harbor Inshore Line |Ocean Observatories Initiative -
+Newport Harbor In shore Line |LINESTRNIG (-124.10 44.65, -124.95 44.65)
+|
+
+| |OOI - Newport Harbor offshore Line |Ocean Observatories Initiative –
+Newport Harbor offshore Line |LINESTRNIG (-124.576 44.650, -128.00
+44.668) |
+
+| |OSCM |Ocean Science Center Mindelo Area |POLYGON (18.00 -26.00, 18.00
+-21.00, 14.00 26.00, 14.00 -21.00,18.00 -26.00) |
+
+| |Palau2WPapua |Palau to Western Papua New Guinea |LINESTRING (134.60
+7.20, 133.90 -0.60) |
+
+| |PEACH |Processes driving Exchange at Cape Hatteras |POLYGON ((-74.867
+36.907, -74.863 36.925, -74.542 36.886, -74.640 36.400, -74.676 35.829,
+-74.690 35.5, -74.710 35.5, -74.696 35.829 , -74.66 36.400, -74.563
+36.872,-74.867 36.907)) |
+
+| |PLOCAN1 |PLOCAN 1 |LINESTRING ((-9.63 39.54, -11. 00 39.52, -12.71
+36.36, -16.00 32.33, -15.32 29.17) |
+
+| |PLOCAN2 |PLOCAN 2 |LINESTRING (-15.30 28.00, -15.34 29.17, -14.11
+28.91) |
+
+| |Portland |Portland |POLYGON ((139.021 -37.254, 138.982 -40.044,
+142.499 -40.004, 142.501 -38.454, 142.246 -38.441, 142.110 -38.416,
+141.910 -38.313, 141.724 -38.294, 141.698 -38.412, 141.664 -38.448,
+141.548 -38.453, 141.388 -38.420, 141.328 -38.378, 141.324 -38.285,
+141.155 -38.155, 140.964 -38.078, 140.755 -38.081, 140.653 -38.085,
+140.359 -37.932, 140.220 -37.763, 140.057 -37.585, 139.929 -37.492,
+139.735 -37.262, 139.021 -37.254, 139.021 -37.254)) |
+
+| |PtArena |Point Arean |LINESTRING (-123.75 38.94, -127.28 37.32) |
+
+| |ROGER93 |West Galapagos Island 93 |LINESTRING (-93.00 -2.00, -93.00
+2.00) |
+
+| |ROGER95 |West Galapagos Islands 95 |LINESTRING (-95.00 -2.00, -95.00
+2.00) |
+
+| |Solomon |Solomon |LINESTRING (156.58 -8.49, 154.29 -11.30) |
+
+| |SpencerGulf |Spencer Gulf |POLYGON ((138.012 -36.258,
+138.0223277782697 -35.934, 137.863 -35.919, 137.706 -35.952, 137.648
+-36.068, 137.496 -36.107, 137.297 -36.088, 137.130 -36.071, 136.716
+-36.102, 136.522 -35.963, 136.514 -35.7342, 136.757 -35.665, 137.104
+-35.614, 137.333 -35.532, 137.640 -35.525, 137.721 -35.5854, 137.842
+-35.712, 138.019 -35.674, 138.006 -34.504, 137.882 -34.998, 137.817
+-35.200, 137.591 -35.207, 137.438 -35.137, 137.303 -35.226, 137.178
+-35.271, 137.025 -35.271, 136.887 -35.381, 136.775 -35.367, 136.758
+-35.273, 136.791 -35.145, 136.899 -35.066, 136.895 -34.973, 136.954
+-34.857, 137.105 -34.868, 137.233 -34.850, 137.384 -34.866, 137.434
+-34.624, 137.429 -34.536, 137.300 -34.571, 137.270 -34.470, 137.343
+-34.393, 137.430 -34.317, 137.394 -34.133, 136.555 -34.051, 136.360
+-34.273, 136.242 -34.389, 136.432 -34.674, 136.322 -34.775, 136.257
+-35.071, 136.180 -35.163, 135.991 -35.098, 135.648 -35.091, 135.391
+-34.909, 135.232 -34.702, 135.081 -34.655, 135.064 -34.504, 135.003
+-34.509, 135.006 -34.653, 135.038 -36.259, 138.012 -36.258, 138.012
+-36.258)) |
+
+| |SPR1 |South Puerto Rico 1 |LINESTRING (-67.755 17.55, -68.21 15.60) |
+
+| |SPR2 |South Puerto Rico 2 |LINESTRING ( -67.31515.40, -66.61 17.175)
+|
+
+| |SRedSea |South Red Sea |LINESTRING (38.054 22.21, 38.835 22.21) |
+
+| |StormBay |Storm bay |POLYGON ((147.427 -43.102, 147.466 -43.262,
+147.402 -43.292, 147.384 -43.339, 147.401 -43.388, 147.369 -43.458,
+147.346 -43.515, 147.299 -43.556, 147.259 -43.758, 148.251 -43.757,
+148.027 -43.268, 147.910 -43.234, 147.818 -43.253, 147.773 -43.264,
+147.730 -43.229, 147.680 -43.203, 147.656 -43.171, 147.640 -43.142,
+147.642 -43.117, 147.610 -43.098, 147.427 -43.102, 147.427 -43.102)) |
+
+| |SVancouver |South Vancouver |LINESTRING (-125.00 48.51, -132.00
+46.51) |
+
+| |Svinoy |Svinoy |LINESTRING (4.43 62.72,0 64.66) |
+
+| |TaiwanKuroshioN |Taiwan Kuroshio North |LINESTRING (121.4 23.12,
+124.00 21.50, 121.48 23.125) |
+
+| |TaiwanKuroshioS |Taiwan Kuroshio South |LINESTRING (120.00 20.00,
+123.75 21.20, 121.00 21.90) |
+
+| |TassieEastCoast |Tazmania Eastern Coast |POLYGON ((148.339 -41.052,
+148.317 -41.157, 148.363 -41.231, 148.369 -41.295, 148.304 -41.455,
+148.335 -41.540, 148.346 -41.611, 148.316 -41.792, 148.356 -41.911,
+148.380 -42.114, 148.382 -42.347, 148.182 -42.485, 148.243 -42.660,
+148.099 -43.003, 151.504 -42.995, 151.506 -41.013, 148.373 -41.001,
+148.339 -41.052, 148.339 -41.052)) |
+
+| |UKOSNAP |UK Overturning Sub-polar North Atlantic Program |LINESTRING
+(-21.00 58.00, -14.50 58.00) |
+
+| |USMidAtlantic |US Mid-Atlantic Bay |POLYGON (( -75.66 36.73, -73.73
+36.25, -70.83 38.97, -73.22 40.25, -75.66 36.73)) |
+
+| |USVI |US Virgin Islands |LINESTRING ( -65.62 17.56, -65.30 16.21,
+65.19 16.21, -64.88 17.55) |
+
+| |WACoastCascadia |Washington Coast Cascadia |LINESTRING ( -128.00
+47.00, -124.00 47.00) |
+
+| |WACoastNANOOS |Washington Coast NANOOS |LINESTRING ( -125.17 47.87,
+-127.00 47.00) |
+
+| |WSC |Western Svalbard Current |LINESTRING (0 77.25,12 77.25) |
+|===
+
+_Master list_: None·
+
+_Host_: NERC Vocabulary Server
+
+_Management_: OceanOPS
+
+_Note_: Sites are already registered in the OceanOPS system.
+
+[#anchor-6]####contributors_role
+
+[cols=",,",]
+|===
+|_collection_ |_definition_ |_Status_
+
+|glider pilot |pilot of the glider during the mission |approved
+
+|principal operator |person in charge of the operations until deployment
+and from recovery of the glider. Operations does not cover piloting,
+data management and scientific approach |approved
+
+|operator |person involved in operations from pre-deployment to recovery
+of the glider. Operations does not cover piloting, data management and
+science. |
+
+|principal investigator |Scientist in charge of the scientific aspects
+of the glider mission |approved
+
+|scientist |Scientist involved in the scientific aspects of the glider
+mission |approved
+
+|data manager |person in charge of the collection, processing and
+archiving of the data and metadata acquired during the glider mission
+|approved
+
+|data curator | |
+
+|quality control |person in charge of the quality control of the data
+acquired during the glider mission |approved
+|===
+
+__Master list:__** **None
+
+_Host _: NVS or existing list.
+
+__Management : __OceanGliders, OceanOPS or existing management.
+
+_Note:_
+
+[#anchor-7]####agencies_role
+
+[cols=",,",]
+|===
+|_collection_ |_definition_ |_Status_
+
+|funding agency |agency that is funding hardware and ship time for
+operation at sea |
+
+|operating agency |agency who is operating the glider before, during and
+after the mission. Operation does not cover data management and
+scientific use of the data |approved
+
+|scientific agency |agency involved is the scientific use of the data
+acquired during the glider mission |
+
+|reference data center |agency in charge of the data and metadata before
+processing into common format |
+
+|data assembly center |agency in charge of the processing of the raw
+data acquire during the glider mission into the community format.
+Reference agency and data assembly center can be the same |approved
+|===
+
+__Master list:__** **None
+
+_Host_ : NVS
+
+_Management_ : OceansGliders or OceanOPS
+
+_Note _: Such vocab already exist like ;
+http://vocab.nerc.ac.uk/collection/C86/current/SDNPR002/[_SDNPR002_] /
+programme operation responsibility or
+http://vocab.nerc.ac.uk/collection/C86/current/SDNPR008/[_SDNPR008_] /
+programme realtime responsibility. But it doesn’t suite perfectly what
+we need.
+
+[#anchor-8]####agencies_id
+
+_Definition_: Code referring to the marine organisation registered in
+the European Directory of Marine Organisations.
+
+__Master list:__https://www.seadatanet.org/Metadata/EDMO-Organisations[
+]https://www.seadatanet.org/Metadata/EDMO-Organisations[_https://www.seadatanet.org/Metadata/EDMO-Organisations_]
+
+_Management_: EDMO (European Directory of Marine Organisations) code are
+managed by Maris in the framework of SeaDataNet project. Meanwhile its
+name, the EDMO code covers the global marine organisations.
+
+_Note_:
+
+[#anchor-9]####rtqc_method
+
+[cols=",,",]
+|===
+|_Collection_ |_definition_ |_Status_
+
+|QUARTOD manual
+|https://ioos.noaa.gov/project/qartod/[_https://ioos.noaa.gov/project/qartod/_]
+|Approved when published on OBPS
+
+|ego quality control manual
+|http://doi.org/10.13155/51485[_http://doi.org/10.13155/51485_]
+|Approved when published on OBPS
+
+|SOCIB QC manual
+|https://doi.org/10.25704/q4zs-tspv[_https://doi.org/10.25704/q4zs-tspv_]
+|Approved when published on OBPS
+
+|gliders tools – SOCCO
+|https://doi.org/10.3389/fmars.2019.00738[_https://doi.org/10.3389/fmars.2019.00738_]
+|Approved when published on OBPS
+
+|uea Seaglider toolbox
+|http://www.byqueste.com/toolbox.html[_http://www.byqueste.com/toolbox.html_]
+|Approved when published on OBPS
+
+|CoTeDe |about:blank[_https://doi:10.21105/joss.02063_] |Approved when
+published on OBPS
+|===
+
+_Master List_ : None
+
+_Host_ : NVS (suggested)
+
+_Management_ : OceanGliders through Ocean Best Practices repository
+
+_Note_: RTQC methods need publishing as a best practice document
+separately to the OG1.0 ToR. Each value should be a DOI.
+
+[#anchor-10]####Phase_calculation_method
+
+To be done
+
+[#anchor-11]####platform_type
+
+*Option 1*
+
+[cols=",,,,",]
+|===
+|Url |Short_name |Long_name |Definition |Status
+
+|http://vocab.nerc.ac.uk/collection/L06/current/27/[_http://vocab.nerc.ac.uk/collection/L06/current/27/_]
+|sub-surface gliders |sub-surface gliders |Platforms with buoyancy-based
+propulsion that are capable of operations at variable depths which are
+not constrained to be near the sea surface. |Under discussion
+|===
+
+_Master list:_ __
+__http://vocab.nerc.ac.uk/collection/L06/current/[_http://vocab.nerc.ac.uk/collection/L06/current/_]
+
+_Host_ : NVS
+
+_Management_ : NVS/BODC
+
+_Note_ : In OG1.0, PLATFORM_TYPE is a variable. With this option
+PLATFORM_TYPE will be the same for all OceanGliders data sets. But this
+is close to the platform attribute (“Autonomous underwater vehicles”).
+
+*Option 2 *:
+
+[cols=",,",]
+|===
+|_collection_ |_definition_ |_Status_
+
+|seaglider |generic name of underwater glider manufactured by Kongsberg
+|Under discussion
+
+|slocum |generic name of underwater glider manufactured by Teledyne Webb
+Research |Under discussion
+
+|spray |name of underwater glider manufactured by Blue Finn Robotics
+|Under discussion
+
+|seaexplorer |generic name of underwater glider manufactured by Alseamar
+|Under discussion
+|===
+
+_Note_:; In that case we “platform model” should become highly desirable
+instead of Mandatory.
+
+[#anchor-12]####platform_model
+
+[cols=",,",]
+|===
+|_collection_ |_definition_ |_Status_
+
+|seaglider |generic name of underwater glider manufactured by Kongsberg
+|Under discussion
+
+|slocum |generic name of underwater glider manufactured by Teledyne Webb
+Research |Under discussion
+
+|spray |name of underwater glider manufactured by Scripps Institution of
+Oceanography |Under discussion
+
+|seaexplorer |generic name of underwater glider manufactured by Alseamar
+|Under discussion
+
+|deepexplorer |underwater glider manufactured by Alsemar with a maximum
+depth capability of 6000 meters |Under discussion
+
+|seaglider C2 |underwater glider manufactured by Kongberg optimized for
+performance in littoral (i.e. shallow, coastal) waters. The vehicle
+design incorporates a large variable buoyancy device with a high rate of
+volumetric change. Adaptations to the mass shifter enable high turn
+rates |Under discussion
+
+|seaglider M1 |underwater glider manufactured by Kongsberg with a
+maximum depth capability of 1000 meters |Under discussion
+
+|seaglider M6 |underwater glider manufactured by Kongsberg with a
+maximum depth capability of 6000 meters |Under discussion
+
+|slocum G1 |first generation of the underwater glider manufactured by
+Teledyne Webb research |Under discussion
+
+|slocum G2 |second generation of underwater glider manufactured by
+Teledyne Webb Research |Under discussion
+
+|slocum G3 |thrid generation of underwater glider manufactured by
+Teledyne Webb Research |Under discussion
+|===
+
+__Master
+list:__https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/B76/[*
+*]https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/B76/[_https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/B76/_]
+
+_Host_ : NVS
+
+_Management_ : OceanGliders
+
+Note :
+
+_Already Existing vocabulary:_
+
+[cols=",,,",]
+|===
+|Url |Identifier |Pref Label |Definition
+
+|http://vocab.nerc.ac.uk/collection/B76/current/B7600002/[_http://vocab.nerc.ac.uk/collection/B76/current/B7600002/_]
+|SDN:B76::B7600002 |Kongsberg Maritime Seaglider M1 glider |An
+autonomous underwater vehicle (AUV) based on buoyancy. It was developed
+for continuous, long-term measurement of oceanographic parameters. It
+uses small changes in buoyancy and wings to achieve forward motion. The
+system's pitch and roll are controlled using adjustable ballast (the
+vehicle battery). The vehicle moves through the water in a saw-tooth
+like pattern and surfaces often to determine its position. Navigation is
+accomplished using a combination of GPS fixes while on the surface and
+internal sensors that monitor the vehicle heading, depth and attitude
+during dives. External sensors are constantly scanning the ocean to
+determine environmental properties. The glider is 1.8 - 2 m long with a
+maximum diameter of 30 cm and antenna mast length between 43 cm and 1 m.
+It weighs 52 kg with a wing span of 1 m. It has a deployment range of
+4600 km, deployment length of 10 months and an operating depth range
+between 50-1000 m. Maximum speed is 25 cm/s.
+
+|http://vocab.nerc.ac.uk/collection/B76/current/B7600013/[_http://vocab.nerc.ac.uk/collection/B76/current/B7600013/_]
+|SDN:B76::B7600013 |Teledyne Webb Research Slocum G1 glider |A
+long-range autonomous underwater vehicle (AUV) based on buoyancy. It is
+used for remote water column sampling. It uses hydraulic buoyancy change
+to alter the vehicle density in relation to the surrounding water
+thereby causing the vehicle to either float or sink. Given an
+appropriate dive or climb angle, the wings and body lift and convert
+some of this vertical motion into a forward saw tooth horizontal motion.
+Periodically, the glider surfaces and calls via Iridium Satellite Phone
+(anywhere in world) or Free Wave RF Modem (line of sight) in to
+Dockserver (auto attendant computer) to relay navigational fix, data and
+receive further instructions for command and control. The glider is
+capable of storm sampling and can be flown in a coordinated fleet. It is
+1.5 m in length, has a hull diameter of 22 cm and mass of 54 kgs. It has
+an exchangeable payload (capacity up to 6 L) which is capable of housing
+a variety of environmental sensors such as nitrate and oxygen. It uses
+lithium or alkaline batteries. It has a deployment range of 600-6000 km,
+a deployment length of 15 days to 12 months and an operating depth range
+of 4-1000m. Navigation is via GPS waypoints, a pressure and altimeter
+sensor. Maximum speed is .35 m/s. It transmits via RF modem, Iridium
+(RUDICS), ARGOS or acoustic modem.
+
+|http://vocab.nerc.ac.uk/collection/B76/current/B7600014/[_http://vocab.nerc.ac.uk/collection/B76/current/B7600014/_]
+|SDN:B76::B7600014 |Teledyne Webb Research Slocum G3 glider |A
+long-range autonomous underwater vehicle (AUV) based on buoyancy. It is
+used for remote water column sampling. It uses hydraulic buoyancy change
+to alter the vehicle density in relation to the surrounding water
+thereby causing the vehicle to either float or sink. Given an
+appropriate dive or climb angle, the wings and body lift and convert
+some of this vertical motion into a forward saw tooth horizontal motion.
+Periodically, the glider surfaces and calls via Iridium Satellite Phone
+(anywhere in world) or Free Wave RF Modem (line of sight) in to
+Dockserver (auto attendant computer) to relay navigational fix, data and
+receive further instructions for command and control. The glider is
+capable of storm sampling and can be flown in a coordinated fleet. It is
+1.5 m in length, has a hull diameter of 22 cm and mass of 55-70 kgs
+(dependent upon configuration). It has an exchangeable payload (capacity
+up to 6 L) which is capable of housing a variety of environmental
+sensors such as nitrate and oxygen. It uses lithium or alkaline
+batteries. It has a deployment range of 350-13000 km (dependent upon
+configuration), a deployment length of 15 days to 18 months (dependent
+upon configuration) and an operating depth range of 4-1000m. Navigation
+is via GPS waypoints, a pressure and altimeter sensor. Maximum speed is
+0.35 m/s (0.68 knot) with the buoyancy engine and an average up to 0.5
+m/s (1 knots) with full drive, with the thruster: Up to 1 m/s (2 knots).
+It transmits via RF modem, Iridium (RUDICS), ARGOS or acoustic modem.
+
+|http://vocab.nerc.ac.uk/collection/B76/current/B7600001/[_http://vocab.nerc.ac.uk/collection/B76/current/B7600001/_]
+|SDN:B76::B7600001 |Teledyne Webb Research Slocum G2 glider |A
+long-range autonomous underwater vehicle (AUV) based on buoyancy. It is
+used for remote water column sampling. It uses hydraulic buoyancy change
+to alter the vehicle density in relation to the surrounding water
+thereby causing the vehicle to either float or sink. Given an
+appropriate dive or climb angle, the wings and body lift and convert
+some of this vertical motion into a forward saw tooth horizontal motion.
+Periodically, the glider surfaces and calls via Iridium Satellite Phone
+(anywhere in world) or Free Wave RF Modem (line of sight) in to
+Dockserver (auto attendant computer) to relay navigational fix, data and
+receive further instructions for command and control. The glider is
+capable of storm sampling and can be flown in a coordinated fleet. It is
+1.5 m in length, has a hull diameter of 22 cm and mass of 54 kgs. It has
+an exchangeable payload (capacity up to 6 L) which is capable of housing
+a variety of environmental sensors such as nitrate and oxygen. It uses
+lithium or alkaline batteries. It has a deployment range of 600-6000 km,
+a deployment length of 15 days to 12 months and an operating depth range
+of 4-1000m. Navigation is via GPS waypoints, a pressure and altimeter
+sensor. Maximum speed is .35 m/s. It transmits via RF modem, Iridium
+(RUDICS), ARGOS or acoustic modem.
+|===
+
+_Note_: The minimum level of granularity expected is the generic label
+(i.e. Spray, Seaglider, Seaexplorer, Slocum) but it is encouraged to
+provide the glider model.
+
+[#anchor-13]####ICES_code
+
+_Definition_: SeaDataNet Ship and Platform Codes.
+
+__Master list:__https://www.seadatanet.org/Metadata/EDMO-Organisations[
+]https://vocab.ices.dk/?ref=315[
+]https://vocab.ices.dk/?ref=315[_//vocab.ices.dk/?ref=315_]
+
+_Management_: ICES/SEADATANET
+
+_Note_:
+
+[#anchor-14]####platform_maker
+
+[cols=",,",]
+|===
+|_Collection_ |_definition_ |_Status_
+
+|Teledyne Webb Research
+|http://vocab.nerc.ac.uk/collection/B75/current/ORG01077/[_http://vocab.nerc.ac.uk/collection/B75/current/ORG01077/_]
+a|
+approved
+
+|Kongsberg Maritime AS
+|http://vocab.nerc.ac.uk/collection/B75/current/ORG00360/[_http://vocab.nerc.ac.uk/collection/B75/current/ORG00360/_]
+|approved
+
+|Scripps Institution of Oceanography
+|http://vocab.nerc.ac.uk/collection/B75/current/ORG00134/ |approved
+
+|Alseamar | |To be completed
+
+|University of Washington | |To be completed
+
+|IRobot | |To be completed
+
+|Huntington Ingalls | |To be completed
+|===
+
+_Master list_ :http://vocab.nerc.ac.uk/collection/B75/current/[
+]http://vocab.nerc.ac.uk/collection/B75/current/[_http://vocab.nerc.ac.uk/collection/B75/current/_]
+
+_Host_ : NVS
+
+_Management_ : OceanGliders
+
+_Note_ :
+
+[#anchor-15]####telecom_type
+
+[cols=",,",]
+|===
+|_Collection_ |_definition_ |_Status_
+
+|Iridium |Communication system based on IRIDIUM satellite constellation
+use by the glider when surfacing to relay to landstation (auto attendant
+computer) navigational fix, data and receive further instruction for
+command and control |approved
+
+|Freewave |Communication system based on Free Wave RF Modem (line of
+sight) use to relay to landstation (auto attendant computer)
+navigational fix, data and receive further instructions for command and
+control |approved
+
+|Cellular mobile | |To be approved
+
+|Argos | |To be approved
+|===
+
+_Master list_ : None
+
+_Host_ : NVS
+
+_Management_ : OceanGliders
+
+_Note_ :
+
+[#anchor-16]####tracking_system
+
+[cols=",,",]
+|===
+|_Collection_ |_definition_ |_Status_
+
+|gps |Global Positioning System is a satellite based radionavigation
+system |approved
+
+|argos doppler |ARGOS constellation satellite-based system used to
+distribute location data |approved
+
+|accoustic | |To be approved
+|===
+
+_Master list_ : None
+
+_Host_ : NVS
+
+_Management_ : OceanGliders
+
+_Note_ :
+
+[#anchor-17]####battery_type
+
+[cols=",,",]
+|===
+|_Collection_ |_definition_ |_Status_
+|lithium rechargeable |Rechargeable lithium battery pack |approved
+|alkaline rechargeable |Rechargeable alkaline battery pack |approved
+|alkaline |alkaline battery pack |approved
+|lithium |lithium battery pack |approved
+|alkaline + lithium |alkaline and lithium battery pack |approved
+|Lithium primary | |To be completed
+|===
+
+_Master list_ : None
+
+_Host_ : NVS
+
+_Management_ : OceanGliders
+
+_Note_ :
+
+[#anchor-18]####PHASES
+
+[cols=",,",]
+|===
+|_Collection_ |_definition_ |_Status_
+
+|ascent |the platform is moving up toward surface with no internal
+command on the pitch angle |To be approved
+
+|descent |the platform is moving down toward targeted depth of operation
+with no internal command on the pitch angle |To be approved
+
+|surfacing |the platform is drifting at the surface for communication,
+recovery or safety purpose” |To be approved
+
+|parking |the platform is maintained at a parking depth |To be approved
+
+|inflexion |the platform is changing pitch angle to move from a phase to
+another |To be approved
+
+|propelled |the platform momentum is increased by the propeller |To be
+approved
+
+|transition |This particular points could be part of the previous as
+well as the following phase. |To be approved
+|===
+
+_Definition_: Terms describing the different behaviours of the glider at
+sea.
+
+_Master list_ : None
+
+_Host_ : NVS
+
+_Management_ : OceanGliders
+
+_Note_ : Phase calculation methods need publishing as a best practice
+document separately to the OG1.0 ToR.
+
+[#anchor-19]####Data_mode
+
+[cols=",,",]
+|===
+|_Collection_ |_definition_ |_Status_
+
+|R a|
+Real-time data. Data coming from the glider through a communication
+channel without physical
+
+access to the instruments, disassembly or recovery of the platform.
+
+|To be approved
+
+|P |Provisional data. Data obtained after the glider has been recovered
+or serviced. |To be approved
+
+|A |Real-time adjusted data. Real-time or provisional data that have
+been adjusted by real-time automatic procedures |To be approved
+
+|D |Delayed-mode data. Data published after all calibrations and quality
+control procedures have been applied on the internally recorded or best
+available original data. This is the best possible version of processed
+data |To be approved
+
+|M |Mixed data. This value indicates that the file contains data in more
+than one of the above states |To be approved
+|===
+
+__Definition: __data_mode __i__ndicates if the file contains real-time,
+provisional, mixed or delayed-mode data
+
+_Master list_ : None, but Argo is using the same code for their file
+naming convention.
+
+_Host_ : NVS
+
+_Management_ : OceanGliders
+
+_Note_ :
+
+[#anchor-20]####SENSOR_MODEL
+
+_Master list_ :http://vocab.nerc.ac.uk/collection/L22/current/[
+]http://vocab.nerc.ac.uk/collection/L22/current/[_http://vocab.nerc.ac.uk/collection/L22/current/_]
+
+_Host_ : NVS
+
+_Management_ : OceanGliders
+
+_Note_: The minimum level of granularity expected is the generic sensor
+“label” (i.e. AANDERAA_OPTODE, SBE41) but it is highly encouraged to
+provide the most precise information about sensor model (i.e.
+AADENDERAA_OPTODE_4330_V2). L22 collection is already implemented in the
+vocab server. Our group should check if this list covers our needs or if
+we need to complete it or set a dedicated vocabulary for OG1.0.
+
+_Collection and definition:_
+
+[cols=",,,,,",]
+|===
+|_Collection_ |_Short name_ |_BODC id_ |_description_ |_Status_ |_Used
+by OG ?_
+
+|AANDERAA_OPTODE |OPTODE |SDN:L22::TOOL0805 | |approved |Already used by
+OG
+
+|AANDERAA_OPTODE_3830 |OPTODE_3830 |SDN:L22::TOOL0836 | |approved
+|Already used by OG
+
+|AANDERAA_OPTODE_3835 |OPTODE_3835 |SDN:L22::TOOL0103 | |approved
+|Already used by OG
+
+|AANDERAA_OPTODE_3930 |OPTODE_3930 |SDN:L22::TOOL1421 | |approved
+|Already used by OG
+
+|AANDERAA_OPTODE_4330 |OPTODE_4330 |SDN:L22::TOOL1247 | |approved
+|Already used by OG
+
+|AANDERAA_OPTODE_4330F |OPTODE_4330F |SDN:L22::TOOL1248 | |approved |
+
+|AANDERAA_OPTODE_4831 |OPTODE_4831 |SDN:L22::TOOL1239 | - |approved
+|Already used by OG
+
+|AANDERAA_OPTODE_4831F |PTODE_4831F |SDN:L22::TOOL1240 | - |approved
+|Already used by OG
+
+|AANDERAA_OPTODE_5013 |OPTODE_5013 | a|
+
+| |Already used by OG
+
+|AANDERAA_OPTODE_5014 |AANDERAA_OPTODE_5014 | | | |Already used by OG
+
+|ACOUSONDE | | | | |
+
+|ADCP_600k | | | | |Already used by OG
+
+|ARO-CAR-Z10 |ARO-CAR-Z10 | | | |Already used by OG
+
+|AROD_FT | | | | |Already used by OG
+
+|ARO_FT | | |JAC RINKO | |Already used by OG
+
+|BioShutter | | | | |
+
+|Biospherical_Instruments_PAR |Biospherical_Instruments_PAR | | |
+|Already used by OG
+
+|Biospherical_Instruments_PAR_2150 |QSP_2150 | | | |Already used by OG
+
+|Biospherical_Instruments_PAR_2155 |QSP-2155 |SDN:L22::TOOL1368 |
+|approved |Already used by OG
+
+|Biospherical_Instruments_PAR_2200 |QSP-2200 | | | |
+
+|CRT_ACOUSONDE_3A |ACOUSONDE_3A | | | |Already used by OG
+
+|CYCLOPS_7_FLUOROMETER | |SDN:L22::TOOL1447 | |approved |
+
+|C_ROVER |CROVER | |Transmissometer (WETLABS) | |
+
+|CTD_F01 | | | | |
+
+|DRUCK | |SDN:L22::TOOL0837 | |approved |Already used by OG
+
+|DRUCK_10153PSIA | | | | |
+
+|DRUCK_2900PSIA | | | | |Already used by OG
+
+|DURA | | | | |
+
+|DISSOLVED_OXYGEN_SENSOR | | | | |Already used by OG
+
+|ECO_BB | | | | |
+
+|ECO_BB2 | | | | |
+
+|ECO_BB3 | | | | |Already used by OG
+
+|ECO_FL | |SDN:L22::TOOL0172 | - |approved |Already used by OG
+
+|ECO_FL2BB |ECO_FL2BB |SDN:L22::TOOL1282 | |approved |Already used by OG
+
+|ECO_FL2BB-IRB |ECO_FL2BB-IRB |SDN:L22::TOOL1311 | |approved |Already
+used by OG
+
+|ECO_FL2BB-VMT |ECO_FL2BB-VMT |SDN:L22::TOOL1309 | |approved |Already
+used by OG
+
+|ECO_FLBB | |SDN:L22::TOOL1361 | |approved |
+
+|ECO_FLBB2 | | | | |Already used by OG
+
+|ECO_FLBB2-VMT |ECO_FLBB2-VMT |SDN:L22::TOOL1309 | |approved |Already
+used by OG
+
+|ECO_FLBB2_V4 |ECO_FLBB2-V4 | | | |Already used by OG
+
+|ECO_FLBB2_V5 |ECO_FLBB2-V5 | | | |Already used by OG
+
+|ECO_FLBB2_V6 |ECO_FLBB2-V6 | | | |Already used by OG
+
+|ECO_FLBBCD | |SDN:L22::TOOL1141 | - |approved |Already used by OG
+
+|ECO_FLBBCD-SLC |ECO_FLBBCD-SLC |SDN:L22::TOOL1312 | |approved |Already
+used by OG
+
+|ECO_FLBB_2K | | | | |
+
+|ECO_FLBB_AP2 | | | | |
+
+|ECO_FLNTU | |SDN:L22::TOOL0215 | - |approved |Already used by OG
+
+|ECO_NTU | |SDN:L22::TOOL0879 | - |approved |
+
+|FSI | | | | |
+
+|ISUS | | | | |
+
+|ISUS_V3 | |SDN:L22::TOOL0528 | - |approved |
+
+|JASCO_M36-100 |M36-100 hydrophone | | | |Already used by OG
+
+|MCOMS_FLBB2 | | | | |
+
+|MCOMS_FLBBCD | | | | |
+
+|MiniFluo-UV |MiniFluo | | | |Already used by OG
+
+|NORTEK_SIGNATURE_1000 | |SDN:L22::TOOL1009 | |approved |Already used by
+OG
+
+|OceanSonics_icListen-HF PAM |HF PAM | | | |Already used by OG
+
+|RAFOS | | | | |
+
+|Generic_RADIOMETER | | | | |Already used by OG
+
+|RBR_CTD | | | | |
+
+|RBR_concerto3_CTD |RBRconcerto3 | | | |Already used by OG
+
+|RBR_legato3_CTD |RBRlegato3_CTD | | | |Already used by OG
+
+|Rockland_MicroRider_1000 |MicroRider_1000 |SDN:L22::TOOL1232 |
+|approved |Already used by OG
+
+|SATLANTIC_OCR504_ICSW | | | | |Already used by OG
+
+|SATLANTIC_OCR504_R10W |OCR504_R10W | | | |
+
+|SATLANTIC_OCR507_ICSW | | | | |Already used by OG
+
+|SATLANTIC_OCR507_ICSWR10W | | | | |
+
+|SATLANTIC_OCR507_R10W | | | | |Already used by OG
+
+|SATLANTIC_PAR | |SDN:L22::TOOL0973 | - |approved |Already used by OG
+
+|SATLANTIC_OCR504_R10W | | | | |
+
+|SEABIRD_BioShutter | | | | |
+
+|SATLANTIC_BioShutter | | | | |
+
+|SEABIRD_SBE |SBE | | | |Already used by OG
+
+|SEABIRD_SBE37 |SBE37 | | | |Already used by OG
+
+|SEABIRD_SBE41 |SBE41 |SDN:L22::TOOL0668 | |approved |Already used by OG
+
+|SEABIRD_SBE41CP |SBE41CP |SDN:L22::TOOL0669 | |approved |Already used
+by OG
+
+|SEABIRD_SBE41CP_IDO |SBE43F_IDO |SDN:L22::TOOL0037 |Seabird
+Electrochemical Dissolved Oxygen IDO sensor (frequency output) |approved
+|
+
+|SEABIRD_SBE41CP_V1 | | | | |
+
+|SEABIRD_SBE41CP_V2 | | | | |Already used by OG
+
+|SEABIRD_SBE41CP_V3 | | | | |
+
+|SEABIRD_SBE41CP_V4 | | | | |
+
+|SEABIRD_SBE41CP_V5 | | | | |
+
+|SEABIRD_SBE41CP_V6 | | | | |
+
+|SEABIRD_SBE41CP_V7 | | | | |
+
+|SEABIRD_SBE41_IDO_V1 | | | | |
+
+|SEABIRD_SBE41_IDO_V2 | | | | |
+
+|SEABIRD_SBE41_IDO_V3 | | | | |
+
+|SEABIRD_SBE41_V1 | | | | |
+
+|SEABIRD_SBE41_V2 | | | | |
+
+|SEABIRD_SBE41_V3 | | | | |
+
+|SEABIRD_SBE43 | |SDN:L22::TOOL0036 | |approved |Already used by OG
+
+|SEABIRD_SBE43F_IDO |SBE43_IDO |SDN:L22::TOOL0037 |Seabird
+Electrochemical Dissolved Oxygen IDO sensor (volt output) |approved
+|Already used by OG
+
+|SEABIRD_SBE43I |SBE43I |SDN:L22::TOOL1233 |configuration option | |
+
+|SEABIRD_SBE43_IDO | | | | |
+
+|SEABIRD_SBE63_OPTODE |SBE63_OPTODE |SDN:L22::TOOL0739 |Seabird Optical
+Dissolved Oxygen Sensor | |
+
+|SEABIRD_SBE706 |SBE706 | | | |Already used by OG
+
+|SEABIRD_CT-Sail |SBE_CT Sail | | | |Already used by OG
+
+|SEABIRD_GPCTD |GPCTD |SDN:L22::TOOL1026 | |approved |Already used by OG
+
+|SEABIRD_SeaFET_Ocean_pH |SeaFET | | | |Already used by OG
+
+|SEABIRD_SeaFET_V1_Ocean_pH |SeaFET_V1 | | | |
+
+|SEABIRD_SeaFET_V2_Ocean_pH |SeaFET_V2 | | | |Already used by OG
+
+|SEAPOINT_TURBIDITY_METER | | | | |
+
+|SEQUOIA_LISST | | | | |
+
+|SEQUOIA_LISST_200 | | | | |
+
+|SIMRAD_EK80 |EK80 | | | |
+
+|SUNA | |SDN:L22::TOOL0489 | | |Already used by OG
+
+|SUNA_V2 | | | | |
+
+|TELEDYNE_PATHFINDER_DVL_600 | | | | |Already used by OG
+
+|TURBULENT_RESEARCH_PORPOISE |PORPOISE | | | |Already used by OG
+
+|UVP6 | | | | |
+
+|VEMCO_VMT |VMT |
+|https://www.oceans-research.com/products/receivers/acoustic-monitoring-receivers/vmt/
+| |
+
+|WETLABS_ECO_PAR | - |SDN:L22::TOOL0676 | - |approved |
+
+|WETLABS_ECO_TRIPLET | |SDN:L22::TOOL0674 | |approved |Already used by
+OG
+
+|WHOI_DMON |DMON | |WHOI_Digital Acoustic Monitoring Instrument | |
+|===
+
+_Example_: (taken from “L22/SeaVox” vocabulary):
+
+· Aanderaa 4831 oxygen Optode, A dissolved oxygen sensor which provides
+analogue (0-5V) and digital output (RS-232) to third party data loggers,
+gliders and floats. Measurement based on the ability of selected
+substances to act as dynamic fluorescence quenchers. The fluorescent
+indicator is a special platinum porphyrin complex embedded in a gas
+permeable foil that is exposed to the surrounding water. In this
+standard model, a black optical isolation coating protects the complex
+from sunlight and fluorescent particles in the water. This sensing foil
+is attached to a window providing optical access for the measuring
+system from inside a watertight housing. The foil is excited by
+modulated blue light, and the phase of a returned red light is measured.
+For improved stability the 4831 optode also performs a reference phase
+reading by use of a red LED that does not produce fluorescence in the
+foil. This model is fitted with a standard sensing foil. By linearizing
+and temperature compensating, with an incorporated temperature sensor,
+the absolute O2 concentration can be determined. Accuracy +/- 1.5% or
+2uM; precision +/- 0.2 uM.
+
+[#anchor-21]####Variable names / Standard names,
+
+_Definition_: Terms used to describe measured phenomena within the OG1.0
+format.
+
+_Collection_:http://vocab.nerc.ac.uk/collection/OG1/current/[
+]http://vocab.nerc.ac.uk/collection/OG1/current/[_http://vocab.nerc.ac.uk/collection/OG1/current/_]
+
+_Note_: Need to check why there are so many differences between Argo R03
+and OG1 ? Maybe the list needs to be reviewed
