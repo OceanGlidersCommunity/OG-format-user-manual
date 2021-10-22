@@ -496,19 +496,22 @@ PLATFORM_MAKER:platform_maker_vocabulary = “”;
 |DEPLOYMENT_DATE a|
 string DEPLOYMENT_DATE
 
-long_name = “date of deployment”;
+DEPLOYMENT_DATE:long_name = “date of deployment”;
+DEPLOYMENT_DATE:convention = “ISO 8691”;
 
  |mandatory
 |DEPLOYMENT_LATITUDE a|
 string DEPLOYMENT_LATITUDE
 
 DEPLOYMENT_LATITUDE:long_name = “latitude of deployment”;
+DEPLOYMENT_LATITUDE:convention = "decimal degree";
 
  |mandatory
 |DEPLOYMENT_LONGITUDE a|
 string DEPLOYMENT_LONGITUDE
 
-long_name = “longitude of deployment”;
+DEPLOYMENT_LONGITUDE:long_name = “longitude of deployment”;
+DEPLOYMENT_LONGITUDE:convention = "decimal degree";
 
  |mandatory
 |============================================================
