@@ -504,14 +504,14 @@ DEPLOYMENT_DATE:convention = “ISO 8691”;
 string DEPLOYMENT_LATITUDE
 
 DEPLOYMENT_LATITUDE:long_name = “latitude of deployment”;
-DEPLOYMENT_LATITUDE:convention = "decimal degree";
+DEPLOYMENT_LATITUDE:convention = "degrees_north";
 
  |mandatory
 |DEPLOYMENT_LONGITUDE a|
 string DEPLOYMENT_LONGITUDE
 
 DEPLOYMENT_LONGITUDE:long_name = “longitude of deployment”;
-DEPLOYMENT_LONGITUDE:convention = "decimal degree";
+DEPLOYMENT_LONGITUDE:convention = "degrees_est";
 
  |mandatory
 |============================================================
