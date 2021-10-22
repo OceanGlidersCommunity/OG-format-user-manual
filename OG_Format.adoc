@@ -706,7 +706,7 @@ This section contains information about the parameters measured by the glider or
 |PARAMETER a|
 string PARAMETER(N_PARAM)
 
-PARAMETER:long_name = “"name of parameter computed from glider measurements”;
+PARAMETER:long_name = “name of parameter computed from glider measurements”;
 
 PARAMETER:parameter_vocabulary = “https://vocab.nerc.ac.uk/collection/OG1/current/[_https://vocab.nerc.ac.uk/collection/OG1/current/_]”;
 
@@ -714,7 +714,8 @@ PARAMETER:parameter_vocabulary = “https://vocab.nerc.ac.uk/collection/OG1/curr
 |PARAMETER_SENSOR a|
 string PARAMETER_SENSOR(N_PARAM)
 
-PARAMETER_SENSOR:long_name = “”;
+PARAMETER_SENSOR:long_name = “Name of the sensor that measures this parameter”;
+PARAMETER:parameter_sensor_vocabulary = "TBD"; 
 
  |mandatory
 |PARAMETER_UNITS a|
