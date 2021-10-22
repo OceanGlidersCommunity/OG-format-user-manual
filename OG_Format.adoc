@@ -384,8 +384,6 @@ Interpolation methodologies need publishing as a best practice document separate
 ////
 == General Information
 
-In this following section, two options, “encapsulate variable” and “individual variable” are proposed to store the general information.
-
 ////
 * [[trajectory-name]]
 == Trajectory name
@@ -401,8 +399,6 @@ string TRAJECTORY
 TRAJECTORY:cf_role = "trajectory_id"
 
 TRAJECTORY:long_name = “trajectory name”;
-
-TRAJECTORY:data_mode_vocabulary = “”;
 
  a|
 mandatory
