@@ -699,7 +699,7 @@ This section contains information about the parameters measured by the glider or
 |PARAMETER a|
 string PARAMETER(N_PARAM)
 
-PARAMETER:long_name = “"name of parameter computed from glider measurements”;
+PARAMETER:long_name = “name of parameter computed from glider measurements”;
 
 PARAMETER:parameter_vocabulary = “https://vocab.nerc.ac.uk/collection/OG1/current/[_https://vocab.nerc.ac.uk/collection/OG1/current/_]”;
 
