@@ -722,7 +722,7 @@ __http://vocab.nerc.ac.uk/collection/L06/current/[_http://vocab.nerc.ac.uk/colle
 
 _Host_: NVS
 
-_Management_ : NVS/BODC
+_Management_: NVS/BODC
 
 _Note_: In OG1.0, PLATFORM_TYPE is a variable. With this option
 PLATFORM_TYPE will be the same for all OceanGliders data sets. But this
