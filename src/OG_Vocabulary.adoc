@@ -720,7 +720,7 @@ not constrained to be near the sea surface. |Under discussion
 _Master list:_ __
 __http://vocab.nerc.ac.uk/collection/L06/current/[_http://vocab.nerc.ac.uk/collection/L06/current/_]
 
-_Host_ : NVS
+_Host_: NVS
 
 _Management_ : NVS/BODC
 
