@@ -694,7 +694,7 @@ _Master List_: None
 
 _Host_: NVS (suggested)
 
-_Management_ : OceanGliders through Ocean Best Practices repository
+_Management_: OceanGliders through Ocean Best Practices repository
 
 _Note_: RTQC methods need publishing as a best practice document
 separately to the OG1.0 ToR. Each value should be a DOI.
