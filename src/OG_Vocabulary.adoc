@@ -1099,7 +1099,7 @@ _Host_: NVS
 
 _Management_: OceanGliders
 
-_Note_ :
+_Note_:
 
 [#anchor-20]####SENSOR_MODEL
 
