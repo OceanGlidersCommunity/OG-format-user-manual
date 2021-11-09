@@ -561,7 +561,7 @@ Newport Harbor offshore Line |LINESTRNIG (-124.576 44.650, -128.00
 | |WSC |Western Svalbard Current |LINESTRING (0 77.25,12 77.25) |
 |===
 
-_Master list_: None·
+_Master list_: None
 
 _Host_: NERC Vocabulary Server
 
@@ -1066,7 +1066,7 @@ document separately to the OG1.0 ToR.
 |===
 |_Collection_ |_definition_ |_Status_
 
-|R a|
+|R |
 Real-time data. Data coming from the glider through a communication
 channel without physical
 access to the instruments, disassembly or recovery of the platform.
