@@ -944,7 +944,7 @@ _Master list_: http://vocab.nerc.ac.uk/collection/B75/current/[
 
 _Host_: NVS
 
-_Management_ : OceanGliders
+_Management_: OceanGliders
 
 _Note_ :
 
