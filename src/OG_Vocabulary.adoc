@@ -799,7 +799,7 @@ list:__https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/B76/[*
 
 _Host_: NVS
 
-_Management_ : OceanGliders
+_Management_: OceanGliders
 
 Note :
 
