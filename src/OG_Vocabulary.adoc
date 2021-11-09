@@ -122,7 +122,7 @@ all ocean gliders.
 
 Sites listed here are under discussion within the data management group.
 This vocabulary collection is not approved yet. The definition of sites
-needs review and agreement
+needs review and agreement.
 
 [cols=",,,,",]
 |===
