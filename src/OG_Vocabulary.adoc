@@ -690,7 +690,7 @@ _Note_:
 published on OBPS
 |===
 
-_Master List_ : None
+_Master List_: None
 
 _Host_ : NVS (suggested)
 
