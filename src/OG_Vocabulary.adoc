@@ -1069,7 +1069,6 @@ document separately to the OG1.0 ToR.
 |R a|
 Real-time data. Data coming from the glider through a communication
 channel without physical
-
 access to the instruments, disassembly or recovery of the platform.
 
 |To be approved
