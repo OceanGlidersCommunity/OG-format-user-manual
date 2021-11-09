@@ -975,7 +975,7 @@ _Host_: NVS
 
 _Management_: OceanGliders
 
-_Note_ :
+_Note_:
 
 [#anchor-16]####tracking_system
 
