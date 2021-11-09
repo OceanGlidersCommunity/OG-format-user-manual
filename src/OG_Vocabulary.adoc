@@ -1097,7 +1097,7 @@ naming convention.
 
 _Host_: NVS
 
-_Management_ : OceanGliders
+_Management_: OceanGliders
 
 _Note_ :
 
