@@ -138,7 +138,7 @@ needs review and agreement
 -29.80, 30.42 -30.96, 28.46 -32.811, 27.242 -33.574, 26.500 -34.500)) |
 
 | |Alter Eco |Alternative framework to assess marine Ecosystem
-dunctioning in the shelf seas |LINESTRING (2.1 55.2, 2.12 56.5) |
+functioning in the shelf seas |LINESTRING (2.1 55.2, 2.12 56.5) |
 
 | |AntarcticPeninsula |Antarctic Peninsula |LINESTRING (-65 -64.35, -67
 -63.75) |
