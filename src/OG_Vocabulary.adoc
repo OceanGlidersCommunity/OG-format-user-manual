@@ -992,7 +992,7 @@ distribute location data |approved
 |accoustic | |To be approved
 |===
 
-_Master list_ : None
+_Master list_: None
 
 _Host_ : NVS
 
