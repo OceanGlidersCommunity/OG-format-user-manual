@@ -969,7 +969,7 @@ control |approved
 |Argos | |To be approved
 |===
 
-_Master list_ : None
+_Master list_: None
 
 _Host_ : NVS
 
