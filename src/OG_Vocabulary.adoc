@@ -724,7 +724,7 @@ _Host_ : NVS
 
 _Management_ : NVS/BODC
 
-_Note_ : In OG1.0, PLATFORM_TYPE is a variable. With this option
+_Note_: In OG1.0, PLATFORM_TYPE is a variable. With this option
 PLATFORM_TYPE will be the same for all OceanGliders data sets. But this
 is close to the platform attribute (“Autonomous underwater vehicles”).
 
