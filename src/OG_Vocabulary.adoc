@@ -1095,7 +1095,7 @@ provisional, mixed or delayed-mode data
 _Master list_: None, but Argo is using the same code for their file
 naming convention.
 
-_Host_ : NVS
+_Host_: NVS
 
 _Management_ : OceanGliders
 
