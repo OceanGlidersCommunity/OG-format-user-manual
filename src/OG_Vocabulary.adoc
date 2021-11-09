@@ -637,7 +637,7 @@ __Master list:__** **None
 
 _Host_: NVS
 
-_Management_ : OceansGliders or OceanOPS
+_Management_: OceansGliders or OceanOPS
 
 _Note _: Such vocab already exist like ;
 http://vocab.nerc.ac.uk/collection/C86/current/SDNPR002/[_SDNPR002_] /
