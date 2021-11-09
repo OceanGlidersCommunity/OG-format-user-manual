@@ -1089,7 +1089,7 @@ data |To be approved
 than one of the above states |To be approved
 |===
 
-__Definition: __data_mode __i__ndicates if the file contains real-time,
+__Definition__: data_mode indicates if the file contains real-time,
 provisional, mixed or delayed-mode data
 
 _Master list_ : None, but Argo is using the same code for their file
