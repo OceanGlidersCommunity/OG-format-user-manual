@@ -939,7 +939,7 @@ approved
 |Huntington Ingalls | |To be completed
 |===
 
-_Master list_ :http://vocab.nerc.ac.uk/collection/B75/current/[
+_Master list_: http://vocab.nerc.ac.uk/collection/B75/current/[
 ]http://vocab.nerc.ac.uk/collection/B75/current/[_http://vocab.nerc.ac.uk/collection/B75/current/_]
 
 _Host_ : NVS
