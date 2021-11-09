@@ -692,7 +692,7 @@ published on OBPS
 
 _Master List_: None
 
-_Host_ : NVS (suggested)
+_Host_: NVS (suggested)
 
 _Management_ : OceanGliders through Ocean Best Practices repository
 
