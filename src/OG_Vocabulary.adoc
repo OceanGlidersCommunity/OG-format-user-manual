@@ -1013,7 +1013,7 @@ _Note_:
 |Lithium primary | |To be completed
 |===
 
-_Master list_ : None
+_Master list_: None
 
 _Host_ : NVS
 
