@@ -1051,7 +1051,7 @@ well as the following phase. |To be approved
 _Definition_: Terms describing the different behaviours of the glider at
 sea.
 
-_Master list_ : None
+_Master list_: None
 
 _Host_ : NVS
 
