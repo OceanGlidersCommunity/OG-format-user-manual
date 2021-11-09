@@ -998,7 +998,7 @@ _Host_: NVS
 
 _Management_: OceanGliders
 
-_Note_ :
+_Note_:
 
 [#anchor-17]####battery_type
 
