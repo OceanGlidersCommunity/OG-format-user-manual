@@ -1057,7 +1057,7 @@ _Host_: NVS
 
 _Management_: OceanGliders
 
-_Note_ : Phase calculation methods need publishing as a best practice
+_Note_: Phase calculation methods need publishing as a best practice
 document separately to the OG1.0 ToR.
 
 [#anchor-19]####Data_mode
