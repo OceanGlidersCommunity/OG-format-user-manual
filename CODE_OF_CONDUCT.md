@@ -18,7 +18,7 @@ safe, welcoming, diverse, inclusive, and healthy community.
 * Please be kind and courteous. There’s no need to be mean or rude.
 * Respect that people have differences of opinion and that every design or implementation choice carries a trade-off and numerous costs. There is seldom a right answer.
 * Please keep unstructured critique to a minimum. If you have solid ideas you want to experiment with, make a fork and see how it works.
-* We will exclude you from interaction if you insult, demean or harass anyone. That is not welcome behavior. We interpret the term “harassment” as including the definition in the Citizen Code of Conduct; if you have any lack of clarity about what might be included in that concept, please read [their definition](#harassment). In particular, we don’t tolerate behavior that excludes people in socially marginalized groups.
+* We will exclude you from interaction if you insult, demean or harass anyone. That is not welcome behavior. We interpret the term “harassment” as including the definition in the Citizen Code of Conduct; if you have any lack of clarity about what might be included in that concept, please read [below](#harassment). In particular, we don’t tolerate behavior that excludes people in socially marginalized groups.
 * Private harassment is also unacceptable. No matter who you are, if you feel you have been or are being harassed or made uncomfortable by a community member, please contact any of the moderation team immediately. Whether you’re a regular contributor or a newcomer, we care about making this community a safe place for you and we’ve got your back.
 * Likewise any spamming, trolling, flaming, baiting or other attention-stealing behavior is not welcome.
 
@@ -46,7 +46,7 @@ Examples of unacceptable behavior include:
 
 ### Harassment
 
-The following behaviors, defined in the Citizen Code of Conduct, are considered harassment and are unacceptable within our community:
+The following behaviors, defined in the [Citizen Code of Conduct](https://web.archive.org/web/20200330154000/http://citizencodeofconduct.org/), are considered harassment and are unacceptable within our community:
 
 * Violence, threats of violence or violent language directed against another person.
 * Sexist, racist, homophobic, transphobic, ableist or otherwise discriminatory jokes and language.
@@ -144,13 +144,14 @@ the community.
 This Code of Conduct is adapted from the [Contributor Covenant][homepage],
 version 2.0, available at
 https://www.contributor-covenant.org/version/2/0/code_of_conduct.html
-together with [Rust's Code of Conduct][Rust].
+together with [Rust's Code of Conduct][Rust], and [Citizen Code of Conduct][CitizenCC].
 
 Community Impact Guidelines were inspired by [Mozilla's code of conduct
 enforcement ladder](https://github.com/mozilla/diversity).
 
 [homepage]: https://www.contributor-covenant.org
 [rust]: https://www.rust-lang.org/policies/code-of-conduct
+[CitizenCC]: https://web.archive.org/web/20200330154000/http://citizencodeofconduct.org/
 
 For answers to common questions about this code of conduct, see the FAQ at
 https://www.contributor-covenant.org/faq. Translations are available at
