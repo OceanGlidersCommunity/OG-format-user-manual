@@ -801,7 +801,7 @@ _Host_: NVS
 
 _Management_: OceanGliders
 
-Note :
+Note:
 
 _Already Existing vocabulary:_
 
