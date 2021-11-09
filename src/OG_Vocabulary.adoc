@@ -1408,4 +1408,4 @@ _Collection_:http://vocab.nerc.ac.uk/collection/OG1/current/[
 ]http://vocab.nerc.ac.uk/collection/OG1/current/[_http://vocab.nerc.ac.uk/collection/OG1/current/_]
 
 _Note_: Need to check why there are so many differences between Argo R03
-and OG1 ? Maybe the list needs to be reviewed
+and OG1 ? Maybe the list needs to be reviewed.
