@@ -1108,7 +1108,7 @@ _Master list_: http://vocab.nerc.ac.uk/collection/L22/current/[
 
 _Host_ : NVS
 
-_Management_ : OceanGliders
+_Management_: OceanGliders
 
 _Note_: The minimum level of granularity expected is the generic sensor
 “label” (i.e. AANDERAA_OPTODE, SBE41) but it is highly encouraged to
