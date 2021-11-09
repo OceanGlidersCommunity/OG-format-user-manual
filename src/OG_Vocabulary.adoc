@@ -639,7 +639,7 @@ _Host_: NVS
 
 _Management_: OceansGliders or OceanOPS
 
-_Note _: Such vocab already exist like ;
+_Note_: Such vocab already exist like;
 http://vocab.nerc.ac.uk/collection/C86/current/SDNPR002/[_SDNPR002_] /
 programme operation responsibility or
 http://vocab.nerc.ac.uk/collection/C86/current/SDNPR008/[_SDNPR008_] /
