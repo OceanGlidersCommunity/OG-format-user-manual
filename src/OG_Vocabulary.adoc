@@ -1106,7 +1106,7 @@ _Note_ :
 _Master list_: http://vocab.nerc.ac.uk/collection/L22/current/[
 ]http://vocab.nerc.ac.uk/collection/L22/current/[_http://vocab.nerc.ac.uk/collection/L22/current/_]
 
-_Host_ : NVS
+_Host_: NVS
 
 _Management_: OceanGliders
 
