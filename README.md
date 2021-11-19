@@ -21,3 +21,6 @@ If there is no consensus on the solution, the suggested solution will be rejecte
 Any accepted issue will be considered in the future version of the OG format and vocabulary collections.
 The format will be released every year with the accepted issue.
 The release is planned in January each year. Issues accepted in September should be implemented into the new format.
+
+## Code of Conduct
+Please read and follow our [Code of Conduct](https://github.com/OceanGlidersCommunity/OceanGliders/blob/main/CODE_OF_CONDUCT.md).
