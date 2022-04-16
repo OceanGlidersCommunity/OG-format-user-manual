@@ -133,7 +133,7 @@ variables:
 		DOXY:coverage_content_type = "physicalMeasurement" ;
 		DOXY:comment = "Concentration of dissolved oxygen per unit mass of the water column. Oxygen may be expressed in terms of mass, volume or quantity of substance" ;
 	string DEPLOYMENT_DATE ;
-		DEPLOYMENT_DATE:long_name = "Time" ;
+		DEPLOYMENT_DATE:long_name = "date of deployment" ;
 		DEPLOYMENT_DATE:standard_name = "time" ;
 		DEPLOYMENT_DATE:calendar = "gregorian" ;
 		DEPLOYMENT_DATE:units = "seconds since 1970-01-01T00:00:00Z" ;
