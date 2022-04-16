@@ -152,7 +152,7 @@ variables:
 		DEPLOYMENT_LONGITUDE:valid_min = "-180" ;
 	int N_MEASUREMENTS(N_MEASUREMENTS) ;
 	int N_SENSOR(N_SENSOR) ;
-		N_SENSOR:long_name = "Number of sensors mounted on the float and used to measure the parameters" ;
+		N_SENSOR:long_name = "Number of sensors mounted on the glider and used to measure the parameters" ;
 	int N_PARAM(N_PARAM) ;
 		N_PARAM:long_name = "Number of parameters measured or calculated for a pressure sample" ;
 	string PLATFORM_TYPE ;
