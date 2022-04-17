@@ -300,7 +300,9 @@ double TIME_GPS(N_MEASUREMENTS)
 
 TIME_GPS:long_name = “time of each gps locations”;
 
-TIME _GPS:unit = “seconds since 1970-01-01T00:00:00Z”;
+TIME_GPS:calendar = "gregorian" ;
+
+TIME_GPS:unit = “seconds since 1970-01-01T00:00:00Z”;
 
 TIME_GPS:valid_min = 1e9 ;
 
@@ -376,6 +378,8 @@ double TIME (N_MEASUREMENTS)
 TIME:long_name = “time of measurement and gps location”;
 
 TIME:standard_name = “time”;
+
+TIME:calendar = "gregorian" ;
 
 TIME:unit = “seconds since 1970-01-01T00:00:00Z”;
 
