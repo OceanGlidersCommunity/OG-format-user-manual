@@ -268,11 +268,11 @@ LATITUDE_GPS:standard_name = “latitude”;
 
 LATITUDE_GPS:unit = “decimal degree north”;
 
-LATITUDE_GPS:FillValue = “-9999.9”;
+LATITUDE_GPS:FillValue = -9999.9;
 
-LATITUDE_GPS:valid_min = “-90”;
+LATITUDE_GPS:valid_min = -90.0;
 
-LATITUDE_GPS:valid_max = “90”;
+LATITUDE_GPS:valid_max = 90.0;
 
 LATITUDE_GPS:ancillary_variables = "LATITUDE_GPS_QC"
 
@@ -286,11 +286,11 @@ LONGITUDE_GPS:standard_name = “longitude”;
 
 LONGITUDE_GPS:unit = “decimal degree east”;
 
-LONGITUDE_GPS:FillValue = “-9999.9”;
+LONGITUDE_GPS:FillValue = -9999.9;
 
-LONGITUDE_GPS:valid_min = “-180”;
+LONGITUDE_GPS:valid_min = -180.0;
 
-LONGITUDE_GPS:valid_max = “180” ;
+LONGITUDE_GPS:valid_max = 180.0;
 
 LONGIITUDE_GPS:ancillary_variables = "LONGITUDE_GPS_QC"
 
@@ -335,11 +335,11 @@ LATITUDE:standard_name = “latitude”;
 
 LATITUDE:unit = “decimal degrees_north”;
 
-LATITUDE:FillValue = “-9999.9” ;
+LATITUDE:FillValue = -9999.9;
 
-LATITUDE:valid_min = “-90” ;
+LATITUDE:valid_min = -90.0;
 
-LATITUDE:valid_max = “90” ;
+LATITUDE:valid_max = 90.0;
 
 LATITUDE:interpolation_methodology = “”;
 
@@ -357,11 +357,11 @@ LONGITUDE:standard_name = “longitude”;
 
 LONGITUDE:unit = “decimal degrees_east”;
 
-LONGITUDE:FillValue = “-9999.9” ;
+LONGITUDE:FillValue = -9999.9;
 
-LONGITUDE:valid_min = “-180” ;
+LONGITUDE:valid_min = -180.0;
 
-LONGITUDE:valid_max = “180” ;
+LONGITUDE:valid_max = 180.0;
 
 LONGITUDE:interpolation_methodology = “”;
 
