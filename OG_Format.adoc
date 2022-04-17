@@ -302,11 +302,11 @@ TIME_GPS:long_name = “time of each gps locations”;
 
 TIME _GPS:unit = “seconds since 1970-01-01T00:00:00Z”;
 
-TIME_GPS:valid_min = “1e9”;
+TIME_GPS:valid_min = 1e9 ;
 
-TIME_GPS:valid_max = “4e9” ;
+TIME_GPS:valid_max = 4e9 ;
 
-TIME _GPS:FillValue = “-1”;
+TIME_GPS:FillValue = -1.0 ;
 
 TIME_GPS:ancillary_variables = “TIME_GPS_QC”
 
@@ -379,7 +379,7 @@ TIME:standard_name = “time”;
 
 TIME:unit = “seconds since 1970-01-01T00:00:00Z”;
 
-TIME:FillValue = “-1”;
+TIME:FillValue = -1.0 ;
 
 TIME:interpolation_methodology = “”;
 
