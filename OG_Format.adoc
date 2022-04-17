@@ -643,6 +643,8 @@ PHASE:long_name = “behavior of the glider at sea”;
 
 PHASE:phase_vocabulary: “url to phase vocab list”;
 
+PHASE:_FillValue = 0b ;
+
 PHASE:phase_calculation_method = “”;
 
 PHASE:phase_calculation_method_vocabulary = “”;
