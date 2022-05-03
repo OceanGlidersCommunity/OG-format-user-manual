@@ -176,7 +176,7 @@ ___________________
 |site_vocabulary |Controlled vocabulary of the names used in the “site” attribute |highly desirable |To be define
 |program |The overarching program(s) of which the dataset is a part. A program consists of a set (or portfolio) of related and possibly interdependent projects that meet an overarching objective. |Highly desirable |
 |project |The name of the project(s) principally responsible for originating this data. Multiple projects can be separated by commas |suggested |
-|network |The name of the networks this deployment is part of. Multiple networks can be separated by commas. |suggested |
+|network |A network is a grouping of platforms, crossing the boundaries of the program. It can represent a mutualized scientific objective (Boundary Ocean Observing Network, OceanGliders Storms), a geographical focus (MARACOOS, MOOSE, PAP), an array (OSNAP, CUGN), a project (MOSES, Alter Eco). Multiple networks can be separated by commas. |suggested |
 |contributor_name |Name of the contributors to the glider mission. Multiple contributors are separated by commas. |PI name is mandatory |
 |contributor_email |Email if the contributors to the glider mission. Multiple contributors’ emails are separated by commas. |PI email is mandatory |
 |contributor_id |Unique id of the contributors to the glider mission. Multiple contributors’ ids are separated by commas. |highly desirable |
