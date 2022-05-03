@@ -89,6 +89,19 @@ This document defines the requirements of the future OceanGliders harmonized for
 	- Suggested: If the information is available.
 
 ////
+* [[og1.0-file-naming-convention]]
+= OG1.0 file naming convention
+////
+== OG1.0 file naming convention
+Data files should be named as follow.
+"file_name" : "<id>.nc" (ex : "sp065_20210616T1430_R.nc")
+
+Recalling that :  
+"id" : "<trajectory>_<data_mode>" (ex : "sp065_20210616T1430_R")
+"trajectory" : "<platform_code>_<start_date>" (ex :  "sp065_20210616T1430")
+"platform_code", "start_date" and "data_mode" are described below.
+
+////
 * [[global-attributes]]
 = Global attributes
 ////
