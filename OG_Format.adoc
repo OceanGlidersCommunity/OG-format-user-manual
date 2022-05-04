@@ -87,6 +87,7 @@ This document defines the requirements of the future OceanGliders harmonized for
   - Mandatory: Minimum metadata set to be compliant with OG1.0 requirement.
 	- Highly desirable: Worth having for complete use of the data set.
 	- Suggested: If the information is available.
+* DOI : DOI must be ... 
 
 ////
 * [[global-attributes]]
