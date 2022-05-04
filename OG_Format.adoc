@@ -88,6 +88,15 @@ This document defines the requirements of the future OceanGliders harmonized for
 	- Highly desirable: Worth having for complete use of the data set.
 	- Suggested: If the information is available.
 
+== DOI management
+
+* DOI can be minted at any level (PI, Reference Data Center, Data Assembly Center, Global Data Assembly Center) following the internal policy of data curation.
+* DOI can be minted for a single glider mission or multiple glider missions (i.e. project, reference lines).
+* DOI if included in OG files needs to be preserved. The DOI must remain unchanged if there is no valuable modification. If valuable information is aggregated/added or a new product produced, a new DOI shall be created and the new DOI MUST link to the original DOI to acknowledge as the source
+* GDACs will create an evolving global data set with a DOI referring to all existing DOIs.
+* The most effective way of preserving the integrity of the source citation is to preserve the intitial DOI added in the OG file.
+
+
 ////
 * [[global-attributes]]
 = Global attributes
