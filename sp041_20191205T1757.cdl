@@ -5,7 +5,9 @@ dimensions:
 	N_MEASUREMENTS = 25 ;
 variables:
 	string TRAJECTORY ;
-		TRAJECTORY:long_name = "trajectory" ;
+		TRAJECTORY:cf_role = "trajectory_id"
+		TRAJECTORY:long_name = "trajectory name";
+		TRAJECTORY:data_mode_vocabulary = "TBD";
 	string SENSOR(N_SENSOR) ;
 		SENSOR:long_name = "Terms describing sensor types" ;
 	string PARAMETER(N_PARAM) ;
