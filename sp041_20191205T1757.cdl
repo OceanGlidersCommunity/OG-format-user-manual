@@ -10,6 +10,7 @@ variables:
 		TRAJECTORY:data_mode_vocabulary = "TBD";
 	string SENSOR(N_SENSOR) ;
 		SENSOR:long_name = "Terms describing sensor types" ;
+		SENSOR:sensor_vocabulary = "TBD";
 	string PARAMETER(N_PARAM) ;
 		PARAMETER:long_name = "name of parameter computed from glider measurements" ;
 	string PARAMETER_SENSOR(N_PARAM) ;
