@@ -38,7 +38,6 @@ variables:
 		LONGITUDE_GPS:ancillary_variables = "LONGITUDE_GPS_QC" ;
 		LONGITUDE_GPS:valid_max = "180" ;
 		LONGITUDE_GPS:valid_min = "-180" ;
-	string PLATFORM ;
 	byte PHASE(N_MEASUREMENTS) ;
 		PHASE:_FillValue = 0b ;
 		PHASE:long_name = "behavior of the glider at sea" ;
@@ -250,8 +249,6 @@ data:
 
  LONGITUDE_GPS = -119.80175, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, 
     _, _, _, _, _, _, _, -119.82769 ;
-
- PLATFORM = "sp041" ;
 
  PHASE = _, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
     1, _ ;
