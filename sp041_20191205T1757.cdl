@@ -214,6 +214,7 @@ variables:
 		:contributor_email = "drudnick@ucsd.edu,castelao@ucsd.edu" ;
 		:contributor_id = "0000-0002-2624-7074,0000-0002-6765-0708" ;
 		:contributor_role_vocabulary = "https://orcid.org/" ;
+		:contributor_role = "Principal Investigator, Data Curator" ;
 		:agency = "Scripps Institution of Oceanography" ;
 		:agency_role = "SDNPR004" ;
 		:agency_role_vocabulary = "http://vocab.nerc.ac.uk/collection/C86/" ;
