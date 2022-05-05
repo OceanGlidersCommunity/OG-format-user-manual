@@ -61,7 +61,7 @@ variables:
 		LONGITUDE:units = "degrees_east" ;
 		LONGITUDE:valid_max = "180" ;
 		LONGITUDE:valid_min = "-180" ;
-	double PRES(N_MEASUREMENTS) ;
+	float PRES(N_MEASUREMENTS) ;
 		PRES:_FillValue = -9999.9 ;
 		PRES:long_name = "Pressure" ;
 		PRES:standard_name = "sea_water_pressure" ;
@@ -71,13 +71,13 @@ variables:
 	byte PRES_QC(N_MEASUREMENTS) ;
 		PRES_QC:_FillValue = 0b ;
 		PRES_QC:long_name = "quality flag" ;
-	double DEPTH(N_MEASUREMENTS) ;
+	float DEPTH(N_MEASUREMENTS) ;
 		DEPTH:_FillValue = NaN ;
 		DEPTH:long_name = "Depth" ;
 		DEPTH:standard_name = "depth" ;
 		DEPTH:units = "m" ;
 		DEPTH:positive = "down" ;
-	double TEMP(N_MEASUREMENTS) ;
+	float TEMP(N_MEASUREMENTS) ;
 		TEMP:_FillValue = -9999.9 ;
 		TEMP:long_name = "Sea Water Temperature" ;
 		TEMP:standard_name = "sea_water_temperature" ;
@@ -91,7 +91,7 @@ variables:
 	byte TEMP_QC(N_MEASUREMENTS) ;
 		TEMP_QC:_FillValue = 0b ;
 		TEMP_QC:long_name = "quality flag" ;
-	double PSAL(N_MEASUREMENTS) ;
+	float PSAL(N_MEASUREMENTS) ;
 		PSAL:_FillValue = NaN ;
 		PSAL:long_name = "Sea Water Salinity" ;
 		PSAL:standard_name = "sea_water_practical_salinity" ;
@@ -105,7 +105,7 @@ variables:
 	byte PSAL_QC(N_MEASUREMENTS) ;
 		PSAL_QC:_FillValue = 0b ;
 		PSAL_QC:long_name = "quality flag" ;
-	double CHLA(N_MEASUREMENTS) ;
+	float CHLA(N_MEASUREMENTS) ;
 		CHLA:_FillValue = NaN ;
 		CHLA:long_name = "Chlorophyll-a concentration" ;
 		CHLA:standard_name = "mass_concentration_of_chlorophyll_a_in_sea_water" ;
@@ -117,7 +117,7 @@ variables:
 	byte CHLA_QC(N_MEASUREMENTS) ;
 		CHLA_QC:_FillValue = 0b ;
 		CHLA_QC:long_name = "quality flag" ;
-	double DOXY(N_MEASUREMENTS) ;
+	float DOXY(N_MEASUREMENTS) ;
 		DOXY:_FillValue = NaN ;
 		DOXY:long_name = "Dissolved oxygen" ;
 		DOXY:standard_name = "moles_of_oxygen_per_unit_mass_in_sea_water" ;
