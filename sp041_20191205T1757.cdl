@@ -13,6 +13,7 @@ variables:
 		SENSOR:sensor_vocabulary = "TBD";
 	string PARAMETER(N_PARAM) ;
 		PARAMETER:long_name = "name of parameter computed from glider measurements" ;
+		PARAMETER:parameter_vocabulary = "https://vocab.nerc.ac.uk/collection/OG1/current/" ;
 	string PARAMETER_SENSOR(N_PARAM) ;
 	double TIME_GPS(N_MEASUREMENTS) ;
 		TIME_GPS:_FillValue = -1. ;
