@@ -150,6 +150,7 @@ variables:
 		DEPLOYMENT_LONGITUDE:valid_min = "-180" ;
 	string PLATFORM_TYPE ;
 		PLATFORM_TYPE:long_name = "type of glider" ;
+		PLATFORM_TYPE:platform_type_vocabulary = "TBD";
 	string PLATFORM_MODEL ;
 		PLATFORM_MODEL:long_name = "model of the glider" ;
 		PLATFORM_MODEL:platform_model_vocabulary = "TBD";
