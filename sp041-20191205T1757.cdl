@@ -37,7 +37,7 @@ variables:
 		PHASE:_FillValue = 0b ;
 		PHASE:long_name = "behavior of the glider at sea" ;
 		PHASE:ancillary_variables = "PHASE_QC" ;
-		PHASE:phase_vocabulary = "TBD" ;
+		PHASE:phase_vocabulary = "url to phase vocab list" ;
 	byte PHASE_QC(N_MEASUREMENTS) ;
 		PHASE_QC:_FillValue = 0b ;
 		PHASE_QC:long_name = "quality flag" ;
