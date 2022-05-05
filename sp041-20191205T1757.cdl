@@ -7,7 +7,7 @@ variables:
 	string TRAJECTORY ;
 		TRAJECTORY:long_name = "trajectory" ;
 	string SENSOR(N_SENSOR) ;
-		SENSOR:long_name = "name of the sensor" ;
+		SENSOR:long_name = "Terms describing sensor types" ;
 	string PARAMETER(N_PARAM) ;
 		PARAMETER:long_name = "name of parameter computed from glider measurements" ;
 	string PARAMETER_SENSOR(N_PARAM) ;
