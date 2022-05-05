@@ -43,7 +43,7 @@ variables:
 		PHASE_QC:long_name = "quality flag" ;
 	double TIME(N_MEASUREMENTS) ;
 		TIME:_FillValue = -1. ;
-		TIME:long_name = "Time" ;
+		TIME:long_name = "time of measurement and gps location" ;
 		TIME:standard_name = "time" ;
 		TIME:calendar = "gregorian" ;
 		TIME:units = "seconds since 1970-01-01T00:00:00Z" ;
