@@ -132,6 +132,9 @@ variables:
 		DOXY:valid_min = 500. ;
 		DOXY:coverage_content_type = "physicalMeasurement" ;
 		DOXY:comment = "Concentration of dissolved oxygen per unit mass of the water column. Oxygen may be expressed in terms of mass, volume or quantity of substance" ;
+	byte DOXY_QC(N_MEASUREMENTS) ;
+		DOXY_QC:_FillValue = 0b ;
+		DOXY_QC:long_name = "quality flag" ;
 	string DEPLOYMENT_DATE ;
 		DEPLOYMENT_DATE:long_name = "date of deployment" ;
 		DEPLOYMENT_DATE:standard_name = "time" ;
@@ -310,6 +313,9 @@ data:
     240.7111499353, 240.664998530651, 240.915858055632, 240.904784287258, 
     241.074164770971, 240.990908679491, 241.093556991221, 241.119569863555, 
     241.297597492548, 241.067163480339, 241.244566377113, 241.199209516033, _ ;
+
+ DOXY_QC = _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _,
+    _, _, _ ;
 
  DEPLOYMENT_DATE = "1575570735.0" ;
 
