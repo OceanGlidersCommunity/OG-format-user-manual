@@ -13,12 +13,12 @@ variables:
 	string PARAMETER_SENSOR(N_PARAM) ;
 	double TIME_GPS(N_MEASUREMENTS) ;
 		TIME_GPS:_FillValue = -1. ;
-		TIME_GPS:long_name = "time of each gps fix" ;
+		TIME_GPS:long_name = "time of each gps location" ;
 		TIME_GPS:units = "seconds since 1970-01-01T00:00:00Z" ;
 		TIME_GPS:ancillary_variables = "TIME_GPS_QC" ;
 	double LATITUDE_GPS(N_MEASUREMENTS) ;
 		LATITUDE_GPS:_FillValue = NaN ;
-		LATITUDE_GPS:long_name = "latitude of each gps fix" ;
+		LATITUDE_GPS:long_name = "latitude of each gps location" ;
 		LATITUDE_GPS:standard_name = "latitude" ;
 		LATITUDE_GPS:units = "degrees_north" ;
 		LATITUDE_GPS:ancillary_variables = "LATITUDE_GPS_QC" ;
@@ -26,7 +26,7 @@ variables:
 		LATITUDE_GPS:valid_min = "-90" ;
 	double LONGITUDE_GPS(N_MEASUREMENTS) ;
 		LONGITUDE_GPS:_FillValue = NaN ;
-		LONGITUDE_GPS:long_name = "longitude of each gps fix" ;
+		LONGITUDE_GPS:long_name = "longitude of each gps location" ;
 		LONGITUDE_GPS:standard_name = "longitude" ;
 		LONGITUDE_GPS:units = "degrees_east" ;
 		LONGITUDE_GPS:ancillary_variables = "LONGITUDE_GPS_QC" ;
