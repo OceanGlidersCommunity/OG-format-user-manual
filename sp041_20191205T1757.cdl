@@ -163,6 +163,8 @@ variables:
 // global attributes:
 		:Conventions = "CF-1.8, ACDD-1.3, OG-1.0" ;
 		:title = "California Underwater Glider Network - Line 90" ;
+		:platform = "Autonomous Underwater Vehicle" ;
+		:platform_vocabulary = "https://vocab.nerc.ac.uk/collection/L06/current/27/" ;
 		:keywords = "AUVS > Autonomous Underwater Vehicles, Oceans > Ocean Pressure > Water Pressure, Oceans > Ocean Temperature > Water Temperature, Oceans > Salinity/Density > Conductivity, Oceans > Salinity/Density > Density, Oceans > Salinity/Density > Salinity" ;
 		:keywords_vocabulary = "GCMD Science Keywords" ;
 		:featureType = "trajectory" ;
@@ -201,14 +203,12 @@ variables:
 		:contributor_name = "Daniel Rudnick,Guilherme Castelao" ;
 		:contributor_role = "Principal Investigator, Data Curator" ;
 		:product_version = "v3" ;
-		:platform = "Autonomous Underwater Vehicle" ;
 		:instrument = "Sea-Bird 41CP" ;
 		:metadata_link = "http://spraydata.ucsd.edu" ;
 		:ctd_make_model = "Sea-Bird 41CP" ;
 		:doi = "10.21238/S8SPRAY1618" ;
 		:xglider_type = "trajectoryObs" ;
 		:trajectory = "sp041_20191205T1757" ;
-		:platform_vocabulary = "https://vocab.nerc.ac.uk/collection/L06/current/27/" ;
 		:wmoid = "4801948" ;
 		:internal_mission_identifier = "19C04101" ;
 		:site = "CUGN line 90" ;
