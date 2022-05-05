@@ -1,4 +1,4 @@
-netcdf sp041-20191205T1757 {
+netcdf sp041_20191205T1757 {
 dimensions:
 	N_SENSOR = 5 ;
 	N_PARAM = 5 ;
@@ -207,7 +207,7 @@ variables:
 		:ctd_make_model = "Sea-Bird 41CP" ;
 		:doi = "10.21238/S8SPRAY1618" ;
 		:xglider_type = "trajectoryObs" ;
-		:trajectory = "sp041-20191205T1757" ;
+		:trajectory = "sp041_20191205T1757" ;
 		:platform_vocabulary = "https://vocab.nerc.ac.uk/collection/L06/current/27/" ;
 		:wmoid = "4801948" ;
 		:internal_mission_identifier = "19C04101" ;
