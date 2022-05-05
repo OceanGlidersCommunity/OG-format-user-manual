@@ -165,7 +165,7 @@ variables:
 		:keywords = "AUVS > Autonomous Underwater Vehicles, Oceans > Ocean Pressure > Water Pressure, Oceans > Ocean Temperature > Water Temperature, Oceans > Salinity/Density > Conductivity, Oceans > Salinity/Density > Density, Oceans > Salinity/Density > Salinity" ;
 		:keywords_vocabulary = "GCMD Science Keywords" ;
 		:featureType = "trajectory" ;
-		:id = "sp041-20191205T1757_R" ;
+		:id = "sp041_20191205T1757_R" ;
 		:naming_authority = "edu.ucsd.spray" ;
 		:history = "readsat - 2020-05-18T19:31:07Z, fixgps3 - 2020-05-18T19:31:07Z, calcvelsat - 2020-05-18T19:31:07Z, calox - 2021-02-26T11:39:46Z, addoxumolkg - 2021-02-26T11:39:46Z" ;
 		:comment = "Dataset for demonstration purposes only. Original dataset truncated for the sake of simplicity" ;
