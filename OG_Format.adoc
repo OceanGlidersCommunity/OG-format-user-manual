@@ -72,7 +72,7 @@ This document defines the requirements of the future OceanGliders harmonized for
 == OG1.0 General conventions
 
 * The required granularity of the data set is the glider mission, starting from deployment at sea to recovery.
-* Data are recorded as a trajectory Discrete Geometry, using NetCDFfootnote:[version 3 doesn't satisfy the requirements] system and following CF 1.8footnote:[http://cfconventions.org/Data/cf-conventions/cf-conventions-1.8/cf-conventions.html#trajectory-data] (Climate and Forecast) specifications. Each data file contains a series of dive cycles representing the mission of the glider. It can be produced in near real time after every glider transmission and revised later into a recovery-mode (when glider on shore and any data gaps filled in) or a delayed-mode (after rigorous QC) version.
+* Data are recorded as a trajectory Discrete Geometry, using NetCDFfootnote:[NetCDF-3 does not satisfy the requirements of OG1.0 format] system and following CF 1.8footnote:[http://cfconventions.org/Data/cf-conventions/cf-conventions-1.8/cf-conventions.html#trajectory-data] (Climate and Forecast) specifications. Each data file contains a series of dive cycles representing the mission of the glider. It can be produced in near real time after every glider transmission and revised later into a recovery-mode (when glider on shore and any data gaps filled in) or a delayed-mode (after rigorous QC) version.
 * Format follows the ACDD 1.3 convention.
 * Variables are identified in capital letters.
 * Attributes are identified in lower case.
