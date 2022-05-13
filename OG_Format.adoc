@@ -252,6 +252,8 @@ double LATITUDE_GPS(N_MEASUREMENTS)
 
 LATITUDE_GPS:long_name = “latitude of each gps locations”;
 
+LATITUDE_GPS:standard_name = “latitude”;
+
 LATITUDE_GPS:unit = “decimal degree north”;
 
 LATITUDE_GPS:FillValue = “-9999.9”;
@@ -267,6 +269,8 @@ LATITUDE_GPS:ancillary_variables = "LATITUDE_GPS_QC"
 double LONGITUDE_GPS(N_MEASUREMENTS)
 
 LONGITUDE_GPS:long_name = “longitude of each gps locations”;
+
+LONGITUDE_GPS:standard_name = “longitude”;
 
 LONGITUDE_GPS:unit = “decimal degree east”;
 
