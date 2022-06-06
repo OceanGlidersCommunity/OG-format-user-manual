@@ -138,11 +138,11 @@ variables:
 	byte DOXY_QC(N_MEASUREMENTS) ;
 		DOXY_QC:_FillValue = 0b ;
 		DOXY_QC:long_name = "quality flag" ;
-	string DEPLOYMENT_DATE ;
+	string DEPLOYMENT_TIME ;
 		DEPLOYMENT_DATE:long_name = "date of deployment" ;
 		DEPLOYMENT_DATE:standard_name = "time" ;
 		DEPLOYMENT_DATE:calendar = "gregorian" ;
-		DEPLOYMENT_DATE:units = "seconds since 1970-01-01T00:00:00Z" ;
+		DEPLOYMENT_DATE:units = "ISO 8601 (YYYY-MM-DDThh:mm:ss)" ;
 		DEPLOYMENT_DATE:axis = "T" ;
 	string DEPLOYMENT_LATITUDE ;
 		DEPLOYMENT_LATITUDE:long_name = "latitude of deployment" ;
@@ -316,7 +316,7 @@ data:
  DOXY_QC = _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _,
     _, _, _ ;
 
- DEPLOYMENT_DATE = "1575570735.0" ;
+ DEPLOYMENT_DATE = "2019-12-05T17:57:00" ;
 
  DEPLOYMENT_LATITUDE = "32.9018" ;
 
