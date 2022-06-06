@@ -499,8 +499,8 @@ PLATFORM_MAKER:platform_maker_vocabulary = “”;
 [cols=",,",options="header",]
 |============================================================
 |*VARIABLE NAME* |*variable attributes* |*requirement status*
-|DEPLOYMENT_DATE a|
-string DEPLOYMENT_DATE
+|DEPLOYMENT_TIME a|
+string DEPLOYMENT_TIME
 
 long_name = “date of deployment”;
 
