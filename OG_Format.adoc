@@ -132,17 +132,14 @@ _______________________________
 
  |mandatory |
 |naming_authority a|
-Name of the institution that provide the id
+A unique name that identifies the institution who provided the id.
+ACDD-1.3 recommends using reverse-DNS naming.
 
-* _____________
-Example: IOOS
-_____________
-* _____________
-Example: IMOS
-_____________
-* _________________
-Example: Coriolis
-_________________
+Examples:
+* IOOS
+* IMOS
+* Coriolis
+* edu.ucsd.spray
 
  |highly desirable |
 |institution a|
