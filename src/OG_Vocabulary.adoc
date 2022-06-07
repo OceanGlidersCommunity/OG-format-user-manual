@@ -52,7 +52,7 @@ The host and manager of each collection are identified in the table below.
 
 |link:#_yyy0h0t0nabp[_phase_calculation_method_] |No | |? |OceanGliders
 
-|link:#_a9i45kmkxsz[_platform_type_] |No
+|link:#_a9i45kmkxsz[_platform_type_] |Yes
 |http://vocab.nerc.ac.uk/collection/L06/current/27/[_http://vocab.nerc.ac.uk/collection/L06/current/27/_]
 |NVS |OceanGliders
 
