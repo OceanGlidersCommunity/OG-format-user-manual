@@ -132,7 +132,6 @@ https://vocab.nerc.ac.uk/collection/L06/current/[_https://vocab.nerc.ac.uk/colle
 
  |mandatory |“Autonomous Underwater Vehicle”
 |platform_vocabulary |Controlled vocabulary for the names used in the "platform" attribute. |mandatory |https://vocab.nerc.ac.uk/collection/L06/current/27/[_https://vocab.nerc.ac.uk/collection/L06/current/27/_]
-|wmoid |Wmo identifier |mandatory |
 |id a|
 Formatted mission name: <platform_code>_<start_date>_<data_mode>
 
