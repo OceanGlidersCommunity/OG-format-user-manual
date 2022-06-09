@@ -263,7 +263,7 @@ OG1.0 requirements cover the GPS variables delivered by the glider when at the s
 |LATITUDE_GPS a|
 double LATITUDE_GPS(N_MEASUREMENTS)
 
-LATITUDE_GPS:long_name = “latitude of each gps locations”;
+LATITUDE_GPS:long_name = “latitude of each gps locations in decimal degree”;
 
 LATITUDE_GPS:standard_name = “latitude”;
 
@@ -281,7 +281,7 @@ LATITUDE_GPS:ancillary_variables = "LATITUDE_GPS_QC"
 |LONGITUDE_GPS a|
 double LONGITUDE_GPS(N_MEASUREMENTS)
 
-LONGITUDE_GPS:long_name = “longitude of each gps locations”;
+LONGITUDE_GPS:long_name = “longitude of each gps locations in decimal degree”;
 
 LONGITUDE_GPS:standard_name = “longitude”;
 
