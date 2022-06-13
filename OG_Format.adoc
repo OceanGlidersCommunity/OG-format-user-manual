@@ -262,7 +262,7 @@ OG1.0 requirements cover the GPS variables delivered by the glider when at the s
 |LATITUDE_GPS a|
 double LATITUDE_GPS(N_MEASUREMENTS)
 
-LATITUDE_GPS:long_name = “latitude of each gps locations”;
+LATITUDE_GPS:long_name = “latitude of each GPS location”;
 
 LATITUDE_GPS:standard_name = “latitude”;
 
@@ -280,7 +280,7 @@ LATITUDE_GPS:ancillary_variables = "LATITUDE_GPS_QC"
 |LONGITUDE_GPS a|
 double LONGITUDE_GPS(N_MEASUREMENTS)
 
-LONGITUDE_GPS:long_name = “longitude of each gps locations”;
+LONGITUDE_GPS:long_name = “longitude of each GPS location”;
 
 LONGITUDE_GPS:standard_name = “longitude”;
 
@@ -298,7 +298,7 @@ LONGIITUDE_GPS:ancillary_variables = "LONGITUDE_GPS_QC"
 |TIME_GPS a|
 double TIME_GPS(N_MEASUREMENTS)
 
-TIME_GPS:long_name = “time of each gps locations”;
+TIME_GPS:long_name = “time of each GPS location”;
 
 TIME_GPS:calendar = "gregorian" ;
 
@@ -331,7 +331,7 @@ OG1.0 requirements cover positioning variables and geolocating any scientific me
 |LATITUDE a|
 double LATITUDE (N_MEASUREMENTS)
 
-LATITUDE:long_name = “latitude of each measurements and gps locations”;
+LATITUDE:long_name = “latitude of each measurements and GPS location”;
 
 LATITUDE:standard_name = “latitude”;
 
@@ -353,7 +353,7 @@ LATITUDE:interpolation_methodology_doi = “”;
 |LONGITUDE a|
 double LONGITUDE (N_MEASUREMENTS)
 
-LONGITUDE:long_name = “longitude of each measurements and gps locations”;
+LONGITUDE:long_name = “longitude of each measurements and GPS location”;
 
 LONGITUDE:standard_name = “longitude”;
 
