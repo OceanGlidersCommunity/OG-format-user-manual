@@ -266,7 +266,7 @@ LATITUDE_GPS:long_name = “latitude of each gps locations”;
 
 LATITUDE_GPS:standard_name = “latitude”;
 
-LATITUDE_GPS:units = “degree_north”;
+LATITUDE_GPS:units = “degrees_north”;
 
 LATITUDE_GPS:FillValue = -9999.9;
 
@@ -284,7 +284,7 @@ LONGITUDE_GPS:long_name = “longitude of each gps locations”;
 
 LONGITUDE_GPS:standard_name = “longitude”;
 
-LONGITUDE_GPS:units = “degree_east”;
+LONGITUDE_GPS:units = “degrees_east”;
 
 LONGITUDE_GPS:FillValue = -9999.9;
 
