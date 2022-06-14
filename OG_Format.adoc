@@ -890,7 +890,7 @@ Example 3:
 * platform: SG669-20210617
 * Program: NOAA Hurricane Glider program
 * Site: NPR1 (North Puerto Rico 1)
-* Networks: Integrated Ocean Observing System (IOOS), Caribbean Coastal Ocean Observing System (CARICOOS), Boundary Ocean Observing Network (BOON), OceanGliders OceanGliders Storms, AtlantOS
+* Networks: Integrated Ocean Observing System (IOOS), Caribbean Coastal Ocean Observing System (CARICOOS), Boundary Ocean Observing Network (BOON), OceanGliders Storms, AtlantOS
 
 Example 4:
 
