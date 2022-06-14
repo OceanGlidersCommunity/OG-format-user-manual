@@ -198,7 +198,7 @@ ___________________
 |site_vocabulary |Controlled vocabulary of the names used in the “site” attribute |highly desirable |To be defined
 |program |The overarching program(s) of which the dataset is a part. A program consists of a set (or portfolio) of related and possibly interdependent projects that meet an overarching objective. |Highly desirable |
 |project |The name of the project(s) principally responsible for originating this data. Multiple projects can be separated by commas |suggested |
-|network |The name of the networks this deployment is part of. Multiple networks can be separated by commas. |suggested |
+|network |A network is a group of platforms crossing the boundaries of a single program. It can represent a mutual scientific objective, a geographical focus, an array and/or a project. Multiple networks shall be separated by commas. |suggested |
 |contributor_name |Name of the contributors to the glider mission. Multiple contributors are separated by commas. |PI name is mandatory |
 |contributor_email |Email if the contributors to the glider mission. Multiple contributors’ emails are separated by commas. |PI email is mandatory |
 |contributor_id |Unique id of the contributors to the glider mission. Multiple contributors’ ids are separated by commas. |highly desirable |
@@ -902,14 +902,14 @@ Example 1:
 * platform (i.e. glider mission): kraken_20210205
 * Program: MOOSE glider program
 * Site: MOOSE_T00, MOOSET_02
-* Networks: Mediterranean Ocean Observing Systems for the Environment (MOOSE), Boundary Ocean Observing Network (BOON), Water Transformation task team”
+* Networks: Mediterranean Ocean Observing Systems for the Environment (MOOSE), Boundary Ocean Observing Network (BOON), OceanGliders Water Transformation task team”
 
 Example 2:
 
 * platform: sdeep09_sdeep04_20200929
 * Program: SOCIB Glider Programme
 * Site: Canales
-* Network: BOON
+* Network: Boundary Ocean Observing Network (BOON)
 
 Example 3:
 
@@ -923,7 +923,7 @@ Example 4:
 * platform: sp058-20210812T1703
 * Program: Scripps glider program
 * Site: CUGN90
-* Network: Integrated Ocean Observing System (IOOS), Southern California Coastal Ocean Observing System (SCCOOS), California Network Spray Program, Boundary Ocean Observing Network (BOON)
+* Network: Integrated Ocean Observing System (IOOS), Southern California Coastal Ocean Observing System (SCCOOS), California Network Spray Program, California Underwater Glider Network (CUGN), Boundary Ocean Observing Network (BOON)
 
 Example 5:
 
