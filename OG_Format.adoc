@@ -263,17 +263,17 @@ OG1.0 requirements cover the GPS variables delivered by the glider when at the s
 |LATITUDE_GPS a|
 double LATITUDE_GPS(N_MEASUREMENTS)
 
-LATITUDE_GPS:long_name = “latitude of each gps locations”;
+LATITUDE_GPS:long_name = “latitude of each GPS location”;
 
 LATITUDE_GPS:standard_name = “latitude”;
 
-LATITUDE_GPS:unit = “decimal degree north”;
+LATITUDE_GPS:units = “degrees_north”;
 
-LATITUDE_GPS:FillValue = “-9999.9”;
+LATITUDE_GPS:FillValue = -9999.9;
 
-LATITUDE_GPS:valid_min = “-90”;
+LATITUDE_GPS:valid_min = -90.0;
 
-LATITUDE_GPS:valid_max = “90”;
+LATITUDE_GPS:valid_max = 90.0;
 
 LATITUDE_GPS:ancillary_variables = "LATITUDE_GPS_QC"
 
@@ -281,17 +281,17 @@ LATITUDE_GPS:ancillary_variables = "LATITUDE_GPS_QC"
 |LONGITUDE_GPS a|
 double LONGITUDE_GPS(N_MEASUREMENTS)
 
-LONGITUDE_GPS:long_name = “longitude of each gps locations”;
+LONGITUDE_GPS:long_name = “longitude of each GPS location”;
 
 LONGITUDE_GPS:standard_name = “longitude”;
 
-LONGITUDE_GPS:unit = “decimal degree east”;
+LONGITUDE_GPS:units = “degrees_east”;
 
-LONGITUDE_GPS:FillValue = “-9999.9”;
+LONGITUDE_GPS:FillValue = -9999.9;
 
-LONGITUDE_GPS:valid_min = “-180”;
+LONGITUDE_GPS:valid_min = -180.0;
 
-LONGITUDE_GPS:valid_max = “180” ;
+LONGITUDE_GPS:valid_max = 180.0;
 
 LONGIITUDE_GPS:ancillary_variables = "LONGITUDE_GPS_QC"
 
@@ -299,15 +299,17 @@ LONGIITUDE_GPS:ancillary_variables = "LONGITUDE_GPS_QC"
 |TIME_GPS a|
 double TIME_GPS(N_MEASUREMENTS)
 
-TIME_GPS:long_name = “time of each gps locations”;
+TIME_GPS:long_name = “time of each GPS location”;
 
-TIME _GPS:unit = “seconds since 1970-01-01T00:00:00Z”;
+TIME_GPS:calendar = "gregorian" ;
 
-TIME_GPS:valid_min = “1e9”;
+TIME_GPS:units = “seconds since 1970-01-01T00:00:00Z”;
 
-TIME_GPS:valid_max = “4e9” ;
+TIME_GPS:valid_min = 1e9 ;
 
-TIME _GPS:FillValue = “-1”;
+TIME_GPS:valid_max = 4e9 ;
+
+TIME_GPS:FillValue = -1.0 ;
 
 TIME_GPS:ancillary_variables = “TIME_GPS_QC”
 
@@ -330,17 +332,17 @@ OG1.0 requirements cover positioning variables and geolocating any scientific me
 |LATITUDE a|
 double LATITUDE (N_MEASUREMENTS)
 
-LATITUDE:long_name = “latitude of each measurements and gps locations”;
+LATITUDE:long_name = “latitude of each measurements and GPS location”;
 
 LATITUDE:standard_name = “latitude”;
 
-LATITUDE:unit = “decimal degrees_north”;
+LATITUDE:units = “degrees_north”;
 
-LATITUDE:FillValue = “-9999.9” ;
+LATITUDE:FillValue = -9999.9;
 
-LATITUDE:valid_min = “-90” ;
+LATITUDE:valid_min = -90.0;
 
-LATITUDE:valid_max = “90” ;
+LATITUDE:valid_max = 90.0;
 
 LATITUDE:interpolation_methodology = “”;
 
@@ -352,17 +354,17 @@ LATITUDE:interpolation_methodology_doi = “”;
 |LONGITUDE a|
 double LONGITUDE (N_MEASUREMENTS)
 
-LONGITUDE:long_name = “longitude of each measurements and gps locations”;
+LONGITUDE:long_name = “longitude of each measurements and GPS location”;
 
 LONGITUDE:standard_name = “longitude”;
 
-LONGITUDE:unit = “decimal degrees_east”;
+LONGITUDE:units = “degrees_east”;
 
-LONGITUDE:FillValue = “-9999.9” ;
+LONGITUDE:FillValue = -9999.9;
 
-LONGITUDE:valid_min = “-180” ;
+LONGITUDE:valid_min = -180.0;
 
-LONGITUDE:valid_max = “180” ;
+LONGITUDE:valid_max = 180.0;
 
 LONGITUDE:interpolation_methodology = “”;
 
@@ -378,9 +380,11 @@ TIME:long_name = “time of measurement and gps location”;
 
 TIME:standard_name = “time”;
 
-TIME:unit = “seconds since 1970-01-01T00:00:00Z”;
+TIME:calendar = "gregorian" ;
 
-TIME:FillValue = “-1”;
+TIME:units = “seconds since 1970-01-01T00:00:00Z”;
+
+TIME:FillValue = -1.0 ;
 
 TIME:interpolation_methodology = “”;
 
@@ -643,6 +647,8 @@ Byte PHASE(N_MEASUREMENTS)
 PHASE:long_name = “behavior of the glider at sea”;
 
 PHASE:phase_vocabulary: “url to phase vocab list”;
+
+PHASE:_FillValue = 0b ;
 
 PHASE:phase_calculation_method = “”;
 
