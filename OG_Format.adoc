@@ -240,6 +240,7 @@ image:figures/image2.png[image,width=515,height=171]
 |N_MEASUREMENTS |N_MEASUREMENTS = unlimited; |Number of recorded locations.
 |N_PARAM |N_PARAM = <int value>; |Number of parameters measured or calculated for a pressure sample. Examples :(pressure, temperature) : N_PARAM = 2 (pressure, temperature, salinity) : N_PARAM = 3 (pressure, temperature, conductivity, salinity) : N_PARAM = 4
 |N_SENSOR |N_SENSOR = <int value>; |Number of sensors mounted on the platform and used to measure the parameters.
+|N_CALIB |N_CALIB = <int value>; |Number of calibrations.
 |=================================================================================================================================================================================================================================================================
 
 ////
@@ -706,7 +707,27 @@ string SENSOR_SERIAL_NUMBER(N_SENSOR)
 SENSOR_SERIAL_NUMBER:long_name = “serial number of the sensor”;
 
  |highly desirable
-|SENSOR_CALIBRATION_DATE |string SENSOR_CALIBRATION_DATE(N_SENSOR) SENSOR_CALIBRATION_DATE:long_name = “date of calibration of the sensor”; |highly desirable - ISO 8601
+
+|SENSOR_CALIBRATION_DATE a|
+string SENSOR_CALIBRATION_DATE(N_CALIB)
+
+SENSOR_CALIBRATION_DATE:long_name = “date of calibration of the sensor”;
+ |highly desirable - ISO 8601
+
+|SENSOR_CALIBRATION_SENSOR a|
+string SENSOR_CALIBRATION_SENSOR(N_CALIB)
+
+SENSOR_CALIBRATION_SENSOR:long_name = “sensor being calibrated”;
+ |highly desirable - ISO 8601
+
+|SENSOR_CALIBRATION_LINK a|
+string SENSOR_CALIBRATION_LINK(N_CALIB)
+
+SENSOR_CALIBRATION_LINK:long_name = “link to calibration sheets”;
+
+SENSOR_CALIBRATION_LINK:comment = “one single URI”;
+ |highly desirable - ISO 8601
+
 |=======================================================================================================================================================================
 
 ////
