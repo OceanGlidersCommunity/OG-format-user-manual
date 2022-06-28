@@ -19,13 +19,13 @@ The format will need to grow and evolve with time while being managed effectivel
 
 2. If a format update is required, then a pull will be made from the repository and updates made to the format description and supporting tools such as format checkers. The draft changes will go to OGDMTT members within the GitHub repository for approval. Stakeholers will be noftifed of the change at this point.
 
-## Vocabaularies
-The vocabualry collections are more dynamic than the format. When terms are added to vocabualry collections there will be no need to update the format with the vocabulary contected being governed by a dedicate GitHub page for the collection.
+## Vocabularies
+The vocabulary collections are more dynamic than the format. When terms are added to vocabulary collections there will be no need to update the format with the vocabulary contected being governed by a dedicate GitHub page for the collection.
 
-When new vocabularies are required or existing fields in the format need to be constrained against a vocabulary then a simialr process as descibed for issues will be followed. There are additional options available for vocabualries:
+When new vocabularies are required or existing fields in the format need to be constrained against a vocabulary then a simialr process as descibed for issues will be followed. There are additional options available for vocabularies:
 1. Identify an existing vocabulary that already meets the needs of the OceanGliders community
 2. Create a scheme on an existing vocabulary where terms are too diverse to meet the needs of the OceanGliders community
-3. Enhance an an existing voabcualry to meet the needs of the OceanGliders community
+3. Enhance an existing vocabualry to meet the needs of the OceanGliders community
 4. Create a new vocabulary.
 Once the solution in each case has been identified then the process described above for issues will be followed.
 
@@ -33,4 +33,4 @@ Once the solution in each case has been identified then the process described ab
 Any accepted issue will be considered in the future version of the OG format and vocabulary collections. The format will be released every year with the accepted issue. The release is planned for January each year. Issues accepted in September should be implemented into the new format.
 
 ## Engagement with the OceanGliders GitHub repository
-Github enables users to enage with the repository contstantly, enabling the format to progress. Most members of the community are not ressourced to work full time on the format, which much of the activity being voluntary. As such, the community encourage users to enage with relevant issues once per ?fortnight?. When there is a critical mass of issue and pull requests to be discussed a meeting of the OGDMTT will be called to progress these more efficiently with the results of discussions being documented in the GTitHub repository.
+Github enables users to enage with the repository constantly, enabling the format to progress. Most members of the community are not ressourced to work full time on the format, which much of the activity being voluntary. As such, the community encourages users to enage with relevant issues once per ?fortnight?. When there is a critical mass of issue and pull requests to be discussed a meeting of the OGDMTT will be called to progress these more efficiently with the results of discussions being documented in the GTitHub repository.
