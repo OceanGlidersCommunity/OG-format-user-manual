@@ -718,7 +718,7 @@ SENSOR_CALIBRATION_DATE:long_name = “date of calibration of the sensor”;
 string SENSOR_CALIBRATION_SENSOR(N_CALIB)
 
 SENSOR_CALIBRATION_SENSOR:long_name = “serial number of the sensor being calibrated”;
- |highly desirable - ISO 8601
+ |highly desirable
 
 |SENSOR_CALIBRATION_LINK a|
 string SENSOR_CALIBRATION_LINK(N_CALIB)
@@ -726,7 +726,7 @@ string SENSOR_CALIBRATION_LINK(N_CALIB)
 SENSOR_CALIBRATION_LINK:long_name = “link to calibration sheets”;
 
 SENSOR_CALIBRATION_LINK:comment = “one single URI”;
- |highly desirable - ISO 8601
+ |highly desirable
 
 |=======================================================================================================================================================================
 
