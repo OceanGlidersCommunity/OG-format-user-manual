@@ -717,7 +717,7 @@ SENSOR_CALIBRATION_DATE:long_name = “date of calibration of the sensor”;
 |SENSOR_CALIBRATION_SENSOR a|
 string SENSOR_CALIBRATION_SENSOR(N_CALIB)
 
-SENSOR_CALIBRATION_SENSOR:long_name = “sensor being calibrated”;
+SENSOR_CALIBRATION_SENSOR:long_name = “serial number of the sensor being calibrated”;
  |highly desirable - ISO 8601
 
 |SENSOR_CALIBRATION_LINK a|
