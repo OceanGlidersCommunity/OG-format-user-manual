@@ -1,7 +1,9 @@
 # OceanGliders format goverance proposal
 
-##Status
-2022-06-27 draft policy based on the exisintg readme for review and feeedabck from the OGDMTT and OG steering team
+## Status
+
+2022-06-27 draft policy based on the existing readme for review and feeedabck
+from the OGDMTT and OG steering team
 
 ## Data format
 
