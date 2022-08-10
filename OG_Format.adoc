@@ -124,8 +124,8 @@ The global attribute section is used for data discovery. The following global at
 
 [cols=",,,",options="header",]
 |=====================================================================================================================================================================================================================================================================================
-|*Global attribute* |*Definition* |*Requirement status* |*Format or fixed value*
-|title |A short phrase or sentence describing the dataset. |mandatory |“OceanGliders trajectory file”
+|*Global attribute* |*Definition* |*Requirement status* |*Format, fixed value or example*
+|title |A short phrase or sentence describing the dataset. |mandatory |ex.: “OceanGliders trajectory file”
 |platform a|
 Name of the platform(s) that supported the sensors data used to create this data set or product.
 
