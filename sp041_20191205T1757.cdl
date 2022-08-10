@@ -200,8 +200,8 @@ variables:
 		:geospatial_lat_max = 32.51754 ;
 		:geospatial_lon_min = -119.82769 ;
 		:geospatial_lon_max = -119.80175 ;
-		:geospatial_vertical_min = 1LL ;
-		:geospatial_vertical_max = 25LL ;
+		:geospatial_vertical_min = 1.54 ;
+		:geospatial_vertical_max = 24.59 ;
 		:geospatial_vertical_positive = "down" ;
 		:geospatial_vertical_units = "m" ;
 		:program = "GOMO, IOOS" ;
