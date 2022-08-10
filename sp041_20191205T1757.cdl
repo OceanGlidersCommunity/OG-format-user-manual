@@ -235,6 +235,7 @@ variables:
 		:data_url = "https://spraydata.ucsd.edu/projects/CUGN/" ;
 		:rtqc_method = "Spray - CoTeDe" ;
 		:rtqc_method_doi = "10.21105/joss.02063" ;
+		:web_link = "https://spraydata.ucsd.edu/projects/CUGN/" ;
 		:mission = "19C04101" ;
 data:
 
