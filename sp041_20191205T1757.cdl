@@ -207,6 +207,8 @@ variables:
 		:time_coverage_start = 2019-12-05T17:57Z ;
 		:time_coverage_end = 2019-12-05T18:05Z ;
 		:program = "GOMO, IOOS" ;
+		:network = "California Underwater Glider Network" ;
+		:project = "California Underwater Glider Network" ;
 		:contributor_name = "Daniel Rudnick,Guilherme Castelao" ;
 		:contributor_role = "Principal Investigator, Data Curator" ;
 		:product_version = "v3" ;
