@@ -218,7 +218,7 @@ ___________________
 |comment |Miscellaneous information about the data or methods used to produce it. |suggested |
 |date_created |date of creation of this data set |mandatory |iso 8601
 |featureType |Description of a single feature with this discrete sampling geometry |mandatory |trajectory
-|Conventions |A comma-separated list of the conventions that are followed by the dataset. For files that follow this version of ACDD, include the string 'ACDD-1.3' |mandatory |CF-1.9, ACDD-1.3, OG-1.0
+|Conventions |A comma-separated list of the conventions that are followed by the dataset. |mandatory |ex.: "CF-1.9, ACDD-1.3, OG-1.0"
 |=====================================================================================================================================================================================================================================================================================
 
 Note about program, networks, and sites:
