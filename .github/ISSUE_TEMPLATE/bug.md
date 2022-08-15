@@ -1,39 +1,33 @@
 ---
-name: Typo report
-about: Create a report to help us improve
+name: Error report
+about: Report a logical error, inconsistency, or any break in the format
 title: ''
 labels: ''
 assignees: ''
 
 ---
-moderator: @OceanGlidersCommunity/format-maintainers
+<!-- Use your Github handle if possible -->
+Proponent(s):
+<!--
+If this is proposed by a member of the committee, please assign yourself,
+otherwise, leave as it is.
+The purpose of the moderator is to guide and help the issue proponent to
+advance this to reach a conclusion or decision.
+-->
+Moderator: @OceanGlidersCommunity/format-maintainers
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+**Describe the error**
+<!-- A clear and concise description of what the error is. Please, start by
+defining which part of the current format is affected. -->
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+**Example**
+<!-- If it is the case, please present one or more examples of this issue -->
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+**Potential solution**
+<!-- If you have one or more solutions in mind, please describe them -->
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
-
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
-
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
+**Platforms affected**
+<!-- Does it affect all platforms or some specific platforms? -->
 
 **Additional context**
-Add any other context about the problem here.
+<!-- Add any other context about the problem here. -->
