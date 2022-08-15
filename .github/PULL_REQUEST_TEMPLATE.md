@@ -1,1 +1,0 @@
-Moderator: @OceanGlidersCommunity/format-mantainers
