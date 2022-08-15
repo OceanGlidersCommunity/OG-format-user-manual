@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: Suggest an idea for OG-format
+about: An enhancement that adds without changing the current format
 title: ''
 labels: ''
 assignees: ''
