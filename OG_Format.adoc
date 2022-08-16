@@ -521,11 +521,11 @@ double DEPLOYMENT_TIME
 
 DEPLOYMENT_TIME:long_name = “date of deployment”;
 
-DEPLOYMENT_DATE:standard_name = "time";
+DEPLOYMENT_TIME:standard_name = "time";
 
-DEPLOYMENT_DATE:calendar = "gregorian";
+DEPLOYMENT_TIME:calendar = "gregorian";
 
-DEPLOYMENT_DATE:units = "seconds since 1970-01-01T00:00:00Z";
+DEPLOYMENT_TIME:units = "seconds since 1970-01-01T00:00:00Z";
 
  |mandatory
 |DEPLOYMENT_LATITUDE a|
