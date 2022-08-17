@@ -519,17 +519,23 @@ PLATFORM_MAKER:platform_maker_vocabulary = “”;
 |DEPLOYMENT_TIME a|
 double DEPLOYMENT_TIME
 
-long_name = “date of deployment”;
+DEPLOYMENT_TIME:long_name = “date of deployment”;
+
+DEPLOYMENT_TIME:standard_name = "time";
+
+DEPLOYMENT_TIME:calendar = "gregorian";
+
+DEPLOYMENT_TIME:units = "seconds since 1970-01-01T00:00:00Z";
 
  |mandatory
 |DEPLOYMENT_LATITUDE a|
-string DEPLOYMENT_LATITUDE
+double DEPLOYMENT_LATITUDE
 
 DEPLOYMENT_LATITUDE:long_name = “latitude of deployment”;
 
  |mandatory
 |DEPLOYMENT_LONGITUDE a|
-string DEPLOYMENT_LONGITUDE
+double DEPLOYMENT_LONGITUDE
 
 long_name = “longitude of deployment”;
 
