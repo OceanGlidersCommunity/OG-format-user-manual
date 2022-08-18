@@ -1,6 +1,6 @@
 [cols=",",options="header",]
 |===========================================================================================
-|[[_heading=h.2p2csry]]image:figures/image1.png[image,width=164,height=144] a|
+|image:figures/image1.png[image,width=164,height=144] a|
 OceanGliders 1.0
 
 Harmonizing format across OceanGliders
@@ -10,7 +10,7 @@ Terms of References
 |===========================================================================================
 
 
-[[_heading=h.gjdgxs]]__Drafted: Victor Turpin – 13/12/2019__
+__Drafted: Victor Turpin – 13/12/2019__
 
 _Edited: Daniel Hayes -18/12/2019_
 
@@ -28,7 +28,7 @@ _Endorsed: OceanGliders Steering Team –_
 
 *Table of Contents*
 
-[[_heading=h.1fob9te]]__This document has been endorsed by the OceanGliders steering team, the OceanGliders data management task team, and the following OceanGliders Data Assembly Centers: __
+__This document has been endorsed by the OceanGliders steering team, the OceanGliders data management task team, and the following OceanGliders Data Assembly Centers: __
 
 _IOOS/glider DAC (USA), _
 
@@ -851,7 +851,7 @@ Vocabularies will be fully defined during the implementation phase of the OG1.0.
 ////
 == Best practices
 
-[[_heading=h.3whwml4]]Methodologies used to compute OG1.0 format need publishing as best practices document in the IODE Ocean Best Practice repository (https://repository.oceanbestpractices.org/[_https://repository.oceanbestpractices.org/_]) under the community “OceanGliders” and the collection “data management”. It covers the following topic:
+Methodologies used to compute OG1.0 format need publishing as best practices document in the IODE Ocean Best Practice repository (https://repository.oceanbestpractices.org/[_https://repository.oceanbestpractices.org/_]) under the community “OceanGliders” and the collection “data management”. It covers the following topic:
 
 * Interpolation methodologies
 * PHASE computing methodologies
@@ -901,7 +901,7 @@ _Operational phase:_ 3 months – Oct 2022 to Dec 2023
 
 2 years after the agreement on the Terms of Reference OG1.0 will become the unique format for the OceanGliders program.
 
-[[_heading=h.1egqt2p]]Glider missions not delivering OG1.0 will not be considered as part of the OceanGliders program. It will be encouraged that legacy files be converted and added to OceanGliders final repository
+Glider missions not delivering OG1.0 will not be considered as part of the OceanGliders program. It will be encouraged that legacy files be converted and added to OceanGliders final repository
 
 [appendix]
 == Examples
