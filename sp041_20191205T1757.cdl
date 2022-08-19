@@ -160,7 +160,7 @@ variables:
 		PLATFORM_TYPE:long_name = "type of glider" ;
 		PLATFORM_TYPE:platform_type_vocabulary = "TBD" ;
 	string PLATFORM_MODEL ;
-		PLATFORM_MODEL:long_name = "spray" ;
+		PLATFORM_MODEL:long_name = "Model of the glider" ;
 		PLATFORM_MODEL:platform_model_vocabulary = "TBD" ;
 	string PLATFORM_MAKER ;
 		PLATFORM_MAKER:long_name = "Glider manufacturer" ;
