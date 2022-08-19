@@ -22,6 +22,10 @@ See issue #XXX for discussion of these changes.
 # Release checklist
 
 - [ ] Approved by at least two members of the committee?
+- [ ] There were modifications after the review approvals? If so, please
+      as reviewers to update their review.
+- [ ] Proponents and moderador should explicitly agree that it is ready to
+      to merge.
 
 # For maintainers
 
@@ -30,3 +34,6 @@ See issue #XXX for discussion of these changes.
       forward. It is OK to update the moderador pass it to another one.
 - [ ] Confirm that the associated branch was deleted after the merging.
 - [ ] Wrap-up and close the related issues.
+
+# Comments
+<!-- If the modifications need any extra comments or explanations -->
