@@ -156,6 +156,12 @@ variables:
 		DEPLOYMENT_LONGITUDE:units = "degrees_east" ;
 		DEPLOYMENT_LONGITUDE:valid_max = "180" ;
 		DEPLOYMENT_LONGITUDE:valid_min = "-180" ;
+	string TELECOM_TYPE ;
+		TELECOM_TYPE:long_name = "type of telecommunication systems used by the glider" ;
+		TELECOM_TYPE:telecom_type_vocabulary = "TBD" ;
+	string TRACKING_SYSTEM ;
+		TRACKING_SYSTEM:long_name = "type of tracking systems used by the glider" ;
+		TRACKING_SYSTEM:tracking_system_vocabulary = "TBD" ;
 	string PLATFORM_TYPE ;
 		PLATFORM_TYPE:long_name = "type of glider" ;
 		PLATFORM_TYPE:platform_type_vocabulary = "TBD";
@@ -326,6 +332,10 @@ data:
  DEPLOYMENT_LATITUDE = 32.9018 ;
 
  DEPLOYMENT_LONGITUDE = -117.29972500000001 ;
+
+ TELECOM_TYPE = "Iridium" ;
+
+ TRACKING_SYSTEM = "GPS, ARGOS" ;
 
  PLATFORM_TYPE = "Spray" ;
 
