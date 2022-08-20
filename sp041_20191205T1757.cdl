@@ -168,7 +168,7 @@ variables:
 	string PLATFORM_SERIAL_NUMBER ;
 		PLATFORM_SERIAL_NUMBER:long_name = "glider serial number" ;
 	string PLATFORM_CODE ;
-		PLATFORM_CODE:long_name = "nickname of a glider" ;
+		PLATFORM_CODE:long_name = "nickname of the glider" ;
 	int PLATFORM_DEPTH_RATING ;
 		PLATFORM_DEPTH_RATING:long_name = "Depth limit in meters of the glider for this mission" ;
 	string WMO_IDENTIFIER ;
