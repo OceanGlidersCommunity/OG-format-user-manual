@@ -23,7 +23,7 @@ See issue #XXX for discussion of these changes.
 
 - [ ] Approved by at least two members of the committee?
 - [ ] There were modifications after the review approvals? If so, please
-      as reviewers to update their review.
+      ask reviewers to update their review.
 - [ ] Proponents and moderador should explicitly agree that it is ready to
       to merge.
 
