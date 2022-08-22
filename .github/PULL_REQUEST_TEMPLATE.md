@@ -26,6 +26,8 @@ See issue #XXX for discussion of these changes.
       ask reviewers to update their review.
 - [ ] Proponents and moderador should explicitly agree that it is ready to
       to merge.
+- [ ] The moderador is the one in charge to actually merge or close this PR
+      according to the final decision.
 
 # For maintainers
 
