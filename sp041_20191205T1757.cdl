@@ -164,10 +164,19 @@ variables:
 		TRACKING_SYSTEM:tracking_system_vocabulary = "TBD" ;
 	string PLATFORM_TYPE ;
 		PLATFORM_TYPE:long_name = "type of glider" ;
-		PLATFORM_TYPE:platform_type_vocabulary = "TBD";
+		PLATFORM_TYPE:platform_type_vocabulary = "TBD" ;
 	string PLATFORM_MODEL ;
-		PLATFORM_MODEL:long_name = "model of the glider" ;
-		PLATFORM_MODEL:platform_model_vocabulary = "TBD";
+		PLATFORM_MODEL:long_name = "Model of the glider" ;
+		PLATFORM_MODEL:platform_model_vocabulary = "TBD" ;
+	string PLATFORM_MAKER ;
+		PLATFORM_MAKER:long_name = "Glider manufacturer" ;
+		PLATFORM_MAKER:platform_maker_vocabulary = "TBD" ;
+	string PLATFORM_SERIAL_NUMBER ;
+		PLATFORM_SERIAL_NUMBER:long_name = "glider serial number" ;
+	string PLATFORM_CODE ;
+		PLATFORM_CODE:long_name = "nickname of the glider" ;
+	int PLATFORM_DEPTH_RATING ;
+		PLATFORM_DEPTH_RATING:long_name = "Depth limit in meters of the glider for this mission" ;
 	string WMO_IDENTIFIER ;
 		WMO_IDENTIFIER:long_name = "wmo id" ;
 
@@ -340,6 +349,14 @@ data:
  PLATFORM_TYPE = "Spray" ;
 
  PLATFORM_MODEL = "Spray" ;
+
+ PLATFORM_MAKER = "Scripps Institution of Oceanography" ;
+
+ PLATFORM_SERIAL_NUMBER = "0041" ;
+
+ PLATFORM_CODE = "sp041" ;
+
+ PLATFORM_DEPTH_RATING = 1000 ;
 
  WMO_IDENTIFIER = "4801948" ;
 }
