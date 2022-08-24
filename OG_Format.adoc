@@ -22,7 +22,9 @@ _Edited: Justin Buck/Emma Slater – 26/11/2020_
 
 _Edited: Thierry Carval – 17/03/2021_
 
-_Finalized and proposed: data format harmonization group – _
+__Edited: Emma Slater – 24/08/2022__
+
+__Finalized and proposed: data format harmonization group – __
 
 _Endorsed: OceanGliders Steering Team –_
 
@@ -30,19 +32,19 @@ _Endorsed: OceanGliders Steering Team –_
 
 __This document has been endorsed by the OceanGliders steering team, the OceanGliders data management task team, and the following OceanGliders Data Assembly Centers: __
 
-_IOOS/glider DAC (USA), _
+__IOOS/glider DAC (USA), __
 
-_Coriolis (France), _
+__Coriolis (France), __
 
-_BODC (UK), _
+__BODC-NOC (UK), __
 
 _IMOS/AODN (Australia),_
 
-_SOCIB (Spain), _
+__SOCIB (Spain), __
 
-_C-IOOS (Canada), _
+__C-IOOS (Canada), __
 
-_EMODNET Physics (EU),_
+_EMODNET Physics (EU)_
 
 ////
 * [[background]]
@@ -77,8 +79,8 @@ This document defines the requirements of the future OceanGliders harmonized for
 * Format follows the ACDD 1.3 convention.
 * Variables are identified in capital letters.
 * Attributes are identified in lower case.
-* Vocabulary collections will be hosted in different places (NERC Vocabulary Server -NVS, OceanOPS, ICES, etc). The OceanGliders data management team will manage (additions, updates, etc.) the collections.
-* OG1.0 overseen the following parameters: CTD measurements, Oxygen measurements, Optical fluorescence, and backscatter measurements. Other types of measurements (intermediate parameters, technical measurements, and other variables) not framed by OG1.0 could be included in OG1.0 data files. No control will be applied to those measurements.
+* Vocabulary collections will be hosted in different places (NERC Vocabulary Server - NVS, OceanOPS, ICES, etc). The OceanGliders data management team will manage (additions, updates, etc.) the collections.
+* OG1.0 oversees the following parameters: CTD measurements, Oxygen measurements, Optical fluorescence, and backscatter measurements. Other types of measurements (intermediate parameters, technical measurements, and other variables) not framed by OG1.0 could be included in OG1.0 data files. No control will be applied to those measurements.
 * GPS variables and along-track positioning variables are mandatory.
 * Interpolation methodologies used to compute along-track positioning variables, phases and QC needs publishing as a best practice document under strict rules.
 * A list of mandatory metadata describing the data set is defined below.
@@ -93,9 +95,9 @@ This document defines the requirements of the future OceanGliders harmonized for
 
 * DOI can be minted at any level (PI, Reference Data Center, Data Assembly Center, Global Data Assembly Center) following the internal policy of data curation.
 * DOI can be minted for a single glider mission or multiple glider missions (i.e. project, reference lines).
-* DOI if included in OG files needs to be preserved. The DOI must remain unchanged if there is no valuable modification. If valuable information is aggregated/added or a new product produced, a new DOI shall be created and the new DOI MUST link to the original DOI to acknowledge as the source
+* DOI if included in OG1.0 files needs to be preserved. The DOI must remain unchanged if there is no valuable modification. If valuable information is aggregated/added or a new product produced, a new DOI shall be created and the new DOI MUST link to the original DOI to acknowledge as the source
 * GDACs will create an evolving global data set with a DOI referring to all existing DOIs.
-* The most effective way of preserving the integrity of the source citation is to preserve the intitial DOI added in the OG file.
+* The most effective way of preserving the integrity of the source citation is to preserve the intitial DOI added in the OG1.0 file.
 
 
 ////
@@ -197,7 +199,7 @@ ex.:
 |agency_role |Role of the agencies involved in the glider mission. Multiple agencies’ roles are separated by a comma. |operating agency role is mandatory |
 |agency_role_vocabulary |The controlled vocabulary of the role used in the agency’s role. Multiple vocabularies are separated by commas. |operating agency vocabulary is mandatory |https://vocab.nerc.ac.uk/collection/C86/current/[_https://vocab.nerc.ac.uk/collection/C86/current/_]
 |agency_id |code of the agency involved in the glider mission. Multiple ids are separated by a comma. |highly desirable |
-|agency_id_vocabulary |url to the repository of the id |highly desirable |EMDO, ROR, etc.
+|agency_id_vocabulary |url to the repository of the id |highly desirable |EDMO, ROR, etc.
 |uri |Other universal resource identifiers relevant to be linked to this dataset. Multiple uris are separated by a comma. |suggested |EDIOS, CSR, EDMERP, EDMED, CDI, ICES, etc.
 |data_url |url link to OG1.0 data file |mandatory |
 |doi |The digital object identifier of the OG1.0 data file |highly desirable |
@@ -728,7 +730,7 @@ string PARAMETER(N_PARAM)
 
 PARAMETER:long_name = “name of parameter computed from glider measurements”;
 
-PARAMETER:parameter_vocabulary = “https://vocab.nerc.ac.uk/collection/OG1/current/[_https://vocab.nerc.ac.uk/collection/OG1/current/_]”;
+PARAMETER:parameter_vocabulary = “_https://vocab.nerc.ac.uk/collection/OG1/current/_”;
 
  |mandatory
 |PARAMETER_SENSOR a|
@@ -759,7 +761,7 @@ float <PARAM>(N_MEASUREMENT);
 
 <PARAM>:long_name = "<X>"; <PARAM>:standard_name = “<X>";
 
-<PARAM>:vocabulary = “https://vocab.nerc.ac.uk/collection/OG1/current/[_https://vocab.nerc.ac.uk/collection/OG1/current/_]";
+<PARAM>:vocabulary = “_https://vocab.nerc.ac.uk/collection/OG1/current/_";
 
 <PARAM>:_FillValue = <X>;
 
@@ -793,38 +795,38 @@ vocabulary = "";
 Note: It is anticipated to upgrade the ancillary variable related to QC by refining the ancillary variable name like < PARAM >_qc_generic, < PARAM >_qc_spike_test, <PARAM>_qc_land_test, etc.
 
 ////
-* [[control-vocabularies]]
-= Control vocabularies
+* [[controlled-vocabularies]]
+= Controlled vocabularies
 ////
-== Control vocabularies
+== Controlled vocabularies
 
-A list of vocabularies of this format is controlled for harmonization across multiple stakeholders. The different collections with hosts and managers are listed below.
+A list of controlled vocabularies is used in this format to enable harmonization across multiple stakeholders. The different collections with hosts and managers are listed below.
 
-Control vocabularies will cover the metadata listed in the table (with a summary of existing candidate vocabularies and proposed governance):
+Controlled vocabularies will cover the metadata listed in the table (with a summary of existing candidate vocabularies and proposed governance):
 
 [cols=",,,,",options="header",]
 |===================================================================================================================================================================================
 |*Metadata field* |*Vocabulary exists* |*Link to vocabulary* |*host* |*Possible governance*
 |platform |yes |https://vocab.nerc.ac.uk/collection/L06/current/25/[_https://vocab.nerc.ac.uk/collection/L06/current/25/_] |NVS |OceanGliders
-|oceangliders_site |No |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_OG1 - Vocabulary Collection_] |NVS |OceanOPS
-|contributors_role |No |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_OG1 - Vocabulary Collection_] |NVS |OceanGliders
-|agencies_role |No |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_OG1 - Vocabulary Collection_] |NVS |OceanGliders
+|oceangliders_site |No |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_Interim Reference Document_] |NVS |OceanOPS
+|contributors_role |No |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_Interim Reference Document_] |NVS |OceanGliders
+|agencies_role |No |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_Interim Reference Document_] |NVS |OceanGliders
 |agencies_id |Yes |https://edmo.seadatanet.org/[_https://edmo.seadatanet.org/_] |Maris |SeaDataNet
 |naming_authority |Yes |https://edmo.seadatanet.org/[_https://edmo.seadatanet.org/_] |Maris |SeaDataNet
 |institution |Yes |https://edmo.seadatanet.org/[_https://edmo.seadatanet.org/_] |Maris |SeaDataNet
-|rtqc_method |No |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_OG1 - Vocabulary Collection_] |? |OceanGliders
-|phase_calculation_methodology |No |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_OG1 - Vocabulary Collection_] |? |OceanGliders
-|platform_type |No |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_OG1 - Vocabulary Collection_] |NVS |OceanGliders
-|platform_model |Yes |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_OG1 - Vocabulary Collection_] |NVS |OceanGliders
-|ICES_code |Yes |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_OG1 - Vocabulary Collection_] |? (ICES / NVS) |ICES
-|platform_maker |Yes |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_OG1 - Vocabulary Collection_] |NVS |OceanGliders
-|battery_type |No |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_OG1 - Vocabulary Collection_] |NVS |OceanGliders
-|telecom_type |No |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_OG1 - Vocabulary Collection_] |NVS |OceanGliders
-|tracking_system |No |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_OG1 - Vocabulary Collection_] |NVS |OceanGliders
-|sensor_model |Yes |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_OG1 - Vocabulary Collection_] |NVS |OceanGliders
-|data_mode |No |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_OG1 - Vocabulary Collection_] |? |OceanGliders
-|phase |No |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_OG1 - Vocabulary Collection_] |NVS |OceanGliders
-|variable names |Yes |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_OG1 - Vocabulary Collection_] |NVS |OceanGliders
+|rtqc_method |No |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_Interim Reference Document_] |? |OceanGliders
+|phase_calculation_methodology |No |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_Interim Reference Document_] |? |OceanGliders
+|platform_type |No |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_Interim Reference Document_] |NVS |OceanGliders
+|platform_model |Yes |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_Interim Reference Document_] |NVS |OceanGliders
+|ICES_code |Yes |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_Interim Reference Document_] |? (ICES / NVS) |ICES
+|platform_maker |Yes |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_Interim Reference Document_] |NVS |OceanGliders
+|battery_type |No |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_Interim Reference Document_] |NVS |OceanGliders
+|telecom_type |No |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_Interim Reference Document_] |NVS |OceanGliders
+|tracking_system |No |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_Interim Reference Document_] |NVS |OceanGliders
+|sensor_model |Yes |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_Interim Reference Document_] |NVS |OceanGliders
+|data_mode |No |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_Interim Reference Document_] |? |OceanGliders
+|phase |No |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_Interim Reference Document_] |NVS |OceanGliders
+|variable names |Yes |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_Interim Reference Document_] |NVS |OceanGliders
 |===================================================================================================================================================================================
 
 _Notes:_
@@ -832,7 +834,7 @@ _Notes:_
 * Units are a special case to be discussed because the convention in GOOS is UD units which are a conflation of observed property and measurement scale. UD units are available in spreadsheet form but not on a vocabulary server. Efforts are ongoing in the internal community to harmonize a common unit's vocabulary.
 * A sustainable model to resource the development and ongoing maintenance of vocabularies will need to be identified during the implementation phase of the OG1.0.
 
-Vocabularies will be fully defined during the implementation phase of the OG1.0. The current version of the vocabulary collections is available here: https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_OG1 - Vocabulary Collection_]
+Vocabularies will be fully defined during the implementation phase of the OG1.0. The current version of the vocabulary collections is available here: https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_Interim Reference Document_]
 
 ////
 * [[best-practices]]
