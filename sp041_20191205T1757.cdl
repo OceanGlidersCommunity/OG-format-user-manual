@@ -359,4 +359,46 @@ data:
  PLATFORM_DEPTH_RATING = 1000 ;
 
  WMO_IDENTIFIER = "4801948" ;
+
+group: CTD {
+
+  // group attributes:
+  		:long_name = "CTD sensor" ;
+  		:type = "CTD" ;
+  		:type_vocabulary = "http://vocab.nerc.ac.uk/collection/OGXXX/" ;
+  		:maker = "Seabird" ;
+  		:maker_vocabulary = "http://vocab.nerc.ac.uk/collection/OGXXX/" ;
+  		:model = "SBE 41CP" ;
+  		:model_vocabulary = "http://vocab.nerc.ac.uk/collection/OGXXX/" ;
+  		:serial_number = "32" ;
+  		:calibration_date = "2019-10-22T00:00:00Z" ;
+  } // group CTD
+
+group: OPTODE_DOXY {
+
+  // group attributes:
+  		:long_name = "Optical Dissolved Oxygen Sensor" ;
+  		:type = "OPTODE_DOXY" ;
+  		:type_vocabulary = "http://vocab.nerc.ac.uk/collection/OGXXX/" ;
+  		:maker = "Seabird" ;
+  		:maker_vocabulary = "http://vocab.nerc.ac.uk/collection/OGXXX/" ;
+  		:model = "DOX63" ;
+  		:model_vocabulary = "http://vocab.nerc.ac.uk/collection/OGXXX/" ;
+  		:serial_number = "631776" ;
+  		:calibration_date = "2019-11-22T00:00:00Z" ;
+  } // group OPTODE_DOXY
+
+group: FLUOROMETER_CHLA {
+
+  // group attributes:
+  		:long_name = "Chlorophyll fluorescence sensor" ;
+  		:type = "FLUOROMETER_CHLA" ;
+  		:type_vocabulary = "http://vocab.nerc.ac.uk/collection/OGXXX/" ;
+  		:maker = "Seapoint" ;
+  		:maker_vocabulary = "http://vocab.nerc.ac.uk/collection/OGXXX/" ;
+  		:model = "Seapoint" ;
+  		:model_vocabulary = "http://vocab.nerc.ac.uk/collection/OGXXX/" ;
+  		:serial_number = "S-5012" ;
+  		:calibration_date = "2019-11-22T00:00:00Z" ;
+  } // group FLUOROMETER_CHLA
 }
