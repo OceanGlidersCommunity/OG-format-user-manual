@@ -365,12 +365,12 @@ group: CTD {
   // group attributes:
   		:long_name = "CTD sensor" ;
   		:type = "CTD" ;
-  		:type_vocabulary = "http://vocab.nerc.ac.uk/collection/OGXXX/" ;
-  		:maker = "Seabird" ;
-  		:maker_vocabulary = "http://vocab.nerc.ac.uk/collection/OGXXX/" ;
-  		:model = "SBE 41CP" ;
-  		:model_vocabulary = "http://vocab.nerc.ac.uk/collection/OGXXX/" ;
-  		:serial_number = "32" ;
+  		:type_vocabulary = "https://vocab.nerc.ac.uk/collection/L05/current/" ;
+  		:maker = "Sea-Bird Scientific" ;
+  		:maker_vocabulary = "https://vocab.nerc.ac.uk/collection/L35/current/" ;
+  		:model = "SBE 41CP CTD " ;
+  		:model_vocabulary = "https://vocab.nerc.ac.uk/collection/L22/current/" ;
+  		:serial_number = "75" ;
   		:calibration_date = "2019-10-22T00:00:00Z" ;
   } // group CTD
 
@@ -379,11 +379,11 @@ group: OPTODE_DOXY {
   // group attributes:
   		:long_name = "Optical Dissolved Oxygen Sensor" ;
   		:type = "OPTODE_DOXY" ;
-  		:type_vocabulary = "http://vocab.nerc.ac.uk/collection/OGXXX/" ;
+  		:type_vocabulary = "https://vocab.nerc.ac.uk/collection/L05/current/" ;
   		:maker = "Seabird" ;
-  		:maker_vocabulary = "http://vocab.nerc.ac.uk/collection/OGXXX/" ;
-  		:model = "DOX63" ;
-  		:model_vocabulary = "http://vocab.nerc.ac.uk/collection/OGXXX/" ;
+  		:maker_vocabulary = "https://vocab.nerc.ac.uk/collection/L35/current/" ;
+  		:model = "Sea-Bird SBE 63 DO" ;
+  		:model_vocabulary = "https://vocab.nerc.ac.uk/collection/L22/current/" ;
   		:serial_number = "631776" ;
   		:calibration_date = "2019-11-22T00:00:00Z" ;
   } // group OPTODE_DOXY
@@ -393,11 +393,11 @@ group: FLUOROMETER_CHLA {
   // group attributes:
   		:long_name = "Chlorophyll fluorescence sensor" ;
   		:type = "FLUOROMETER_CHLA" ;
-  		:type_vocabulary = "http://vocab.nerc.ac.uk/collection/OGXXX/" ;
-  		:maker = "Seapoint" ;
-  		:maker_vocabulary = "http://vocab.nerc.ac.uk/collection/OGXXX/" ;
+  		:type_vocabulary = "https://vocab.nerc.ac.uk/collection/L05/current/" ;
+  		:maker = "SEAPOINT" ;
+  		:maker_vocabulary = "https://vocab.nerc.ac.uk/collection/L35/current/" ;
   		:model = "Seapoint" ;
-  		:model_vocabulary = "http://vocab.nerc.ac.uk/collection/OGXXX/" ;
+  		:model_vocabulary = "https://vocab.nerc.ac.uk/collection/L22/current/" ;
   		:serial_number = "S-5012" ;
   		:calibration_date = "2019-11-22T00:00:00Z" ;
   } // group FLUOROMETER_CHLA
