@@ -1,6 +1,5 @@
 netcdf sp041_20191205T1757 {
 dimensions:
-	N_SENSOR = 5 ;
 	N_PARAM = 5 ;
 	N_MEASUREMENTS = 25 ;
 variables:
@@ -8,9 +7,6 @@ variables:
 		TRAJECTORY:cf_role = "trajectory_id"
 		TRAJECTORY:long_name = "trajectory name";
 		TRAJECTORY:data_mode_vocabulary = "TBD";
-	string SENSOR(N_SENSOR) ;
-		SENSOR:long_name = "Terms describing sensor types" ;
-		SENSOR:sensor_vocabulary = "TBD";
 	string PARAMETER(N_PARAM) ;
 		PARAMETER:long_name = "name of parameter computed from glider measurements" ;
 		PARAMETER:parameter_vocabulary = "https://vocab.nerc.ac.uk/collection/OG1/current/" ;
@@ -255,9 +251,6 @@ variables:
 data:
 
  TRAJECTORY = "sp041_20191205T1757" ;
-
- SENSOR = "CTD_PRES", "CTD_TEMP", "CTD_CNDC", "FLUOROMETER_CHLA", 
-    "OPTODE_DOXY" ;
 
  PARAMETER = "PRES", "TEMP", "PSAL", "CHLA", "DOXY" ;
 
