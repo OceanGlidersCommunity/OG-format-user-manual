@@ -27,7 +27,7 @@ defining which part of the current format is affected. -->
 <!-- If you have one or more solutions in mind, please describe them -->
 
 **Platforms affected**
-<!-- Does it affect all platforms or some specific platforms? -->
+<!-- Does it affect all types of gliders or some specific platforms? -->
 
 **Additional context**
 <!-- Add any other context about the problem here. -->
