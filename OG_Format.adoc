@@ -248,61 +248,43 @@ OG1.0 requirements cover the GPS variables delivered by the glider when at the s
 
 * OG1.0 requirement for GPS variables: The table below describes mandatory GPS variables and their attributes.
 
-[cols=",,",options="header",]
+[cols="1,2a,1",options="header",]
 |============================================================
 |*VARIABLE NAME* |*variable attributes* |*requirement status*
-|LATITUDE_GPS a|
+|LATITUDE_GPS |
 double LATITUDE_GPS(N_MEASUREMENTS)
 
-LATITUDE_GPS:long_name = “latitude of each GPS location”;
-
-LATITUDE_GPS:standard_name = “latitude”;
-
-LATITUDE_GPS:units = “degrees_north”;
-
-LATITUDE_GPS:FillValue = -9999.9;
-
-LATITUDE_GPS:valid_min = -90.0;
-
-LATITUDE_GPS:valid_max = 90.0;
-
-LATITUDE_GPS:ancillary_variables = "LATITUDE_GPS_QC"
+* long_name = “latitude of each GPS location”;
+* standard_name = “latitude”;
+* units = “degrees_north”;
+* FillValue = -9999.9;
+* valid_min = -90.0;
+* valid_max = 90.0;
+* ancillary_variables = "LATITUDE_GPS_QC"
 
  |mandatory
-|LONGITUDE_GPS a|
+|LONGITUDE_GPS |
 double LONGITUDE_GPS(N_MEASUREMENTS)
 
-LONGITUDE_GPS:long_name = “longitude of each GPS location”;
-
-LONGITUDE_GPS:standard_name = “longitude”;
-
-LONGITUDE_GPS:units = “degrees_east”;
-
-LONGITUDE_GPS:FillValue = -9999.9;
-
-LONGITUDE_GPS:valid_min = -180.0;
-
-LONGITUDE_GPS:valid_max = 180.0;
-
-LONGIITUDE_GPS:ancillary_variables = "LONGITUDE_GPS_QC"
+* long_name = “longitude of each GPS location”;
+* standard_name = “longitude”;
+* units = “degrees_east”;
+* FillValue = -9999.9;
+* valid_min = -180.0;
+* valid_max = 180.0;
+* ancillary_variables = "LONGITUDE_GPS_QC"
 
  |mandatory
-|TIME_GPS a|
+|TIME_GPS |
 double TIME_GPS(N_MEASUREMENTS)
 
-TIME_GPS:long_name = “time of each GPS location”;
-
-TIME_GPS:calendar = "gregorian" ;
-
-TIME_GPS:units = “seconds since 1970-01-01T00:00:00Z”;
-
-TIME_GPS:valid_min = 1e9 ;
-
-TIME_GPS:valid_max = 4e9 ;
-
-TIME_GPS:FillValue = -1.0 ;
-
-TIME_GPS:ancillary_variables = “TIME_GPS_QC”
+* long_name = “time of each GPS location”;
+* calendar = "gregorian" ;
+* units = “seconds since 1970-01-01T00:00:00Z”;
+* valid_min = 1e9 ;
+* valid_max = 4e9 ;
+* FillValue = -1.0 ;
+* ancillary_variables = “TIME_GPS_QC”
 
  |mandatory
 |============================================================
