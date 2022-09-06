@@ -166,10 +166,10 @@ variables:
 		TRACKING_SYSTEM:tracking_system_vocabulary = "TBD" ;
 	string PLATFORM_TYPE ;
 		PLATFORM_TYPE:long_name = "type of glider" ;
-		PLATFORM_TYPE:platform_type_vocabulary = "TBD" ;
+		PLATFORM_TYPE:platform_type_vocabulary = "https://vocab.nerc.ac.uk/collection/L06/current/";
 	string PLATFORM_MODEL ;
-		PLATFORM_MODEL:long_name = "Model of the glider" ;
-		PLATFORM_MODEL:platform_model_vocabulary = "TBD" ;
+		PLATFORM_MODEL:long_name = "model of the glider" ;
+		PLATFORM_MODEL:platform_model_vocabulary = "http://vocab.nerc.ac.uk/collection/B76/current/B7600027/";
 	string PLATFORM_MAKER ;
 		PLATFORM_MAKER:long_name = "Glider manufacturer" ;
 		PLATFORM_MAKER:platform_maker_vocabulary = "TBD" ;
