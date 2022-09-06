@@ -362,7 +362,7 @@ data:
 group: CTD {
 
   // group attributes:
-  		:long_name = "CTD sensor" ;
+  		:long_name = "Sea-Bird SBE 41CP CTD" ;
   		:type = "CTD" ;
   		:type_vocabulary = "https://vocab.nerc.ac.uk/collection/L05/current/130/" ;
   		:maker = "Sea-Bird Scientific" ;
@@ -376,7 +376,7 @@ group: CTD {
 group: OPTODE_DOXY {
 
   // group attributes:
-  		:long_name = "Optical Dissolved Oxygen Sensor" ;
+  		:long_name = "Sea-Bird SBE 63 dissolved oxygen sensor" ;
   		:type = "OPTODE_DOXY" ;
   		:type_vocabulary = "https://vocab.nerc.ac.uk/collection/L05/current/351/" ;
   		:maker = "Seabird" ;
@@ -390,11 +390,11 @@ group: OPTODE_DOXY {
 group: FLUOROMETER_CHLA {
 
   // group attributes:
-  		:long_name = "Chlorophyll fluorescence sensor" ;
+  		:long_name = "Seapoint chlorophyll fluorometer" ;
   		:type = "FLUOROMETER_CHLA" ;
-  		:type_vocabulary = "https://vocab.nerc.ac.uk/collection/L05/current/353/" ;
+  		:type_vocabulary = "https://vocab.nerc.ac.uk/collection/L05/current/113/" ;
   		:maker = "SEAPOINT" ;
-  		:maker_vocabulary = "http://vocab.nerc.ac.uk/collection/B75/current/ORG00347/" ;
+  		:maker_vocabulary = "https://vocab.nerc.ac.uk/collection/L35/current/MAN0177/" ;
   		:model = "Seapoint SCF" ;
   		:model_identifier = "http://vocab.nerc.ac.uk/collection/L22/current/TOOL0119/" ;
   		:serial_number = "S-5012" ;
