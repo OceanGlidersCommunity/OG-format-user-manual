@@ -666,7 +666,7 @@ A sensor is a device used to measure a physical parameter. Sensor outputs are pr
 
 This section contains information about the sensors of the glider. Each ocean state variable to be recorded must be described with its sensor. Gears with multiple sensors (i.e. CTD) should consider separated sensors in particular if there is not a unique serial number and calibration date for the sensors.
 
-[cols=",,",options="header",]
+[cols="2,3,1",options="header",]
 |=======================================================================================================================================================================
 |*VARIABLE NAME* |*variable attributes* |*requirement status*
 |SENSOR a|
@@ -698,6 +698,8 @@ SENSOR_SERIAL_NUMBER:long_name = “serial number of the sensor”;
 
  |highly desirable
 |SENSOR_CALIBRATION_DATE |string SENSOR_CALIBRATION_DATE(N_SENSOR) SENSOR_CALIBRATION_DATE:long_name = “date of calibration of the sensor”; |highly desirable - ISO 8601
+
+|UUID |string UUID(N_SENSOR) UUID:long_name = “Sensor's UUID”; | suggested, e.x.: "TOOL0669_75"
 |=======================================================================================================================================================================
 
 ////
