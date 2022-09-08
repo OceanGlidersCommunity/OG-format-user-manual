@@ -230,7 +230,6 @@ image:figures/image2.png[image,width=515,height=171]
 |*Name* |*Definition* |*Comment*
 |N_MEASUREMENTS |N_MEASUREMENTS = unlimited; |Number of recorded locations.
 |N_PARAM |N_PARAM = <int value>; |Number of parameters measured or calculated for a pressure sample. Examples :(pressure, temperature) : N_PARAM = 2 (pressure, temperature, salinity) : N_PARAM = 3 (pressure, temperature, conductivity, salinity) : N_PARAM = 4
-|N_SENSOR |N_SENSOR = <int value>; |Number of sensors mounted on the platform and used to measure the parameters.
 |=================================================================================================================================================================================================================================================================
 
 ////
