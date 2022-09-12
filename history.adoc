@@ -1,0 +1,12 @@
+History of format evolution process
+
+
+PR #103: Sensors as groups
+
+Proposed by: @castelao
+
+Approved on 2022-09-12 by: @callumrollo, @vturpin, @JuangaSocib, @emmerbodc, @glidermann, and @justinbuck.
+
+notes:
+- @JuangaSocib had proposed before alternative solutions (#45 & #69), and later agreed with #103 .
+- @emmerbodc and @vturpin did intensive and careful review providing a lot of improvements.

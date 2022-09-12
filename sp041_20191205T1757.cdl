@@ -1,6 +1,5 @@
 netcdf sp041_20191205T1757 {
 dimensions:
-	N_SENSOR = 5 ;
 	N_PARAM = 5 ;
 	N_MEASUREMENTS = 25 ;
 variables:
@@ -8,15 +7,9 @@ variables:
 		TRAJECTORY:cf_role = "trajectory_id"
 		TRAJECTORY:long_name = "trajectory name";
 		TRAJECTORY:data_mode_vocabulary = "TBD";
-	string SENSOR(N_SENSOR) ;
-		SENSOR:long_name = "Terms describing sensor types" ;
-		SENSOR:sensor_vocabulary = "TBD";
 	string PARAMETER(N_PARAM) ;
 		PARAMETER:long_name = "name of parameter computed from glider measurements" ;
 		PARAMETER:parameter_vocabulary = "https://vocab.nerc.ac.uk/collection/OG1/current/" ;
-	string PARAMETER_SENSOR(N_PARAM) ;
-		PARAMETER_SENSOR:long_name = "Name of the sensor that measures this parameter";
-		PARAMETER_SENSOR:parameter_sensor_vocabulary = "TBD";
 	double TIME_GPS(N_MEASUREMENTS) ;
 		TIME_GPS:_FillValue = -1. ;
 		TIME_GPS:long_name = "time of each GPS location" ;
@@ -76,6 +69,7 @@ variables:
 		PRES:units = "dbar" ;
 		PRES:ancillary_variables = "PRES_QC" ;
 		PRES:comment = "Sea water pressure, equals 0 at sea-level" ;
+		PRES:sensor = "/CTD"
 	byte PRES_QC(N_MEASUREMENTS) ;
 		PRES_QC:_FillValue = 0b ;
 		PRES_QC:long_name = "quality flag" ;
@@ -85,6 +79,7 @@ variables:
 		DEPTH:standard_name = "depth" ;
 		DEPTH:units = "m" ;
 		DEPTH:positive = "down" ;
+		DEPTH:sensor = "/CTD"
 	float TEMP(N_MEASUREMENTS) ;
 		TEMP:_FillValue = -9999.9 ;
 		TEMP:long_name = "Sea Water Temperature" ;
@@ -96,6 +91,7 @@ variables:
 		TEMP:coverage_content_type = "physicalMeasurement" ;
 		TEMP:coordinates = "time lon lat depth" ;
 		TEMP:comment = "Sea temperature in-situ ITS-90 scale" ;
+		TEMP:sensor = "/CTD"
 	byte TEMP_QC(N_MEASUREMENTS) ;
 		TEMP_QC:_FillValue = 0b ;
 		TEMP_QC:long_name = "quality flag" ;
@@ -110,6 +106,7 @@ variables:
 		PSAL:coverage_content_type = "physicalMeasurement" ;
 		PSAL:coordinates = "time lon lat depth" ;
 		PSAL:comment = "Practical salinity computed using UNESCO 1983 algorithm" ;
+		PSAL:sensor = "/CTD"
 	byte PSAL_QC(N_MEASUREMENTS) ;
 		PSAL_QC:_FillValue = 0b ;
 		PSAL_QC:long_name = "quality flag" ;
@@ -122,6 +119,7 @@ variables:
 		CHLA:coverage_content_type = "physicalMeasurement" ;
 		CHLA:coordinates = "time lon lat depth" ;
 		CHLA:comment = "In-situ fluorometer with either manufacturer, laboratory or sample calibration applied" ;
+		CHLA:sensor = "/FLUOROMETER_CHLA"
 	byte CHLA_QC(N_MEASUREMENTS) ;
 		CHLA_QC:_FillValue = 0b ;
 		CHLA_QC:long_name = "quality flag" ;
@@ -135,6 +133,7 @@ variables:
 		DOXY:valid_min = 500. ;
 		DOXY:coverage_content_type = "physicalMeasurement" ;
 		DOXY:comment = "Concentration of dissolved oxygen per unit mass of the water column. Oxygen may be expressed in terms of mass, volume or quantity of substance" ;
+		DOXY:sensor = "/OPTODE_DOXY"
 	byte DOXY_QC(N_MEASUREMENTS) ;
 		DOXY_QC:_FillValue = 0b ;
 		DOXY_QC:long_name = "quality flag" ;
@@ -164,10 +163,10 @@ variables:
 		TRACKING_SYSTEM:tracking_system_vocabulary = "TBD" ;
 	string PLATFORM_TYPE ;
 		PLATFORM_TYPE:long_name = "type of glider" ;
-		PLATFORM_TYPE:platform_type_vocabulary = "TBD" ;
+		PLATFORM_TYPE:platform_type_vocabulary = "https://vocab.nerc.ac.uk/collection/L06/current/";
 	string PLATFORM_MODEL ;
-		PLATFORM_MODEL:long_name = "Model of the glider" ;
-		PLATFORM_MODEL:platform_model_vocabulary = "TBD" ;
+		PLATFORM_MODEL:long_name = "model of the glider" ;
+		PLATFORM_MODEL:platform_model_vocabulary = "http://vocab.nerc.ac.uk/collection/B76/current/B7600027/";
 	string PLATFORM_MAKER ;
 		PLATFORM_MAKER:long_name = "Glider manufacturer" ;
 		PLATFORM_MAKER:platform_maker_vocabulary = "TBD" ;
@@ -256,13 +255,7 @@ data:
 
  TRAJECTORY = "sp041_20191205T1757" ;
 
- SENSOR = "CTD_PRES", "CTD_TEMP", "CTD_CNDC", "FLUOROMETER_CHLA", 
-    "OPTODE_DOXY" ;
-
  PARAMETER = "PRES", "TEMP", "PSAL", "CHLA", "DOXY" ;
-
- PARAMETER_SENSOR = "CTD_PRES", "CTD_TEMP", "CTD_CNDC", "FLUOROMETER_CHLA", 
-    "OPTODE_DOXY" ;
 
  TIME_GPS = 1576507260, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, 
     _, _, _, _, _, 1576517403 ;
@@ -359,4 +352,46 @@ data:
  PLATFORM_DEPTH_RATING = 1000 ;
 
  WMO_IDENTIFIER = "4801948" ;
+
+group: CTD {
+
+  // group attributes:
+  		:long_name = "Sea-Bird SBE 41CP CTD" ;
+  		:type = "CTD" ;
+  		:type_vocabulary = "https://vocab.nerc.ac.uk/collection/L05/current/130/" ;
+  		:maker = "Sea-Bird Scientific" ;
+  		:maker_vocabulary = "https://vocab.nerc.ac.uk/collection/L35/current/MAN0013/" ;
+  		:model = "SBE 41CP CTD " ;
+  		:model_vocabulary = "https://vocab.nerc.ac.uk/collection/L22/current/TOOL0669/" ;
+  		:serial_number = "75" ;
+  		:calibration_date = "2019-10-22T00:00:00Z" ;
+  } // group CTD
+
+group: OPTODE_DOXY {
+
+  // group attributes:
+  		:long_name = "Sea-Bird SBE 63 dissolved oxygen sensor" ;
+  		:type = "OPTODE_DOXY" ;
+  		:type_vocabulary = "https://vocab.nerc.ac.uk/collection/L05/current/351/" ;
+  		:maker = "Seabird" ;
+  		:maker_vocabulary = "https://vocab.nerc.ac.uk/collection/L35/current/MAN0013/" ;
+  		:model = "Sea-Bird SBE 63 DO" ;
+  		:model_vocabulary = "https://vocab.nerc.ac.uk/collection/L22/current/TOOL0739/" ;
+  		:serial_number = "631776" ;
+  		:calibration_date = "2019-11-22T00:00:00Z" ;
+  } // group OPTODE_DOXY
+
+group: FLUOROMETER_CHLA {
+
+  // group attributes:
+  		:long_name = "Seapoint chlorophyll fluorometer" ;
+  		:type = "FLUOROMETER_CHLA" ;
+  		:type_vocabulary = "https://vocab.nerc.ac.uk/collection/L05/current/113/" ;
+  		:maker = "SEAPOINT" ;
+  		:maker_vocabulary = "https://vocab.nerc.ac.uk/collection/L35/current/MAN0177/" ;
+  		:model = "Seapoint SCF" ;
+  		:model_identifier = "http://vocab.nerc.ac.uk/collection/L22/current/TOOL0119/" ;
+  		:serial_number = "S-5012" ;
+  		:calibration_date = "2019-11-22T00:00:00Z" ;
+  } // group FLUOROMETER_CHLA
 }

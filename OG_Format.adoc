@@ -230,7 +230,6 @@ image:figures/image2.png[image,width=515,height=171]
 |*Name* |*Definition* |*Comment*
 |N_MEASUREMENTS |N_MEASUREMENTS = unlimited; |Number of recorded locations.
 |N_PARAM |N_PARAM = <int value>; |Number of parameters measured or calculated for a pressure sample. Examples :(pressure, temperature) : N_PARAM = 2 (pressure, temperature, salinity) : N_PARAM = 3 (pressure, temperature, conductivity, salinity) : N_PARAM = 4
-|N_SENSOR |N_SENSOR = <int value>; |Number of sensors mounted on the platform and used to measure the parameters.
 |=================================================================================================================================================================================================================================================================
 
 ////
@@ -666,38 +665,21 @@ A sensor is a device used to measure a physical parameter. Sensor outputs are pr
 
 This section contains information about the sensors of the glider. Each ocean state variable to be recorded must be described with its sensor. Gears with multiple sensors (i.e. CTD) should consider separated sensors in particular if there is not a unique serial number and calibration date for the sensors.
 
-[cols=",,",options="header",]
+For each sensor it is created a group with the following group attributes:
+
+[cols="2,3,1,2",options="header",]
 |=======================================================================================================================================================================
-|*VARIABLE NAME* |*variable attributes* |*requirement status*
-|SENSOR a|
-string SENSOR(N_SENSOR)
-
-SENSOR:long_name = “Terms describing sensor types”;
-
-SENSOR:sensor_vocabulary = “”;
-
- |mandatory
-|SENSOR_MAKER a|
-string SENSOR_MAKER(N_SENSOR) SENSOR_MAKER:long_name = “manufacturer of the sensor”;
-
-SENSOR_MAKER:sensor_maker_vocabulary =“”;
-
- |highly desirable
-|SENSOR_MODEL a|
-string SENSOR_MODEL(N_SENSOR)
-
-SENSOR_MODEL:long_name = “model of the sensor”;
-
-SENSOR_MODEL:sensor_model_vocabulary = “”;
-
- |Highly desirable
-|SENSOR_SERIAL_NUMBER a|
-string SENSOR_SERIAL_NUMBER(N_SENSOR)
-
-SENSOR_SERIAL_NUMBER:long_name = “serial number of the sensor”;
-
- |highly desirable
-|SENSOR_CALIBRATION_DATE |string SENSOR_CALIBRATION_DATE(N_SENSOR) SENSOR_CALIBRATION_DATE:long_name = “date of calibration of the sensor”; |highly desirable - ISO 8601
+|*Group attribute* |*Definition* |*Requirement status* |*Format, fixed value or example*
+|long_name         | | highly desirable | ex: "Sea-Bird SBE 41CP CTD"
+|type              | | highly desirable | ex: "CTD"
+|type_vocabulary   | | highly desirable | ex: "https://vocab.nerc.ac.uk/collection/L05/current/130"
+|maker             | | highly desirable | ex: "Sea-Bird Scientific"
+|maker_vocabulary  | | highly desirable | ex: "https://vocab.nerc.ac.uk/collection/L35/current/MAN0013/"
+|model             | | highly desirable | ex: "SBE 41CP CTD"
+|model_vocabulary  | | highly desirable | ex: "https://vocab.nerc.ac.uk/collection/L22/current/TOOL0669/"
+|serial_number     | | highly desirable | ex: "75"
+|calibration_date  | Date of sensor calibration in ISO 8601 | highly desirable | ex.: "2019-10-22T00:00:00Z"
+|UUID              | Universal Unique Identifier | suggested | ex: "TOOL0669_75" <concept>_<serial_number>
 |=======================================================================================================================================================================
 
 ////
