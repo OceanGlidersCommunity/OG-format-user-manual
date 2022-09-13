@@ -679,6 +679,7 @@ For each sensor it is created a group with the following group attributes:
 |model_vocabulary  | | highly desirable | ex: "https://vocab.nerc.ac.uk/collection/L22/current/TOOL0669/"
 |serial_number     | | highly desirable | ex: "75"
 |calibration_date  | Date of sensor calibration in ISO 8601 | highly desirable | ex.: "2019-10-22T00:00:00Z"
+|calibration_link  | Link (persintent URL) to calibration sheets | highly desirable | ex.: "https://doi.org/xx.yyyy/12345"
 |UUID              | Universal Unique Identifier | suggested | ex: "TOOL0669_75" <concept>_<serial_number>
 |=======================================================================================================================================================================
 
