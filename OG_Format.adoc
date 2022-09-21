@@ -722,7 +722,7 @@ PARAMETER_UNITS:parameter_units_vocabulary = “”;
 = Geophysical variables
 ////
 = Geophysical variables
-
+"We recommend using NaN for float/double, but the user is allowed to choose any value with the same data type of the variable."
 [cols=",,",options="header",]
 |==========================================================================================================================
 |*VARIABLE NAME* |*variable attributes* |*requirement status*
