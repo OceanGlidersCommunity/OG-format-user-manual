@@ -4,7 +4,7 @@ dimensions:
 	N_MEASUREMENTS = 25 ;
 variables:
 	string TRAJECTORY ;
-		TRAJECTORY:cf_role = "trajectory_id"
+		TRAJECTORY:cf_role = "trajectory_id" ;
 		TRAJECTORY:long_name = "trajectory name";
 		TRAJECTORY:data_mode_vocabulary = "TBD";
 	string PARAMETER(N_PARAM) ;
@@ -69,7 +69,7 @@ variables:
 		PRES:units = "dbar" ;
 		PRES:ancillary_variables = "PRES_QC" ;
 		PRES:comment = "Sea water pressure, equals 0 at sea-level" ;
-		PRES:sensor = "/CTD"
+		PRES:sensor = "/CTD" ;
 	byte PRES_QC(N_MEASUREMENTS) ;
 		PRES_QC:_FillValue = 0b ;
 		PRES_QC:long_name = "quality flag" ;
@@ -79,7 +79,7 @@ variables:
 		DEPTH:standard_name = "depth" ;
 		DEPTH:units = "m" ;
 		DEPTH:positive = "down" ;
-		DEPTH:sensor = "/CTD"
+		DEPTH:sensor = "/CTD" ;
 	float TEMP(N_MEASUREMENTS) ;
 		TEMP:_FillValue = -9999.9 ;
 		TEMP:long_name = "Sea Water Temperature" ;
@@ -91,7 +91,7 @@ variables:
 		TEMP:coverage_content_type = "physicalMeasurement" ;
 		TEMP:coordinates = "time lon lat depth" ;
 		TEMP:comment = "Sea temperature in-situ ITS-90 scale" ;
-		TEMP:sensor = "/CTD"
+		TEMP:sensor = "/CTD" ;
 	byte TEMP_QC(N_MEASUREMENTS) ;
 		TEMP_QC:_FillValue = 0b ;
 		TEMP_QC:long_name = "quality flag" ;
@@ -106,7 +106,7 @@ variables:
 		PSAL:coverage_content_type = "physicalMeasurement" ;
 		PSAL:coordinates = "time lon lat depth" ;
 		PSAL:comment = "Practical salinity computed using UNESCO 1983 algorithm" ;
-		PSAL:sensor = "/CTD"
+		PSAL:sensor = "/CTD" ;
 	byte PSAL_QC(N_MEASUREMENTS) ;
 		PSAL_QC:_FillValue = 0b ;
 		PSAL_QC:long_name = "quality flag" ;
@@ -119,7 +119,7 @@ variables:
 		CHLA:coverage_content_type = "physicalMeasurement" ;
 		CHLA:coordinates = "time lon lat depth" ;
 		CHLA:comment = "In-situ fluorometer with either manufacturer, laboratory or sample calibration applied" ;
-		CHLA:sensor = "/FLUOROMETER_CHLA"
+		CHLA:sensor = "/FLUOROMETER_CHLA" ;
 	byte CHLA_QC(N_MEASUREMENTS) ;
 		CHLA_QC:_FillValue = 0b ;
 		CHLA_QC:long_name = "quality flag" ;
@@ -133,7 +133,7 @@ variables:
 		DOXY:valid_min = 500. ;
 		DOXY:coverage_content_type = "physicalMeasurement" ;
 		DOXY:comment = "Concentration of dissolved oxygen per unit mass of the water column. Oxygen may be expressed in terms of mass, volume or quantity of substance" ;
-		DOXY:sensor = "/OPTODE_DOXY"
+		DOXY:sensor = "/OPTODE_DOXY" ;
 	byte DOXY_QC(N_MEASUREMENTS) ;
 		DOXY_QC:_FillValue = 0b ;
 		DOXY_QC:long_name = "quality flag" ;
@@ -218,8 +218,8 @@ variables:
 		:geospatial_vertical_max = 24.59 ;
 		:geospatial_vertical_positive = "down" ;
 		:geospatial_vertical_units = "m" ;
-		:time_coverage_start = 2019-12-05T17:57Z ;
-		:time_coverage_end = 2019-12-05T18:05Z ;
+		:time_coverage_start = "2019-12-05T17:57Z" ;
+		:time_coverage_end = "2019-12-05T18:05Z" ;
 		:program = "GOMO, IOOS" ;
 		:network = "California Underwater Glider Network" ;
 		:project = "California Underwater Glider Network" ;
