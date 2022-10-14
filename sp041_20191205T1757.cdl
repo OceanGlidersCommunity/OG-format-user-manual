@@ -5,8 +5,8 @@ dimensions:
 variables:
 	string TRAJECTORY ;
 		TRAJECTORY:cf_role = "trajectory_id" ;
-		TRAJECTORY:long_name = "trajectory name" ;
-		TRAJECTORY:data_mode_vocabulary = "http://vocab.nerc.ac.uk/collection/OGXXX/" ;
+		TRAJECTORY:long_name = "trajectory name";
+		TRAJECTORY:data_mode_vocabulary = "TBD";
 	string PARAMETER(N_PARAM) ;
 		PARAMETER:long_name = "name of parameter computed from glider measurements" ;
 		PARAMETER:parameter_vocabulary = "https://vocab.nerc.ac.uk/collection/OG1/current/" ;
@@ -93,7 +93,6 @@ variables:
 		PRES:ancillary_variables = "PRES_QC" ;
 		PRES:comment = "Sea water pressure, equals 0 at sea-level" ;
 		PRES:sensor = "/CTD" ;
-		PRES:coordinates = "TRAJECTORY" ;
 	byte PRES_QC(N_MEASUREMENTS) ;
 		PRES_QC:_FillValue = 0b ;
 		PRES_QC:long_name = "quality flag" ;
@@ -105,7 +104,6 @@ variables:
 		DEPTH:units = "m" ;
 		DEPTH:positive = "down" ;
 		DEPTH:sensor = "/CTD" ;
-		DEPTH:coordinates = "TRAJECTORY" ;
 	double TEMP(N_MEASUREMENTS) ;
 		TEMP:_FillValue = -9999.9 ;
 		TEMP:long_name = "Sea Water Temperature" ;
@@ -137,7 +135,20 @@ variables:
 	byte PSAL_QC(N_MEASUREMENTS) ;
 		PSAL_QC:_FillValue = 0b ;
 		PSAL_QC:long_name = "quality flag" ;
-		PSAL_QC:coordinates = "TRAJECTORY" ;
+	float DOXY(N_MEASUREMENTS) ;
+		DOXY:_FillValue = NaN ;
+		DOXY:long_name = "Dissolved oxygen" ;
+		DOXY:standard_name = "moles_of_oxygen_per_unit_mass_in_sea_water" ;
+		DOXY:units = "micromol kg-1" ;
+		DOXY:ancillary_variables = "DOXY_QC" ;
+		DOXY:valid_max = 0. ;
+		DOXY:valid_min = 500. ;
+		DOXY:coverage_content_type = "physicalMeasurement" ;
+		DOXY:comment = "Concentration of dissolved oxygen per unit mass of the water column. Oxygen may be expressed in terms of mass, volume or quantity of substance" ;
+		DOXY:sensor = "/OPTODE_DOXY" ;
+	byte DOXY_QC(N_MEASUREMENTS) ;
+		DOXY_QC:_FillValue = 0b ;
+		DOXY_QC:long_name = "quality flag" ;
 	double DEPLOYMENT_TIME ;
 		DEPLOYMENT_TIME:_FillValue = -1. ;
 		DEPLOYMENT_TIME:long_name = "date of deployment" ;
