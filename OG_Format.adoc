@@ -122,7 +122,7 @@ This document defines the requirements of the future OceanGliders harmonized for
 ////
 == Global attributes
 
-The global attribute section is used for data discovery. The following global attributes should appear in the global section. The NetCDF Climate and Forecast (CF) Metadata Conventions are available from: http://cfconventions.org/Data/cf-conventions/cf-conventions-1.7/cf-conventions.html#trajectory-data[_http://cfconventions.org/Data/cf-conventions/cf-conventions-1.8/cf-conventions.html#trajectory-data_]. It is recommended that extra global attributes follow ACDD convention".
+The global attribute section is used for data discovery. The following global attributes should appear in the global section. The NetCDF Climate and Forecast (CF) Metadata Conventions are available from: http://cfconventions.org/Data/cf-conventions/cf-conventions-1.10/cf-conventions.html#trajectory-data[_http://cfconventions.org/Data/cf-conventions/cf-conventions-1.10/cf-conventions.html#trajectory-data_]. It is recommended that extra global attributes follow ACDD convention".
 
 [cols="5,6,3,6a",options="header",]
 |=====================================================================================================================================================================================================================================================================================
