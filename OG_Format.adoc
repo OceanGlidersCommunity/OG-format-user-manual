@@ -194,7 +194,7 @@ ex.:
 |contributor_email |Email if the contributors to the glider mission. Multiple contributors’ emails are separated by commas. |PI email is mandatory |
 |contributor_id |Unique id of the contributors to the glider mission. Multiple contributors’ ids are separated by commas. |highly desirable |
 |contributor_role |Role of the contributors to the glider mission. Multiple contributors’ roles are separated by commas. |PI vocabulary is mandatory |
-|contributor_role_vocabulary |Controlled vocabulary for the roles used in the "contributors_role". Multiple contributors’ roles and vocabularies are separated by commas. |PI vocabulary is mandatory |https://orcid.org/[_https://orcid.org/_]
+|contributor_role_vocabulary |Controlled vocabulary for the roles used in the "contributors_role". Multiple contributors’ roles and vocabularies are separated by commas. |PI vocabulary is mandatory |http://vocab.nerc.ac.uk/search_nvs/W08/[_http://vocab.nerc.ac.uk/search_nvs/W08/_]
 |agency |Name of agencies involved in the glider mission. Multiple agencies are separated by commas. |operating agency is mandatory |
 |agency_role |Role of the agencies involved in the glider mission. Multiple agencies’ roles are separated by a comma. |operating agency role is mandatory |
 |agency_role_vocabulary |The controlled vocabulary of the role used in the agency’s role. Multiple vocabularies are separated by commas. |operating agency vocabulary is mandatory |https://vocab.nerc.ac.uk/collection/C86/current/[_https://vocab.nerc.ac.uk/collection/C86/current/_]
