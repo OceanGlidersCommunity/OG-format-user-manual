@@ -354,7 +354,7 @@ LONGITUDE:interpolation_methodology_doi = “”;
 |TIME a|
 double TIME (N_MEASUREMENTS)
 
-TIME:long_name = “time of measurement and gps location”;
+TIME:long_name = “time of measurement and GPS location”;
 
 TIME:standard_name = “time”;
 
