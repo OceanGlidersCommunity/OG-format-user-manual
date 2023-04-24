@@ -404,14 +404,6 @@ Ex.: sp042_20210218T2325
 [cols=",,",options="header",]
 |========================================================================================
 |*VARIABLE NAME* |*variable attributes* |*requirement status*
-|PLATFORM_TYPE a|
-string PLATFORM_TYPE
-
-PLATFORM_TYPE:long_name: “type of glider”;
-
-PLATFORM_TYPE:platform_type_vocabulary = “”;
-
- |mandatory
 |PLATFORM_MODEL a|
 string PLATFORM_MODEL
 
