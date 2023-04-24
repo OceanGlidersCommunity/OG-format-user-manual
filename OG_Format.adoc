@@ -449,7 +449,7 @@ PLATFORM_DEPTH_RATING:convention = “positive value expected - e.g. 100m depth 
 |ICES_CODE a|
 string ICES_CODE
 
-ICES_CODE:long_name = “ICES code” ;
+ICES_CODE:long_name = “ICES platform code of the glider” ;
 
 ICES_CODE :ices_code_vocabulary = “” ;
 
