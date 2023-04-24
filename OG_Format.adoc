@@ -1,50 +1,41 @@
 [cols=",",options="header",]
 |===========================================================================================
 |image:figures/image1.png[image,width=164,height=144] a|
-OceanGliders 1.0
-
-Harmonizing format across OceanGliders
-
-Terms of References
+OceanGliders 1.0 format - Terms of References
 
 |===========================================================================================
 
+////
+* [[History]]
+////
+== History
 
-__Drafted: Victor Turpin – 13/12/2019__
-
+_Drafted: Victor Turpin – 13/12/2019__
 _Edited: Daniel Hayes -18/12/2019_
-
 _Reviewed: data format harmonization working group – 07/05/2020_
-
 _Reviewed: Victor Turpin – 17/11/2020_
-
 _Edited: Justin Buck/Emma Slater – 26/11/2020_
-
 _Edited: Thierry Carval – 17/03/2021_
+_Edited: Emma Slater – 24/08/2022_
+_Reviewed: data format harmonization working group – 24/04/2023_
+_Finalized and proposed: data format harmonization group – _
 
-__Edited: Emma Slater – 24/08/2022__
+////
+* [[Endorsment]]
+////
+== Endorsment
 
-__Finalized and proposed: data format harmonization group – __
-
-_Endorsed: OceanGliders Steering Team –_
-
-*Table of Contents*
-
-__This document has been endorsed by the OceanGliders steering team, the OceanGliders data management task team, and the following OceanGliders Data Assembly Centers: __
-
-__IOOS/glider DAC (USA), __
-
-__Coriolis (France), __
-
-__BODC-NOC (UK), __
-
+_This document has been endorsed by:
+_OceanGliders data management Team, _
+_OceanGliders Steering Team, _
+_IOOS/glider DAC (USA), _
+_Coriolis (France), _
 _IMOS/AODN (Australia),_
-
-__SOCIB (Spain), __
-
-__C-IOOS (Canada), __
-
+_BODC-NOC (UK), _
+_SOCIB (Spain), _
+_C-IOOS (Canada), _
 _EMODNET Physics (EU)_
+
 
 ////
 * [[background]]
@@ -57,7 +48,7 @@ The program oversees the monitoring of global glider activity, a prerequisite fo
 
 The OceanGliders program was created about 10 years after the popularization of the use of gliders by ocean scientists. With no common rules on format, data managers from Australia, the USA, and Europe processed 3 regional formats that are not interoperable.
 
-Harmonization toward interoperability within the 3 current formats and other networks is a recommendation from the OceanGliders steering team to strengthen the network and reach the FAIR principles (Findable, Accessible, Interoperable, Reusable) adopted by GOOS (Global Ocean Observing System), and better monitor the program activity.
+Harmonization toward interoperability within the existing formats and many national/regional glider networks is a recommendation from the OceanGliders steering team to strengthen the program and reach the FAIR principles (Findable, Accessible, Interoperable, Reusable) adopted by GOOS (Global Ocean Observing System), and better monitor the program activity.
 
 ////
 * [[objectives]]
@@ -65,7 +56,7 @@ Harmonization toward interoperability within the 3 current formats and other net
 ////
 == Objectives
 
-This document defines the requirements of the future OceanGliders harmonized format, hereafter OG1.0, and the agenda for achievements.
+This document defines the common OceanGliders data format, hereafter OG1.0.
 
 ////
 * [[og1.0-general-conventions]]
