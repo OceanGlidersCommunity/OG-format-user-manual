@@ -4,17 +4,23 @@ dimensions:
 	N_MEASUREMENTS = 25 ;
 variables:
 	string TRAJECTORY ;
-		TRAJECTORY:cf_role = "trajectory_id"
+		TRAJECTORY:cf_role = "trajectory_id" ;
 		TRAJECTORY:long_name = "trajectory name";
 		TRAJECTORY:data_mode_vocabulary = "TBD";
 	string PARAMETER(N_PARAM) ;
 		PARAMETER:long_name = "name of parameter computed from glider measurements" ;
 		PARAMETER:parameter_vocabulary = "https://vocab.nerc.ac.uk/collection/OG1/current/" ;
+		PARAMETER:coordinates = "TRAJECTORY" ;
 	double TIME_GPS(N_MEASUREMENTS) ;
 		TIME_GPS:_FillValue = -1. ;
 		TIME_GPS:long_name = "time of each GPS location" ;
 		TIME_GPS:units = "seconds since 1970-01-01T00:00:00Z" ;
 		TIME_GPS:ancillary_variables = "TIME_GPS_QC" ;
+		TIME_GPS:coordinates = "TRAJECTORY" ;
+	byte TIME_GPS_QC(N_MEASUREMENTS) ;
+		TIME_GPS_QC:_FillValue = 0b ;
+		TIME_GPS_QC:long_name = "quality flag" ;
+		TIME_GPS_QC:coordinates = "TRAJECTORY" ;
 	double LATITUDE_GPS(N_MEASUREMENTS) ;
 		LATITUDE_GPS:_FillValue = NaN ;
 		LATITUDE_GPS:long_name = "latitude of each GPS location" ;
@@ -23,6 +29,11 @@ variables:
 		LATITUDE_GPS:ancillary_variables = "LATITUDE_GPS_QC" ;
 		LATITUDE_GPS:valid_max = "90" ;
 		LATITUDE_GPS:valid_min = "-90" ;
+		LATITUDE_GPS:coordinates = "TRAJECTORY" ;
+	byte LATITUDE_GPS_QC(N_MEASUREMENTS) ;
+		LATITUDE_GPS_QC:_FillValue = 0b ;
+		LATITUDE_GPS_QC:long_name = "quality flag" ;
+		LATITUDE_GPS_QC:coordinates = "TRAJECTORY" ;
 	double LONGITUDE_GPS(N_MEASUREMENTS) ;
 		LONGITUDE_GPS:_FillValue = NaN ;
 		LONGITUDE_GPS:long_name = "longitude of each GPS location" ;
@@ -31,23 +42,33 @@ variables:
 		LONGITUDE_GPS:ancillary_variables = "LONGITUDE_GPS_QC" ;
 		LONGITUDE_GPS:valid_max = "180" ;
 		LONGITUDE_GPS:valid_min = "-180" ;
+		LONGITUDE_GPS:coordinates = "TRAJECTORY" ;
+	byte LONGITUDE_GPS_QC(N_MEASUREMENTS) ;
+		LONGITUDE_GPS_QC:_FillValue = 0b ;
+		LONGITUDE_GPS_QC:long_name = "quality flag" ;
+		LONGITUDE_GPS_QC:coordinates = "TRAJECTORY" ;
+	string PLATFORM ;
+		PLATFORM:coordinates = "TRAJECTORY" ;
 	byte PHASE(N_MEASUREMENTS) ;
 		PHASE:_FillValue = 0b ;
 		PHASE:long_name = "behavior of the glider at sea" ;
 		PHASE:ancillary_variables = "PHASE_QC" ;
 		PHASE:phase_vocabulary = "url to phase vocab list" ;
-		PHASE:phase_calculation_method = "TBD";
-		PHASE:phase_calculation_method_vocabulary = "TBD";
-		PHASE:phase_calculation_method_doi = "TBD";
+		PHASE:phase_calculation_method = "TBD" ;
+		PHASE:phase_calculation_method_vocabulary = "TBD" ;
+		PHASE:phase_calculation_method_doi = "TBD" ;
+		PHASE:coordinates = "TRAJECTORY" ;
 	byte PHASE_QC(N_MEASUREMENTS) ;
 		PHASE_QC:_FillValue = 0b ;
 		PHASE_QC:long_name = "quality flag" ;
+		PHASE_QC:coordinates = "TRAJECTORY" ;
 	double TIME(N_MEASUREMENTS) ;
 		TIME:_FillValue = -1. ;
 		TIME:long_name = "time of measurement and GPS location" ;
 		TIME:standard_name = "time" ;
 		TIME:calendar = "gregorian" ;
 		TIME:units = "seconds since 1970-01-01T00:00:00Z" ;
+		TIME:coordinates = "TRAJECTORY" ;
 	double LATITUDE(N_MEASUREMENTS) ;
 		LATITUDE:_FillValue = -9999.9 ;
 		LATITUDE:long_name = "latitude of each measurement and GPS location" ;
@@ -55,32 +76,35 @@ variables:
 		LATITUDE:units = "degrees_north" ;
 		LATITUDE:valid_max = "90" ;
 		LATITUDE:valid_min = "-90" ;
+		LATITUDE:coordinates = "TRAJECTORY" ;
 	double LONGITUDE(N_MEASUREMENTS) ;
 		LONGITUDE:_FillValue = -9999.9 ;
-		LONGITUDE:long_name = "longitude of each measurements and gps locations" ;
+		LONGITUDE:long_name = "longitude of each measurement and GPS location" ;
 		LONGITUDE:standard_name = "longitude" ;
 		LONGITUDE:units = "degrees_east" ;
 		LONGITUDE:valid_max = "180" ;
 		LONGITUDE:valid_min = "-180" ;
-	float PRES(N_MEASUREMENTS) ;
+		LONGITUDE:coordinates = "TRAJECTORY" ;
+	double PRES(N_MEASUREMENTS) ;
 		PRES:_FillValue = -9999.9 ;
 		PRES:long_name = "Pressure" ;
 		PRES:standard_name = "sea_water_pressure" ;
 		PRES:units = "dbar" ;
 		PRES:ancillary_variables = "PRES_QC" ;
 		PRES:comment = "Sea water pressure, equals 0 at sea-level" ;
-		PRES:sensor = "/CTD"
+		PRES:sensor = "/CTD" ;
 	byte PRES_QC(N_MEASUREMENTS) ;
 		PRES_QC:_FillValue = 0b ;
 		PRES_QC:long_name = "quality flag" ;
-	float DEPTH(N_MEASUREMENTS) ;
+		PRES_QC:coordinates = "TRAJECTORY" ;
+	double DEPTH(N_MEASUREMENTS) ;
 		DEPTH:_FillValue = NaN ;
 		DEPTH:long_name = "Depth" ;
 		DEPTH:standard_name = "depth" ;
 		DEPTH:units = "m" ;
 		DEPTH:positive = "down" ;
-		DEPTH:sensor = "/CTD"
-	float TEMP(N_MEASUREMENTS) ;
+		DEPTH:sensor = "/CTD" ;
+	double TEMP(N_MEASUREMENTS) ;
 		TEMP:_FillValue = -9999.9 ;
 		TEMP:long_name = "Sea Water Temperature" ;
 		TEMP:standard_name = "sea_water_temperature" ;
@@ -91,11 +115,12 @@ variables:
 		TEMP:coverage_content_type = "physicalMeasurement" ;
 		TEMP:coordinates = "time lon lat depth" ;
 		TEMP:comment = "Sea temperature in-situ ITS-90 scale" ;
-		TEMP:sensor = "/CTD"
+		TEMP:sensor = "/CTD" ;
 	byte TEMP_QC(N_MEASUREMENTS) ;
 		TEMP_QC:_FillValue = 0b ;
 		TEMP_QC:long_name = "quality flag" ;
-	float PSAL(N_MEASUREMENTS) ;
+		TEMP_QC:coordinates = "TRAJECTORY" ;
+	double PSAL(N_MEASUREMENTS) ;
 		PSAL:_FillValue = NaN ;
 		PSAL:long_name = "Sea Water Salinity" ;
 		PSAL:standard_name = "sea_water_practical_salinity" ;
@@ -106,23 +131,10 @@ variables:
 		PSAL:coverage_content_type = "physicalMeasurement" ;
 		PSAL:coordinates = "time lon lat depth" ;
 		PSAL:comment = "Practical salinity computed using UNESCO 1983 algorithm" ;
-		PSAL:sensor = "/CTD"
+		PSAL:sensor = "/CTD" ;
 	byte PSAL_QC(N_MEASUREMENTS) ;
 		PSAL_QC:_FillValue = 0b ;
 		PSAL_QC:long_name = "quality flag" ;
-	float CHLA(N_MEASUREMENTS) ;
-		CHLA:_FillValue = NaN ;
-		CHLA:long_name = "Chlorophyll-a concentration" ;
-		CHLA:standard_name = "mass_concentration_of_chlorophyll_a_in_sea_water" ;
-		CHLA:units = "mg m-3" ;
-		CHLA:ancillary_variables = "CHLA_QC" ;
-		CHLA:coverage_content_type = "physicalMeasurement" ;
-		CHLA:coordinates = "time lon lat depth" ;
-		CHLA:comment = "In-situ fluorometer with either manufacturer, laboratory or sample calibration applied" ;
-		CHLA:sensor = "/FLUOROMETER_CHLA"
-	byte CHLA_QC(N_MEASUREMENTS) ;
-		CHLA_QC:_FillValue = 0b ;
-		CHLA_QC:long_name = "quality flag" ;
 	float DOXY(N_MEASUREMENTS) ;
 		DOXY:_FillValue = NaN ;
 		DOXY:long_name = "Dissolved oxygen" ;
@@ -133,68 +145,81 @@ variables:
 		DOXY:valid_min = 500. ;
 		DOXY:coverage_content_type = "physicalMeasurement" ;
 		DOXY:comment = "Concentration of dissolved oxygen per unit mass of the water column. Oxygen may be expressed in terms of mass, volume or quantity of substance" ;
-		DOXY:sensor = "/OPTODE_DOXY"
+		DOXY:sensor = "/OPTODE_DOXY" ;
 	byte DOXY_QC(N_MEASUREMENTS) ;
 		DOXY_QC:_FillValue = 0b ;
 		DOXY_QC:long_name = "quality flag" ;
 	double DEPLOYMENT_TIME ;
+		DEPLOYMENT_TIME:_FillValue = -1. ;
 		DEPLOYMENT_TIME:long_name = "date of deployment" ;
 		DEPLOYMENT_TIME:standard_name = "time" ;
 		DEPLOYMENT_TIME:calendar = "gregorian" ;
 		DEPLOYMENT_TIME:units = "seconds since 1970-01-01T00:00:00Z" ;
-		DEPLOYMENT_TIME:axis = "T" ;
+		DEPLOYMENT_TIME:coordinates = "TRAJECTORY" ;
 	double DEPLOYMENT_LATITUDE ;
+		DEPLOYMENT_LATITUDE:_FillValue = NaN ;
 		DEPLOYMENT_LATITUDE:long_name = "latitude of deployment" ;
 		DEPLOYMENT_LATITUDE:standard_name = "latitude" ;
 		DEPLOYMENT_LATITUDE:units = "degrees_north" ;
 		DEPLOYMENT_LATITUDE:valid_max = "90" ;
 		DEPLOYMENT_LATITUDE:valid_min = "-90" ;
+		DEPLOYMENT_LATITUDE:coordinates = "TRAJECTORY" ;
 	double DEPLOYMENT_LONGITUDE ;
+		DEPLOYMENT_LONGITUDE:_FillValue = NaN ;
 		DEPLOYMENT_LONGITUDE:long_name = "longitude of deployment" ;
 		DEPLOYMENT_LONGITUDE:standard_name = "longitude" ;
 		DEPLOYMENT_LONGITUDE:units = "degrees_east" ;
 		DEPLOYMENT_LONGITUDE:valid_max = "180" ;
 		DEPLOYMENT_LONGITUDE:valid_min = "-180" ;
+		DEPLOYMENT_LONGITUDE:coordinates = "TRAJECTORY" ;
 	string TELECOM_TYPE ;
 		TELECOM_TYPE:long_name = "type of telecommunication systems used by the glider" ;
 		TELECOM_TYPE:telecom_type_vocabulary = "TBD" ;
+		TELECOM_TYPE:coordinates = "TRAJECTORY" ;
 	string TRACKING_SYSTEM ;
 		TRACKING_SYSTEM:long_name = "type of tracking systems used by the glider" ;
 		TRACKING_SYSTEM:tracking_system_vocabulary = "TBD" ;
+		TRACKING_SYSTEM:coordinates = "TRAJECTORY" ;
+	int N_MEASUREMENTS(N_MEASUREMENTS) ;
 	string PLATFORM_TYPE ;
 		PLATFORM_TYPE:long_name = "type of glider" ;
-		PLATFORM_TYPE:platform_type_vocabulary = "https://vocab.nerc.ac.uk/collection/L06/current/";
+		PLATFORM_TYPE:platform_type_vocabulary = "https://vocab.nerc.ac.uk/collection/L06/current/" ;
+		PLATFORM_TYPE:coordinates = "TRAJECTORY" ;
 	string PLATFORM_MODEL ;
 		PLATFORM_MODEL:long_name = "model of the glider" ;
-		PLATFORM_MODEL:platform_model_vocabulary = "http://vocab.nerc.ac.uk/collection/B76/current/B7600027/";
+		PLATFORM_MODEL:platform_model_vocabulary = "http://vocab.nerc.ac.uk/collection/B76/current/B7600027/" ;
+		PLATFORM_MODEL:coordinates = "TRAJECTORY" ;
 	string PLATFORM_MAKER ;
 		PLATFORM_MAKER:long_name = "Glider manufacturer" ;
 		PLATFORM_MAKER:platform_maker_vocabulary = "TBD" ;
+		PLATFORM_MAKER:coordinates = "TRAJECTORY" ;
 	string PLATFORM_SERIAL_NUMBER ;
 		PLATFORM_SERIAL_NUMBER:long_name = "glider serial number" ;
+		PLATFORM_SERIAL_NUMBER:coordinates = "TRAJECTORY" ;
 	string PLATFORM_CODE ;
 		PLATFORM_CODE:long_name = "nickname of the glider" ;
+		PLATFORM_CODE:coordinates = "TRAJECTORY" ;
 	int PLATFORM_DEPTH_RATING ;
 		PLATFORM_DEPTH_RATING:long_name = "Depth limit in meters of the glider for this mission" ;
+		PLATFORM_DEPTH_RATING:coordinates = "TRAJECTORY" ;
 	string WMO_IDENTIFIER ;
 		WMO_IDENTIFIER:long_name = "wmo id" ;
+		WMO_IDENTIFIER:coordinates = "TRAJECTORY" ;
 
 // global attributes:
 		:Conventions = "CF-1.8, ACDD-1.3, OG-1.0" ;
 		:title = "California Underwater Glider Network - Line 90" ;
-		:platform = "Autonomous Underwater Vehicle" ;
-		:platform_vocabulary = "https://vocab.nerc.ac.uk/collection/L06/current/27/" ;
 		:keywords = "AUVS > Autonomous Underwater Vehicles, Oceans > Ocean Pressure > Water Pressure, Oceans > Ocean Temperature > Water Temperature, Oceans > Salinity/Density > Conductivity, Oceans > Salinity/Density > Density, Oceans > Salinity/Density > Salinity" ;
 		:keywords_vocabulary = "GCMD Science Keywords" ;
 		:featureType = "trajectory" ;
-		:id = "sp041_20191205T1757_R" ;
+		:id = "sp041-20191205T1757_R" ;
 		:naming_authority = "edu.ucsd.spray" ;
 		:history = "readsat - 2020-05-18T19:31:07Z, fixgps3 - 2020-05-18T19:31:07Z, calcvelsat - 2020-05-18T19:31:07Z, calox - 2021-02-26T11:39:46Z, addoxumolkg - 2021-02-26T11:39:46Z" ;
+		:references = "Rudnick, D. L. (2016). Ocean research enabled by underwater gliders. Annual review of marine science, 8, 519-541, doi:10.1146/annurev-marine-122414-033913\n Rudnick, D. L., Davis, R. E., & Sherman, J. T. (2016). Spray Underwater Glider Operations. Journal of Atmospheric and Oceanic Technology, 33(6), 1113-1122, doi:10.1175/JTECH-D-15-0252.1\n Rudnick, D. L., Davis, R. E., Eriksen, C. C., Fratantoni, D. M., & Perry, M. J. (2004). Underwater gliders for ocean research. Marine Technology Society Journal, 38(2), 73-84, doi:10.4031/002533204787522703\n Sherman, J., Davis, R. E., Owens, W. B., & Valdes, J. (2001). The autonomous underwater glider \'Spray\'. IEEE Journal of oceanic Engineering, 26(4), 437-446, doi:10.1109/48.972076" ;
 		:comment = "Dataset for demonstration purposes only. Original dataset truncated for the sake of simplicity" ;
 		:processing_level = "Automatic quality control" ;
-		:standard_name_vocabulary = "CF Standard Name Table v72" ;
-		:date_created = "2021-04-10T01:14:44" ;
-		:date_modified = "2021-10-06T18:36:50.099674" ;
+		:standard_name_vocabulary = "CF Standard Name Table v79" ;
+		:date_created = "2022-08-17T06:54:43.077222" ;
 		:creator_name = "Instrument Development Group" ;
 		:creator_email = "idgdata@ucsd.edu" ;
 		:creator_url = "http://spraydata.ucsd.edu" ;
@@ -218,20 +243,20 @@ variables:
 		:geospatial_vertical_max = 24.59 ;
 		:geospatial_vertical_positive = "down" ;
 		:geospatial_vertical_units = "m" ;
-		:time_coverage_start = 2019-12-05T17:57Z ;
-		:time_coverage_end = 2019-12-05T18:05Z ;
+		:time_coverage_start = "2019-12-16T17:20:17Z" ;
+		:time_coverage_end = "2019-12-16T17:23:13Z" ;
 		:program = "GOMO, IOOS" ;
-		:network = "California Underwater Glider Network" ;
-		:project = "California Underwater Glider Network" ;
 		:contributor_name = "Daniel Rudnick,Guilherme Castelao" ;
 		:contributor_role = "Principal Investigator, Data Curator" ;
 		:product_version = "v3" ;
-		:instrument = "Sea-Bird 41CP" ;
+		:platform = "Autonomous Underwater Vehicle" ;
+		:instrument = "Seabird SBE 41CP" ;
 		:metadata_link = "http://spraydata.ucsd.edu" ;
-		:ctd_make_model = "Sea-Bird 41CP" ;
+		:ctd_make_model = "Seabird SBE 41CP" ;
 		:doi = "10.21238/S8SPRAY1618" ;
 		:xglider_type = "trajectoryObs" ;
-		:trajectory = "sp041_20191205T1757" ;
+		:trajectory = "sp041-20191205T1757" ;
+		:platform_vocabulary = "https://vocab.nerc.ac.uk/collection/L06/current/27/" ;
 		:wmoid = "4801948" ;
 		:internal_mission_identifier = "19C04101" ;
 		:site = "CUGN line 90" ;
@@ -240,7 +265,6 @@ variables:
 		:contributor_email = "drudnick@ucsd.edu,castelao@ucsd.edu" ;
 		:contributor_id = "0000-0002-2624-7074,0000-0002-6765-0708" ;
 		:contributor_role_vocabulary = "https://orcid.org/" ;
-		:contributor_role = "Principal Investigator, Data Curator" ;
 		:agency = "Scripps Institution of Oceanography" ;
 		:agency_role = "SDNPR004" ;
 		:agency_role_vocabulary = "http://vocab.nerc.ac.uk/collection/C86/" ;
@@ -251,20 +275,32 @@ variables:
 		:rtqc_method_doi = "10.21105/joss.02063" ;
 		:web_link = "https://spraydata.ucsd.edu/projects/CUGN/" ;
 		:mission = "19C04101" ;
+		:date_modified = "2021-10-06T18:36:50.099674" ;
 data:
 
- TRAJECTORY = "sp041_20191205T1757" ;
+ TRAJECTORY = "sp041-20191205T1757" ;
 
  PARAMETER = "PRES", "TEMP", "PSAL", "CHLA", "DOXY" ;
 
  TIME_GPS = 1576507260, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, 
     _, _, _, _, _, 1576517403 ;
 
+ TIME_GPS_QC = _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, 
+    _, _, _, _ ;
+
  LATITUDE_GPS = 32.51754, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, 
     _, _, _, _, _, _, 32.50146 ;
 
+ LATITUDE_GPS_QC = _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, 
+    _, _, _, _, _, _ ;
+
  LONGITUDE_GPS = -119.80175, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, 
     _, _, _, _, _, _, _, -119.82769 ;
+
+ LONGITUDE_GPS_QC = _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, 
+    _, _, _, _, _, _ ;
+
+ PLATFORM = "sp041" ;
 
  PHASE = _, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
     1, _ ;
@@ -312,32 +348,18 @@ data:
  PSAL_QC = _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, 
     _, _, _ ;
 
- CHLA = _, 0.861, 0.909, 0.873, 0.867, 0.834, 0.864, 0.882, 0.855, 0.93, 
-    0.819, 0.786, 0.807, 0.783, 0.741, 0.744, 0.609, 0.555, 0.573, 0.498, 
-    0.471, 0.453, 0.444, 0.414, _ ;
-
- CHLA_QC = _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, 
-    _, _, _ ;
-
- DOXY = _, 240.699500381006, 240.728111146589, 240.75690836507, 
-    240.710612669174, 240.922144300944, 240.655413148225, 240.720151525978, 
-    240.635340339479, 240.700230807224, 240.76636985969, 240.831706998232, 
-    240.7111499353, 240.664998530651, 240.915858055632, 240.904784287258, 
-    241.074164770971, 240.990908679491, 241.093556991221, 241.119569863555, 
-    241.297597492548, 241.067163480339, 241.244566377113, 241.199209516033, _ ;
-
- DOXY_QC = _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _,
-    _, _, _ ;
-
- DEPLOYMENT_TIME = 1575570735.0 ;
+ DEPLOYMENT_TIME = 1575570735 ;
 
  DEPLOYMENT_LATITUDE = 32.9018 ;
 
- DEPLOYMENT_LONGITUDE = -117.29972500000001 ;
+ DEPLOYMENT_LONGITUDE = -117.299725 ;
 
  TELECOM_TYPE = "Iridium" ;
 
  TRACKING_SYSTEM = "GPS, ARGOS" ;
+
+ N_MEASUREMENTS = 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 
+    17, 18, 19, 20, 21, 22, 23, 24 ;
 
  PLATFORM_TYPE = "Spray" ;
 
@@ -376,12 +398,28 @@ group: OPTODE_DOXY {
   		:maker = "Seabird" ;
   		:maker_vocabulary = "https://vocab.nerc.ac.uk/collection/L35/current/MAN0013/" ;
   		:model = "Sea-Bird SBE 63 DO" ;
-  		:model_vocabulary = "https://vocab.nerc.ac.uk/collection/L22/current/TOOL0739/" ;
+  		:model_identifier = "https://vocab.nerc.ac.uk/collection/L22/current/TOOL0739/" ;
   		:serial_number = "631776" ;
   		:calibration_date = "2019-11-22T00:00:00Z" ;
   } // group OPTODE_DOXY
 
 group: FLUOROMETER_CHLA {
+  dimensions:
+  	N_MEASUREMENTS = 25 ;
+  variables:
+  	double CHLA(N_MEASUREMENTS) ;
+  		CHLA:_FillValue = NaN ;
+  		CHLA:long_name = "Chlorophyll-a concentration" ;
+  		CHLA:standard_name = "mass_concentration_of_chlorophyll_a_in_sea_water" ;
+  		CHLA:units = "mg m-3" ;
+  		CHLA:ancillary_variables = "CHLA_QC" ;
+  		CHLA:coverage_content_type = "physicalMeasurement" ;
+  		CHLA:coordinates = "time lon lat depth" ;
+  		CHLA:comment = "In-situ fluorometer with either manufacturer, laboratory or sample calibration applied" ;
+  	byte CHLA_QC(N_MEASUREMENTS) ;
+  		CHLA_QC:_FillValue = 0b ;
+  		CHLA_QC:long_name = "quality flag" ;
+  	int N_MEASUREMENTS(N_MEASUREMENTS) ;
 
   // group attributes:
   		:long_name = "Seapoint chlorophyll fluorometer" ;
@@ -393,5 +431,16 @@ group: FLUOROMETER_CHLA {
   		:model_identifier = "http://vocab.nerc.ac.uk/collection/L22/current/TOOL0119/" ;
   		:serial_number = "S-5012" ;
   		:calibration_date = "2019-11-22T00:00:00Z" ;
+  data:
+
+   CHLA = _, 0.861, 0.909, 0.873, 0.867, 0.834, 0.864, 0.882, 0.855, 0.93, 
+      0.819, 0.786, 0.807, 0.783, 0.741, 0.744, 0.609, 0.555, 0.573, 0.498, 
+      0.471, 0.453, 0.444, 0.414, _ ;
+
+   CHLA_QC = _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, 
+      _, _, _, _ ;
+
+   N_MEASUREMENTS = 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 
+      17, 18, 19, 20, 21, 22, 23, 24 ;
   } // group FLUOROMETER_CHLA
 }

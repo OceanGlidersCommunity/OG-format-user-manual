@@ -1,50 +1,41 @@
 [cols=",",options="header",]
 |===========================================================================================
 |image:figures/image1.png[image,width=164,height=144] a|
-OceanGliders 1.0
-
-Harmonizing format across OceanGliders
-
-Terms of References
+OceanGliders 1.0 format - Terms of References
 
 |===========================================================================================
 
+////
+* [[History]]
+////
+== History
 
-__Drafted: Victor Turpin – 13/12/2019__
-
+_Drafted: Victor Turpin – 13/12/2019__
 _Edited: Daniel Hayes -18/12/2019_
-
 _Reviewed: data format harmonization working group – 07/05/2020_
-
 _Reviewed: Victor Turpin – 17/11/2020_
-
 _Edited: Justin Buck/Emma Slater – 26/11/2020_
-
 _Edited: Thierry Carval – 17/03/2021_
+_Edited: Emma Slater – 24/08/2022_
+_Reviewed: data format harmonization working group – 24/04/2023_
+_Finalized and proposed: data format harmonization group – _
 
-__Edited: Emma Slater – 24/08/2022__
+////
+* [[Endorsment]]
+////
+== Endorsment
 
-__Finalized and proposed: data format harmonization group – __
-
-_Endorsed: OceanGliders Steering Team –_
-
-*Table of Contents*
-
-__This document has been endorsed by the OceanGliders steering team, the OceanGliders data management task team, and the following OceanGliders Data Assembly Centers: __
-
-__IOOS/glider DAC (USA), __
-
-__Coriolis (France), __
-
-__BODC-NOC (UK), __
-
+_This document has been endorsed by:
+_OceanGliders data management Team, _
+_OceanGliders Steering Team, _
+_IOOS/glider DAC (USA), _
+_Coriolis (France), _
 _IMOS/AODN (Australia),_
-
-__SOCIB (Spain), __
-
-__C-IOOS (Canada), __
-
+_BODC-NOC (UK), _
+_SOCIB (Spain), _
+_C-IOOS (Canada), _
 _EMODNET Physics (EU)_
+
 
 ////
 * [[background]]
@@ -57,7 +48,7 @@ The program oversees the monitoring of global glider activity, a prerequisite fo
 
 The OceanGliders program was created about 10 years after the popularization of the use of gliders by ocean scientists. With no common rules on format, data managers from Australia, the USA, and Europe processed 3 regional formats that are not interoperable.
 
-Harmonization toward interoperability within the 3 current formats and other networks is a recommendation from the OceanGliders steering team to strengthen the network and reach the FAIR principles (Findable, Accessible, Interoperable, Reusable) adopted by GOOS (Global Ocean Observing System), and better monitor the program activity.
+Harmonization toward interoperability within the existing formats and many national/regional glider networks is a recommendation from the OceanGliders steering team to strengthen the program and reach the FAIR principles (Findable, Accessible, Interoperable, Reusable) adopted by GOOS (Global Ocean Observing System), and better monitor the program activity.
 
 ////
 * [[objectives]]
@@ -65,7 +56,7 @@ Harmonization toward interoperability within the 3 current formats and other net
 ////
 == Objectives
 
-This document defines the requirements of the future OceanGliders harmonized format, hereafter OG1.0, and the agenda for achievements.
+This document defines the common OceanGliders data format, hereafter OG1.0.
 
 ////
 * [[og1.0-general-conventions]]
@@ -122,7 +113,7 @@ This document defines the requirements of the future OceanGliders harmonized for
 ////
 == Global attributes
 
-The global attribute section is used for data discovery. The following global attributes should appear in the global section. The NetCDF Climate and Forecast (CF) Metadata Conventions are available from: http://cfconventions.org/Data/cf-conventions/cf-conventions-1.7/cf-conventions.html#trajectory-data[_http://cfconventions.org/Data/cf-conventions/cf-conventions-1.8/cf-conventions.html#trajectory-data_]
+The global attribute section is used for data discovery. The following global attributes should appear in the global section. The NetCDF Climate and Forecast (CF) Metadata Conventions are available from: http://cfconventions.org/Data/cf-conventions/cf-conventions-1.10/cf-conventions.html#trajectory-data[_http://cfconventions.org/Data/cf-conventions/cf-conventions-1.10/cf-conventions.html#trajectory-data_]. It is recommended that extra global attributes follow ACDD convention".
 
 [cols="5,6,3,6a",options="header",]
 |=====================================================================================================================================================================================================================================================================================
@@ -133,7 +124,7 @@ Name of the platform(s) that supported the sensors data used to create this data
 
 https://vocab.nerc.ac.uk/collection/L06/current/[_https://vocab.nerc.ac.uk/collection/L06/current/_]
 
- |mandatory |“Autonomous Underwater Vehicle”
+ |mandatory |"sub-surface gliders"
 |platform_vocabulary |Controlled vocabulary for the names used in the "platform" attribute. |mandatory |https://vocab.nerc.ac.uk/collection/L06/current/27/[_https://vocab.nerc.ac.uk/collection/L06/current/27/_]
 |id a|
 Formatted mission name: <platform_code>_<start_date>_<data_mode>
@@ -194,7 +185,7 @@ ex.:
 |contributor_email |Email if the contributors to the glider mission. Multiple contributors’ emails are separated by commas. |PI email is mandatory |
 |contributor_id |Unique id of the contributors to the glider mission. Multiple contributors’ ids are separated by commas. |highly desirable |
 |contributor_role |Role of the contributors to the glider mission. Multiple contributors’ roles are separated by commas. |PI vocabulary is mandatory |
-|contributor_role_vocabulary |Controlled vocabulary for the roles used in the "contributors_role". Multiple contributors’ roles and vocabularies are separated by commas. |PI vocabulary is mandatory |https://orcid.org/[_https://orcid.org/_]
+|contributor_role_vocabulary |Controlled vocabulary for the roles used in the "contributors_role". Multiple contributors’ roles and vocabularies are separated by commas. |PI vocabulary is mandatory |http://vocab.nerc.ac.uk/search_nvs/W08/[_http://vocab.nerc.ac.uk/search_nvs/W08/_]
 |agency |Name of agencies involved in the glider mission. Multiple agencies are separated by commas. |operating agency is mandatory |
 |agency_role |Role of the agencies involved in the glider mission. Multiple agencies’ roles are separated by a comma. |operating agency role is mandatory |
 |agency_role_vocabulary |The controlled vocabulary of the role used in the agency’s role. Multiple vocabularies are separated by commas. |operating agency vocabulary is mandatory |https://vocab.nerc.ac.uk/collection/C86/current/[_https://vocab.nerc.ac.uk/collection/C86/current/_]
