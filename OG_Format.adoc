@@ -338,7 +338,7 @@ OG1.0 requirements cover positioning variables and geolocating any scientific me
 * data type: double
 * dimension: N_MEASUREMENTS |
 
-* long_name = “time of measurement and gps location”;
+* long_name = “time of measurement”;
 * calendar = "gregorian" ;
 * units = “seconds since 1970-01-01T00:00:00Z”;
 * valid_min = 1e9 ;
