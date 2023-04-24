@@ -722,7 +722,7 @@ PARAMETER_UNITS:parameter_units_vocabulary = “”;
 = Geophysical variables
 ////
 = Geophysical variables
-"The user is allowed to choose any value with the same data type of the variable out of that sensor's range of possible measurements."
+"The fill value should have the same data type as the variable and be outside of the range of possible data values."
 [cols=",,",options="header",]
 |==========================================================================================================================
 |*VARIABLE NAME* |*variable attributes* |*requirement status*
