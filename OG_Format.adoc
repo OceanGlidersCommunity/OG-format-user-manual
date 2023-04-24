@@ -737,7 +737,9 @@ float <PARAM>(N_MEASUREMENT);
 
 <PARAM>:units = "<X>";
 
-<PARAM>:ancillary_variables = "PARAM_QC"
+<PARAM>:ancillary_variables = "PARAM_QC";
+
+<PARAM>:coordinate = "LATITUDE, LONGITUDE, DEPTH, TIME"
 
  a|
 mandatory
