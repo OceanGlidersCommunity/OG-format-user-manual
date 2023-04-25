@@ -10,7 +10,7 @@ OceanGliders 1.0 format - Terms of References
 ////
 == History
 
-_Drafted: Victor Turpin – 13/12/2019__
+_Drafted: Victor Turpin – 13/12/2019_
 _Edited: Daniel Hayes -18/12/2019_
 _Reviewed: data format harmonization working group – 07/05/2020_
 _Reviewed: Victor Turpin – 17/11/2020_
@@ -29,12 +29,9 @@ _This document has been endorsed by:
 _OceanGliders data management Team, _
 _OceanGliders Steering Team, _
 _IOOS/glider DAC (USA), _
-_Coriolis (France), _
-_IMOS/AODN (Australia),_
 _BODC-NOC (UK), _
 _SOCIB (Spain), _
-_C-IOOS (Canada), _
-_EMODNET Physics (EU)_
+
 
 
 ////
