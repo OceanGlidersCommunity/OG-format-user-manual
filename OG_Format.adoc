@@ -431,7 +431,7 @@ PLATFORM_SERIAL_NUMBER:long_name = “glider serial number”;
 |PLATFORM_CODE a|
 string PLATFORM_CODE
 
-PLATFORM_CODE:long_name = “nickname of the glider”;
+PLATFORM_NAME:long_name = “Local or nickname of the glider”;
 
  |highly desirable
 |PLATFORM_DEPTH_RATING a|
