@@ -759,7 +759,7 @@ vocabulary = "";
 
 <PARAM>_QC:RTQC_methodology_doi = “”;
 
- |higly-desirable
+ |higly desirable
 |==========================================================================================================================
 
 Note: It is anticipated to upgrade the ancillary variable related to QC by refining the ancillary variable name like < PARAM >_qc_generic, < PARAM >_qc_spike_test, <PARAM>_qc_land_test, etc.
