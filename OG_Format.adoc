@@ -792,7 +792,7 @@ Methodologies used to produce files meeting the OG format should be published in
 * PHASE computation
 * RTQC 
 
-Methodologies should describe the computation methods used (typically by Data Assembly Centers) to produce the data set. OBP publications are assigned a DOI and should be tagged as “OceanGliders practices” by the OceanGliders data management task team after a review process.
+Methodologies should describe the computation methods used (typically by Data Assembly Centers) to produce the data set. Ocean Best Practices are assigned a DOI and should be tagged as "OceanGliders" practices by the submitter. Additionally, OBP endorsed by the OceanGliders data management task team will be marked as such.
 
 ////
 * [[evolution-process-inclusion-of-new-variables.]]
