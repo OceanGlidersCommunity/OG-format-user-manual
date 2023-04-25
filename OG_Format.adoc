@@ -758,7 +758,7 @@ vocabulary = "";
 
 <PARAM>_QC:RTQC_methodology_doi = “”;
 
- |mandatory
+ |higly desirable
 |==========================================================================================================================
 
 Note: It is anticipated to upgrade the ancillary variable related to QC by refining the ancillary variable name like < PARAM >_qc_generic, < PARAM >_qc_spike_test, <PARAM>_qc_land_test, etc. Current _QC attributes based on CF guidance (https://cfconventions.org/Data/cf-conventions/cf-conventions-1.8/cf-conventions.html#flags)
