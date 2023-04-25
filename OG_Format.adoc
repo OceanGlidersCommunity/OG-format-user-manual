@@ -249,7 +249,7 @@ OG1.0 requirements cover the GPS variables delivered by the glider when at the s
 * long_name = “latitude of each GPS location”;
 * standard_name = “latitude”;
 * units = “degrees_north”;
-* FillValue = -9999.9;
+* _FillValue = -9999.9;
 * valid_min = -90.0;
 * valid_max = 90.0;
 * ancillary_variables = "LATITUDE_GPS_QC"
@@ -263,7 +263,7 @@ OG1.0 requirements cover the GPS variables delivered by the glider when at the s
 * long_name = “longitude of each GPS location”;
 * standard_name = “longitude”;
 * units = “degrees_east”;
-* FillValue = -9999.9;
+* _FillValue = -9999.9;
 * valid_min = -180.0;
 * valid_max = 180.0;
 * ancillary_variables = "LONGITUDE_GPS_QC"
@@ -277,9 +277,9 @@ OG1.0 requirements cover the GPS variables delivered by the glider when at the s
 * long_name = “time of each GPS location”;
 * calendar = "gregorian" ;
 * units = “seconds since 1970-01-01T00:00:00Z”;
+* _FillValue = -1.0 ;
 * valid_min = 1e9 ;
 * valid_max = 4e9 ;
-* FillValue = -1.0 ;
 * ancillary_variables = “TIME_GPS_QC”
 
  |mandatory
@@ -308,7 +308,7 @@ OG1.0 requirements cover positioning variables and geolocating any scientific me
 * long_name = “latitude of each measurements and GPS location”;
 * standard_name = “latitude”;
 * units = “degrees_north”;
-* FillValue = -9999.9;
+* _FillValue = -9999.9;
 * valid_min = -90.0;
 * valid_max = 90.0;
 * ancillary_variables = "LATITUDE_GPS_QC"
@@ -326,7 +326,7 @@ OG1.0 requirements cover positioning variables and geolocating any scientific me
 * long_name = “longitude of each measurements and GPS location”;
 * standard_name = “longitude”;
 * units = “degrees_east”;
-* FillValue = -9999.9;
+* _FillValue = -9999.9;
 * valid_min = -180.0;
 * valid_max = 180.0;
 * ancillary_variables = "LONGITUDE_GPS_QC";
@@ -343,9 +343,9 @@ OG1.0 requirements cover positioning variables and geolocating any scientific me
 * long_name = “time of measurement”;
 * calendar = "gregorian" ;
 * units = “seconds since 1970-01-01T00:00:00Z”;
+* _FillValue = -1.0 ;
 * valid_min = 1e9 ;
 * valid_max = 4e9 ;
-* FillValue = -1.0 ;
 * ancillary_variables = “TIME_GPS_QC”;
 * interpolation_methodology = “”;
 * interpolation_methodology_vocabulary = “”;
@@ -623,6 +623,8 @@ Byte PHASE_QC(N_MEASUREMENTS)
 
 PHASE_QC:long_name = "quality flag";
 
+PHASE_QC:_FillValue = " ";
+
 PHASE_QC:valid_range = 0b, 1b, 2b, 3b, 4b;
 
 PHASE_QC:flag_values = 0b, 1b, 2b, 3b, 4b;
@@ -738,7 +740,7 @@ mandatory
 |<PARAM>_QC a|
 Byte <PARAM>_QC(N_MEASUREMENT); <PARAM>_QC:long_name = "quality flag";
 
-<PARAM>_QC:FillValue = " ";
+<PARAM>_QC:_FillValue = " ";
 
 <PARAM>_QC:valid_range = 0b, 1b, 2b, 3b, 4b;
 
@@ -751,8 +753,6 @@ Byte <PARAM>_QC(N_MEASUREMENT); <PARAM>_QC:long_name = "quality flag";
 			Bad data" ;
 
 <PARAM>_QC:RTQC_methodology = “”;
-
-vocabulary = "";
 
 <PARAM>_QC:RTQC_methodology_vocabulary = “”;
 
