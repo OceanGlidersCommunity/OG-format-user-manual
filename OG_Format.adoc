@@ -786,13 +786,13 @@ Vocabularies will be fully defined during the implementation phase of the OG1.0.
 ////
 == Best practices
 
-Methodologies used to compute OG1.0 format need publishing as best practices document in the IODE Ocean Best Practice repository (https://repository.oceanbestpractices.org/[_https://repository.oceanbestpractices.org/_]) under the community “OceanGliders” and the collection “data management”. It covers the following topic:
+Methodologies used to produce files meeting the OG format should be published in the IODE Ocean Best Practice (OBP) repository (https://repository.oceanbestpractices.org/[_https://repository.oceanbestpractices.org/_]) under the community “OceanGliders” and the collection “data management”. The following methodologies are covered, among others:
 
-* Interpolation methodologies
-* PHASE computing methodologies
-* RTQC methodologies
+* Interpolation
+* PHASE computation
+* RTQC 
 
-Methodologies should describe the computation methods used by DAC to produce the data set. Methodologies should have a DOI and be labialized as “OceanGliders practices” by the OceanGliders data management task team.
+Methodologies should describe the computation methods used (typically by Data Assembly Centers) to produce the data set. OBP publications are assigned a DOI and should be tagged as “OceanGliders practices” by the OceanGliders data management task team after a review process.
 
 ////
 * [[evolution-process-inclusion-of-new-variables.]]
@@ -801,42 +801,6 @@ Methodologies should describe the computation methods used by DAC to produce the
 == Evolution process, the inclusion of new variables.
 
 Management of the evolution of the format will be organized by the OceanGliders data management team.
-
-////
-* [[reporting]]
-= Reporting
-////
-== Reporting
-
-The meeting will be organized (every 6 months?) with DACs to report about the implementation process until September 2023.
-
-////
-* [[agenda]]
-= Agenda
-////
-== Agenda
-
-__Agreement on the Term of Reference__: 3 months – Jan 2021 – March 2021
-
-A proposal will be delivered by the working group on December 14^th^ for endorsement by the OceanGliders steering committee.
-
-The OG1.0 ToR will be addressed to the OceanGliders community for questions and feedback for 3 months.
-
-Our working group will agree on a final version of the common format.
-
-__Implementation phase__: 18 months – April 2021 to Oct 2022
-
-During the implementation phase, operators, DACs and GDACs will develop tools and procedures to produce real-time gliders data files compliant with OG1.0 requirements described in the ToR.
-
-Regular meetings (frequency to be discussed) will be organized by the data management task team and DACs to evaluate progress in the different steps of the implementation phase.
-
-The OceanGliders data management team will agree on vocabulary collection.
-
-_Operational phase:_ 3 months – Oct 2022 to Dec 2023
-
-2 years after the agreement on the Terms of Reference OG1.0 will become the unique format for the OceanGliders program.
-
-Glider missions not delivering OG1.0 will not be considered as part of the OceanGliders program. It will be encouraged that legacy files be converted and added to OceanGliders final repository
 
 [appendix]
 == Examples
