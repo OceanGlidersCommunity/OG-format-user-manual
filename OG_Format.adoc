@@ -285,6 +285,8 @@ OG1.0 requirements cover the GPS variables delivered by the glider when at the s
  |mandatory
 |============================================================
 
+Note: TIME_GPS is a legacy channel kept to ensure interoperbility with EGO formats theat preceded OceanGliders format.
+
 ////
 * [[along-track-positioning-variables]]
 == Along track positioning variables
@@ -353,6 +355,8 @@ OG1.0 requirements cover positioning variables and geolocating any scientific me
 |============================================================
 
 Interpolation methodologies need publishing as a best practice document separately to the OG1.0 terms of reference.
+
+See parameters section for guidance on attributes and convetions on _QC channels.
 
 ////
 * [[general-information]]
@@ -619,6 +623,16 @@ Byte PHASE_QC(N_MEASUREMENTS)
 
 PHASE_QC:long_name = "quality flag";
 
+PHASE_QC:valid_range = 0b, 1b, 2b, 3b, 4b;
+
+PHASE_QC:flag_values = 0b, 1b, 2b, 3b, 4b;
+
+PHASE_QC:flag_meanings = "No QC has been applied
+			Good data
+			Probably good data
+			Probably bad data
+			Bad data" ;
+
  |Highly desirable
 |=============================================================
 
@@ -662,7 +676,8 @@ For each sensor it is created a group with the following group attributes:
 
 A parameter is a measurement of a physical phenomenon; it can be provided by a sensor (in sensor counts or in physical units) or computed (derived) from other parameters. A sensor can measure 1 to N parameter(s). A parameter can be measured by 1 or N sensor(s).
 
-This section contains information about the parameters measured by the glider or derived from glider measurements.
+This section contains information about the parameters measured by the glider or derived from glider measurements. The section is based on the approach used in
+Argo formats and enables parameter information interoperability with major stakeholders such as CMEMS.
 
 [cols=",,",options="header",]
 |=======================================================================================================================================
@@ -725,6 +740,16 @@ Byte <PARAM>_QC(N_MEASUREMENT); <PARAM>_QC:long_name = "quality flag";
 
 <PARAM>_QC:FillValue = " ";
 
+<PARAM>_QC:valid_range = 0b, 1b, 2b, 3b, 4b;
+
+<PARAM>_QC:flag_values = 0b, 1b, 2b, 3b, 4b;
+
+<PARAM>_QC:flag_meanings = "No QC has been applied
+			Good data
+			Probably good data
+			Probably bad data
+			Bad data" ;
+
 <PARAM>_QC:RTQC_methodology = “”;
 
 vocabulary = "";
@@ -736,7 +761,8 @@ vocabulary = "";
  |mandatory
 |==========================================================================================================================
 
-Note: It is anticipated to upgrade the ancillary variable related to QC by refining the ancillary variable name like < PARAM >_qc_generic, < PARAM >_qc_spike_test, <PARAM>_qc_land_test, etc.
+Note: It is anticipated to upgrade the ancillary variable related to QC by refining the ancillary variable name like < PARAM >_qc_generic, < PARAM >_qc_spike_test, <PARAM>_qc_land_test, etc. Current _QC attributes based on CF guidance (https://cfconventions.org/Data/cf-conventions/cf-conventions-1.8/cf-conventions.html#flags)
+and use the GOOS networks 0-4 flagging convention.
 
 ////
 * [[controlled-vocabularies]]
