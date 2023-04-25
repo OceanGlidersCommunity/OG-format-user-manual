@@ -676,8 +676,8 @@ For each sensor it is created a group with the following group attributes:
 
 A parameter is a measurement of a physical phenomenon; it can be provided by a sensor (in sensor counts or in physical units) or computed (derived) from other parameters. A sensor can measure 1 to N parameter(s). A parameter can be measured by 1 or N sensor(s).
 
-This section contains information about the parameters measured by the glider or derived from glider measurements. The section is based on the fomrat used in
-Argo formats and enbales parameter information interoperbility with CMEMS.
+This section contains information about the parameters measured by the glider or derived from glider measurements. The section is based on the approach used in
+Argo formats and enables parameter information interoperability with major stakeholders such as CMEMS.
 
 [cols=",,",options="header",]
 |=======================================================================================================================================
