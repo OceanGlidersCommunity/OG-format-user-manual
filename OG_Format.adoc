@@ -765,6 +765,15 @@ Note: It is anticipated to upgrade the ancillary variable related to QC by refin
 and use the GOOS networks 0-4 flagging convention.
 
 ////
+* [[depth-average-currents]]
+= Depth average currents
+////
+== Depth average currents
+
+Depth average currents should be included as a geophysical value in the N_MEASUREMENTS dimension along with an associated QC channel at the time when the calculation was completed by the glider. The methodology for derivation of the depth average current can be included as a methodology attribute to the variable. Results of the OceanGliders working group on depth average currents are pending at the time of writing (25th April 2023). Once, the working group provides result the approach for inclusion of depth average currents should be reviewed.
+
+
+////
 * [[controlled-vocabularies]]
 = Controlled vocabularies
 ////
