@@ -20,6 +20,21 @@ _Edited: Emma Slater – 24/08/2022_
 _Reviewed: data format harmonization working group – 24/04/2023_
 _Finalized and proposed: data format harmonization group – _
 
+////
+* [[Authors]]
+////
+== Authors
+
+* https://github.com/castelao[Guilherme Castelão], _Scripps Institution of Oceanography - UC San Diego, USA_
+* https://github.com/vturpin[Victor Turpin], _OceanGliders Technical Coordinator at OceanOPS, Brest, France_
+* https://github.com/soerenthomsen[ Sören Thomsen ], _ LOCEAN, ISPL, Sorbonne University, Paris, France,_
+* https://github.com/justinbuck[Justin Buck], _National Oceanography Centre, British Oceanographic Data Centre, UK_
+* https://github.com/glidermann[Daniel Hayes], _Cyprus Subsea Consulting and Services C.S.C.S. Ltd, Cyprus_
+* https://github.com/JuangaSocib[Juan Gabriel Fernández Pineda], _SOCIB, Mallorca, Spain_
+* https://github.com/emmerbodc[Emma Slater], _National Oceanography Centre, British Oceanographic Data Centre, UK_
+* https://github.com/callumrollo[Callum Rollo], _Voice of the Ocean Foundation, Sweden_
+* https://github.com/Riuqlav[Valquir Souza], _SBG Systems, France_
+* https://github.com/ptestor[Pierre Testor], _National Centre for Scientific Research, France_
 
 
 ////
