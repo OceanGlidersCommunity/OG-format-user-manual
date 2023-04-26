@@ -20,21 +20,6 @@ _Edited: Emma Slater – 24/08/2022_
 _Reviewed: data format harmonization working group – 24/04/2023_
 _Finalized and proposed: data format harmonization group – _
 
-////
-* [[Endorsment]]
-////
-== Endorsment
-
-_This document has been endorsed by:
-_OceanGliders data management Team, _
-_OceanGliders Steering Team, _
-_IOOS/glider DAC (USA), _
-_Coriolis (France), _
-_IMOS/AODN (Australia),_
-_BODC-NOC (UK), _
-_SOCIB (Spain), _
-_C-IOOS (Canada), _
-_EMODNET Physics (EU)_
 
 
 ////
