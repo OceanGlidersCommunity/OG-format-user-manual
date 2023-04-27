@@ -5,6 +5,15 @@ OceanGliders 1.0 format - Terms of References
 
 |===========================================================================================
 
+////
+* [[Methodology]]
+////
+== Methodology
+
+A working group on harmonization of the glider format was set in September 2020 at the request of the OceanGliders steering team. All volunteers from the OceanGliders data management team was invited to join.
+The three existing format (at the time) were analysed and compared by the group. Regular technical meetings occurred and the format harmonization process was managed with a google doc. In late 2021 the group decided to move the document to https://github.com/OceanGlidersCommunity/OG-format-user-manual[GitHub] to better manage the issues, work synchronously and contribute to the community open source policy.
+The GitHub repository was open to any comment from the community and validation rules by the working group were created.
+From there the working group organized regular meeting to validate the evolution of the format, discuss issues that needed oral explanations and finally reach a consensus on the OG1.0 format.
 
 
 ////
