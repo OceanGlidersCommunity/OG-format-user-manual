@@ -17,13 +17,13 @@ notes:
 ////
 == History
 
-_Drafted: Victor Turpin – 13/12/2019__
-_Edited: Daniel Hayes -18/12/2019_
-_Reviewed: data format harmonization working group – 07/05/2020_
-_Reviewed: Victor Turpin – 17/11/2020_
-_Edited: Justin Buck/Emma Slater – 26/11/2020_
-_Edited: Thierry Carval – 17/03/2021_
-_Edited: Emma Slater – 24/08/2022_
-_Reviewed: data format harmonization working group – 24/04/2023_
-_Finalized and proposed: data format harmonization group – _
+* _Drafted: Victor Turpin – 13/12/2019__
+* _Edited: Daniel Hayes -18/12/2019_
+* _Reviewed: data format harmonization working group – 07/05/2020_
+* _Reviewed: Victor Turpin – 17/11/2020_
+* _Edited: Justin Buck/Emma Slater – 26/11/2020_
+* _Edited: Thierry Carval – 17/03/2021_
+* _Edited: Emma Slater – 24/08/2022_
+* _Reviewed: data format harmonization working group – 24/04/2023_
+* _Finalized and proposed: data format harmonization group – _
 
