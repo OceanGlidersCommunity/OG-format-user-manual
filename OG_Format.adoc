@@ -32,6 +32,11 @@ From there the working group organized regular meetings to validate the evolutio
 * https://github.com/jenseva[Jennifer Sevadjian], _Southwest Fisheries Science Center Environmental Research Division, NOAA, USA_
 * https://github.com/callumrollo[Callum Rollo], _Voice of the Ocean Foundation, Sweden_
 
+=== Acknowledgements
+
+Several organisations were instrumental in the development of this format. OceanGliders, UG2, and EGO provided encouragement and forums for initial discussion. Some authors received support from, amongst others, EuroSEA, AtlantOS and GROOM II.
+
+
 ////
 * [[background]]
 ////
