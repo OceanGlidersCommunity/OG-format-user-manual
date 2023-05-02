@@ -32,7 +32,7 @@ _Finalized and proposed: data format harmonization group – _
 * https://github.com/justinbuck[Justin Buck], _National Oceanography Centre, British Oceanographic Data Centre, UK_
 * https://github.com/glidermann[Daniel Hayes], _Cyprus Subsea Consulting and Services C.S.C.S. Ltd, Cyprus_
 * https://github.com/JuangaSocib[Juan Gabriel Fernández Pineda], _SOCIB, Mallorca, Spain_
-* https://github.com/emmerbodc[Emma Slater], _National Oceanography Centre, British Oceanographic Data Centre, UK_
+* https://github.com/emmerbodc[Emma Gardner], _National Oceanography Centre, British Oceanographic Data Centre, UK_
 * https://github.com/jenseva[Jennifer Sevadjian], _Southwest Fisheries Science Center Environmental Research Division, NOAA, USA_
 * https://github.com/callumrollo[Callum Rollo], _Voice of the Ocean Foundation, Sweden_
 
