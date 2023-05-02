@@ -6,19 +6,15 @@ OceanGliders 1.0 format - Terms of References
 |===========================================================================================
 
 ////
-* [[History]]
+* [[Methodology]]
 ////
-== History
+== Methodology
 
-_Drafted: Victor Turpin – 13/12/2019__
-_Edited: Daniel Hayes -18/12/2019_
-_Reviewed: data format harmonization working group – 07/05/2020_
-_Reviewed: Victor Turpin – 17/11/2020_
-_Edited: Justin Buck/Emma Slater – 26/11/2020_
-_Edited: Thierry Carval – 17/03/2021_
-_Edited: Emma Slater – 24/08/2022_
-_Reviewed: data format harmonization working group – 24/04/2023_
-_Finalized and proposed: data format harmonization group – _
+A working group on harmonization of the glider data format was set up in September 2020 at the request of the OceanGliders steering team. All members of the OceanGliders data management team were invited to join.
+The three existing formats (at the time) were analysed and compared by the group. Regular technical meetings occurred and the format harmonization process was managed via a google doc. In late 2021 the group decided to move the document to https://github.com/OceanGlidersCommunity/OG-format-user-manual[GitHub] to better manage the issues, work asynchronously and contribute to the open source community.
+The GitHub repository was open to any comments from the community and validation rules were created by the working group.
+From there the working group organized regular meetings to validate the evolution of the format, discuss issues and finally reach a consensus on the OG1.0 format.
+
 
 ////
 * [[Authors]]
