@@ -21,16 +21,16 @@ From there the working group organized regular meetings to validate the evolutio
 ////
 == Authors
 
-* https://github.com/castelao[Guilherme Castelão], _Scripps Institution of Oceanography - UC San Diego, USA_
-* https://github.com/vturpin[Victor Turpin], _OceanGliders Technical Coordinator at OceanOPS, Brest, France_
-* https://github.com/kerfoot[John Kerfoot], _Institute of Marine & Coastal Sciences, Rutgers University, New Jersey, USA_
-* https://github.com/soerenthomsen[ Sören Thomsen ], _LOCEAN, ISPL, Sorbonne University, Paris, France,_
+* https://github.com/castelao[Guilherme Castelão] (lead), _Scripps Institution of Oceanography - UC San Diego, USA_
 * https://github.com/justinbuck[Justin Buck], _National Oceanography Centre, British Oceanographic Data Centre, UK_
-* https://github.com/glidermann[Daniel Hayes], _Cyprus Subsea Consulting and Services C.S.C.S. Ltd, Cyprus_
 * https://github.com/JuangaSocib[Juan Gabriel Fernández Pineda], _SOCIB, Mallorca, Spain_
 * https://github.com/emmerbodc[Emma Gardner], _National Oceanography Centre, British Oceanographic Data Centre, UK_
-* https://github.com/jenseva[Jennifer Sevadjian], _Southwest Fisheries Science Center Environmental Research Division, NOAA, USA_
+* https://github.com/glidermann[Daniel Hayes], _Cyprus Subsea Consulting and Services C.S.C.S. Ltd, Cyprus_
+* https://github.com/kerfoot[John Kerfoot], _Institute of Marine & Coastal Sciences, Rutgers University, New Jersey, USA_
 * https://github.com/callumrollo[Callum Rollo], _Voice of the Ocean Foundation, Sweden_
+* https://github.com/jenseva[Jennifer Sevadjian], _Southwest Fisheries Science Center Environmental Research Division, NOAA, USA_
+* https://github.com/soerenthomsen[ Sören Thomsen ], _LOCEAN, ISPL, Sorbonne University, Paris, France,_
+* https://github.com/vturpin[Victor Turpin], _OceanGliders Technical Coordinator at OceanOPS, Brest, France_
 
 ////
 * [[background]]
