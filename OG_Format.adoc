@@ -23,21 +23,21 @@ From there the working group organized regular meetings to validate the evolutio
 
 
 === Original authors
-* https://github.com/justinbuck[Justin Buck], _National Oceanography Centre, British Oceanographic Data Centre, UK_
-* https://github.com/castelao[Guilherme Castelão], _Scripps Institution of Oceanography - UC San Diego, USA_
+* https://github.com/justinbuck[Justin Buck], _National Oceanography Centre, British Oceanographic Data Centre, UK_ https://orcid.org/0000-0002-3587-4889[0000-0002-3587-4889]
+* https://github.com/castelao[Guilherme Castelão], _Scripps Institution of Oceanography - UC San Diego, USA_ https://orcid.org/0000-0002-6765-0708[0000-0002-6765-0708]
 * https://github.com/emmerbodc[Emma Gardner], _National Oceanography Centre, British Oceanographic Data Centre, UK_
-* https://github.com/glidermann[Daniel Hayes], [OGDMTT co-chair], _Cyprus Subsea Consulting and Services C.S.C.S. Ltd, Cyprus_
-* https://github.com/kerfoot[John Kerfoot], _Institute of Marine & Coastal Sciences, Rutgers University, New Jersey, USA_
-* https://github.com/vturpin[Victor Turpin], [OGDMTT co-chair],  _OceanGliders Technical Coordinator at OceanOPS, Brest, France_
+* https://github.com/glidermann[Daniel Hayes], [OGDMTT co-chair], _Cyprus Subsea Consulting and Services C.S.C.S. Ltd, Cyprus_ https://orcid.org/0000-0003-0141-9973[0000-0003-0141-9973]
+* https://github.com/kerfoot[John Kerfoot], _Institute of Marine & Coastal Sciences, Rutgers University, New Jersey, USA_ https://orcid.org/0000-0003-1405-4248[0000-0003-1405-4248]
+* https://github.com/vturpin[Victor Turpin], [OGDMTT co-chair],  _OceanGliders Technical Coordinator at OceanOPS, Brest, France_ https://orcid.org/0000-0002-1662-4358[0000-0002-1662-4358]
 
 
 === Contributors
-* https://github.com/soerenthomsen[ Sören Thomsen ], _LOCEAN, ISPL, Sorbonne University, Paris, France,_
-* https://github.com/ptestor[Pierre Testor], _National Centre for Scientific Research, France_
-* https://github.com/JuangaSocib[Juan Gabriel Fernández Pineda], _SOCIB, Mallorca, Spain_
-* https://www.researchgate.net/profile/Thierry-Carval-2[Thierry Carval], _IFREMER, Brest, France_
-* https://github.com/callumrollo[Callum Rollo], _Voice of the Ocean Foundation, Sweden_
-* https://github.com/jenseva[Jennifer Sevadjian], _Scripps Institution of Oceanography - UC San Diego, USA_
+* https://github.com/soerenthomsen[Sören Thomsen], _LOCEAN, ISPL, Sorbonne University, Paris, France,_ https://orcid.org/0000-0002-0598-8340[0000-0002-0598-8340]
+* https://github.com/ptestor[Pierre Testor], _National Centre for Scientific Research, France_ https://orcid.org/0000-0002-8038-9479[0000-0002-8038-9479]
+* https://github.com/JuangaSocib[Juan Gabriel Fernández Pineda], _SOCIB, Mallorca, Spain_ https://orcid.org/0000-0002-8732-7887[0000-0002-8732-7887]
+* https://www.researchgate.net/profile/Thierry-Carval-2[Thierry Carval], _IFREMER, Brest, France_ https://orcid.org/0000-0003-2700-4020[0000-0003-2700-4020]
+* https://github.com/callumrollo[Callum Rollo], _Voice of the Ocean Foundation, Sweden_ https://orcid.org/0000-0002-5134-7886[0000-0002-5134-7886]
+* https://github.com/jenseva[Jennifer Sevadjian], _Scripps Institution of Oceanography - UC San Diego, USA_ 
 
 ////
 * [[background]]
