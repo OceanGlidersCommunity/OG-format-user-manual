@@ -37,7 +37,7 @@ From there the working group organized regular meetings to validate the evolutio
 * https://github.com/JuangaSocib[Juan Gabriel Fernández Pineda], _SOCIB, Mallorca, Spain_ https://orcid.org/0000-0002-8732-7887[0000-0002-8732-7887]
 * https://github.com/tcarval[Thierry Carval], _IFREMER, Brest, France_ https://orcid.org/0000-0003-2700-4020[0000-0003-2700-4020]
 * https://github.com/callumrollo[Callum Rollo], _Voice of the Ocean Foundation, Sweden_ https://orcid.org/0000-0002-5134-7886[0000-0002-5134-7886]
-* https://github.com/jenseva[Jennifer Sevadjian], _Scripps Institution of Oceanography - UC San Diego, USA_ 
+* https://github.com/jenseva[Jennifer Sevadjian], _Scripps Institution of Oceanography - UC San Diego, USA_ https://orcid.org/0000-0001-9286-2043[0000-0001-9286-2043]
 
 ////
 * [[background]]
