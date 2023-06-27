@@ -184,15 +184,15 @@ ex.:
 |project |The name of the project(s) principally responsible for originating this data. Multiple projects can be separated by commas |suggested |
 |network |A network is a group of platforms crossing the boundaries of a single program. It can represent a mutual scientific objective, a geographical focus, an array and/or a project. Multiple networks shall be separated by commas. |suggested |
 |contributor_name |Name of the contributors to the glider mission. Multiple contributors are separated by commas. |PI name is mandatory |
-|contributor_email |Email if the contributors to the glider mission. Multiple contributors’ emails are separated by commas. |PI email is mandatory |
+|contributor_email |Email of the contributors to the glider mission. Multiple contributors' emails are separated by commas. |PI email is mandatory |
 |contributor_id |Unique id of the contributors to the glider mission. Multiple contributors’ ids are separated by commas. |highly desirable |
 |contributor_role |Role of the contributors to the glider mission. Multiple contributors’ roles are separated by commas. |PI vocabulary is mandatory |
 |contributor_role_vocabulary |Controlled vocabulary for the roles used in the "contributors_role". Multiple contributors’ roles and vocabularies are separated by commas. |PI vocabulary is mandatory |http://vocab.nerc.ac.uk/search_nvs/W08/[_http://vocab.nerc.ac.uk/search_nvs/W08/_]
-|agency |Name of agencies involved in the glider mission. Multiple agencies are separated by commas. |operating agency is mandatory |
-|agency_role |Role of the agencies involved in the glider mission. Multiple agencies’ roles are separated by a comma. |operating agency role is mandatory |
-|agency_role_vocabulary |The controlled vocabulary of the role used in the agency’s role. Multiple vocabularies are separated by commas. |operating agency vocabulary is mandatory |https://vocab.nerc.ac.uk/collection/C86/current/[_https://vocab.nerc.ac.uk/collection/C86/current/_]
-|agency_id |code of the agency involved in the glider mission. Multiple ids are separated by a comma. |highly desirable |
-|agency_id_vocabulary |url to the repository of the id |highly desirable |EDMO, ROR, etc.
+|institution |Name of institutions involved in the glider mission. Multiple institutions are separated by commas. |operating institution is mandatory |
+|institution_role |Role of the institutions involved in the glider mission. Multiple institutions' roles are separated by a comma. |operating institution role is mandatory |
+|institution_role_vocabulary |The controlled vocabulary of the role used in the institution's role. Multiple vocabularies are separated by commas. |operating institution vocabulary is mandatory |https://vocab.nerc.ac.uk/collection/C86/current/[_https://vocab.nerc.ac.uk/collection/C86/current/_]
+|institution_id |code of the institution involved in the glider mission. Multiple ids are separated by a comma. |highly desirable |
+|institution_id_vocabulary |url to the repository of the id |highly desirable |EDMO, ROR, etc.
 |uri |Other universal resource identifiers relevant to be linked to this dataset. Multiple uris are separated by a comma. |suggested |EDIOS, CSR, EDMERP, EDMED, CDI, ICES, etc.
 |data_url |url link to OG1.0 data file |mandatory |
 |doi |The digital object identifier of the OG1.0 data file |highly desirable |
