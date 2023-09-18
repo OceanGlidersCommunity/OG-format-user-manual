@@ -27,6 +27,40 @@
         "doi": "{HIGHLY_DESIRABLE}",
         "rtqc_method": "{MANDATORY}",
         "rtqc_method_doi": "{MANDATORY}"
+    },
+    "variables": {
+        "TIME_GPS": {
+            "attributes": {
+                "long_name": "time of each GPS location",
+                "units": "seconds since 1970-01-01T00:00:00Z",
+                "_FillValue": "-1.0",
+                "valid_min": "1e9",
+                "valid_max": "4e9",
+                "ancillary_variables": "TIME_GPS_QC"
+            }
+        },
+        "LATITUDE_GPS": {
+            "attributes": {
+                "long_name": "latitude of each GPS location",
+                "standard_name": "latitude",
+                "units": "degrees_north",
+                "_FillValue": "-9999.9",
+                "valid_min": "-90.0",
+                "valid_max": "90.0",
+                "ancillary_variables": "LATITUDE_GPS_QC"
+            }
+        },
+        "LONGITUDE_GPS": {
+            "attributes": {
+                "long_name": "longitude of each GPS location",
+                "standard_name": "longitude",
+                "units": "degrees_east",
+                "_FillValue": "-9999.9",
+                "valid_min": "-180.0",
+                "valid_max": "180.0",
+                "ancillary_variables": "LONGITUDE_GPS_QC"
+            }
+        }
     }
-  }
+}
 }
