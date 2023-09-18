@@ -9,8 +9,24 @@
         "platform": "{MANDATORY}",
         "platform_vocabulary": "{MANDATORY}",
         "id": "{MANDATORY}",
+        "naming_authority": "{HIGHLY_DESIRABLE}",
+        "institution": "{MANDATORY}",
+        "institution_role": "{MANDATORY}",
+        "institution_role_vocabulary": "{MANDATORY}",
+        "institution_id": "{HIGHLY_DESIRABLE}",
+        "internal_mission_identifier": "{HIGHLY_DESIRABLE}",
+        "site": "{HIGHLY_DESIRABLE}",
+        "site_vocabulary": "{HIGHLY_DESIRABLE}",
+        "program": "{HIGHLY_DESIRABLE}",
         "contributor_name": "{MANDATORY}",
-        "contributor_email": "{MANDATORY}"
+        "contributor_email": "{MANDATORY}",
+        "contributor_id": "{HIGHLY_DESIRABLE}",
+        "contributor_role": "{MANDATORY}",
+        "contributor_role_vocabulary": "{MANDATORY}",
+        "data_url": "{MANDATORY}",
+        "doi": "{HIGHLY_DESIRABLE}",
+        "rtqc_method": "{MANDATORY}",
+        "rtqc_method_doi": "{MANDATORY}"
     }
   }
 }
