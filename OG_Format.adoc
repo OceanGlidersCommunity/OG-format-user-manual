@@ -41,7 +41,7 @@ From there the working group organized regular meetings to validate the evolutio
 
 === Acknowledgements
 
-Several organisations were instrumental in the development of this format. OceanGliders, UG2, and EGO provided encouragement and forums for initial discussion. Some authors received support from, amongst others, EuroSEA, AtlantOS, GOMO and GROOM II.
+Several organisations were instrumental in the development of this format. OceanGliders, UG2, and EGO provided encouragement and forums for initial discussion. Some authors received support from, amongst others, EuroSEA, AtlantOS, GOMO, EMODnet Physic, and GROOM II.
 
 
 ////
