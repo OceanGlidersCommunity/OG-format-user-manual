@@ -25,7 +25,7 @@ Vocabularies that are not governed by OceanGliders do not follow the *status* co
 
 === Request a new entry
 
-To request a new entry in any of the collection listed below, you should submit an issue to this repository entitle `*_"new entry for table_ <name of the vocabulary>"_*` . 
+To request a new entry in any of the collection listed below, you should submit an issue to this repository entitle `*_"new entry for table <name of the vocabulary>"_*` . 
 The issue must indicate the value of the new entry and all its relevant attributes described in the corresponding table.
                                                                                         
 === Validation process
