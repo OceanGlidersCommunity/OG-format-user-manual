@@ -3,7 +3,7 @@ name: Export and publish document
 on:
   workflow_dispatch:
   push:
-    branches: [ vturpin-patch-3-VocabularyCollectionSection ]
+    branches: [ main ]
 
 permissions:
   contents: read
@@ -24,11 +24,11 @@ jobs:
     - name: Generate HTML document
       uses: Analog-inc/asciidoctor-action@v1.2.2
       with:
-        shellcommand: "asciidoctor --verbose -D build -o index.html tableOfControlledVocab.adoc; cp -r figures build/"
+        shellcommand: "asciidoctor --verbose -D build -o index.html OG_Format.adoc; cp -r figures build/"
     - name: Generate PDF document
       uses: Analog-inc/asciidoctor-action@v1.2.2
       with:
-        shellcommand: "asciidoctor-pdf --verbose -d book tableOfControlledVocab.adoc -D build"
+        shellcommand: "asciidoctor-pdf --verbose -d book OG_Format.adoc -D build"
 
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v1
