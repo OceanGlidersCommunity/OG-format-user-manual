@@ -5,7 +5,8 @@
 Here we review issues related to OceanGliders (OG) format and vocabularies.
 A discussion section is also available for any question or comment related to OG format and vocabulary.
 
-You can find the most recent version of the [OG format](https://oceangliderscommunity.github.io/OG-format-user-manual/)
+You can find the most recent version of the [OG format](https://oceangliderscommunity.github.io/OG-format-user-manual/). 
+
 You can find the most recent version of the [OG format vocabulary collection]()
 
 ## Who is reviewing the issues?
