@@ -12,9 +12,9 @@ OceanGliders 1.0 format - Vocabulary Collections
 Series of concept of the https://github.com/OceanGlidersCommunity/OG1.0-user-manual[OG1.0 format] are controlled by a collection of vocabularies managed by the OceanGliders data management team. +
 These concept are listed below. +
 Each concept is linked to its collection of vocabularies. Each element of the collection has a status attribute. +
-* The *validated* entries have been validated by the vocabulary working group and can be used in the OG1.0 format. +
-* The *published* entries have been published by the vocabulary server when it exist. +
-* The *pending* entries are being discussed by the community and are not yet supported by the OG1.0 format. +
+The *validated* entries have been validated by the vocabulary working group and can be used in the OG1.0 format. +
+The *published* entries have been published by the vocabulary server when it exist. +
+The *pending* entries are being discussed by the community and are not yet supported by the OG1.0 format. +
 Some of the publised collection are available in the https://vocab.nerc.ac.uk/search_nvs/[Nerc Vocabulary Server].
 Vocabularies that are not governed by OceanGliders do not follow the *status* convention described above.
 
