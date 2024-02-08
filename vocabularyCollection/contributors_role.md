@@ -1,4 +1,4 @@
-| collection entry | definition | status |
+| contributors_role | definition | status |
 |:--------- |:-------- |:--------- |
 | glider pilot | pilot of the glider during the mission | pending |
 | principal operator | person responsible for the operations from deployment to recovery of the glider. Operations does not cover piloting, data management and science | pending |
