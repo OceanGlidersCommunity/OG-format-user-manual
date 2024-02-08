@@ -46,7 +46,7 @@ It is expected that the vocabulary collections will not always been synchronized
 
   | platform | https://vocab.nerc.ac.uk/collection/L06/current/25/ |  https://vocab.nerc.ac.uk/collection/L06/current/25/ | OceanGliders |
   | oceangliders_site | *tbd* |  *tbd* | OceanOPS |
-  | contributors_role | *tbd* |  *tbd* | OceanGliders |
+  | contributors_role | [collection](https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/contributors_role.md) |  *tbd* | OceanGliders |
   | agencies_role | *tbd* |  *tbd* | OceanGliders |
   | agencies_id | *tbd* |  https://edmo.seadatanet.org/ | SeaDataNet |
   | naming_authority | *tbd* |  https://edmo.seadatanet.org/ | SeaDataNet |
