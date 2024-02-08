@@ -16,7 +16,7 @@ Here we recall that having the collection served by NVS will allow machine to ma
 
 === Request a new entry
 
-To request a new entry in any of the collection, you should submit an issue entitle "new entry for table `*_name of the vocabulary_*`. 
+To request a new entry in any of the collection, you should submit an issue entitle -"new entry for table- `*_name of the vocabulary_*`. 
 The issue must indicate the value of the new entry and all its relevant attributes described in the table.
                                                                                         
 === Validation process
