@@ -36,7 +36,7 @@ The aim is to update the collection on the host server at least once a year.
 
 === Non synchronised list
 It is expected that the vocabulary collections will not always been synchronized between this repository and the NVS services. There will be a lag between validating a entry here and this entry being published in NVS. This lag is due to different governance and validation rules between governance and host. +
-'*The reference lists are the list available below.*'
+`*The reference lists are the list available below.*`
 
 === Table of controlled vocabularies
   
