@@ -1,0 +1,2 @@
+| Collection entry | Definition | Status |
+|:----------|:----------|:----------|
