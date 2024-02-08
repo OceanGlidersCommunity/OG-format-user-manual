@@ -1,0 +1,60 @@
+[cols=",",options="header",]
+|===========================================================================================
+|image:figures/image1.png[image,width=164,height=144] a|
+OceanGliders 1.0 format - Vocabulary Collections
+
+|===========================================================================================
+
+////
+* [[Vocabulary Collections]]
+////
+== Vocabulary Collections
+Series of concept of the https://github.com/OceanGlidersCommunity/OG1.0-user-manual[OG1.0 format] are controlled by a collection of vocabularies managed be the OceanGliders data management team.
+These concept are listed below. Each concept is linked to its collection of vocabularies. The *published* entries have been agreed by the OceanGliders community and can be used in the OG1.0 format. The *pending* entries are being discussed by the community and are not yet supported by the OG1.0 format.
+Note that some of the publised collection are available in the https://vocab.nerc.ac.uk/search_nvs/[Nerc Vocabulary Server]. 
+Here we recall that having the collection served by NVS will allow machine to machine communication capacity.
+
+=== Request a new entry
+
+To request a new entry in any of the collection, you should submit an issue entitle "new entry for table `*_name of the vocabulary_*`. 
+The issue must indicate the value of the new entry and all its relevant attributes described in the table.
+                                                                                        
+=== Validation process
+  
+A working group on controlled vocabulary will reviewing the requests for new vocabularies regularly.
+While a continuous update of the controlled vocabularie is anticipated, the working group will publish an updated version of controlled vocabulary at least twice a year. 
+The update on the NVS server will occure at least once a year.
+
+=== Non synchronised list
+It is expected that the vocabulary collections will not always been synchronized between this repository and the NVS services. There will be a lag between validating a entry here and this entry being published in NVS. This lag is due to different governance and validation rules between OceanGliders and NVS.
+*The reference lists are the list available below.*
+
+=== Table of controlled vocabularies
+  
+|===
+|Metadata fields | link to reference collection | Link to server | Governance | 
+
+  | platform | *tbd* |  *tbd* | OceanGliders |
+  | oceangliders_site | *tbd* |  *tbd* | OceanOPS |
+  | contributors_role | *tbd* |  *tbd* | OceanGliders |
+  | agencies_role | *tbd* |  *tbd* | OceanGliders |
+  | agencies_id | *tbd* |  https://edmo.seadatanet.org/ | SeaDataNet |
+  | naming_authority | *tbd* |  https://edmo.seadatanet.org/ | SeaDataNet |
+  | institution | *tbd* |  https://edmo.seadatanet.org/ | SeaDataNet |
+  | rtqc_method | *tbd* |  *tbd* | OceanGliders |
+  | phase_calculation_methodology | *tbd* |  *tbd* | OceanGliders |
+  | platform_type | *tbd* |  *tbd* | OceanGliders |
+  | platform_model | *tbd* |  *tbd* | OceanGliders |
+  | ICES_code | *tbd* |  *tbd* | ICES |
+  | platform_maker | *tbd* |  *tbd* | OceanGliders |
+  | battery_type | *tbd* |  *tbd* | OceanGliders |
+  | telecom_type | *tbd* |  *tbd* | OceanGliders |
+  | tracking_system | *tbd* |  *tbd* | OceanGliders |
+  | sensor_model | *tbd* |  *tbd* | OceanGliders |
+  | data_mode | *tbd* |  *tbd* | OceanGliders |
+  | phase | *tbd* |  *tbd* | OceanGliders |
+  | variable names | *tbd* |  *tbd* | OceanGliders |
+|===
+  
+                                                                                          
+  
