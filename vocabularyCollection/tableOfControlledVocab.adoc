@@ -58,7 +58,7 @@ It is expected that the vocabulary collections will not always been synchronized
   | ICES_code | https://vocab.ices.dk/?codetypeguid=7f9a91e1-fb57-464a-8eb0-697e4b0235b5[collection] |  https://vocab.ices.dk/?codetypeguid=7f9a91e1-fb57-464a-8eb0-697e4b0235b5 | ICES |
   | platform_maker | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/platform_maker.md[collection] |  *tbd* | OceanGliders |
   | battery_type | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/battery_type.md[collection] |  *tbd* | OceanGliders |
-  | telecom_type | *tbd* |  *tbd* | OceanGliders |
+  | telecom_type | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/telecom_type.md[collection] |  *tbd* | OceanGliders |
   | tracking_system | *tbd* |  *tbd* | OceanGliders |
   | sensor_model | *tbd* |  *tbd* | OceanGliders |
   | data_mode | *tbd* |  *tbd* | OceanGliders |
