@@ -51,9 +51,9 @@ It is expected that the vocabulary collections will not always been synchronized
   | agencies_id | https://edmo.seadatanet.org/[collection] |  https://edmo.seadatanet.org/ | SeaDataNet |
   | naming_authority | https://edmo.seadatanet.org/[collection] |  https://edmo.seadatanet.org/ | SeaDataNet |
   | institution | https://edmo.seadatanet.org/[collection] |  https://edmo.seadatanet.org/ | SeaDataNet |
-  | rtqc_method | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/rtqc_method.md[collection] |  *tbd* | OceanGliders |
+  | rtqc_method | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/rtqc_method.md[collection] |  https://vocab.nerc.ac.uk/collection/L06/current/25/ | OceanGliders |
   | phase_calculation_methodology | *tbd* |  *tbd* | OceanGliders |
-  | platform_type | *tbd* |  *tbd* | OceanGliders |
+  | platform_type | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/platform_type.md[collection] | http://vocab.nerc.ac.uk/collection/L06/current/27/ | OceanGliders |
   | platform_model | *tbd* |  *tbd* | OceanGliders |
   | ICES_code | *tbd* |  *tbd* | ICES |
   | platform_maker | *tbd* |  *tbd* | OceanGliders |
