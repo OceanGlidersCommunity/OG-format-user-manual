@@ -61,7 +61,7 @@ It is expected that the vocabulary collections will not always been synchronized
   | telecom_type | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/telecom_type.md[collection] |  *tbd* | OceanGliders |
   | tracking_system | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/tracking_system.md[collection] |  *tbd* | OceanGliders |
   | sensor_model | *tbd* |  *tbd* | OceanGliders |
-  | data_mode | *tbd* |  *tbd* | OceanGliders |
+  | data_mode | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/data_mode.md[collection] |  *tbd* | OceanGliders |
   | phase | *tbd* |  *tbd* | OceanGliders |
   | variable names | *tbd* |  *tbd* | OceanGliders |
 |===
