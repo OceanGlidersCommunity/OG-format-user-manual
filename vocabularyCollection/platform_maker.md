@@ -1,4 +1,4 @@
-| platform_maker | descritpion | status |
+| platform_maker | definition | status |
 |:----- |:----- |:----- |
 | Teledyne Webb Research | [uri](http://vocab.nerc.ac.uk/collection/B75/current/ORG01077/)| pending |
 | Kongsberg Maritime AS | [uri](http://vocab.nerc.ac.uk/collection/B75/current/ORG00360/)| pending |
