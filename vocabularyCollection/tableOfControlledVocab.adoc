@@ -20,7 +20,7 @@ Vocabularies that are not governed by OceanGliders do not follow the *status* co
 
 === "host" and "governance" of vocabulary collection
 
-**host** : The host is the entity that is serving the *published* vocabularies. A collection served by host enable the machine to machine communication.
+**host** : The host is the entity that is serving the *published* vocabularies. A collection served by host enable the machine to machine communication. +
 **governance** :  Governance refers to the entity in charge of the maintenance, evolution and publication of the vocabulary collection.
 
 === Request a new entry
