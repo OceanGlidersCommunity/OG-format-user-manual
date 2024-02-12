@@ -18,10 +18,10 @@ These concepts are listed in the table below. Each concept is linked to its coll
 
 Vocabularies that are not governed by OceanGliders do not follow the *status* convention described above.
 
-=== Host and governance of vocabulary collection
+=== "host" and "governance" of vocabulary collection
 
-**Host** : The host is the entity that is serving the *published* vocabularies. A collection served by host enable the machine to machine communication.
-**Governance** :  Governance refers to the entity in charge of the maintenance, evolution and publication of the vocabulary collection.
+**host** : The host is the entity that is serving the *published* vocabularies. A collection served by host enable the machine to machine communication.
+**governance** :  Governance refers to the entity in charge of the maintenance, evolution and publication of the vocabulary collection.
 
 === Request a new entry
 
