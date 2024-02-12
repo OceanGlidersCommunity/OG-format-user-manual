@@ -31,7 +31,7 @@ OceanGliders use collections hosted by various organisations and countries and g
 It is anticipated that collections will update frequently as users request new terms. This will NOT require changes to the format specification. When new collections  are required or existing fields in the format need to be constrained against a vocabulary then a similar process as descibed for issues will be followed. There are additional options available for vocabularies:
 
 1. Identify an existing vocabulary that already meets the needs of the OceanGliders community
-2. Create a scheme on an existing vocabulary where terms are too diverse to meet the needs of the OceanGliders community
+2. Create a [scheme](https://www.bodc.ac.uk/resources/products/web_services/vocab/#uris) on an existing vocabulary where terms are too diverse to meet the needs of the OceanGliders community
 3. Enhance an existing vocabualry to meet the needs of the OceanGliders community
 4. Create a new vocabulary.
 Once you have identified one of the above, please liaise with the OGDMTT community to discuss further and follow the process described above for issues will be followed.
