@@ -7,8 +7,6 @@ A discussion section is also available for any question or comment related to OG
 
 You can find the most recent version of the [OG format](https://oceangliderscommunity.github.io/OG-format-user-manual/). 
 
-You can find the most recent version of the [OG format vocabulary collection](https://oceangliderscommunity.github.io/OG-format-user-manual/vocabularyCollection/)
-
 ## Who is reviewing the issues?
 
 A sub-group of the OceanGliders data management team will be in charge of reviewing the issues.
