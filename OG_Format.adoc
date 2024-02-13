@@ -227,7 +227,9 @@ image:figures/image2.png[image,width=515,height=171]
 |=================================================================================================================================================================================================================================================================
 |*Name* |*Definition* |*Comment*
 |N_MEASUREMENTS |N_MEASUREMENTS = unlimited; |Number of recorded locations.
-|N_PARAM |N_PARAM = <int value>; |Number of parameters measured or calculated for a pressure sample. Examples :(pressure, temperature) : N_PARAM = 2 (pressure, temperature, salinity) : N_PARAM = 3 (pressure, temperature, conductivity, salinity) : N_PARAM = 4
+| N_SENSOR| N_SENSOR = <int value>; | Number of sensors mounted on the float and used to measure the parameters. 
+Example for a float with CTD, ECO_FLBBCD and OPTODE: CTD_TEMP, CTD_PRES, CTD_CNDC, OPTODE_DOXY, FLUOROMETER_CHLA, FLUOROMETER_CDOM, BACKSCATTERINGMETER_BBP700 ; N_SENSOR = 7
+|N_PARAM |N_PARAM = <int value>; |Number of parameters measured or calculated for a pressure sample. Examples for a float with CTD, ECO_FLBBCD and OPTODE : PRES, TEMP, CNDC, PSAL,  MOLAR_DOXY, TEMP_DOXY, CHLA, CDOM, BETA700) : N_PARAM = 9
 |=================================================================================================================================================================================================================================================================
 
 ////
@@ -647,7 +649,7 @@ PHASE_QC:flag_meanings = "No QC has been applied
 
 Note 1: For a simple case, PHASE calculation is relatively easy. But in some cases, PHASE calculation remains difficult. When code will be available publicly and described in some published best practices, PHASE will become mandatory. Note 2: Quality control of the PHASE could be useful to manage difficult cases.
 
-Note 3: PHASE is used to derive data product (profile, trajectory profiles, gridded product) from OG1.0 data sets. It is recommended to include PHASE when possible.
+Note 2: PHASE is used to derive data product (profile, trajectory profiles, gridded product) from OG1.0 data sets. It is recommended to include PHASE when possible.
 
 ////
 * [[sensor-information]]
@@ -655,27 +657,65 @@ Note 3: PHASE is used to derive data product (profile, trajectory profiles, grid
 ////
 == Sensor information
 
-A sensor is a device used to measure a physical parameter. Sensor outputs are provided in parameter counts and need to be converted into parameter physical units using a calibration equation. This conversion can be done onboard the float or during the decoding process.
-
 This section contains information about the sensors of the glider. Each ocean state variable to be recorded must be described with its sensor. Gears with multiple sensors (i.e. CTD) should consider separated sensors in particular if there is not a unique serial number and calibration date for the sensors.
 
-For each sensor it is created a group with the following group attributes:
+A sensor is a device used to measure a physical parameter. Sensor outputs are provided in parameter counts and need to be converted into parameter physical units using a calibration equation. This conversion can be done onboard the float or during the decoding process.
 
-[cols="2,3,1,2",options="header",]
-|=======================================================================================================================================================================
-|*Group attribute* |*Definition* |*Requirement status* |*Format, fixed value or example*
-|long_name         | | highly desirable | ex: "Sea-Bird SBE 41CP CTD"
-|type              | | highly desirable | ex: "CTD"
-|type_vocabulary   | | highly desirable | ex: "https://vocab.nerc.ac.uk/collection/L05/current/130"
-|maker             | | highly desirable | ex: "Sea-Bird Scientific"
-|maker_vocabulary  | | highly desirable | ex: "https://vocab.nerc.ac.uk/collection/L35/current/MAN0013/"
-|model             | | highly desirable | ex: "SBE 41CP CTD"
-|model_vocabulary  | | highly desirable | ex: "https://vocab.nerc.ac.uk/collection/L22/current/TOOL0669/"
-|serial_number     | | highly desirable | ex: "75"
-|calibration_date  | Date of sensor calibration in ISO 8601 | highly desirable | ex.: "2019-10-22T00:00:00Z"
-|calibration_link  | Link (persintent URL) to calibration sheets | highly desirable | ex.: "https://doi.org/xx.yyyy/12345"
-|UUID              | Universal Unique Identifier | suggested | ex: "TOOL0669_75" <concept>_<serial_number>
-|=======================================================================================================================================================================
+[cols=",,",options="header",]
+|=============================================================
+|*VARIABLE NAME* |*variable attributes* |*requirement status*
+|SENSOR a|
+
+string SENSOR(N_SENSOR)
+
+SENSOR:long_name: “type of sensor”;
+
+SENSOR:sensor_vocabulary = “”; | highly desirable 
+
+|SENSOR_MODEL a|
+
+string SENSOR_MODEL(N_SENSOR)
+
+SENSOR_MODEL:long_name: “model of sensor”;
+
+SENSOR_MODEL:sensor_model_vocabulary = “”; | highly desirable 
+
+|SENSOR_MAKER a|
+
+string SENSOR_MAKER(N_SENSOR)
+
+SENSOR_MAKER:long_name: “manufacturer of the sensor”;
+
+| highly desirable 
+
+|SENSOR_SERIAL_NUMBER a|
+
+string SENSOR_SERIAL_NUMBER(N_SENSOR)
+
+SENSOR_SERIAL_NUMBER:long_name: “serial number of the sensor”; | highly desirable 
+
+|SENSOR_CALIBRATION_DATE a|
+
+string SENSOR_CALIBRATION_DATE(N_SENSOR)
+
+SENSOR_CALIBRATION_DATE:long_name: “date of calibration of the sensor”;
+
+SENSOR_CALIBRATION_DATE:format: “iso8601”;
+
+SENSOR_CALIBRATION_DATE:comment: “YYYY-MM-DD”; 
+
+SENSOR_CALIBRATION_DATE:calibration_link | highly desirable 
+
+| SENSOR_UUID a|  
+
+string SENSOR_UUID(N_SENSOR)
+
+SENSOR_UUID:long_name: "Universal Unique Identifier", 
+
+SENSOR_UUID:exemplar: "TOOL0669_75" <concept>_<serial_number>" | suggested  
+|=============================================================
+
+Note 1: SENSOR information is highly desirable to avoid ERDDAP configuration difficulties. When those difficulties will be overcome, some of the SENSOR information will become mandatory.
 
 ////
 * [[parameters-information]]
@@ -698,13 +738,13 @@ PARAMETER:long_name = “name of parameter computed from glider measurements”;
 
 PARAMETER:parameter_vocabulary = “_https://vocab.nerc.ac.uk/collection/OG1/current/_”;
 
- |mandatory
+ |highly desirable
 |PARAMETER_SENSOR a|
 string PARAMETER_SENSOR(N_PARAM)
 
 PARAMETER_SENSOR:long_name = “”;
 
- |mandatory
+ |highly desirable
 |PARAMETER_UNITS a|
 string PARAMETER_UNITS(N_PARAM) PARAMETER_UNITS:long_name = “”;
 
@@ -712,6 +752,8 @@ PARAMETER_UNITS:parameter_units_vocabulary = “”;
 
  |highly desirable
 |=======================================================================================================================================
+
+Note 1: PARAMETER information is highly desirable to avoid ERDDAP configuration difficulties. When those difficulties will be overcome, some of the PARAMETER information will become mandatory.
 
 ////
 * [[geophysical-variables]]
