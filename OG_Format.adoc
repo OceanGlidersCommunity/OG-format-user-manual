@@ -872,7 +872,7 @@ It is expected that the vocabulary collections will not always been synchronized
   | sensor_model | *tbd* |  *tbd* | OceanGliders |
   | data_mode | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/data_mode.md[collection] |  *tbd* | OceanGliders |
   | phase | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/phase.md[collection] |  *tbd* | OceanGliders |
-  | param | *tbd* |  http://vocab.nerc.ac.uk/collection/OG1/current/ | OceanGliders |
+  | parameter | *tbd* |  http://vocab.nerc.ac.uk/collection/OG1/current/ | OceanGliders |
 |===
   
                                                                                           
