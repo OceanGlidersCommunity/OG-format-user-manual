@@ -813,19 +813,6 @@ Note: It is anticipated to upgrade the ancillary variable related to QC by refin
 and use the GOOS networks 0-4 flagging convention.
 
 ////
-* [[controlled-vocabularies]]
-= Controlled vocabularies
-////
-== Controlled vocabularies
-
-[cols=",",options="header",]
-|===========================================================================================
-|image:figures/image1.png[image,width=164,height=144] a|
-OceanGliders 1.0 format - Vocabulary Collections
-
-|===========================================================================================
-
-////
 * [[Vocabulary Collections]]
 ////
 == Vocabulary Collections
