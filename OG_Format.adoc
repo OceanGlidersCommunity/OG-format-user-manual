@@ -136,6 +136,8 @@ https://vocab.nerc.ac.uk/collection/L06/current/[_https://vocab.nerc.ac.uk/colle
 |id a|
 Formatted mission name: <platform_name>_<start_date>_<data_mode>
 
+data_mode_vocabulary = “”;
+
 |mandatory |
 ex.:
 
@@ -388,8 +390,6 @@ string TRAJECTORY
 TRAJECTORY:cf_role = "trajectory_id"
 
 TRAJECTORY:long_name = “trajectory name”;
-
-TRAJECTORY:data_mode_vocabulary = “”;
 
  a|
 mandatory
