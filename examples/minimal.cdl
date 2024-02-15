@@ -1,4 +1,4 @@
-netcdf sp041_20191205T1757 {
+netcdf sp041_20191205T1757_R {
     dimensions:
         N_MEASUREMENTS = 25 ;
     variables:
@@ -33,7 +33,7 @@ netcdf sp041_20191205T1757 {
             LATITUDE:_FillValue = -9999.9 ;
             LATITUDE:valid_min = "-90" ;
             LATITUDE:valid_max = "90" ;
-            LATITUDE:ancillary_variables = "LATITUDE_GPS_QC"
+            LATITUDE:ancillary_variables = "LATITUDE_GPS_QC" ;
             LATITUDE:interpolation_methodology = "TBD" ;
             LATITUDE:interpolation_methodology_vocabulary = "TBD" ;
             LATITUDE:interpolation_methodology_doi = "TBD" ;
@@ -44,7 +44,7 @@ netcdf sp041_20191205T1757 {
             LONGITUDE:_FillValue = -9999.9 ;
             LONGITUDE:valid_min = "-180" ;
             LONGITUDE:valid_max = "180" ;
-            LONGITUDE:ancillary_variables = "LONGITUDE_GPS_QC";
+            LONGITUDE:ancillary_variables = "LONGITUDE_GPS_QC" ;
             LONGITUDE:interpolation_methodology = "TBD" ;
             LONGITUDE:interpolation_methodology_vocabulary = "TBD" ;
             LONGITUDE:interpolation_methodology_doi = "TBD" ;
@@ -110,7 +110,7 @@ netcdf sp041_20191205T1757 {
         float PSAL(N_MEASUREMENTS) ;
             PSAL:long_name = "Sea Water Salinity" ;
             PSAL:standard_name = "sea_water_practical_salinity" ;
-            PSAL:vocabulary = "http://vocab.nerc.ac.uk/collection/OG1/current/PSAL/";
+            PSAL:vocabulary = "http://vocab.nerc.ac.uk/collection/OG1/current/PSAL/" ;
             PSAL:_FillValue = NaN ;
             PSAL:units = "1" ;
             PSAL:ancillary_variables = "PSAL_QC" ;
@@ -118,7 +118,7 @@ netcdf sp041_20191205T1757 {
         float CHLA(N_MEASUREMENTS) ;
             CHLA:long_name = "Chlorophyll-a concentration" ;
             CHLA:standard_name = "mass_concentration_of_chlorophyll_a_in_sea_water" ;
-            CHLA:vocabulary = "http://vocab.nerc.ac.uk/collection/OG1/current/CHLA/";
+            CHLA:vocabulary = "http://vocab.nerc.ac.uk/collection/OG1/current/CHLA/" ;
             CHLA:_FillValue = NaN ;
             CHLA:units = "mg m-3" ;
             CHLA:ancillary_variables = "CHLA_QC" ;
@@ -126,7 +126,7 @@ netcdf sp041_20191205T1757 {
         float DOXY(N_MEASUREMENTS) ;
             DOXY:long_name = "Dissolved oxygen" ;
             DOXY:standard_name = "moles_of_oxygen_per_unit_mass_in_sea_water" ;
-            DOXY:vocabulary = "http://vocab.nerc.ac.uk/collection/OG1/current/DOXY/";
+            DOXY:vocabulary = "http://vocab.nerc.ac.uk/collection/OG1/current/DOXY/" ;
             DOXY:_FillValue = NaN ;
             DOXY:units = "micromol kg-1" ;
             DOXY:ancillary_variables = "DOXY_QC" ;
@@ -154,8 +154,6 @@ netcdf sp041_20191205T1757 {
     data:
     
      TRAJECTORY = "sp041_20191205T1757" ;
-    
-     PARAMETER = "PRES", "TEMP", "PSAL", "CHLA", "DOXY" ;
     
      TIME_GPS = 1576507260, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, 
         _, _, _, _, _, 1576517403 ;
