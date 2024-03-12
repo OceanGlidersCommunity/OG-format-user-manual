@@ -5,4 +5,4 @@
 | alkaline | alkaline battery pack | pending |
 | lithium | lithium battery pack | pending |
 | alkaline + lithium | alkaline and lithium battery pack | pending |
-| Lithium primary |  | pending |
+| lithium primary |  | pending |
