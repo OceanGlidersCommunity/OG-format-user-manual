@@ -7,6 +7,18 @@ A discussion section is also available for any question or comment related to OG
 
 You can find the most recent version of the [OG format](https://oceangliderscommunity.github.io/OG-format-user-manual/)
 
+### Example files
+
+Example .cdl files can be found in the directory `og_format_examples_files`. To create .nc files from these files, use the netcdf utility ncgen command to create a netCDF4 file. e.g.:
+
+`ncgen -o example.nc -k nc4 example.cdl`
+
+Conversely, to create a .cdl file from an .nc use ncdump:
+
+`ncdump example.cdl > example.nc`
+
+
+
 ## Who is reviewing the issues?
 
 A sub-group of the OceanGliders data management team will be in charge of reviewing the issues.
