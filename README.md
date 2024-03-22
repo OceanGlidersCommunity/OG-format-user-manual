@@ -9,7 +9,7 @@ You can find the most recent version of the [OG format](https://oceangliderscomm
 
 ### Example files
 
-Example .cdl files can be found in the directory `og_format_examples_files`. To create .nc files from these files, use the netcdf utility ncgen command to create a netCDF4 file. e.g.:
+Example .cdl files can be found in the directory `og_format_examples_files`. To create .nc files from these files, use the netcdf utility [ncgen](https://www.systutorials.com/docs/linux/man/1-ncgen/) command to create a netCDF4 file. e.g.:
 
 `ncgen -o example.nc -k nc4 example.cdl`
 
