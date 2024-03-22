@@ -1,6 +1,9 @@
 netcdf SEA076_20230906T0852_nrt {
 dimensions:
 	N_MEASUREMENTS = 10 ;
+	string24 = 24 ;
+	string7 = 7 ;
+	string11 = 11 ;
 variables:
 	float CNDC(N_MEASUREMENTS) ;
 		CNDC:_FillValue = NaNf ;
@@ -14,8 +17,7 @@ variables:
 		CNDC:URI = "https://vocab.nerc.ac.uk/collection/OG1/current/CNDC/" ;
 		CNDC:ancillary_variables = "CNDC_QC" ;
 		CNDC:coordinates = "DEPTH LATITUDE LONGITUDE TIME" ;
-	float CNDC_QC(N_MEASUREMENTS) ;
-		CNDC_QC:_FillValue = NaNf ;
+	int64 CNDC_QC(N_MEASUREMENTS) ;
 		CNDC_QC:ioos_qc_module = "qartod" ;
 		CNDC_QC:quality_control_conventions = "IOOS QARTOD standard flags" ;
 		CNDC_QC:quality_control_set = 1LL ;
@@ -30,7 +32,7 @@ variables:
 	float PHASE(N_MEASUREMENTS) ;
 		PHASE:_FillValue = NaNf ;
 		PHASE:long_name = "behavior of the glider at sea" ;
-		PHASE:units = "None" ;
+		PHASE:units = "1" ;
 		PHASE:coordinates = "DEPTH LATITUDE LONGITUDE TIME" ;
 	float DOXY(N_MEASUREMENTS) ;
 		DOXY:_FillValue = NaNf ;
@@ -43,8 +45,7 @@ variables:
 		DOXY:URI = "https://vocab.nerc.ac.uk/collection/P02/current/DOXY/" ;
 		DOXY:ancillary_variables = "DOXY_QC" ;
 		DOXY:coordinates = "DEPTH LATITUDE LONGITUDE TIME" ;
-	float DOXY_QC(N_MEASUREMENTS) ;
-		DOXY_QC:_FillValue = NaNf ;
+	int64 DOXY_QC(N_MEASUREMENTS) ;
 		DOXY_QC:ioos_qc_module = "qartod" ;
 		DOXY_QC:quality_control_conventions = "IOOS QARTOD standard flags" ;
 		DOXY_QC:quality_control_set = 1LL ;
@@ -62,7 +63,6 @@ variables:
 		PRES:instrument = "instrument_ctd" ;
 		PRES:long_name = "Pressure (spatial coordinate) exerted by the water body by profiling pressure sensor and correction to read zero at sea level" ;
 		PRES:observation_type = "measured" ;
-		PRES:positive = "down" ;
 		PRES:reference_datum = "sea-surface" ;
 		PRES:standard_name = "sea_water_pressure" ;
 		PRES:units = "dbar" ;
@@ -84,8 +84,7 @@ variables:
 		PSAL:URI = "https://vocab.nerc.ac.uk/collection/OG1/current/PSAL/" ;
 		PSAL:ancillary_variables = "PSAL_QC" ;
 		PSAL:coordinates = "DEPTH LATITUDE LONGITUDE TIME" ;
-	float PSAL_QC(N_MEASUREMENTS) ;
-		PSAL_QC:_FillValue = NaNf ;
+	int64 PSAL_QC(N_MEASUREMENTS) ;
 		PSAL_QC:ioos_qc_module = "qartod" ;
 		PSAL_QC:quality_control_conventions = "IOOS QARTOD standard flags" ;
 		PSAL_QC:quality_control_set = 1LL ;
@@ -108,8 +107,7 @@ variables:
 		TEMP:URI = "https://vocab.nerc.ac.uk/collection/OG1/current/TEMP/" ;
 		TEMP:ancillary_variables = "TEMP_QC" ;
 		TEMP:coordinates = "DEPTH LATITUDE LONGITUDE TIME" ;
-	float TEMP_QC(N_MEASUREMENTS) ;
-		TEMP_QC:_FillValue = NaNf ;
+	int64 TEMP_QC(N_MEASUREMENTS) ;
 		TEMP_QC:ioos_qc_module = "qartod" ;
 		TEMP_QC:quality_control_conventions = "IOOS QARTOD standard flags" ;
 		TEMP_QC:quality_control_set = 1LL ;
@@ -134,8 +132,7 @@ variables:
 		DENSITY:URI = "https://vocab.nerc.ac.uk/collection/OG1/current/DENSITY/" ;
 		DENSITY:ancillary_variables = "DENSITY_QC" ;
 		DENSITY:coordinates = "DEPTH LATITUDE LONGITUDE TIME" ;
-	float DENSITY_QC(N_MEASUREMENTS) ;
-		DENSITY_QC:_FillValue = NaNf ;
+	int64 DENSITY_QC(N_MEASUREMENTS) ;
 		DENSITY_QC:ioos_qc_module = "qartod" ;
 		DENSITY_QC:quality_control_conventions = "IOOS QARTOD standard flags" ;
 		DENSITY_QC:quality_control_set = 1LL ;
@@ -147,10 +144,10 @@ variables:
 		DENSITY_QC:standard_name = "status_flag" ;
 		DENSITY_QC:comment = "Quality control flags from IOOS QC QARTOD https://github.com/ioos/ioos_qc Version: 2.1.0. Using config: [<Call stream_id=temperature function=qartod.gross_range_test(suspect_span=[0, 30], fail_span=[-2.5, 40])>, <Call stream_id=temperature function=qartod.spike_test(suspect_threshold=2.0, fail_threshold=6.0)>, <Call stream_id=temperature function=qartod.location_test(bbox=[10, 50, 25, 60])>, <Call stream_id=conductivity function=qartod.gross_range_test(suspect_span=[6, 42], fail_span=[3, 45])>, <Call stream_id=salinity function=qartod.gross_range_test(suspect_span=[5, 38], fail_span=[2, 41])>, <Call stream_id=salinity function=qartod.spike_test(suspect_threshold=0.3, fail_threshold=0.9)>, <Call stream_id=salinity function=qartod.location_test(bbox=[10, 50, 25, 60])>].  Threshold values from EuroGOOS DATA-MEQ Working Group (2010) Recommendations for in-situ data Near Real Time Quality Control [Version 1.2]. EuroGOOS, 23pp. DOI http://dx.doi.org/10.25607/OBP-214." ;
 		DENSITY_QC:coordinates = "DEPTH LATITUDE LONGITUDE TIME" ;
-	int64 profile_index(N_MEASUREMENTS) ;
-		profile_index:long_name = "profile index" ;
-		profile_index:units = "None" ;
-		profile_index:coordinates = "DEPTH LATITUDE LONGITUDE TIME" ;
+	int64 PROFILE_NUMBER(N_MEASUREMENTS) ;
+		PROFILE_NUMBER:long_name = "profile index" ;
+		PROFILE_NUMBER:units = "1" ;
+		PROFILE_NUMBER:coordinates = "DEPTH LATITUDE LONGITUDE TIME" ;
 	double LATITUDE(N_MEASUREMENTS) ;
 		LATITUDE:_FillValue = NaN ;
 		LATITUDE:coordinate_reference_frame = "urn:ogc:crs:EPSG::4326" ;
@@ -161,8 +158,7 @@ variables:
 		LATITUDE:standard_name = "latitude" ;
 		LATITUDE:units = "degrees_north" ;
 		LATITUDE:valid_max = 90LL ;
-		LATITUDE:valid_min = 90LL ;
-		LATITUDE:axis = "Y" ;
+		LATITUDE:valid_min = -90LL ;
 	double LONGITUDE(N_MEASUREMENTS) ;
 		LONGITUDE:_FillValue = NaN ;
 		LONGITUDE:coordinate_reference_frame = "urn:ogc:crs:EPSG::4326" ;
@@ -174,13 +170,11 @@ variables:
 		LONGITUDE:units = "degrees_east" ;
 		LONGITUDE:valid_max = 180LL ;
 		LONGITUDE:valid_min = -180LL ;
-		LONGITUDE:axis = "X" ;
 	double TIME(N_MEASUREMENTS) ;
 		TIME:_FillValue = NaN ;
 		TIME:long_name = "Time" ;
 		TIME:observation_type = "measured" ;
 		TIME:standard_name = "time" ;
-		TIME:axis = "T" ;
 		TIME:URI = "https://vocab.nerc.ac.uk/collection/P02/current/AYMD/" ;
 		TIME:units = "seconds since 1970-01-01T00:00:00+00:00" ;
 		TIME:calendar = "proleptic_gregorian" ;
@@ -200,7 +194,6 @@ variables:
 		DEPTH:valid_min = 0LL ;
 		DEPTH:valid_max = 2000LL ;
 		DEPTH:reference_datum = "surface" ;
-		DEPTH:positive = "down" ;
 	double LATITUDE_GPS(N_MEASUREMENTS) ;
 		LATITUDE_GPS:_FillValue = NaN ;
 		LATITUDE_GPS:coordinate_reference_frame = "urn:ogc:crs:EPSG::4326" ;
@@ -211,8 +204,7 @@ variables:
 		LATITUDE_GPS:standard_name = "latitude" ;
 		LATITUDE_GPS:units = "degrees_north" ;
 		LATITUDE_GPS:valid_max = 90LL ;
-		LATITUDE_GPS:valid_min = 90LL ;
-		LATITUDE_GPS:axis = "Y" ;
+		LATITUDE_GPS:valid_min = -90LL ;
 		LATITUDE_GPS:coordinates = "DEPTH LATITUDE LONGITUDE TIME" ;
 	double LONGITUDE_GPS(N_MEASUREMENTS) ;
 		LONGITUDE_GPS:_FillValue = NaN ;
@@ -225,27 +217,23 @@ variables:
 		LONGITUDE_GPS:units = "degrees_east" ;
 		LONGITUDE_GPS:valid_max = 180LL ;
 		LONGITUDE_GPS:valid_min = -180LL ;
-		LONGITUDE_GPS:axis = "X" ;
 		LONGITUDE_GPS:coordinates = "DEPTH LATITUDE LONGITUDE TIME" ;
 	double TIME_GPS(N_MEASUREMENTS) ;
 		TIME_GPS:_FillValue = NaN ;
 		TIME_GPS:long_name = "TIME of each GPS location" ;
 		TIME_GPS:observation_type = "measured" ;
 		TIME_GPS:standard_name = "time" ;
-		TIME_GPS:axis = "T" ;
 		TIME_GPS:URI = "https://vocab.nerc.ac.uk/collection/P02/current/AYMD/" ;
 		TIME_GPS:coordinates = "DEPTH LATITUDE LONGITUDE TIME" ;
 		TIME_GPS:units = "seconds since 1970-01-01T00:00:00+00:00" ;
 		TIME_GPS:calendar = "proleptic_gregorian" ;
-	string TRAJECTORY ;
+	char TRAJECTORY(string24) ;
 		TRAJECTORY:cf_role = "trajectory_id" ;
 		TRAJECTORY:long_name = "trajectory name" ;
-		TRAJECTORY:data_mode_vocabulary = "" ;
-	string WMO_IDENTIFIER ;
+	char WMO_IDENTIFIER(string7) ;
 		WMO_IDENTIFIER:long_name = "wmo id" ;
-	string PLATFORM_MODEL ;
+	char PLATFORM_MODEL(string11) ;
 		PLATFORM_MODEL:long_name = "model of the glider" ;
-		PLATFORM_MODEL:platform_model_vocabulary = "" ;
 	double DEPLOYMENT_TIME ;
 		DEPLOYMENT_TIME:_FillValue = NaN ;
 		DEPLOYMENT_TIME:long_name = "date of deployment" ;
@@ -362,7 +350,7 @@ data:
 
  DENSITY_QC = 4, 4, 4, 4, 4, 4, 4, 4, 4, 4 ;
 
- profile_index = 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ;
+ PROFILE_NUMBER = 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ;
 
  LATITUDE = 58.3330333333333, 58.3330333333333, 58.3329833333333, 
     58.3328333333333, 58.33275, 58.3326249166967, 58.3325, 58.3324333333333, 
@@ -387,7 +375,7 @@ data:
 
  TIME_GPS = 1693990379.375, _, _, _, _, _, _, _, _, _ ;
 
- TRAJECTORY = "OceanGliders example file for SeaExplorer data" ;
+ TRAJECTORY = "SEA076_20230906T0852_nrt" ;
 
  WMO_IDENTIFIER = "6801665" ;
 
