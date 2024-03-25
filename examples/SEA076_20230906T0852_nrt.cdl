@@ -32,6 +32,7 @@ variables:
 	float PHASE(N_MEASUREMENTS) ;
 		PHASE:_FillValue = NaNf ;
 		PHASE:long_name = "behavior of the glider at sea" ;
+		PHASE:comment = "This is the variable NAV_STATE from the SeaExplorer nav file" ;
 		PHASE:units = "1" ;
 		PHASE:coordinates = "DEPTH LATITUDE LONGITUDE TIME" ;
 	float DOXY(N_MEASUREMENTS) ;
