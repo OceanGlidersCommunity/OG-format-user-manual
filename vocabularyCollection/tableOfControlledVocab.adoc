@@ -1,0 +1,70 @@
+[cols=",",options="header",]
+|===========================================================================================
+|image:figures/image1.png[image,width=164,height=144] a|
+OceanGliders 1.0 format - Vocabulary Collections
+
+|===========================================================================================
+
+////
+* [[Vocabulary Collections]]
+////
+== Vocabulary Collections
+The series of concepts of the https://github.com/OceanGlidersCommunity/OG1.0-user-manual[OG1.0 format] are controlled by a set of vocabulary collections managed by the OceanGliders data management team and other governance bodies. +
+These concepts are listed in the table below. Each concept is linked to its collection of vocabularies. Each collection has a status attribute. +
+[square]
+* The *validated* entries have been validated by the vocabulary working group and can be used in the OG1.0 format. +
+* The *published* entries have been published by the host when it exists. +
+* The *pending* entries are being discussed by the community and are not yet supported by the OG1.0 format. +
+
+Vocabulary collections that are not governed by OceanGliders do not follow the *status* convention described above.
+
+=== "host" and "governance" of the vocabulary collection
+
+**host** : The host is the entity that is serving the *published* vocabulary collections and enable machine to machine communication. +
+**governance** :  Governance refers to the entity in charge of the maintenance, evolution and publication of the vocabulary collection.
+
+=== Request a new entry
+
+To request a new entry in the table below, one should submit an issue to this repository entitle `*_new entry for table <name of the vocabulary>_*` . 
+The issue must indicate the value of the new entry and all its relevant attributes described in the corresponding table.
+                                                                                        
+=== Validation process
+  
+A working group on controlled vocabulary collections will review the requests regularly.
+While a continuous update of the controlled vocabularies is anticipated, the working group will update the vocabulary collection at least twice a year.
+The aim is to update the collection on the host server at least once a year.
+
+=== Non synchronised list
+It is expected that the vocabulary collections will not always been synchronized between this repository and the host services. There will be a lag between validating a entry here and this entry being published in the host. This lag is due to different governance and validation rules between governance and host. +
+
+`*The reference lists are the lists available below.*`
+
+=== Table of controlled vocabularies
+  
+|===
+|Metadata fields | link to reference collection | Link to host | Governance | 
+
+  | platform | https://vocab.nerc.ac.uk/collection/L06/current/25/[collection] |  https://vocab.nerc.ac.uk/collection/L06/current/25/ | OceanGliders |
+  | oceangliders_site | *tbd* |  *tbd* | OceanOPS |
+  | contributors_role | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/contributors_role.md[collection] |  *tbd* | OceanGliders |
+  | agencies_role | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/agencies_role.md[collection] |  *tbd* | OceanGliders |
+  | agencies_id | https://edmo.seadatanet.org/[collection] |  https://edmo.seadatanet.org/ | SeaDataNet |
+  | naming_authority | https://edmo.seadatanet.org/[collection] |  https://edmo.seadatanet.org/ | SeaDataNet |
+  | institution | https://edmo.seadatanet.org/[collection] |  https://edmo.seadatanet.org/ | SeaDataNet |
+  | rtqc_method | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/rtqc_method.md[collection] |  https://vocab.nerc.ac.uk/collection/L06/current/25/ | OceanGliders |
+  | phase_calculation_methodology | *tbd* |  *tbd* | OceanGliders |
+  | platform_type | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/platform_type.md[collection] | http://vocab.nerc.ac.uk/collection/L06/current/27/ | OceanGliders |
+  | platform_model | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/platform_model.md[collection] |  *tbd* | OceanGliders |
+  | ICES_code | https://vocab.ices.dk/?codetypeguid=7f9a91e1-fb57-464a-8eb0-697e4b0235b5[collection] |  https://vocab.ices.dk/?codetypeguid=7f9a91e1-fb57-464a-8eb0-697e4b0235b5 | ICES |
+  | platform_maker | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/platform_maker.md[collection] |  *tbd* | OceanGliders |
+  | battery_type | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/battery_type.md[collection] |  *tbd* | OceanGliders |
+  | telecom_type | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/telecom_type.md[collection] |  *tbd* | OceanGliders |
+  | tracking_system | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/tracking_system.md[collection] |  *tbd* | OceanGliders |
+  | sensor_model | *tbd* |  *tbd* | OceanGliders |
+  | data_mode | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/data_mode.md[collection] |  *tbd* | OceanGliders |
+  | phase | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/phase.md[collection] |  *tbd* | OceanGliders |
+  | variable names | *tbd* |  *tbd* | OceanGliders |
+|===
+  
+                                                                                          
+  
