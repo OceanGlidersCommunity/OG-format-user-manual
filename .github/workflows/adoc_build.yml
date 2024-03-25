@@ -31,7 +31,7 @@ jobs:
         shellcommand: "asciidoctor-pdf --verbose -d book OG_Format.adoc -D build"
 
     - name: Upload artifact
-      uses: actions/upload-pages-artifact@v1
+      uses: actions/upload-pages-artifact@v3.0.1
       with:
         path: 'build'
 
