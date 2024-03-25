@@ -313,7 +313,7 @@ variables:
 		:deployment_end = "2023-09-15T07:37:07.016000000" ;
 		:disclaimer = "Data, products and services from VOTO are provided \'as is\' without any warranty as to fitness for a particular purpose." ;
 		:platform_vocabulary = "https://vocab.nerc.ac.uk/collection/L06/current/27/" ;
-		:contributor_email = "callum.rollo@voiceoftheocean.org, louise.biddle@voiceoftheocean.org" ;
+		:contributor_email = "callum.rollo@voiceoftheocean.org, louise.biddle@voiceoftheocean.org, , , , , , " ;
 		:contributor_role_vocabulary = "http://vocab.nerc.ac.uk/search_nvs/W08/" ;
 		:institution_role = "principal investigator " ;
 		:institution_role_vocabulary = "https://vocab.nerc.ac.uk/collection/C86/current/" ;
