@@ -15,7 +15,7 @@ Example .cdl files can be found in the directory `og_format_examples_files`. To 
 
 Conversely, to create a .cdl file from an .nc use ncdump:
 
-`ncdump example.cdl > example.nc`
+`ncdump example.nc > example.cdl`
 
 
 
