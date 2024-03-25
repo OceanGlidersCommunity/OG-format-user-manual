@@ -264,7 +264,7 @@ variables:
 		:dataset_id = "nrt_SEA076_M19" ;
 		:date_created = "2023-09-15T08:05:17Z" ;
 		:date_issued = "2023-09-15T08:05:17Z" ;
-		:date_modified = " " ;
+		:date_modified = "2023-09-15T08:05:17Z" ;
 		:deployment_id = "19" ;
 		:deployment_name = "SAMBA" ;
 		:featureType = "trajectory" ;
