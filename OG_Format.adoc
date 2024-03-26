@@ -225,11 +225,11 @@ image:figures/image2.png[image,width=515,height=171]
 ////
 == Dimension and definition
 
-[cols=",,",options="header",]
+[cols=",,,",options="header",]
 |=================================================================================================================================================================================================================================================================
-|*Name* |*Definition* |*Comment*
-|N_MEASUREMENTS |N_MEASUREMENTS = unlimited; |Number of recorded locations.
-|N_PARAM |N_PARAM = <int value>; |Number of parameters measured or calculated for a pressure sample. Examples :(pressure, temperature) : N_PARAM = 2 (pressure, temperature, salinity) : N_PARAM = 3 (pressure, temperature, conductivity, salinity) : N_PARAM = 4
+|*Name* |*Definition* | *Requirement status* |*Comment*
+|N_MEASUREMENTS |N_MEASUREMENTS = unlimited;|mandatory |Number of recorded locations.
+|N_PARAM |N_PARAM = <int value>; |highly desirable|Number of parameters measured or calculated for a pressure sample. Examples :(pressure, temperature) : N_PARAM = 2 (pressure, temperature, salinity) : N_PARAM = 3 (pressure, temperature, conductivity, salinity) : N_PARAM = 4
 |=================================================================================================================================================================================================================================================================
 
 ////
@@ -698,13 +698,13 @@ PARAMETER:long_name = “name of parameter computed from glider measurements”;
 
 PARAMETER:parameter_vocabulary = “_https://vocab.nerc.ac.uk/collection/OG1/current/_”;
 
- |mandatory
+ |highly desirable
 |PARAMETER_SENSOR a|
 string PARAMETER_SENSOR(N_PARAM)
 
 PARAMETER_SENSOR:long_name = “”;
 
- |mandatory
+ |highly desirable
 |PARAMETER_UNITS a|
 string PARAMETER_UNITS(N_PARAM) PARAMETER_UNITS:long_name = “”;
 
@@ -717,7 +717,8 @@ PARAMETER_UNITS:parameter_units_vocabulary = “”;
 * [[geophysical-variables]]
 = Geophysical variables
 ////
-= Geophysical variables
+== Geophysical variables
+
 "The fill value should have the same data type as the variable and be outside of the range of possible data values."
 [cols=",,",options="header",]
 |==========================================================================================================================
