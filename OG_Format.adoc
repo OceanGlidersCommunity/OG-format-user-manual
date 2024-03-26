@@ -136,6 +136,8 @@ https://vocab.nerc.ac.uk/collection/L06/current/[_https://vocab.nerc.ac.uk/colle
 |id a|
 Formatted mission name: <platform_name>_<start_date>_<data_mode>
 
+data_mode_vocabulary = “”;
+
 |mandatory |
 ex.:
 
@@ -193,11 +195,11 @@ ex.:
 |contributor_id |Unique id of the contributors to the glider mission. Multiple contributors’ ids are separated by commas. |highly desirable |
 |contributor_role |Role of the contributors to the glider mission. Multiple contributors’ roles are separated by commas. |PI vocabulary is mandatory |
 |contributor_role_vocabulary |Controlled vocabulary for the roles used in the "contributors_role". Multiple contributors’ roles and vocabularies are separated by commas. |PI vocabulary is mandatory |http://vocab.nerc.ac.uk/search_nvs/W08/[_http://vocab.nerc.ac.uk/search_nvs/W08/_]
-|institution |Name of institutions involved in the glider mission. Multiple institutions are separated by commas. |operating institution is mandatory |
-|institution_role |Role of the institutions involved in the glider mission. Multiple institutions' roles are separated by a comma. |operating institution role is mandatory |
-|institution_role_vocabulary |The controlled vocabulary of the role used in the institution's role. Multiple vocabularies are separated by commas. |operating institution vocabulary is mandatory |https://vocab.nerc.ac.uk/collection/C86/current/[_https://vocab.nerc.ac.uk/collection/C86/current/_]
-|institution_id |code of the institution involved in the glider mission. Multiple ids are separated by a comma. |highly desirable |
-|institution_id_vocabulary |url to the repository of the id |highly desirable |EDMO, ROR, etc.
+|agency |Name of institutions involved in the glider mission. Multiple institutions are separated by commas. |operating institution is mandatory |
+|agency_role |Role of the institutions involved in the glider mission. Multiple institutions' roles are separated by a comma. |operating institution role is mandatory |
+|agency_role_vocabulary |The controlled vocabulary of the role used in the institution's role. Multiple vocabularies are separated by commas. |operating institution vocabulary is mandatory |https://vocab.nerc.ac.uk/collection/C86/current/[_https://vocab.nerc.ac.uk/collection/C86/current/_]
+|agency_id |code of the institution involved in the glider mission. Multiple ids are separated by a comma. |highly desirable |
+|agency_id_vocabulary |url to the repository of the id |highly desirable |EDMO, ROR, etc.
 |uri |Other universal resource identifiers relevant to be linked to this dataset. Multiple uris are separated by a comma. |suggested |EDIOS, CSR, EDMERP, EDMED, CDI, ICES, etc.
 |data_url |url link to OG1.0 data file |mandatory |
 |doi |The digital object identifier of the OG1.0 data file |highly desirable |
@@ -223,11 +225,11 @@ image:figures/image2.png[image,width=515,height=171]
 ////
 == Dimension and definition
 
-[cols=",,",options="header",]
+[cols=",,,",options="header",]
 |=================================================================================================================================================================================================================================================================
-|*Name* |*Definition* |*Comment*
-|N_MEASUREMENTS |N_MEASUREMENTS = unlimited; |Number of recorded locations.
-|N_PARAM |N_PARAM = <int value>; |Number of parameters measured or calculated for a pressure sample. Examples :(pressure, temperature) : N_PARAM = 2 (pressure, temperature, salinity) : N_PARAM = 3 (pressure, temperature, conductivity, salinity) : N_PARAM = 4
+|*Name* |*Definition* | *Requirement status* |*Comment*
+|N_MEASUREMENTS |N_MEASUREMENTS = unlimited;|mandatory |Number of recorded locations.
+|N_PARAM |N_PARAM = <int value>; |highly desirable|Number of parameters measured or calculated for a pressure sample. Examples :(pressure, temperature) : N_PARAM = 2 (pressure, temperature, salinity) : N_PARAM = 3 (pressure, temperature, conductivity, salinity) : N_PARAM = 4
 |=================================================================================================================================================================================================================================================================
 
 ////
@@ -347,7 +349,7 @@ OG1.0 requirements cover positioning variables and geolocating any scientific me
 * data type: double
 * dimension: N_MEASUREMENTS |
 
-* long_name = “time of measurement”;
+* long_name = “time of measurement and GPS location”;
 * calendar = "gregorian" ;
 * units = “seconds since 1970-01-01T00:00:00Z”;
 * _FillValue = -1.0 ;
@@ -391,6 +393,7 @@ In this following section, two options, “encapsulate variable” and “indivi
 * data_mode_vocabulary = “”;
 
 | mandatory
+
 
 Value: <platform_name>_<start_date>
 
@@ -681,15 +684,15 @@ Argo formats and enables parameter information interoperability with major stake
 * dimension: N_PARAM|
 * long_name = “name of parameter computed from glider measurements”;
 * parameter_vocabulary = “_https://vocab.nerc.ac.uk/collection/OG1/current/_”;
- |mandatory
-
+ |highly desirable
 |PARAMETER_SENSOR 
 
 * data type: string
 * dimension: N_PARAM|
 * long_name = “”;
 * parameter_sensor_vocabulary = 
- |mandatory
+ |highly desirable
+ 
 
 |PARAMETER_UNITS 
 
@@ -704,7 +707,8 @@ Argo formats and enables parameter information interoperability with major stake
 * [[geophysical-variables]]
 = Geophysical variables
 ////
-= Geophysical variables
+== Geophysical variables
+
 "The fill value should have the same data type as the variable and be outside of the range of possible data values."
 [cols="1a,2a,1",options="header",]
 |============================================================
