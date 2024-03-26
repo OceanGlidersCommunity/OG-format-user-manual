@@ -1,9 +1,6 @@
 netcdf SEA076_20230906T0852_nrt {
 dimensions:
 	N_MEASUREMENTS = 10 ;
-	string24 = 24 ;
-	string7 = 7 ;
-	string11 = 11 ;
 variables:
 	float CNDC(N_MEASUREMENTS) ;
 		CNDC:_FillValue = NaNf ;
@@ -29,12 +26,6 @@ variables:
 		CNDC_QC:standard_name = "status_flag" ;
 		CNDC_QC:comment = "Quality control flags from IOOS QC QARTOD https://github.com/ioos/ioos_qc Version: 2.1.0. Using config: [<Call stream_id=conductivity function=qartod.gross_range_test(suspect_span=[6, 42], fail_span=[3, 45])>, <Call stream_id=conductivity function=qartod.location_test(bbox=[10, 50, 25, 60])>].  Threshold values from EuroGOOS DATA-MEQ Working Group (2010) Recommendations for in-situ data Near Real Time Quality Control [Version 1.2]. EuroGOOS, 23pp. DOI http://dx.doi.org/10.25607/OBP-214." ;
 		CNDC_QC:coordinates = "DEPTH LATITUDE LONGITUDE TIME" ;
-	float PHASE(N_MEASUREMENTS) ;
-		PHASE:_FillValue = NaNf ;
-		PHASE:long_name = "behavior of the glider at sea" ;
-		PHASE:comment = "This is the variable NAV_STATE from the SeaExplorer nav file" ;
-		PHASE:units = "1" ;
-		PHASE:coordinates = "DEPTH LATITUDE LONGITUDE TIME" ;
 	float DOXY(N_MEASUREMENTS) ;
 		DOXY:_FillValue = NaNf ;
 		DOXY:long_name = "oxygen concentration" ;
@@ -228,12 +219,12 @@ variables:
 		TIME_GPS:coordinates = "DEPTH LATITUDE LONGITUDE TIME" ;
 		TIME_GPS:units = "seconds since 1970-01-01T00:00:00+00:00" ;
 		TIME_GPS:calendar = "proleptic_gregorian" ;
-	char TRAJECTORY(string24) ;
+	string TRAJECTORY ;
 		TRAJECTORY:cf_role = "trajectory_id" ;
 		TRAJECTORY:long_name = "trajectory name" ;
-	char WMO_IDENTIFIER(string7) ;
+	string WMO_IDENTIFIER ;
 		WMO_IDENTIFIER:long_name = "wmo id" ;
-	char PLATFORM_MODEL(string11) ;
+	string PLATFORM_MODEL ;
 		PLATFORM_MODEL:long_name = "model of the glider" ;
 	double DEPLOYMENT_TIME ;
 		DEPLOYMENT_TIME:_FillValue = NaN ;
@@ -327,8 +318,6 @@ data:
     -0.0032, -0.0032, -0.0028 ;
 
  CNDC_QC = 4, 4, 4, 4, 4, 4, 4, 4, 4, 4 ;
-
- PHASE = 119, 116, 116, 116, 116, 116, 116, 116, 116, 116 ;
 
  DOXY = 287.526, 285.0627, 285.5878, 286.1415, 285.2154, 283.8882, 285.4732, 
     285.2249, 287.421, 279.7922 ;
