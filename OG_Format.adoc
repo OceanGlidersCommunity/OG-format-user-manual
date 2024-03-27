@@ -228,11 +228,11 @@ image:figures/image2.png[image,width=515,height=171]
 [cols=",,,",options="header",]
 |=================================================================================================================================================================================================================================================================
 
-|*Name* |*Definition* |*Comment*
-|N_MEASUREMENTS |N_MEASUREMENTS = unlimited; |Number of recorded locations.
-| N_SENSOR| N_SENSOR = <int value>; | Number of sensors mounted on the float and used to measure the parameters. 
-Example for a float with CTD, ECO_FLBBCD and OPTODE: CTD_TEMP, CTD_PRES, CTD_CNDC, OPTODE_DOXY, FLUOROMETER_CHLA, FLUOROMETER_CDOM, BACKSCATTERINGMETER_BBP700 ; N_SENSOR = 7
-|N_PARAM |N_PARAM = <int value>; |Number of parameters measured or calculated for a pressure sample. Examples for a float with CTD, ECO_FLBBCD and OPTODE : PRES, TEMP, CNDC, PSAL,  MOLAR_DOXY, TEMP_DOXY, CHLA, CDOM, BETA700) : N_PARAM = 9
+|*Name* |*Definition* |*Comment*|
+|N_MEASUREMENTS |N_MEASUREMENTS = unlimited; |Number of recorded locations|
+|N_SENSOR| N_SENSOR = <int value>; | Number of sensors mounted on the float and used to measure the parameters. 
+Example for a float with a CTD, an ECO_FLBBCD and an OPTODE: Sensors are : CTD_TEMP, CTD_PRES, CTD_CNDC, OPTODE_DOXY, FLUOROMETER_CHLA, FLUOROMETER_CDOM, BACKSCATTERINGMETER_BBP700 ; N_SENSOR = 7|
+|N_PARAM |N_PARAM = <int value>; |Number of parameters measured or calculated for a pressure sample. Examples for a float with CTD, ECO_FLBBCD and OPTODE : PRES, TEMP, CNDC, PSAL,  MOLAR_DOXY, TEMP_DOXY, CHLA, CDOM, BETA700) : N_PARAM = 9|
 
 |=================================================================================================================================================================================================================================================================
 
