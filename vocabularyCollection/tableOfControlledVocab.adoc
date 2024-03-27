@@ -24,7 +24,7 @@ Vocabulary collections that are not governed by OceanGliders do not follow the *
 **governance** :  Governance refers to the entity in charge of the maintenance, evolution and publication of the vocabulary collection.
 
 === Request a new entry
-
+**TO BE UPDATED WITH EMMA and NVS TEAM**
 To request a new entry in the table below, one should submit an issue to this repository entitle `*_new entry for table <name of the vocabulary>_*` . 
 The issue must indicate the value of the new entry and all its relevant attributes described in the corresponding table.
                                                                                         
@@ -32,20 +32,16 @@ The issue must indicate the value of the new entry and all its relevant attribut
   
 A working group on controlled vocabulary collections will review the requests regularly.
 While a continuous update of the controlled vocabularies is anticipated, the working group will update the vocabulary collection at least twice a year.
-The aim is to update the collection on the host server at least once a year.
-
-=== Non synchronised list
-It is expected that the vocabulary collections will not always been synchronized between this repository and the host services. There will be a lag between validating a entry here and this entry being published in the host. This lag is due to different governance and validation rules between governance and host. +
 
 `*The reference lists are the lists available below.*`
 
 === Table of controlled vocabularies
   
 |===
-|Metadata fields | link to reference collection | Link to host | Governance | 
+|OceanGliders reference name | NVS collection name | NVS subset url | Request new terms | Governance |
 
-  | platform | https://vocab.nerc.ac.uk/collection/L06/current/25/[collection] |  https://vocab.nerc.ac.uk/collection/L06/current/25/ | OceanGliders |
-  | oceangliders_site | *tbd* |  *tbd* | OceanOPS |
+  | platform | https://vocab.nerc.ac.uk/collection/L06/current/25/[L06 - SeaVoX Platform Categories] |  https://vocab.nerc.ac.uk/collection/L06/current/25/ | https://github.com/nvs-vocabs/L06/issues | OceanGliders |
+  | oceangliders_site | *tbd* |  *tbd* |  | OceanOPS |
   | contributors_role | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/contributors_role.md[collection] |  *tbd* | OceanGliders |
   | agencies_role | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/agencies_role.md[collection] |  *tbd* | OceanGliders |
   | agencies_id | https://edmo.seadatanet.org/[collection] |  https://edmo.seadatanet.org/ | SeaDataNet |
