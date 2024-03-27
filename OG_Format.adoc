@@ -719,32 +719,40 @@ Argo formats and enables parameter information interoperability with major stake
 
 [cols="1a,2a,1",options="header",]
 |============================================================
-|*VARIABLE NAME* |*variable attributes* |*requirement status*
+|*VARIABLE NAME* |*variable attributes* |*requirement status* 
 |PARAMETER 
 
+* data_type: string
+* dimension: N_PARAM|
 
-PARAMETER:long_name = “name of parameter computed from glider measurements”;
+* long_name = “name of parameter computed from glider measurements”;
 
-PARAMETER:parameter_vocabulary = “_https://vocab.nerc.ac.uk/collection/OG1/current/_”;
+* parameter_vocabulary = “_https://vocab.nerc.ac.uk/collection/OG1/current/_”;
 
- |highly desirable
-|PARAMETER_SENSOR a|
-string PARAMETER_SENSOR(N_PARAM)
+ |highly desirable 
 
-PARAMETER_SENSOR:long_name = “”;
+|PARAMETER_SENSOR 
 
- |highly desirable
-|PARAMETER_UNITS a|
-string PARAMETER_UNITS(N_PARAM) PARAMETER_UNITS:long_name = “”;
+* data_type: string
+* dimension: N_PARAM|
 
+* long_name = “”;
+
+* parameter_sensor_vocabulary = “”;
+
+|highly desirable
 
 |PARAMETER_UNITS 
 
-* data type: string
+* data_type: string
 * dimension: N_PARAM|
-* PARAMETER_UNITS:long_name = “”;
+
+* long_name = “”;
+
 * parameter_units_vocabulary = “”;
- |highly desirable
+
+|highly desirable
+
 |============================================================
 
 Note 1: PARAMETER information is highly desirable to avoid ERDDAP configuration difficulties. When those difficulties will be overcome, some of the PARAMETER information will become mandatory.
