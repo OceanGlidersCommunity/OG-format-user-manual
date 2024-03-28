@@ -25,6 +25,7 @@ Vocabulary collections that are not governed by OceanGliders do not follow the *
 
 === Request a new entry
 **TO BE UPDATED WITH EMMA and NVS TEAM**
+
 To request a new entry in the table below, one should submit an issue to this repository entitle `*_new entry for table <name of the vocabulary>_*` . 
 The issue must indicate the value of the new entry and all its relevant attributes described in the corresponding table.
                                                                                         
@@ -38,29 +39,256 @@ While a continuous update of the controlled vocabularies is anticipated, the wor
 === Table of controlled vocabularies
   
 |===
-|OceanGliders reference name | NVS collection name | NVS subset url | Request new terms | Governance |
+|OceanGliders reference name | Collection name | OceanGliders subset | Request new terms | Governance 
 
-  | platform | https://vocab.nerc.ac.uk/collection/L06/current/25/[L06 - SeaVoX Platform Categories] |  https://vocab.nerc.ac.uk/collection/L06/current/25/ | https://github.com/nvs-vocabs/L06/issues | OceanGliders |
-  | oceangliders_site | *tbd* |  *tbd* |  | OceanOPS |
-  | contributors_role | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/contributors_role.md[collection] |  *tbd* | OceanGliders |
-  | agencies_role | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/agencies_role.md[collection] |  *tbd* | OceanGliders |
-  | agencies_id | https://edmo.seadatanet.org/[collection] |  https://edmo.seadatanet.org/ | SeaDataNet |
-  | naming_authority | https://edmo.seadatanet.org/[collection] |  https://edmo.seadatanet.org/ | SeaDataNet |
-  | institution | https://edmo.seadatanet.org/[collection] |  https://edmo.seadatanet.org/ | SeaDataNet |
-  | rtqc_method | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/rtqc_method.md[collection] |  https://vocab.nerc.ac.uk/collection/L06/current/25/ | OceanGliders |
-  | phase_calculation_methodology | *tbd* |  *tbd* | OceanGliders |
-  | platform_type | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/platform_type.md[collection] | http://vocab.nerc.ac.uk/collection/L06/current/27/ | OceanGliders |
-  | platform_model | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/platform_model.md[collection] |  *tbd* | OceanGliders |
-  | ICES_code | https://vocab.ices.dk/?codetypeguid=7f9a91e1-fb57-464a-8eb0-697e4b0235b5[collection] |  https://vocab.ices.dk/?codetypeguid=7f9a91e1-fb57-464a-8eb0-697e4b0235b5 | ICES |
-  | platform_maker | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/platform_maker.md[collection] |  *tbd* | OceanGliders |
-  | battery_type | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/battery_type.md[collection] |  *tbd* | OceanGliders |
-  | telecom_type | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/telecom_type.md[collection] |  *tbd* | OceanGliders |
-  | tracking_system | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/tracking_system.md[collection] |  *tbd* | OceanGliders |
-  | sensor_model | *tbd* |  *tbd* | OceanGliders |
-  | data_mode | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/data_mode.md[collection] |  *tbd* | OceanGliders |
-  | phase | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/phase.md[collection] |  *tbd* | OceanGliders |
-  | variable names | *tbd* |  *tbd* | OceanGliders |
+  | platform | https://vocab.nerc.ac.uk/collection/L06/current/27/[L06 - SeaVoX Platform Categories] |  https://vocab.nerc.ac.uk/collection/L06/current/27/[OceanGliders subset] | https://github.com/nvs-vocabs/L06/issues | OceanGliders 
+  | oceangliders_site | *tbd* |  *tbd* | *tbd* | OceanOPS 
+  | contributors_role | *tbd* |  *subset tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/contributors_role.md[pending list] | *tbd* | OceanGliders 
+  | agencies_role | https://vocab.nerc.ac.uk/search_nvs/C86/[C86 - SeaDataNet contact and security access roles] | *subset tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/agencies_role.md[pending list] | *tbd* | OceanGliders 
+  | agencies_id | https://edmo.seadatanet.org/[EDMO code] | No subset available for this collection | *tbd* | SeaDataNet 
+  | naming_authority | https://edmo.seadatanet.org/[EDMO code] | No subset available for this collection | *tbd* | SeaDataNet 
+  | institution | https://edmo.seadatanet.org/[EDMO code] | No subset available for this collection | *tbd* | SeaDataNet 
+  | rtqc_method | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/rtqc_method.md[Real Time Quality Control methods] | *tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/rtqc_method.md[pending list] | *tbd* | OceanGliders 
+  | phase_calculation_methodology | Phase calculation methods | *tbd* | *tbd* |OceanGliders 
+  | platform_model | https://vocab.nerc.ac.uk/search_nvs/B76/[B76 - BODC Platform Models] | *subset tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/platform_model.md[pending list] | *tbd* | OceanGliders 
+  | ICES_code | https://vocab.ices.dk/?codetypeguid=7f9a91e1-fb57-464a-8eb0-697e4b0235b5[ICES reference table] | No subset available for this collection  | *tbd* | ICES 
+  | platform_maker |  http://vocab.nerc.ac.uk/collection/L35/current/[L35 - SenseOcean device developers and manufacturers] | *subset tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/platform_maker.md[pending list] |  *tbd* | OceanGliders 
+  | battery_type | *tbd* | *tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/battery_type.md[pending list] |  *tbd* | OceanGliders 
+  | telecom_type |  https://vocab.nerc.ac.uk/search_nvs/R10/[*_e.g. R10 - Argo transmission systems_*]  | *tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/telecom_type.md[pending list] |  *tbd* | OceanGliders 
+  | tracking_system | *tbd* | *tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/tracking_system.md[pending list] |  *tbd* | OceanGliders 
+  | sensor_model | https://vocab.nerc.ac.uk/search_nvs/L22/[L22 - Seavox Device Catalog] |  https://vocabdev.nerc.ac.uk/scheme/GLIDER_SENSORS/current/[GLIDER_SENSORS] | https://github.com/nvs-vocabs/L22/issues | OceanGliders 
+  | data_mode | *tbd* | *tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/data_mode.md[pending list] |  *tbd* | OceanGliders 
+  | phase | *tbd* | *tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/phase.md[pending list] |  *tbd* | OceanGliders 
+  | variable names | https://vocab.nerc.ac.uk/search_nvs/OG1/[OG1 - OceanGliders Parameter Usage Vocabulary] | https://vocab.nerc.ac.uk/search_nvs/OG1/ | https://github.com/nvs-vocabs/OG1/issues | OceanGliders 
+  | sensor type |  	http://vocab.nerc.ac.uk/collection/R25/current/[*_e.g. R25 - Argo sensor types_*]  | http://vocab.nerc.ac.uk/collection/R25/current/ | *tbd* | OceanGliders 
+
+
 |===
-  
+
+# Exemplars
+
+## Global attributes
+*_HERE FOLLOW GLOBAL ATTRIBUTE SECTION IN THE SAME ORDER_*
+
+|===
+| Attribute | Exemples 
+
+| platform | :platform = "sub-surface gliders";
+| platform_vocabulary | :platform_vocabulary = https://vocab.nerc.ac.uk/collection/L06/current/27/;
+| oceangliders_site | :oceangliders_site = 
+| contributor_role | :contributor_role = "principal investigator, Data scientist";
+| contributor_role_vocabulary | :contributor_role_vocabulary = "http://vocab.nerc.ac.uk/collection/W08/current/CONT0004/,http://vocab.nerc.ac.uk/collection/W08/current/CONT0006/";
+|===
+
+<td>platform</td>
+<td>L06 - SeaVoX Platform Categories</td>
+<td><p>:platform = "Autonomous Underwater Vehicle";</p>
+<p>:platform = "sub-surface gliders";</p></td>
+</tr>
+<tr class="even">
+<td>platform_vocabulary</td>
+<td>L06 - SeaVoX Platform Categories</td>
+<td><p>:platform_vocabulary = <a
+href="https://vocab.nerc.ac.uk/collection/L06/current/25/">https://vocab.nerc.ac.uk/collection/L06/current/25/</a>;</p>
+<p>:platform_vocabulary =</p>
+<p><a
+href="https://vocab.nerc.ac.uk/collection/L06/current/27/">https://vocab.nerc.ac.uk/collection/L06/current/27/;</a></p></td>
+</tr>
+<tr class="odd">
+<td>contributor_role</td>
+<td><em><u>W08, SensorML Contact Section Terms</u></em></td>
+<td>:contributor_role = "Principal investigator";</td>
+</tr>
+<tr class="even">
+<td>contributor_role_vocabulary</td>
+<td><em><u>W08, SensorML Contact Section Terms</u></em></td>
+<td>:contributor_role_vocabulary = " <a
+href="https://vocab.nerc.ac.uk/search_nvs/W08/">https://vocab.nerc.ac.uk/search_nvs/W08/</a>;</td>
+</tr>
+<tr class="odd">
+<td>institution</td>
+<td>TOADD</td>
+<td><p>:institution = "NOCS";</p>
+<p>:institution = "IMOS";</p>
+<p>:institution = "PLOCAN";</p></td>
+</tr>
+<tr class="even">
+<td>institution_role</td>
+<td>C86, SeaDataNet contact and security access roles</td>
+<td>:institution_role = "contact point";</td>
+</tr>
+<tr class="odd">
+<td>institution_role_vocabulary</td>
+<td>C86, SeaDataNet contact and security access roles</td>
+<td>:institution_role_vocabulary = <a
+href="https://vocab.nerc.ac.uk/collection/C86/current/"><u>https://vocab.nerc.ac.uk/collection/C86/current/
+SDNPR005/;</u></a></td>
+</tr>
+</tbody>
+</table>
+
+### Platform information
+
+<table>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 16%" />
+<col style="width: 56%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Variable</strong></th>
+<th><strong>NVS collection</strong></th>
+<th><strong>Examples</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>PLATFORM_MODEL</td>
+<td>B76, BODC Platform Models</td>
+<td><p>String PLATFORM_MODEL;<br />
+:long_name = "Kongsberg Maritime Seaglider M1 glider";<br />
+:platform_model_vocabulary = <a
+href="https://vocab.nerc.ac.uk/collection/B76/current/B7600002">https://vocab.nerc.ac.uk/collection/B76/current/B7600002</a>;</p>
+<p>String PLATFORM_MODEL;<br />
+:long_name = "Teledyne Webb Research Slocum G2 glider";<br />
+:platform_model_vocabulary = <a
+href="https://vocab.nerc.ac.uk/collection/B76/current/B7600001/">https://vocab.nerc.ac.uk/collection/B76/current/B7600001/;</a></p></td>
+</tr>
+</tbody>
+</table>
+
+## Sensor information
+
+Not mandatory but for some examples
+
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 16%" />
+<col style="width: 61%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Variable</strong></th>
+<th><strong>NVS collection</strong></th>
+<th><strong>Examples</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>INSTRUMENT_&lt;TYPE&gt;_&lt;SERIAL&gt;</td>
+<td><p><a
+href="https://vocabdev.nerc.ac.uk/scheme/GLIDER_SENSORS/current/">GLIDER_SENSORS</a></p>
+<p>OceanGliders sensors</p></td>
+<td><p>long INSTRUMENT_DATA_LOGGERS_sg638;<br />
+:_FillValue = -1L; // long<br />
+:long_name = "Seaglider M1 Glider data logger sg638";<br />
+:type = "data loggers";<br />
+:type_vocabulary =
+"http://vocab.nerc.ac.uk/collection/L05/current/DLOG/";<br />
+:maker = "Kongsberg Maritime";<br />
+:maker_vocabulary =
+"http://vocab.nerc.ac.uk/collection/L35/current/MAN0015/";<br />
+:model = "Seaglider M1 Glider data logger";<br />
+:model_vocabulary =
+"https://vocab.nerc.ac.uk/collection/L22/current/TOOL1185";<br />
+:serial_number = "sg638";<br />
+:calibration_date = "";</p>
+<p>long INSTRUMENT_WATER_TEMPERATURE_SENSOR_0303;<br />
+:_FillValue = -1L; // long<br />
+:long_name = "Sea-Bird Scientific Unpumped CT sail CTD 0303";<br />
+:type = "water temperature sensor";<br />
+:type_vocabulary =
+"http://vocab.nerc.ac.uk/collection/L05/current/";<br />
+:maker = "Sea-Bird Scientific";<br />
+:maker_vocabulary =
+"http://vocab.nerc.ac.uk/collection/L35/current/MAN0013/";<br />
+:model = "Unpumped CT sail CTD";<br />
+:model_vocabulary =
+"https://vocab.nerc.ac.uk/collection/L22/current/TOOL1188";<br />
+:serial_number = "0303";<br />
+:calibration_date = "";</p>
+<p>long INSTRUMENT_FLUOROMETERS_3352;<br />
+:_FillValue = -1L; // long<br />
+:long_name = "WETLabs FLBBCD-SLC 3352";<br />
+:type = "fluorometers";<br />
+:type_vocabulary =
+"http://vocab.nerc.ac.uk/collection/L05/current/113/";<br />
+:maker = "WET Labs";<br />
+:maker_vocabulary =
+"http://vocab.nerc.ac.uk/collection/L35/current/MAN0026/";<br />
+:model = "WET Labs {Sea-Bird WETLabs} ECO Puck Triplet FLBBCD-SLC
+scattering fluorescence sensor";<br />
+:model_vocabulary =
+"https://vocab.nerc.ac.uk/collection/L22/current/TOOL1312";<br />
+:serial_number = "3352";<br />
+:calibration_date = "";</p></td>
+</tr>
+</tbody>
+</table>
+
+# Geophysical variables
+
+<table>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 65%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Variable</strong></th>
+<th><strong>NVS collection</strong></th>
+<th><strong>Examples</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>&lt;PARAM&gt;</td>
+<td><p><a
+href="https://vocab.nerc.ac.uk/collection/OG1/current/"><u>OG1</u></a></p>
+<p>OceanGliders Parameter Usage Vocabulary</p>
+<p><a href="https://vocab.nerc.ac.uk/collection/P06/current/">P06</a>
+BODC-approved data storage units</p></td>
+<td><p>float PRES(N_MEASUREMENTS=563337);<br />
+:_FillValue = 99999.0f; // float<br />
+:long_name = "Pressure (spatial coordinate) exerted by the water body by
+profiling pressure sensor and correction to read zero at sea
+level";<br />
+:units = "decibar";<br />
+:standard_name = "sea_water_pressure";<br />
+:vocabulary =
+"https://vocab.nerc.ac.uk/collection/OG1/current/PRES/";<br />
+:ancillary_variables = "PRES_QC";<br />
+:sensor = "INSTRUMENT_WATER TEMPERATURE_SENSOR_9137";<br />
+:_ChunkSizes = 1023U; // uint</p>
+<p>Please note above example includes variable attribute</p>
+<p>:sensor to be able to link a &lt;PARAM&gt; to the Sensor
+information</p>
+<p>float CHLA(N_MEASUREMENTS=563337);<br />
+:standard_name =
+"mass_concentration_of_chlorophyll_a_in_sea_water";<br />
+:vocabulary = "https://vocab.nerc.ac.uk/collection/OG1/current/";<br />
+:ancillary_variables = "CHLA_QC";<br />
+:sensor = "INSTRUMENT_RADIOMETERS_3352";<br />
+:_FillValue = 99999.0f; // float<br />
+:long_name = "Concentration of chlorophyll-a {chl-a CAS 479-61-8} per
+unit volume of the water body [particulate &gt;unknown phase] by in-situ
+chlorophyll fluorometer";<br />
+:units = "mg/m3";<br />
+:_ChunkSizes = 1023U; // uint</p></td>
+</tr>
+<tr class="even">
+<td>&lt;PARAM&gt;_QC</td>
+<td></td>
+<td>byte PRES_QC(N_MEASUREMENTS=563337);<br />
+:_FillValue = -128B; // byte<br />
+:long_name = "quality flag";<br />
+:_ChunkSizes = 4083U; // uint</td>
+</tr>
+</tbody>
+</table>
+
                                                                                           
   
