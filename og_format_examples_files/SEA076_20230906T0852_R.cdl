@@ -1,4 +1,4 @@
-netcdf SEA076_20230906T0852_nrt {
+netcdf SEA076_20230906T0852_R {
 dimensions:
 	N_MEASUREMENTS = 10 ;
 variables:
@@ -167,9 +167,9 @@ variables:
 		TIME:long_name = "Time" ;
 		TIME:observation_type = "measured" ;
 		TIME:standard_name = "time" ;
-		TIME:units = "seconds since 1970-01-01 00:00:00 UTC" ;
-		TIME:calendar = "gregorian" ;
 		TIME:URI = "https://vocab.nerc.ac.uk/collection/P02/current/AYMD/" ;
+		TIME:units = "seconds since 1970-01-01T00:00:00Z" ;
+		TIME:calendar = "gregorian" ;
 	double DEPTH(N_MEASUREMENTS) ;
 		DEPTH:_FillValue = NaN ;
 		DEPTH:source = "pressure" ;
@@ -215,9 +215,9 @@ variables:
 		TIME_GPS:long_name = "TIME of each GPS location" ;
 		TIME_GPS:observation_type = "measured" ;
 		TIME_GPS:standard_name = "time" ;
-		TIME_GPS:units = "seconds since 1970-01-01 00:00:00 UTC" ;
-		TIME_GPS:calendar = "gregorian" ;
 		TIME_GPS:URI = "https://vocab.nerc.ac.uk/collection/P02/current/AYMD/" ;
+		TIME_GPS:units = "seconds since 1970-01-01T00:00:00Z" ;
+		TIME_GPS:calendar = "gregorian" ;
 		TIME_GPS:coordinates = "DEPTH LATITUDE LONGITUDE TIME" ;
 	double INSTRUMENT_ADVS_AND_TURBULENCE_PROBES_103356 ;
 		INSTRUMENT_ADVS_AND_TURBULENCE_PROBES_103356:_FillValue = NaN ;
@@ -315,7 +315,7 @@ variables:
 		:glider_name = "Fibbla" ;
 		:glider_serial = "76" ;
 		:history = "CPROOF glider toolbox version: pre-tag" ;
-		:id = "SEA076_20230906T0852_nrt" ;
+		:id = "SEA076_20230906T0852_R" ;
 		:institution = "Voice of the Ocean Foundation" ;
 		:keywords = "AUVS, Autonomous Underwater Vehicles, Oceans, Ocean Pressure, Water Pressure, Ocean Temperature, Water Temperature, Salinity/Density, Conductivity, Density, Salinity" ;
 		:keywords_vocabulary = "GCMD Science Keywords" ;
@@ -414,7 +414,7 @@ data:
 
  INSTRUMENT_DISSOLVED_GAS_SENSORS_0041 = _ ;
 
- TRAJECTORY = "SEA076_20230906T0852_nrt" ;
+ TRAJECTORY = "SEA076_20230906T0852_R" ;
 
  WMO_IDENTIFIER = "6801665" ;
 

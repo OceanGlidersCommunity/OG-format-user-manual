@@ -1,6 +1,7 @@
 # OG format example files
 
 - **sp041_20191205T1757_R.cdl**: example slocum dataset from Scripps
+- **SEA076_20230906T0852_R.cdl**: example SeaExplorer dataset from VOTO
 
 
 ### Conversion to/from .nc
