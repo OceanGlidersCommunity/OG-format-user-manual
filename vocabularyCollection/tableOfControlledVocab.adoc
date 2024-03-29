@@ -41,22 +41,22 @@ While a continuous update of the controlled vocabularies is anticipated, the wor
 |===
 |OceanGliders reference name | Collection name | OceanGliders subset | Request new terms | Governance 
 
-  | platform | https://vocab.nerc.ac.uk/collection/L06/current/27/[L06 - SeaVoX Platform Categories] |  https://vocab.nerc.ac.uk/collection/L06/current/27/[OceanGliders subset] | https://github.com/nvs-vocabs/L06/issues | OceanGliders 
+  | platform | https://vocab.nerc.ac.uk/collection/L06/current/[L06 - SeaVoX Platform Categories] |  https://vocab.nerc.ac.uk/collection/L06/current/27/[OceanGliders vocabulary subset] | https://github.com/nvs-vocabs/L06/issues | OceanGliders 
   | oceangliders_site | *tbd* |  *tbd* | *tbd* | OceanOPS 
-  | contributors_role | *tbd* |  *subset tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/contributors_role.md[pending list] | *tbd* | OceanGliders 
-  | agencies_role | https://vocab.nerc.ac.uk/search_nvs/C86/[C86 - SeaDataNet contact and security access roles] | *subset tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/agencies_role.md[pending list] | *tbd* | OceanGliders 
+  | contributors_role | *tbd* |  *OceanGliders vocabulary subset tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/contributors_role.md[pending list] | *tbd* | OceanGliders 
+  | agencies_role | https://vocab.nerc.ac.uk/search_nvs/C86/[C86 - SeaDataNet contact and security access roles] | *OceanGliders vocabulary subset tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/agencies_role.md[pending list] | *tbd* | OceanGliders 
   | agencies_id | https://edmo.seadatanet.org/[EDMO code] | No subset available for this collection | *tbd* | SeaDataNet 
   | naming_authority | https://edmo.seadatanet.org/[EDMO code] | No subset available for this collection | *tbd* | SeaDataNet 
   | institution | https://edmo.seadatanet.org/[EDMO code] | No subset available for this collection | *tbd* | SeaDataNet 
   | rtqc_method | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/rtqc_method.md[Real Time Quality Control methods] | *tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/rtqc_method.md[pending list] | *tbd* | OceanGliders 
   | phase_calculation_methodology | Phase calculation methods | *tbd* | *tbd* |OceanGliders 
-  | platform_model | https://vocab.nerc.ac.uk/search_nvs/B76/[B76 - BODC Platform Models] | *subset tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/platform_model.md[pending list] | *tbd* | OceanGliders 
+  | platform_model | https://vocab.nerc.ac.uk/search_nvs/B76/[B76 - BODC Platform Models] | *OceanGliders vocabulary subset tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/platform_model.md[pending list] | *tbd* | OceanGliders 
   | ICES_code | https://vocab.ices.dk/?codetypeguid=7f9a91e1-fb57-464a-8eb0-697e4b0235b5[ICES reference table] | No subset available for this collection  | *tbd* | ICES 
-  | platform_maker |  http://vocab.nerc.ac.uk/collection/L35/current/[L35 - SenseOcean device developers and manufacturers] | *subset tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/platform_maker.md[pending list] |  *tbd* | OceanGliders 
+  | platform_maker |  http://vocab.nerc.ac.uk/collection/L35/current/[L35 - SenseOcean device developers and manufacturers] | *OceanGliders vocabulary subset tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/platform_maker.md[pending list] |  *tbd* | OceanGliders 
   | battery_type | *tbd* | *tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/battery_type.md[pending list] |  *tbd* | OceanGliders 
   | telecom_type |  https://vocab.nerc.ac.uk/search_nvs/R10/[*_e.g. R10 - Argo transmission systems_*]  | *tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/telecom_type.md[pending list] |  *tbd* | OceanGliders 
   | tracking_system | *tbd* | *tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/tracking_system.md[pending list] |  *tbd* | OceanGliders 
-  | sensor_model | https://vocab.nerc.ac.uk/search_nvs/L22/[L22 - Seavox Device Catalog] |  https://vocabdev.nerc.ac.uk/scheme/GLIDER_SENSORS/current/[GLIDER_SENSORS] | https://github.com/nvs-vocabs/L22/issues | OceanGliders 
+  | sensor_model | https://vocab.nerc.ac.uk/search_nvs/L22/[L22 - Seavox Device Catalog] |  https://vocabdev.nerc.ac.uk/scheme/GLIDER_SENSORS/current/[OceanGliders vocabulary subset] | https://github.com/nvs-vocabs/L22/issues | OceanGliders 
   | data_mode | *tbd* | *tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/data_mode.md[pending list] |  *tbd* | OceanGliders 
   | phase | *tbd* | *tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/phase.md[pending list] |  *tbd* | OceanGliders 
   | variable names | https://vocab.nerc.ac.uk/search_nvs/OG1/[OG1 - OceanGliders Parameter Usage Vocabulary] | https://vocab.nerc.ac.uk/search_nvs/OG1/ | https://github.com/nvs-vocabs/OG1/issues | OceanGliders 
@@ -64,6 +64,8 @@ While a continuous update of the controlled vocabularies is anticipated, the wor
 
 
 |===
+
+* sensor type will be added to the list of control vocab in the format following emma exemplar.
 
 # Exemplars
 
@@ -78,7 +80,21 @@ While a continuous update of the controlled vocabularies is anticipated, the wor
 | oceangliders_site | :oceangliders_site = 
 | contributor_role | :contributor_role = "principal investigator, Data scientist";
 | contributor_role_vocabulary | :contributor_role_vocabulary = "http://vocab.nerc.ac.uk/collection/W08/current/CONT0004/,http://vocab.nerc.ac.uk/collection/W08/current/CONT0006/";
+| institution | :institution = "NOCS";
+| institution_vocabulary | :institution_vocabulary = "https://edmo.seadatanet.org/report/17";
+
+*_HERE WE NEED TO ALIGN WITH FORMAT_*
+
 |===
+
+## Platform information
+|===
+| Attribute | Exemples 
+
+| |
+| |
+|===
+
 
 <td>platform</td>
 <td>L06 - SeaVoX Platform Categories</td>
