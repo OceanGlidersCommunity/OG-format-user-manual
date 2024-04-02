@@ -1,6 +1,6 @@
 # OG format example files
 
-- **sp041_20191205T1757_R.cdl**: example slocum dataset from Scripps
+- **sp041_20191205T1757_R.cdl**: example Spray dataset from Scripps
 
 
 ### Conversion to/from .nc
