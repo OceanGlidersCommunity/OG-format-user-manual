@@ -13,6 +13,7 @@ variables:
 		CNDC:valid_min = 0. ;
 		CNDC:URI = "https://vocab.nerc.ac.uk/collection/OG1/current/CNDC/" ;
 		CNDC:ancillary_variables = "CNDC_QC" ;
+		CNDC:sensor = "INSTRUMENT_CTD_206523" ;
 		CNDC:coordinates = "DEPTH LATITUDE LONGITUDE TIME" ;
 	byte CNDC_QC(N_MEASUREMENTS) ;
 		CNDC_QC:ioos_qc_module = "qartod" ;
@@ -36,6 +37,7 @@ variables:
 		DOXY:valid_min = 0LL ;
 		DOXY:URI = "https://vocab.nerc.ac.uk/collection/P02/current/DOXY/" ;
 		DOXY:ancillary_variables = "DOXY_QC" ;
+		DOXY:sensor = "INSTRUMENT_DISSOLVED_GAS_SENSORS_0041" ;
 		DOXY:coordinates = "DEPTH LATITUDE LONGITUDE TIME" ;
 	byte DOXY_QC(N_MEASUREMENTS) ;
 		DOXY_QC:ioos_qc_module = "qartod" ;
@@ -61,6 +63,7 @@ variables:
 		PRES:valid_max = 2000LL ;
 		PRES:valid_min = 0LL ;
 		PRES:URI = "https://vocab.nerc.ac.uk/collection/OG1/current/PRES" ;
+		PRES:sensor = "INSTRUMENT_CTD_206523" ;
 		PRES:coordinates = "DEPTH LATITUDE LONGITUDE TIME" ;
 	float PSAL(N_MEASUREMENTS) ;
 		PSAL:_FillValue = NaNf ;
@@ -75,6 +78,7 @@ variables:
 		PSAL:valid_min = 0LL ;
 		PSAL:URI = "https://vocab.nerc.ac.uk/collection/OG1/current/PSAL/" ;
 		PSAL:ancillary_variables = "PSAL_QC" ;
+		PSAL:sensor = "INSTRUMENT_CTD_206523" ;
 		PSAL:coordinates = "DEPTH LATITUDE LONGITUDE TIME" ;
 	byte PSAL_QC(N_MEASUREMENTS) ;
 		PSAL_QC:ioos_qc_module = "qartod" ;
@@ -98,6 +102,7 @@ variables:
 		TEMP:valid_min = -5LL ;
 		TEMP:URI = "https://vocab.nerc.ac.uk/collection/OG1/current/TEMP/" ;
 		TEMP:ancillary_variables = "TEMP_QC" ;
+		TEMP:sensor = "INSTRUMENT_CTD_206523" ;
 		TEMP:coordinates = "DEPTH LATITUDE LONGITUDE TIME" ;
 	byte TEMP_QC(N_MEASUREMENTS) ;
 		TEMP_QC:ioos_qc_module = "qartod" ;
@@ -227,7 +232,7 @@ variables:
 		INSTRUMENT_ADVS_AND_TURBULENCE_PROBES_103356:maker_vocabulary = "https://vocab.nerc.ac.uk/collection/L35/current/MAN0068/" ;
 		INSTRUMENT_ADVS_AND_TURBULENCE_PROBES_103356:model = "Nortek Glider1000 AD2CP Acoustic Doppler Current Profiler" ;
 		INSTRUMENT_ADVS_AND_TURBULENCE_PROBES_103356:model_vocabulary = "https://vocab.nerc.ac.uk/collection/L22/current/TOOL1774/" ;
-		INSTRUMENT_ADVS_AND_TURBULENCE_PROBES_103356:long_name = "Nortek AD2CP:str(attr_dict[\'serial\'])" ;
+		INSTRUMENT_ADVS_AND_TURBULENCE_PROBES_103356:long_name = "Nortek AD2CP:103356" ;
 		INSTRUMENT_ADVS_AND_TURBULENCE_PROBES_103356:serial_number = "103356" ;
 		INSTRUMENT_ADVS_AND_TURBULENCE_PROBES_103356:calibration_date = "2022-03-16" ;
 	double INSTRUMENT_CTD_206523 ;
@@ -238,7 +243,7 @@ variables:
 		INSTRUMENT_CTD_206523:maker_vocabulary = "https://vocab.nerc.ac.uk/collection/L35/current/MAN0049/" ;
 		INSTRUMENT_CTD_206523:model = "RBR Legato3 CTD" ;
 		INSTRUMENT_CTD_206523:model_vocabulary = "https://vocab.nerc.ac.uk/collection/L22/current/TOOL1745/" ;
-		INSTRUMENT_CTD_206523:long_name = "RBR Legato3 CTD:str(attr_dict[\'serial\'])" ;
+		INSTRUMENT_CTD_206523:long_name = "RBR Legato3 CTD:206523" ;
 		INSTRUMENT_CTD_206523:serial_number = "206523" ;
 		INSTRUMENT_CTD_206523:calibration_date = "2021-03-01" ;
 	double INSTRUMENT_FLUOROMETERS_7485 ;
@@ -249,7 +254,7 @@ variables:
 		INSTRUMENT_FLUOROMETERS_7485:maker_vocabulary = "https://vocab.nerc.ac.uk/collection/L35/current/MAN0026/" ;
 		INSTRUMENT_FLUOROMETERS_7485:model = "WET Labs {Sea-Bird WETLabs} ECO FLBBCD scattering fluorescence sensor" ;
 		INSTRUMENT_FLUOROMETERS_7485:model_vocabulary = "https://vocab.nerc.ac.uk/collection/L22/current/TOOL1141/" ;
-		INSTRUMENT_FLUOROMETERS_7485:long_name = "WET Labs ECO-FLBBCD:str(attr_dict[\'serial\'])" ;
+		INSTRUMENT_FLUOROMETERS_7485:long_name = "WET Labs ECO-FLBBCD:7485" ;
 		INSTRUMENT_FLUOROMETERS_7485:serial_number = "7485" ;
 		INSTRUMENT_FLUOROMETERS_7485:calibration_date = "2022-04-04" ;
 		INSTRUMENT_FLUOROMETERS_7485:calibration_parameters = "{\'CDOM_DarkCounts\': 50, \'CDOM_SF\': 0.0909, \'Chl_DarkCounts\': 41, \'Chl_SF\': 0.0121, \'SIG_DarkCounts\': 48, \'SIG_SF\': 3.118e-06}" ;
@@ -261,7 +266,7 @@ variables:
 		INSTRUMENT_DISSOLVED_GAS_SENSORS_0041:maker_vocabulary = "https://vocab.nerc.ac.uk/collection/L35/current/MAN0053/" ;
 		INSTRUMENT_DISSOLVED_GAS_SENSORS_0041:model = "JFE Advantech Rinko FT ARO-FT oxygen sensor" ;
 		INSTRUMENT_DISSOLVED_GAS_SENSORS_0041:model_vocabulary = "https://vocab.nerc.ac.uk/collection/L22/current/TOOL1783/" ;
-		INSTRUMENT_DISSOLVED_GAS_SENSORS_0041:long_name = "JFE Rinko ARO-FT:str(attr_dict[\'serial\'])" ;
+		INSTRUMENT_DISSOLVED_GAS_SENSORS_0041:long_name = "JFE Rinko ARO-FT:0041" ;
 		INSTRUMENT_DISSOLVED_GAS_SENSORS_0041:serial_number = "0041" ;
 		INSTRUMENT_DISSOLVED_GAS_SENSORS_0041:calibration_date = "2020-02-05" ;
 	string TRAJECTORY ;
