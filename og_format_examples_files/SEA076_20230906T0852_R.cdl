@@ -57,6 +57,7 @@ variables:
 		PRES:instrument = "instrument_ctd" ;
 		PRES:long_name = "Pressure (spatial coordinate) exerted by the water body by profiling pressure sensor and correction to read zero at sea level" ;
 		PRES:observation_type = "measured" ;
+		PRES:positive = "down" ;
 		PRES:reference_datum = "sea-surface" ;
 		PRES:standard_name = "sea_water_pressure" ;
 		PRES:units = "dbar" ;
@@ -141,10 +142,6 @@ variables:
 		DENSITY_QC:standard_name = "status_flag" ;
 		DENSITY_QC:comment = "Quality control flags from IOOS QC QARTOD https://github.com/ioos/ioos_qc Version: 2.1.0. Using config: [<Call stream_id=temperature function=qartod.gross_range_test(suspect_span=[0, 30], fail_span=[-2.5, 40])>, <Call stream_id=temperature function=qartod.spike_test(suspect_threshold=2.0, fail_threshold=6.0)>, <Call stream_id=temperature function=qartod.location_test(bbox=[10, 50, 25, 60])>, <Call stream_id=conductivity function=qartod.gross_range_test(suspect_span=[6, 42], fail_span=[3, 45])>, <Call stream_id=salinity function=qartod.gross_range_test(suspect_span=[5, 38], fail_span=[2, 41])>, <Call stream_id=salinity function=qartod.spike_test(suspect_threshold=0.3, fail_threshold=0.9)>, <Call stream_id=salinity function=qartod.location_test(bbox=[10, 50, 25, 60])>].  Threshold values from EuroGOOS DATA-MEQ Working Group (2010) Recommendations for in-situ data Near Real Time Quality Control [Version 1.2]. EuroGOOS, 23pp. DOI http://dx.doi.org/10.25607/OBP-214." ;
 		DENSITY_QC:coordinates = "DEPTH LATITUDE LONGITUDE TIME" ;
-	int64 PROFILE_NUMBER(N_MEASUREMENTS) ;
-		PROFILE_NUMBER:long_name = "profile index" ;
-		PROFILE_NUMBER:units = "1" ;
-		PROFILE_NUMBER:coordinates = "DEPTH LATITUDE LONGITUDE TIME" ;
 	double LATITUDE(N_MEASUREMENTS) ;
 		LATITUDE:_FillValue = NaN ;
 		LATITUDE:coordinate_reference_frame = "urn:ogc:crs:EPSG::4326" ;
@@ -191,30 +188,7 @@ variables:
 		DEPTH:valid_min = 0LL ;
 		DEPTH:valid_max = 2000LL ;
 		DEPTH:reference_datum = "surface" ;
-	double LATITUDE_GPS(N_MEASUREMENTS) ;
-		LATITUDE_GPS:_FillValue = NaN ;
-		LATITUDE_GPS:coordinate_reference_frame = "urn:ogc:crs:EPSG::4326" ;
-		LATITUDE_GPS:long_name = "LATITUDE of each GPS location" ;
-		LATITUDE_GPS:observation_type = "measured" ;
-		LATITUDE_GPS:platform = "platform" ;
-		LATITUDE_GPS:reference = "WGS84" ;
-		LATITUDE_GPS:standard_name = "latitude" ;
-		LATITUDE_GPS:units = "degrees_north" ;
-		LATITUDE_GPS:valid_max = 90LL ;
-		LATITUDE_GPS:valid_min = -90LL ;
-		LATITUDE_GPS:coordinates = "DEPTH LATITUDE LONGITUDE TIME" ;
-	double LONGITUDE_GPS(N_MEASUREMENTS) ;
-		LONGITUDE_GPS:_FillValue = NaN ;
-		LONGITUDE_GPS:coordinate_reference_frame = "urn:ogc:crs:EPSG::4326" ;
-		LONGITUDE_GPS:long_name = "LONGITUDE of each GPS location" ;
-		LONGITUDE_GPS:observation_type = "measured" ;
-		LONGITUDE_GPS:platform = "platform" ;
-		LONGITUDE_GPS:reference = "WGS84" ;
-		LONGITUDE_GPS:standard_name = "longitude" ;
-		LONGITUDE_GPS:units = "degrees_east" ;
-		LONGITUDE_GPS:valid_max = 180LL ;
-		LONGITUDE_GPS:valid_min = -180LL ;
-		LONGITUDE_GPS:coordinates = "DEPTH LATITUDE LONGITUDE TIME" ;
+		DEPTH:positive = "down" ;
 	double TIME_GPS(N_MEASUREMENTS) ;
 		TIME_GPS:_FillValue = NaN ;
 		TIME_GPS:long_name = "TIME of each GPS location" ;
@@ -224,51 +198,6 @@ variables:
 		TIME_GPS:units = "seconds since 1970-01-01T00:00:00Z" ;
 		TIME_GPS:calendar = "gregorian" ;
 		TIME_GPS:coordinates = "DEPTH LATITUDE LONGITUDE TIME" ;
-	double INSTRUMENT_ADVS_AND_TURBULENCE_PROBES_103356 ;
-		INSTRUMENT_ADVS_AND_TURBULENCE_PROBES_103356:_FillValue = NaN ;
-		INSTRUMENT_ADVS_AND_TURBULENCE_PROBES_103356:type = "ADVs and turbulence probes" ;
-		INSTRUMENT_ADVS_AND_TURBULENCE_PROBES_103356:type_vocabulary = "https://vocab.nerc.ac.uk/collection/L05/current/384/" ;
-		INSTRUMENT_ADVS_AND_TURBULENCE_PROBES_103356:maker = "Nortek" ;
-		INSTRUMENT_ADVS_AND_TURBULENCE_PROBES_103356:maker_vocabulary = "https://vocab.nerc.ac.uk/collection/L35/current/MAN0068/" ;
-		INSTRUMENT_ADVS_AND_TURBULENCE_PROBES_103356:model = "Nortek Glider1000 AD2CP Acoustic Doppler Current Profiler" ;
-		INSTRUMENT_ADVS_AND_TURBULENCE_PROBES_103356:model_vocabulary = "https://vocab.nerc.ac.uk/collection/L22/current/TOOL1774/" ;
-		INSTRUMENT_ADVS_AND_TURBULENCE_PROBES_103356:long_name = "Nortek AD2CP:103356" ;
-		INSTRUMENT_ADVS_AND_TURBULENCE_PROBES_103356:serial_number = "103356" ;
-		INSTRUMENT_ADVS_AND_TURBULENCE_PROBES_103356:calibration_date = "2022-03-16" ;
-	double INSTRUMENT_CTD_206523 ;
-		INSTRUMENT_CTD_206523:_FillValue = NaN ;
-		INSTRUMENT_CTD_206523:type = "CTD" ;
-		INSTRUMENT_CTD_206523:type_vocabulary = "https://vocab.nerc.ac.uk/collection/L05/current/130/" ;
-		INSTRUMENT_CTD_206523:maker = "RBR" ;
-		INSTRUMENT_CTD_206523:maker_vocabulary = "https://vocab.nerc.ac.uk/collection/L35/current/MAN0049/" ;
-		INSTRUMENT_CTD_206523:model = "RBR Legato3 CTD" ;
-		INSTRUMENT_CTD_206523:model_vocabulary = "https://vocab.nerc.ac.uk/collection/L22/current/TOOL1745/" ;
-		INSTRUMENT_CTD_206523:long_name = "RBR Legato3 CTD:206523" ;
-		INSTRUMENT_CTD_206523:serial_number = "206523" ;
-		INSTRUMENT_CTD_206523:calibration_date = "2021-03-01" ;
-	double INSTRUMENT_FLUOROMETERS_7485 ;
-		INSTRUMENT_FLUOROMETERS_7485:_FillValue = NaN ;
-		INSTRUMENT_FLUOROMETERS_7485:type = "fluorometers" ;
-		INSTRUMENT_FLUOROMETERS_7485:type_vocabulary = "https://vocab.nerc.ac.uk/collection/L05/current/113/" ;
-		INSTRUMENT_FLUOROMETERS_7485:maker = "WET Labs" ;
-		INSTRUMENT_FLUOROMETERS_7485:maker_vocabulary = "https://vocab.nerc.ac.uk/collection/L35/current/MAN0026/" ;
-		INSTRUMENT_FLUOROMETERS_7485:model = "WET Labs {Sea-Bird WETLabs} ECO FLBBCD scattering fluorescence sensor" ;
-		INSTRUMENT_FLUOROMETERS_7485:model_vocabulary = "https://vocab.nerc.ac.uk/collection/L22/current/TOOL1141/" ;
-		INSTRUMENT_FLUOROMETERS_7485:long_name = "WET Labs ECO-FLBBCD:7485" ;
-		INSTRUMENT_FLUOROMETERS_7485:serial_number = "7485" ;
-		INSTRUMENT_FLUOROMETERS_7485:calibration_date = "2022-04-04" ;
-		INSTRUMENT_FLUOROMETERS_7485:calibration_parameters = "{\'CDOM_DarkCounts\': 50, \'CDOM_SF\': 0.0909, \'Chl_DarkCounts\': 41, \'Chl_SF\': 0.0121, \'SIG_DarkCounts\': 48, \'SIG_SF\': 3.118e-06}" ;
-	double INSTRUMENT_DISSOLVED_GAS_SENSORS_0041 ;
-		INSTRUMENT_DISSOLVED_GAS_SENSORS_0041:_FillValue = NaN ;
-		INSTRUMENT_DISSOLVED_GAS_SENSORS_0041:type = "dissolved gas sensors" ;
-		INSTRUMENT_DISSOLVED_GAS_SENSORS_0041:type_vocabulary = "https://vocab.nerc.ac.uk/collection/L05/current/351/" ;
-		INSTRUMENT_DISSOLVED_GAS_SENSORS_0041:maker = "JFE Advantech" ;
-		INSTRUMENT_DISSOLVED_GAS_SENSORS_0041:maker_vocabulary = "https://vocab.nerc.ac.uk/collection/L35/current/MAN0053/" ;
-		INSTRUMENT_DISSOLVED_GAS_SENSORS_0041:model = "JFE Advantech Rinko FT ARO-FT oxygen sensor" ;
-		INSTRUMENT_DISSOLVED_GAS_SENSORS_0041:model_vocabulary = "https://vocab.nerc.ac.uk/collection/L22/current/TOOL1783/" ;
-		INSTRUMENT_DISSOLVED_GAS_SENSORS_0041:long_name = "JFE Rinko ARO-FT:0041" ;
-		INSTRUMENT_DISSOLVED_GAS_SENSORS_0041:serial_number = "0041" ;
-		INSTRUMENT_DISSOLVED_GAS_SENSORS_0041:calibration_date = "2020-02-05" ;
 	string TRAJECTORY ;
 		TRAJECTORY:cf_role = "trajectory_id" ;
 		TRAJECTORY:long_name = "trajectory name" ;
@@ -282,11 +211,85 @@ variables:
 		DEPLOYMENT_TIME:standard_name = "time" ;
 		DEPLOYMENT_TIME:units = "seconds since 1970-01-01T00:00:00Z" ;
 		DEPLOYMENT_TIME:calendar = "gregorian" ;
-	double DEPLOYMENT_LATITUDE ;
-		DEPLOYMENT_LATITUDE:_FillValue = NaN ;
+	short PROFILE_NUMBER(N_MEASUREMENTS) ;
+		PROFILE_NUMBER:_FillValue = 32767s ;
+		PROFILE_NUMBER:long_name = "profile index" ;
+		PROFILE_NUMBER:units = "1" ;
+		PROFILE_NUMBER:coordinates = "DEPTH LATITUDE LONGITUDE TIME" ;
+	float LATITUDE_GPS(N_MEASUREMENTS) ;
+		LATITUDE_GPS:_FillValue = NaNf ;
+		LATITUDE_GPS:coordinate_reference_frame = "urn:ogc:crs:EPSG::4326" ;
+		LATITUDE_GPS:long_name = "LATITUDE of each GPS location" ;
+		LATITUDE_GPS:observation_type = "measured" ;
+		LATITUDE_GPS:platform = "platform" ;
+		LATITUDE_GPS:reference = "WGS84" ;
+		LATITUDE_GPS:standard_name = "latitude" ;
+		LATITUDE_GPS:units = "degrees_north" ;
+		LATITUDE_GPS:valid_max = 90LL ;
+		LATITUDE_GPS:valid_min = -90LL ;
+		LATITUDE_GPS:coordinates = "DEPTH LATITUDE LONGITUDE TIME" ;
+	float LONGITUDE_GPS(N_MEASUREMENTS) ;
+		LONGITUDE_GPS:_FillValue = NaNf ;
+		LONGITUDE_GPS:coordinate_reference_frame = "urn:ogc:crs:EPSG::4326" ;
+		LONGITUDE_GPS:long_name = "LONGITUDE of each GPS location" ;
+		LONGITUDE_GPS:observation_type = "measured" ;
+		LONGITUDE_GPS:platform = "platform" ;
+		LONGITUDE_GPS:reference = "WGS84" ;
+		LONGITUDE_GPS:standard_name = "longitude" ;
+		LONGITUDE_GPS:units = "degrees_east" ;
+		LONGITUDE_GPS:valid_max = 180LL ;
+		LONGITUDE_GPS:valid_min = -180LL ;
+		LONGITUDE_GPS:coordinates = "DEPTH LATITUDE LONGITUDE TIME" ;
+	float INSTRUMENT_ADVS_AND_TURBULENCE_PROBES_103356 ;
+		INSTRUMENT_ADVS_AND_TURBULENCE_PROBES_103356:_FillValue = NaNf ;
+		INSTRUMENT_ADVS_AND_TURBULENCE_PROBES_103356:type = "ADVs and turbulence probes" ;
+		INSTRUMENT_ADVS_AND_TURBULENCE_PROBES_103356:type_vocabulary = "https://vocab.nerc.ac.uk/collection/L05/current/384/" ;
+		INSTRUMENT_ADVS_AND_TURBULENCE_PROBES_103356:maker = "Nortek" ;
+		INSTRUMENT_ADVS_AND_TURBULENCE_PROBES_103356:maker_vocabulary = "https://vocab.nerc.ac.uk/collection/L35/current/MAN0068/" ;
+		INSTRUMENT_ADVS_AND_TURBULENCE_PROBES_103356:model = "Nortek Glider1000 AD2CP Acoustic Doppler Current Profiler" ;
+		INSTRUMENT_ADVS_AND_TURBULENCE_PROBES_103356:model_vocabulary = "https://vocab.nerc.ac.uk/collection/L22/current/TOOL1774/" ;
+		INSTRUMENT_ADVS_AND_TURBULENCE_PROBES_103356:long_name = "Nortek AD2CP:103356" ;
+		INSTRUMENT_ADVS_AND_TURBULENCE_PROBES_103356:serial_number = "103356" ;
+		INSTRUMENT_ADVS_AND_TURBULENCE_PROBES_103356:calibration_date = "2022-03-16" ;
+	float INSTRUMENT_CTD_206523 ;
+		INSTRUMENT_CTD_206523:_FillValue = NaNf ;
+		INSTRUMENT_CTD_206523:type = "CTD" ;
+		INSTRUMENT_CTD_206523:type_vocabulary = "https://vocab.nerc.ac.uk/collection/L05/current/130/" ;
+		INSTRUMENT_CTD_206523:maker = "RBR" ;
+		INSTRUMENT_CTD_206523:maker_vocabulary = "https://vocab.nerc.ac.uk/collection/L35/current/MAN0049/" ;
+		INSTRUMENT_CTD_206523:model = "RBR Legato3 CTD" ;
+		INSTRUMENT_CTD_206523:model_vocabulary = "https://vocab.nerc.ac.uk/collection/L22/current/TOOL1745/" ;
+		INSTRUMENT_CTD_206523:long_name = "RBR Legato3 CTD:206523" ;
+		INSTRUMENT_CTD_206523:serial_number = "206523" ;
+		INSTRUMENT_CTD_206523:calibration_date = "2021-03-01" ;
+	float INSTRUMENT_FLUOROMETERS_7485 ;
+		INSTRUMENT_FLUOROMETERS_7485:_FillValue = NaNf ;
+		INSTRUMENT_FLUOROMETERS_7485:type = "fluorometers" ;
+		INSTRUMENT_FLUOROMETERS_7485:type_vocabulary = "https://vocab.nerc.ac.uk/collection/L05/current/113/" ;
+		INSTRUMENT_FLUOROMETERS_7485:maker = "WET Labs" ;
+		INSTRUMENT_FLUOROMETERS_7485:maker_vocabulary = "https://vocab.nerc.ac.uk/collection/L35/current/MAN0026/" ;
+		INSTRUMENT_FLUOROMETERS_7485:model = "WET Labs {Sea-Bird WETLabs} ECO FLBBCD scattering fluorescence sensor" ;
+		INSTRUMENT_FLUOROMETERS_7485:model_vocabulary = "https://vocab.nerc.ac.uk/collection/L22/current/TOOL1141/" ;
+		INSTRUMENT_FLUOROMETERS_7485:long_name = "WET Labs ECO-FLBBCD:7485" ;
+		INSTRUMENT_FLUOROMETERS_7485:serial_number = "7485" ;
+		INSTRUMENT_FLUOROMETERS_7485:calibration_date = "2022-04-04" ;
+		INSTRUMENT_FLUOROMETERS_7485:calibration_parameters = "{\'CDOM_DarkCounts\': 50, \'CDOM_SF\': 0.0909, \'Chl_DarkCounts\': 41, \'Chl_SF\': 0.0121, \'SIG_DarkCounts\': 48, \'SIG_SF\': 3.118e-06}" ;
+	float INSTRUMENT_DISSOLVED_GAS_SENSORS_0041 ;
+		INSTRUMENT_DISSOLVED_GAS_SENSORS_0041:_FillValue = NaNf ;
+		INSTRUMENT_DISSOLVED_GAS_SENSORS_0041:type = "dissolved gas sensors" ;
+		INSTRUMENT_DISSOLVED_GAS_SENSORS_0041:type_vocabulary = "https://vocab.nerc.ac.uk/collection/L05/current/351/" ;
+		INSTRUMENT_DISSOLVED_GAS_SENSORS_0041:maker = "JFE Advantech" ;
+		INSTRUMENT_DISSOLVED_GAS_SENSORS_0041:maker_vocabulary = "https://vocab.nerc.ac.uk/collection/L35/current/MAN0053/" ;
+		INSTRUMENT_DISSOLVED_GAS_SENSORS_0041:model = "JFE Advantech Rinko FT ARO-FT oxygen sensor" ;
+		INSTRUMENT_DISSOLVED_GAS_SENSORS_0041:model_vocabulary = "https://vocab.nerc.ac.uk/collection/L22/current/TOOL1783/" ;
+		INSTRUMENT_DISSOLVED_GAS_SENSORS_0041:long_name = "JFE Rinko ARO-FT:0041" ;
+		INSTRUMENT_DISSOLVED_GAS_SENSORS_0041:serial_number = "0041" ;
+		INSTRUMENT_DISSOLVED_GAS_SENSORS_0041:calibration_date = "2020-02-05" ;
+	float DEPLOYMENT_LATITUDE ;
+		DEPLOYMENT_LATITUDE:_FillValue = NaNf ;
 		DEPLOYMENT_LATITUDE:long_name = "latitude of deployment" ;
-	double DEPLOYMENT_LONGITUDE ;
-		DEPLOYMENT_LONGITUDE:_FillValue = NaN ;
+	float DEPLOYMENT_LONGITUDE ;
+		DEPLOYMENT_LONGITUDE:_FillValue = NaNf ;
 		DEPLOYMENT_LONGITUDE:long_name = "longitude of deployment" ;
 
 // global attributes:
@@ -387,8 +390,6 @@ data:
 
  DENSITY_QC = 4, 4, 4, 4, 4, 4, 4, 4, 4, 4 ;
 
- PROFILE_NUMBER = 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ;
-
  LATITUDE = 58.3330333333333, 58.3330333333333, 58.3329833333333, 
     58.3328333333333, 58.33275, 58.3326249166967, 58.3325, 58.3324333333333, 
     58.33235, 58.33225 ;
@@ -406,19 +407,7 @@ data:
     0.0140680436915683, 0.0130773364930668, 0.00505260741554698, 
     0.00574610258868005 ;
 
- LATITUDE_GPS = 58.3330333333333, _, _, _, _, _, _, _, _, _ ;
-
- LONGITUDE_GPS = 18.9397, _, _, _, _, _, _, _, _, _ ;
-
  TIME_GPS = 1693990379.375, _, _, _, _, _, _, _, _, _ ;
-
- INSTRUMENT_ADVS_AND_TURBULENCE_PROBES_103356 = _ ;
-
- INSTRUMENT_CTD_206523 = _ ;
-
- INSTRUMENT_FLUOROMETERS_7485 = _ ;
-
- INSTRUMENT_DISSOLVED_GAS_SENSORS_0041 = _ ;
 
  TRAJECTORY = "SEA076_20230906T0852_R" ;
 
@@ -428,7 +417,21 @@ data:
 
  DEPLOYMENT_TIME = 1693990379.375 ;
 
- DEPLOYMENT_LATITUDE = 58.3330333333333 ;
+ PROFILE_NUMBER = 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ;
+
+ LATITUDE_GPS = 58.33303, _, _, _, _, _, _, _, _, _ ;
+
+ LONGITUDE_GPS = 18.9397, _, _, _, _, _, _, _, _, _ ;
+
+ INSTRUMENT_ADVS_AND_TURBULENCE_PROBES_103356 = _ ;
+
+ INSTRUMENT_CTD_206523 = _ ;
+
+ INSTRUMENT_FLUOROMETERS_7485 = _ ;
+
+ INSTRUMENT_DISSOLVED_GAS_SENSORS_0041 = _ ;
+
+ DEPLOYMENT_LATITUDE = 58.33303 ;
 
  DEPLOYMENT_LONGITUDE = 18.9397 ;
 }
