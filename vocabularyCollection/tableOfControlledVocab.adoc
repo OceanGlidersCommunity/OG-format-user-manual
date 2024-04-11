@@ -96,6 +96,7 @@ While a continuous update of the controlled vocabularies is anticipated, the wor
 | rtqc_method | :rtqc_method= ;
 | rtqc_method_vocabulary | :=rtqc_method_vocabulary ;
 *_HERE WE NEED TO ALIGN WITH FORMAT_*
+| rtqc_method_doi | :=rtqc_method_doi ; 
 
 |===
 
