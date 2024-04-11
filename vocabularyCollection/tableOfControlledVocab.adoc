@@ -87,7 +87,7 @@ While a continuous update of the controlled vocabularies is anticipated, the wor
 *_HERE WE NEED TO ADD program_vocabulary IN THE FORMAT_*
 | oceangliders_site | :oceangliders_site = "CONVEX";
 | oceangliders_site_vocabulary | :oceangliders_site_vocabulary = ;
-*_HERE WE NEED TO oceangliders_site_vocabulary ADD IN THE FORMAT_*
+*_HERE WE NEED TO ADD oceangliders_site_vocabulary IN THE FORMAT_*
 | contributor | :contributor = "Elena Mauri,Silvina Logarzo"
 | contributor_role | :contributor_role = "principal investigator,Data scientist";
 | contributor_role_vocabulary | :contributor_role_vocabulary = "http://vocab.nerc.ac.uk/collection/W08/current/CONT0004/,http://vocab.nerc.ac.uk/collection/W08/current/CONT0006/";
