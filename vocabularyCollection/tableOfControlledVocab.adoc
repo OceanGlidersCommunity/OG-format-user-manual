@@ -102,7 +102,7 @@ While a continuous update of the controlled vocabularies is anticipated, the wor
 ## Variable Attributes
 ### Platform Information
 |===
-| Variable | attribute 
+| Variable | exemple
 
 | PLATFORM_MODEL | String PLATFORM_MODEL; 
 
@@ -115,6 +115,12 @@ String PLATFORM_MODEL;
 :long_name = "Teledyne Webb Research Slocum G2 glider";
 
 :platform_model_vocabulary = https://vocab.nerc.ac.uk/collection/B76/current/B7600001/;
+
+| ICES_CODE | string ICES_CODE;
+
+:long_name = "Trieste_1";
+
+:ices_code_vocabulary = "https://vocab.ices.dk/?CodeID=230740";
 
 | PLATFORM_MAKER | String PLATFORM_MAKER;
 
