@@ -42,6 +42,8 @@ While a continuous update of the controlled vocabularies is anticipated, the wor
 |OceanGliders reference name | Collection name | OceanGliders subset | Request new terms | Governance 
 
   | platform | https://vocab.nerc.ac.uk/collection/L06/current/[L06 - SeaVoX Platform Categories] |  https://vocab.nerc.ac.uk/collection/L06/current/27/[OceanGliders vocabulary subset] | https://github.com/nvs-vocabs/L06/issues | OceanGliders 
+  | institution | https://edmo.seadatanet.org/[EDMO code] |  No subset available for this collection | *tbd* | SeaDataNet 
+  | program | *tbd* |  *tbd* | *tbd* | OceanOPS 
   | oceangliders_site | *tbd* |  *tbd* | *tbd* | OceanOPS 
   | contributors_role | *tbd* |  *OceanGliders vocabulary subset tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/contributors_role.md[pending list] | *tbd* | OceanGliders 
   | agencies_role | https://vocab.nerc.ac.uk/search_nvs/C86/[C86 - SeaDataNet contact and security access roles] | *OceanGliders vocabulary subset tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/agencies_role.md[pending list] | *tbd* | OceanGliders 
@@ -77,12 +79,22 @@ While a continuous update of the controlled vocabularies is anticipated, the wor
 
 | platform | :platform = "sub-surface gliders";
 | platform_vocabulary | :platform_vocabulary = https://vocab.nerc.ac.uk/collection/L06/current/27/;
-| oceangliders_site | :oceangliders_site = 
-| contributor_role | :contributor_role = "principal investigator, Data scientist";
-| contributor_role_vocabulary | :contributor_role_vocabulary = "http://vocab.nerc.ac.uk/collection/W08/current/CONT0004/,http://vocab.nerc.ac.uk/collection/W08/current/CONT0006/";
 | institution | :institution = "NOCS";
 | institution_vocabulary | :institution_vocabulary = "https://edmo.seadatanet.org/report/17";
-
+*_HERE WE NEED TO ALIGN WITH FORMAT_*
+| program | :program = ;
+| program_vocabulary | :program_vocabulary = ;
+*_HERE WE NEED TO ALIGN WITH FORMAT_*
+| oceangliders_site | :oceangliders_site = ;
+| oceangliders_site_vocabulary | :oceangliders_site_vocabulary = ;
+*_HERE WE NEED TO ALIGN WITH FORMAT_*
+| contributor_role | :contributor_role = "principal investigator, Data scientist";
+| contributor_role_vocabulary | :contributor_role_vocabulary = "http://vocab.nerc.ac.uk/collection/W08/current/CONT0004/,http://vocab.nerc.ac.uk/collection/W08/current/CONT0006/";
+| agency | :agency= ;
+| agency_vocabulary | :agency_vocabulary= ;
+*_HERE WE NEED TO ALIGN WITH FORMAT_*
+| rtqc_method | :rtqc_method= ;
+| rtqc_method_vocabulary | :=rtqc_method_vocabulary ;
 *_HERE WE NEED TO ALIGN WITH FORMAT_*
 
 |===
