@@ -81,18 +81,19 @@ While a continuous update of the controlled vocabularies is anticipated, the wor
 | platform_vocabulary | :platform_vocabulary = https://vocab.nerc.ac.uk/collection/L06/current/27/;
 | institution | :institution = "OGS";
 | institution_vocabulary | :institution_vocabulary = "https://edmo.seadatanet.org/report/120";
-*_HERE WE NEED TO ALIGN WITH FORMAT_*
+*_HERE WE NEED TO ADD institution_vocabulary  IN THE FORMAT_*
 | program | :program = "OGS glider program" ;
 | program_vocabulary | :program_vocabulary = ;
-*_HERE WE NEED TO ALIGN WITH FORMAT_*
+*_HERE WE NEED TO ADD program_vocabulary IN THE FORMAT_*
 | oceangliders_site | :oceangliders_site = "CONVEX";
 | oceangliders_site_vocabulary | :oceangliders_site_vocabulary = ;
-*_HERE WE NEED TO ALIGN WITH FORMAT_*
+*_HERE WE NEED TO oceangliders_site_vocabulary ADD IN THE FORMAT_*
+| contributor | :contributor = "Elena Mauri,Silvina Logarzo"
 | contributor_role | :contributor_role = "principal investigator,Data scientist";
 | contributor_role_vocabulary | :contributor_role_vocabulary = "http://vocab.nerc.ac.uk/collection/W08/current/CONT0004/,http://vocab.nerc.ac.uk/collection/W08/current/CONT0006/";
 | agency | :agency = "OGS,CNR,Coriolis";
 | agency_vocabulary | :agency_vocabulary = "https://edmo.seadatanet.org/report/120,https://edmo.seadatanet.org/report/227,https://edmo.seadatanet.org/report/227";
-*_HERE WE NEED TO ALIGN WITH FORMAT_*
+*_HERE WE NEED TO ADD agency_vocabulary IN THE FORMAT_*
 | agency_role | :agency = "operating agency,funding agency,data assembly center";
 | agency_role_vocabulary | :agency_role_vocabulary = ",,";
 
