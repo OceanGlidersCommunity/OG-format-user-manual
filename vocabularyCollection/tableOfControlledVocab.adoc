@@ -95,10 +95,6 @@ While a continuous update of the controlled vocabularies is anticipated, the wor
 *_HERE WE NEED TO ALIGN WITH FORMAT_*
 | agency_role | :agency = "operating agency,funding agency,data assembly center";
 | agency_role_vocabulary | :agency_role_vocabulary = ",,";
-| rtqc_method | :rtqc_method = "" ;
-| rtqc_method_vocabulary | :rtqc_method_vocabulary = ;
-*_HERE WE NEED TO ALIGN WITH FORMAT_*
-| rtqc_method_doi | :rtqc_method_doi = ; 
 
 |===
 
