@@ -79,24 +79,26 @@ While a continuous update of the controlled vocabularies is anticipated, the wor
 
 | platform | :platform = "sub-surface gliders";
 | platform_vocabulary | :platform_vocabulary = https://vocab.nerc.ac.uk/collection/L06/current/27/;
-| institution | :institution = "NOCS";
-| institution_vocabulary | :institution_vocabulary = "https://edmo.seadatanet.org/report/17";
+| institution | :institution = "OGS";
+| institution_vocabulary | :institution_vocabulary = "https://edmo.seadatanet.org/report/120";
 *_HERE WE NEED TO ALIGN WITH FORMAT_*
-| program | :program = ;
+| program | :program = "OGS glider program" ;
 | program_vocabulary | :program_vocabulary = ;
 *_HERE WE NEED TO ALIGN WITH FORMAT_*
-| oceangliders_site | :oceangliders_site = ;
+| oceangliders_site | :oceangliders_site = "CONVEX";
 | oceangliders_site_vocabulary | :oceangliders_site_vocabulary = ;
 *_HERE WE NEED TO ALIGN WITH FORMAT_*
-| contributor_role | :contributor_role = "principal investigator, Data scientist";
+| contributor_role | :contributor_role = "principal investigator,Data scientist";
 | contributor_role_vocabulary | :contributor_role_vocabulary = "http://vocab.nerc.ac.uk/collection/W08/current/CONT0004/,http://vocab.nerc.ac.uk/collection/W08/current/CONT0006/";
-| agency | :agency= ;
-| agency_vocabulary | :agency_vocabulary= ;
+| agency | :agency = "OGS,CNR,Coriolis";
+| agency_vocabulary | :agency_vocabulary = "https://edmo.seadatanet.org/report/120,https://edmo.seadatanet.org/report/227,https://edmo.seadatanet.org/report/227";
 *_HERE WE NEED TO ALIGN WITH FORMAT_*
-| rtqc_method | :rtqc_method= ;
-| rtqc_method_vocabulary | :=rtqc_method_vocabulary ;
+| agency_role | :agency = "operating agency,funding agency,data assembly center";
+| agency_role_vocabulary | :agency_role_vocabulary = ",,";
+| rtqc_method | :rtqc_method = ;
+| rtqc_method_vocabulary | :rtqc_method_vocabulary = ;
 *_HERE WE NEED TO ALIGN WITH FORMAT_*
-| rtqc_method_doi | :=rtqc_method_doi ; 
+| rtqc_method_doi | :rtqc_method_doi = ; 
 
 |===
 
