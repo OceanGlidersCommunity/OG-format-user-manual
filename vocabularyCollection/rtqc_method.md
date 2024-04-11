@@ -1,9 +1,9 @@
 | rtqc_method | definition | status |
 |:---------|:-------|:--------|
-| QUARTOD | https://ioos.noaa.gov/project/qartod/[url] | pending |
-| ego quality control manual | http://doi.org/10.13155/51485[DOI] | pending |
-| SOCIB QC manual | https://doi.org/10.25704/q4zs-tspv[DOI] | pending |
-| gliders tools – SOCCO | https://doi.org/10.3389/fmars.2019.00738[DOI] | pending |
-| UEA Seaglider toolbox | https://bitbucket.org/bastienqueste/uea-seaglider-toolbox/src/toolbox/ | pending |
-| CoTeDe | https://doi:10.21105/joss.02063[DOI] | pending |
-| ANFOG data management user's manual | https://imos.org.au/fileadmin/user_upload/shared/ANFOG/ANFOG_DataManagement_UsersManual_v5_Nov28.pdf[url]| pending |
+| QUARTOD | url - https://ioos.noaa.gov/project/qartod/ | pending |
+| ego quality control manual | DOI - http://doi.org/10.13155/51485 | pending |
+| SOCIB QC manual | DOI - https://doi.org/10.25704/q4zs-tspv | pending |
+| gliders tools – SOCCO | DOI - https://doi.org/10.3389/fmars.2019.00738 | pending |
+| UEA Seaglider toolbox | url - https://bitbucket.org/bastienqueste/uea-seaglider-toolbox/src/toolbox/ | pending |
+| CoTeDe | DOI - https://doi:10.21105/joss.02063 | pending |
+| ANFOG data management user's manual | url - https://imos.org.au/fileadmin/user_upload/shared/ANFOG/ANFOG_DataManagement_UsersManual_v5_Nov28.pdf | pending |
