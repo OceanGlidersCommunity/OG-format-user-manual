@@ -118,15 +118,15 @@ String PLATFORM_MODEL;
 
 | PLATFORM_MAKER | String PLATFORM_MAKER;
 
-:long_name = "Kongsberg Maritime";
+:long_name = "Kongsberg Maritime AS";
 
-:platform_maker_vocabulary = ;
+:platform_maker_vocabulary = "https://vocab.nerc.ac.uk/collection/B75/current/ORG00360/";
 
 String PLATFORM_MAKER;
 
-:long_name = "Teledyne Webb Research";
+:long_name = "Teledyne Webb Research	";
 
-:platform_maker_vocabulary = ;
+:platform_maker_vocabulary = "https://vocab.nerc.ac.uk/collection/B75/current/ORG01077/";
 |===
 
 
