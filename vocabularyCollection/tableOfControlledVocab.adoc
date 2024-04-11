@@ -75,7 +75,7 @@ While a continuous update of the controlled vocabularies is anticipated, the wor
 *_HERE FOLLOW GLOBAL ATTRIBUTE SECTION IN THE SAME ORDER_*
 
 |===
-| Attribute | Exemples 
+| Global attribute | Exemples 
 
 | platform | :platform = "sub-surface gliders";
 | platform_vocabulary | :platform_vocabulary = https://vocab.nerc.ac.uk/collection/L06/current/27/;
@@ -99,12 +99,34 @@ While a continuous update of the controlled vocabularies is anticipated, the wor
 
 |===
 
-## Platform information
+## Variable Attributes
+### Platform Information
 |===
-| Attribute | Exemples 
+| Variable | attribute 
 
-| |
-| |
+| PLATFORM_MODEL | String PLATFORM_MODEL; 
+
+:long_name = "Kongsberg Maritime Seaglider M1 glider";
+
+:platform_model_vocabulary = https://vocab.nerc.ac.uk/collection/B76/current/B7600002;
+
+String PLATFORM_MODEL; 
+
+:long_name = "Teledyne Webb Research Slocum G2 glider";
+
+:platform_model_vocabulary = https://vocab.nerc.ac.uk/collection/B76/current/B7600001/;
+
+| PLATFORM_MAKER | String PLATFORM_MAKER;
+
+:long_name = "Kongsberg Maritime";
+
+:platform_maker_vocabulary = ;
+
+String PLATFORM_MAKER;
+
+:long_name = "Teledyne Webb Research";
+
+:platform_maker_vocabulary = ;
 |===
 
 
