@@ -72,7 +72,7 @@ While a continuous update of the controlled vocabularies is anticipated, the wor
 # Exemplars
 
 ## Global attributes
-*_HERE FOLLOW GLOBAL ATTRIBUTE SECTION IN THE SAME ORDER_*
+
 
 |===
 | Global attribute | Exemples 
@@ -101,38 +101,44 @@ While a continuous update of the controlled vocabularies is anticipated, the wor
 
 ## Variable Attributes
 ### Platform Information
+*_Which option do we follow here?_*
 |===
-| Variable | exemple
+| Variable | Variable attribute | exemplar
 
-| PLATFORM_MODEL | String PLATFORM_MODEL; 
+| PLATFORM_MODEL  |  
 
-:long_name = "Kongsberg Maritime Seaglider M1 glider";
+:long_name = "model of the glider";
 
-:platform_model_vocabulary = https://vocab.nerc.ac.uk/collection/B76/current/B7600002;
+:platform_model_vocabulary = "https://vocab.nerc.ac.uk/collection/B76/current/B7600002"; 
 
-String PLATFORM_MODEL; 
 
-:long_name = "Teledyne Webb Research Slocum G2 glider";
 
-:platform_model_vocabulary = https://vocab.nerc.ac.uk/collection/B76/current/B7600001/;
+:long_name = "model of the glider";
 
-| ICES_CODE | string ICES_CODE;
+:platform_model_vocabulary = "https://vocab.nerc.ac.uk/collection/B76/current/B7600001/"; |
+Kongsberg Maritime Seaglider M1 glider
 
+Teledyne Webb Research Slocum G2 glider
+
+| *OR* | | 
+
+| ICES_CODE | 
 :long_name = "Trieste_1";
 
-:ices_code_vocabulary = "https://vocab.ices.dk/?CodeID=230740";
+:ices_code_vocabulary = "https://vocab.ices.dk/?CodeID=230740"; | 
 
-| PLATFORM_MAKER | String PLATFORM_MAKER;
 
+
+| PLATFORM_MAKER | 
 :long_name = "Kongsberg Maritime AS";
 
 :platform_maker_vocabulary = "https://vocab.nerc.ac.uk/collection/B75/current/ORG00360/";
 
-String PLATFORM_MAKER;
 
-:long_name = "Teledyne Webb Research	";
 
-:platform_maker_vocabulary = "https://vocab.nerc.ac.uk/collection/B75/current/ORG01077/";
+:long_name = "Teledyne Webb Research";
+
+:platform_maker_vocabulary = "https://vocab.nerc.ac.uk/collection/B75/current/ORG01077/"; |
 |===
 
 
