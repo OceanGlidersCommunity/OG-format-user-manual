@@ -43,7 +43,7 @@ While a continuous update of the controlled vocabularies is anticipated, the wor
 
   | platform | https://vocab.nerc.ac.uk/collection/L06/current/[L06 - SeaVoX Platform Categories] |  https://vocab.nerc.ac.uk/collection/L06/current/27/[OceanGliders vocabulary subset] | https://github.com/nvs-vocabs/L06/issues | OceanGliders 
   | institution | https://edmo.seadatanet.org/[EDMO code] |  No subset available for this collection | *tbd* | SeaDataNet 
-  | serial_number_prefix | *tbd* | *tbd* | OceanGliders
+  | serial_number_prefix | *tbd* | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/serial_number_prefix.md[pending list] | OceanGliders
   | program | *tbd* |  *tbd* | *tbd* | OceanOPS 
   | oceangliders_site | *tbd* |  *tbd* | *tbd* | OceanOPS 
   | contributors_role | *tbd* |  *OceanGliders vocabulary subset tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/contributors_role.md[pending list] | *tbd* | OceanGliders 
