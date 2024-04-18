@@ -1,4 +1,4 @@
-netcdf SEA076_20230906T0852_R {
+netcdf sea076_20230906T0852_R {
 dimensions:
 	N_MEASUREMENTS = 10 ;
 variables:
@@ -322,7 +322,7 @@ variables:
 		:glider_name = "Fibbla" ;
 		:glider_serial = "76" ;
 		:history = "CPROOF glider toolbox version: pre-tag" ;
-		:id = "SEA076_20230906T0852_R" ;
+		:id = "sea076_20230906T0852_R" ;
 		:institution = "Voice of the Ocean Foundation" ;
 		:keywords = "AUVS, Autonomous Underwater Vehicles, Oceans, Ocean Pressure, Water Pressure, Ocean Temperature, Water Temperature, Salinity/Density, Conductivity, Density, Salinity" ;
 		:keywords_vocabulary = "GCMD Science Keywords" ;
@@ -410,7 +410,7 @@ data:
 
  TIME_GPS = 1693990379.375, _, _, _, _, _, _, _, _, _ ;
 
- TRAJECTORY = "SEA076_20230906T0852_R" ;
+ TRAJECTORY = "sea076_20230906T0852_R" ;
 
  WMO_IDENTIFIER = "6801665" ;
 
