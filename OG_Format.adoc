@@ -437,8 +437,10 @@ If the glider has no <platform_name> use <platform_serial_number> instead to cre
 |PLATFORM_NAME 
 
 * data type: string|
-* long_name = “Local or nickname of the glider”;
- |highly desirable
+* long_name = “unique identifying name of glider”;
+ |mandatory
+
+ The  platform name should be constructed from the manufacturer prefix and the platform serial number e.g. "sea001" (seaglider), unit001 (slocum), sea001 (seaexplorer), sp001 (spray). Where the serial number of the platform is not known, a local nickname can be used e.g. "orca", "sverdrup", "ammonite".
 
 |PLATFORM_DEPTH_RATING 
 
