@@ -127,11 +127,11 @@ The global attribute section is used for data discovery. The following global at
 |*Global attribute* |*Definition* |*Requirement status* |*Format, fixed value or example*
 |title |A short phrase or sentence describing the dataset. |mandatory |ex.: “OceanGliders trajectory file”
 |platform a|
-Name of the platform(s) that supported the sensors data used to create this data set or product.
+Category of the platform that supported the sensor data used to create this data set or product. 
 
-https://vocab.nerc.ac.uk/collection/L06/current/[_https://vocab.nerc.ac.uk/collection/L06/current/_]
+It is common to any OceanGliders data sets and define by platform_vocabulary.
 
- |mandatory |"sub-surface gliders"
+ |mandatory |fixed value: "sub-surface gliders"
 |platform_vocabulary |Controlled vocabulary for the names used in the "platform" attribute. |mandatory |https://vocab.nerc.ac.uk/collection/L06/current/27/[_https://vocab.nerc.ac.uk/collection/L06/current/27/_]
 |id a|
 Formatted mission name: <platform_name>_<start_date>_<data_mode>
@@ -824,7 +824,6 @@ Controlled vocabularies will cover the metadata listed in the table (with a summ
 |institution |Yes |https://edmo.seadatanet.org/[_https://edmo.seadatanet.org/_] |Maris |SeaDataNet
 |rtqc_method |No |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_Interim Reference Document_] |? |OceanGliders
 |phase_calculation_methodology |No |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_Interim Reference Document_] |? |OceanGliders
-|platform_type |No |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_Interim Reference Document_] |NVS |OceanGliders
 |platform_model |Yes |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_Interim Reference Document_] |NVS |OceanGliders
 |ICES_code |Yes |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_Interim Reference Document_] |? (ICES / NVS) |ICES
 |platform_maker |Yes |https://docs.google.com/document/d/1dN90xkw9oCbLs0sPPhOmszdOjLpwcqxiK5mjeZP7abA/edit?usp=sharing[_Interim Reference Document_] |NVS |OceanGliders
