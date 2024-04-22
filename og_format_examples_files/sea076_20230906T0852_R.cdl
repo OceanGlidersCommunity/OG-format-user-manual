@@ -297,7 +297,7 @@ variables:
 		:acknowledgement = "This study used data collected and made freely available by Voice of the Ocean Foundation (https://voiceoftheocean.org) accessed from https://erddap.observations.voiceoftheocean.org/erddap/index.html" ;
 		:basin = "Western Gotland Basin" ;
 		:cdm_data_type = "Trajectory" ;
-		:comment = "deployment and recovery in Gotland" ;
+		:comment = "Dataset for demonstration purposes only. Original dataset truncated for the sake of simplicity" ;
 		:contributor_name = "Callum Rollo, Louise Biddle, Olle Petersson, Aleksandra Mazur, Marcus Melin, Gunnar Johnsson, Andrew Birkett, Chiara Monforte" ;
 		:contributor_role = "Data scientist, PI, Operator, Operator, Operator, Operator, Operator, Operator," ;
 		:creator_email = "callum.rollo@voiceoftheocean.org" ;
