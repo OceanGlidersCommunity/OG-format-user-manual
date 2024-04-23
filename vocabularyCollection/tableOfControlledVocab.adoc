@@ -12,9 +12,9 @@ OceanGliders 1.0 format - Vocabulary Collections
 The series of concepts of the https://github.com/OceanGlidersCommunity/OG1.0-user-manual[OG1.0 format] are controlled by a set of vocabulary collections managed by the OceanGliders data management team and other governance bodies. +
 These concepts are listed in the table below. Each concept is linked to its collection of vocabularies. Each collection has a status attribute. +
 [square]
+* The *pending* entries are being discussed by the community and are not yet supported by the OG1.0 format. +
 * The *validated* entries have been validated by the vocabulary working group and can be used in the OG1.0 format. +
 * The *published* entries have been published by the host when it exists. +
-* The *pending* entries are being discussed by the community and are not yet supported by the OG1.0 format. +
 
 Vocabulary collections that are not governed by OceanGliders do not follow the *status* convention described above.
 
@@ -34,8 +34,6 @@ The issue must indicate the value of the new entry and all its relevant attribut
 A working group on controlled vocabulary collections will review the requests regularly.
 While a continuous update of the controlled vocabularies is anticipated, the working group will update the vocabulary collection at least twice a year.
 
-`*The reference lists are the lists available below.*`
-
 === Table of controlled vocabularies
   
 |===
@@ -43,7 +41,7 @@ While a continuous update of the controlled vocabularies is anticipated, the wor
 
   | platform | https://vocab.nerc.ac.uk/collection/L06/current/[L06 - SeaVoX Platform Categories] |  https://vocab.nerc.ac.uk/collection/L06/current/27/[OceanGliders vocabulary subset] | https://github.com/nvs-vocabs/L06/issues | OceanGliders 
   | institution | https://edmo.seadatanet.org/[EDMO code] |  No subset available for this collection | *tbd* | SeaDataNet 
-  | platform_serial_number_prefix | *tbd* | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/serial_number_prefix.md[pending list] | OceanGliders
+  | platform_serial_number_prefix | *tbd* | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/serial_number_prefix.md[pending list] | *tbd* | OceanGliders
   | program | *tbd* |  *tbd* | *tbd* | OceanOPS 
   | oceangliders_site | *tbd* |  *tbd* | *tbd* | OceanOPS 
   | contributors_role | *tbd* |  *OceanGliders vocabulary subset tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/contributors_role.md[pending list] | *tbd* | OceanGliders 
