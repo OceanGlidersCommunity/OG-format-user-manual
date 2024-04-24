@@ -131,7 +131,7 @@ Category of the platform that supported the sensor data used to create this data
 
 It is common to any OceanGliders data sets and define by platform_vocabulary.
 
- |mandatory |fixed value: "sub-surface gliders"
+ |mandatory |ex.: "sub-surface gliders"
 |platform_vocabulary |Controlled vocabulary for the names used in the "platform" attribute. |mandatory |https://vocab.nerc.ac.uk/collection/L06/current/27/[_https://vocab.nerc.ac.uk/collection/L06/current/27/_]
 |id a|
 Formatted mission name: <platform_name>_<start_date>_<data_mode>
@@ -141,9 +141,10 @@ data_mode_vocabulary = “”;
 |mandatory |
 ex.:
 
-* sverdrup_20200512T001245_delayed
-* SL287_20180715T012451_delayed
-* p202_20150923T150451_R
+* unit1032_20230512T001245_delayed
+* sea008_20180715T012451_delayed
+* sp202_20150923T150451_R
+* sg041_20381221T000032_R
 
 |naming_authority a|
 A unique name that identifies the institution who provided the id.
@@ -175,7 +176,7 @@ ex.:
 
 * sverdrup_20200512_delayed
 * Forster20201109
-* Estoc_2015
+* Estoc_2015_01
 
 |geospatial_lat_min |Describes a simple lower latitude limit |suggested |decimal degree
 |geospatial_lat_max |Describes a simple upper latitude limit |suggested |decimal degree
@@ -401,9 +402,7 @@ In this following section, two options, “encapsulate variable” and “indivi
 
 Value: <platform_name>_<start_date>
 
-Where <platform_name> refers to the name of the glider, <start_date> refers to the deployment start UTC date under iso 8601. *Ex : eltanin_20210909T1605*
-
-If the glider has no <platform_name> use <platform_serial_number> instead to create the TRAJECTORY. *Ex.: sp042_20210218T2325*
+Where <platform_name> is defined below , <start_date> refers to the deployment start UTC date under iso 8601. *Ex : sp041_20210909T1605*
 |============================================================
 
 ////
