@@ -106,11 +106,11 @@ This document defines the common OceanGliders data format, hereafter OG1.0.
 
 * Data files should be named as follows:
 
-	- "file_name" : "<id>.nc" (ex : "sp065_20210616T1430_R.nc")
+	- "file_name" : "<id>.nc" (ex : "sp065_20210616T143025_R.nc")
 
 * Recalling that:
-	- "id" : "<trajectory>_<data_mode>" (ex : "sp065_20210616T1430_R")
-	- "trajectory" : "<platform_name>_<start_date>" (ex :  "sp065_20210616T1430")
+	- "id" : "<trajectory>_<data_mode>" (ex : "sp065_20210616T143025_R")
+	- "trajectory" : "<platform_name>_<start_date>" (ex :  "sp065_20210616T143025")
 	- "platform_name", "start_date", "data_mode" are as described below in this document.
 
 
@@ -205,6 +205,7 @@ ex.:
 |doi |The digital object identifier of the OG1.0 data file |highly desirable |
 |web_link |url that provides useful information about anything related to the glider mission. Multiple urls are separated by commas. |suggested |
 |comment |Miscellaneous information about the data or methods used to produce it. |suggested |
+|start_date | Datetime of glider deployment |mandatory | Formatted string: YYYYmmddTHHMMss e.g. 20240425T145805
 |date_created |date of creation of this data set |mandatory |iso 8601
 |featureType |Description of a single feature with this discrete sampling geometry |mandatory |trajectory
 |Conventions |A comma-separated list of the conventions that are followed by the dataset. |mandatory |ex.: "CF-1.9, ACDD-1.3, OG-1.0"
