@@ -141,9 +141,9 @@ data_mode_vocabulary = “”;
 |mandatory |
 ex.:
 
-* unit1032_20230512T001245_delayed
+* unit_1032_20230512T001245_delayed
 * sea008_20180715T012451_delayed
-* sp202_20150923T150451_R
+* sp032_20150923T150451_R
 * sg041_20381221T000032_R
 
 |naming_authority a|
@@ -402,7 +402,7 @@ In this following section, two options, “encapsulate variable” and “indivi
 
 Value: <platform_name>_<start_date>
 
-Where <platform_name> is defined below , <start_date> refers to the deployment start UTC date under iso 8601. *Ex : sp041_20210909T1605*
+Where <platform_name> is defined below , <start_date> refers to the deployment start UTC date under iso 8601. *Ex : sp041_20210909T160556* 
 |============================================================
 
 ////
@@ -439,7 +439,7 @@ Where <platform_name> is defined below , <start_date> refers to the deployment s
 * long_name = “unique identifying name of glider”;
  |mandatory
 
- The  platform name should be constructed from the manufacturer prefix and the platform serial number e.g. "sea001" (seaglider), unit001 (slocum), sea001 (seaexplorer), sp001 (spray). Where the serial number of the platform is not known, a local nickname can be used e.g. "orca", "sverdrup", "ammonite".
+ The  platform name should be constructed from the manufacturer prefix and the platform serial number e.g. "sea001" (seaglider), unit_001 (slocum), sea001 (seaexplorer), sp001 (spray). Where the serial number of the platform is not known, a local nickname can be used e.g. "orca", "sverdrup", "ammonite".
 
 |PLATFORM_DEPTH_RATING 
 
