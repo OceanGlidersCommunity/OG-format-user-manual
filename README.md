@@ -7,6 +7,10 @@ A discussion section is also available for any question or comment related to OG
 
 [Here](https://oceangliderscommunity.github.io/OG-format-user-manual/) is the most recent version of the user manual. 
 
+### Example files
+
+Example .cdl files can be found in the directory `og_format_examples_files`
+
 ## Who is reviewing the issues?
 
 A sub-group of the OceanGliders data management team will be in charge of reviewing the issues.
