@@ -186,6 +186,7 @@ ex.:
 |site |The name of the regular sample line or area. |highly desirable |
 |site_vocabulary |Controlled vocabulary of the names used in the “site” attribute |highly desirable |To be defined
 |program |The overarching program(s) of which the dataset is a part. A program consists of a set (or portfolio) of related and possibly interdependent projects that meet an overarching objective. |Highly desirable |
+|program_vocabulary | Controlled vocabulary of the program attribute| highly desirable | To be defined
 |project |The name of the project(s) principally responsible for originating this data. Multiple projects can be separated by commas |suggested |
 |network |A network is a group of platforms crossing the boundaries of a single program. It can represent a mutual scientific objective, a geographical focus, an array and/or a project. Multiple networks shall be separated by commas. |suggested |
 |contributor_name |Name of the contributors to the glider mission. Multiple contributors are separated by commas. |PI name is mandatory |
@@ -211,11 +212,7 @@ ex.:
 |Conventions |A comma-separated list of the conventions that are followed by the dataset. |mandatory |ex.: "CF-1.9, ACDD-1.3, OG-1.0"
 |=====================================================================================================================================================================================================================================================================================
 
-Note about program, networks, and sites:
 Some examples are provided in <<ProgramNetworkSite-example>>.
-The image below describes the architecture of the GOOS/OceanOPS database.
-
-image:figures/image2.png[image,width=515,height=171]
 
 
 ////
