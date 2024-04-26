@@ -5,7 +5,14 @@
 Here we review issues related to OceanGliders (OG) format and vocabularies.
 A discussion section is also available for any question or comment related to OG format and vocabulary.
 
-[Here](https://oceangliderscommunity.github.io/OG-format-user-manual/) is the most recent version of the user manual. 
+The homepage of OG format is at [https://github.com/OceanGlidersCommunity/OG-format-user-manual](https://github.com/OceanGlidersCommunity/OG-format-user-manual)
+
+[Here](https://oceangliderscommunity.github.io/OG-format-user-manual/) is the most recent version of the user manual.
+
+
+Vocabulary guidance for the OG format is [here](https://oceangliderscommunity.github.io/OG-format-user-manual/vocabularyCollection/tableOfControlledVocab.html)
+
+The history of the format is documented on the [history page](https://oceangliderscommunity.github.io/OG-format-user-manual/history.html)
 
 ### Example files
 
@@ -34,3 +41,4 @@ The release is planned for January each year. Issues accepted in September shoul
 ## Code of Conduct
 
 Please read and follow our [Code of Conduct](https://github.com/OceanGlidersCommunity/OceanGliders/blob/main/CODE_OF_CONDUCT.md).
+
