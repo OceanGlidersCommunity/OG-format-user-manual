@@ -1,7 +1,13 @@
 [cols=",",options="header",]
 |===========================================================================================
 |image:figures/image1.png[image,width=164,height=144] a|
-OceanGliders 1.0 format - Terms of References
+OceanGliders 1.0 format - Terms of References +
+
+Navigation: +
+
+https://github.com/OceanGlidersCommunity/OG-format-user-manual[Github repository]  +
+https://oceangliderscommunity.github.io/OG-format-user-manual/OG_Format.html[Terms of reference]  +
+https://oceangliderscommunity.github.io/OG-format-user-manual/vocabularyCollection/tableOfControlledVocab.html[Vocabulary collections]  +
 
 |===========================================================================================
 
@@ -756,7 +762,7 @@ Note 1: PARAMETER information is highly desirable to avoid ERDDAP configuration 
 * [[geophysical-variables]]
 = Geophysical variables
 ////
-= Geophysical variables
+== Geophysical variables
 "The fill value should have the same data type as the variable and be outside of the range of possible data values."
 [cols=",,",options="header",]
 |==========================================================================================================================
@@ -852,24 +858,24 @@ It is expected that the vocabulary collections will not always been synchronized
 
   | platform | https://vocab.nerc.ac.uk/collection/L06/current/25/[collection] |  https://vocab.nerc.ac.uk/collection/L06/current/25/ | OceanGliders |
   | oceangliders_site | *tbd* |  *tbd* | OceanOPS |
-  | contributors_role | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/contributors_role.md[collection] |  *tbd* | OceanGliders |
-  | agencies_role | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/agencies_role[collection] |  *tbd* | OceanGliders |
+  | contributors_role | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/contributors_role.md[collection] |  *tbd* | OceanGliders |
+  | agencies_role | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/agencies_role[collection] |  *tbd* | OceanGliders |
   | agencies_id | https://edmo.seadatanet.org/[collection] |  https://edmo.seadatanet.org/ | SeaDataNet |
   | naming_authority | https://edmo.seadatanet.org/[collection] |  https://edmo.seadatanet.org/ | SeaDataNet |
   | institution | https://edmo.seadatanet.org/[collection] |  https://edmo.seadatanet.org/ | SeaDataNet |
-  | rtqc_method | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/rtqc_method.md[collection] |  https://vocab.nerc.ac.uk/collection/L06/current/25/ | OceanGliders |
+  | rtqc_method | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/rtqc_method.md[collection] |  https://vocab.nerc.ac.uk/collection/L06/current/25/ | OceanGliders |
   | phase_calculation_methodology | *tbd* |  *tbd* | OceanGliders |
-  | platform_type | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/platform_type.md[collection] | http://vocab.nerc.ac.uk/collection/L06/current/27/ | OceanGliders |
-  | platform_model | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/platform_model.md[collection] |  *tbd* | OceanGliders |
+  | platform_type | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/platform_type.md[collection] | http://vocab.nerc.ac.uk/collection/L06/current/27/ | OceanGliders |
+  | platform_model | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/platform_model.md[collection] |  *tbd* | OceanGliders |
   | ICES_code | https://vocab.ices.dk/?codetypeguid=7f9a91e1-fb57-464a-8eb0-697e4b0235b5[collection] |  https://vocab.ices.dk/?codetypeguid=7f9a91e1-fb57-464a-8eb0-697e4b0235b5 | ICES |
-  | platform_maker | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/platform_maker.md[collection] |  *tbd* | OceanGliders |
-  | battery_type | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/battery_type.md[collection] |  *tbd* | OceanGliders |
-  | telecom_type | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/telecom_type.md[collection] |  *tbd* | OceanGliders |
-  | tracking_system | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/tracking_system.md[collection] |  *tbd* | OceanGliders |
+  | platform_maker | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/platform_maker.md[collection] |  *tbd* | OceanGliders |
+  | battery_type | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/battery_type.md[collection] |  *tbd* | OceanGliders |
+  | telecom_type | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/telecom_type.md[collection] |  *tbd* | OceanGliders |
+  | tracking_system | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/tracking_system.md[collection] |  *tbd* | OceanGliders |
   | sensor | *tbd* |  *tbd* | OceanGliders |
   | sensor_model | *tbd* |  *tbd* | OceanGliders |
-  | data_mode | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/data_mode.md[collection] |  *tbd* | OceanGliders |
-  | phase | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/phase.md[collection] |  *tbd* | OceanGliders |
+  | data_mode | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/data_mode.md[collection] |  *tbd* | OceanGliders |
+  | phase | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/phase.md[collection] |  *tbd* | OceanGliders |
   | parameter | *tbd* |  http://vocab.nerc.ac.uk/collection/OG1/current/ | OceanGliders |
 |===
   
