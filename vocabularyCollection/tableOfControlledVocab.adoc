@@ -1,10 +1,15 @@
 [cols=",",options="header",]
 |===========================================================================================
-|image:figures/image1.png[image,width=164,height=144] a|
-OceanGliders 1.0 format - Vocabulary Collections
+|image:../figures/image1.png[image,width=164,height=144] a|
+OceanGliders 1.0 format - Vocabulary Collections +
+
+Navigation: +
+
+https://github.com/OceanGlidersCommunity/OG-format-user-manual[Github repository]  +
+https://oceangliderscommunity.github.io/OG-format-user-manual/OG_Format.html[Terms of reference]  +
+https://oceangliderscommunity.github.io/OG-format-user-manual/vocabularyCollection/tableOfControlledVocab.html[Vocabulary collections]  +
 
 |===========================================================================================
-
 ////
 * [[Vocabulary Collections]]
 ////

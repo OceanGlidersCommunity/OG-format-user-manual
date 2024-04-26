@@ -1,7 +1,13 @@
 [cols=",",options="header",]
 |===========================================================================================
 |image:figures/image1.png[image,width=164,height=144] a|
-OceanGliders 1.0 format - Terms of References
+OceanGliders 1.0 format - Terms of References +
+
+Navigation: +
+
+https://github.com/OceanGlidersCommunity/OG-format-user-manual[Github repository]  +
+https://oceangliderscommunity.github.io/OG-format-user-manual/OG_Format.html[Terms of reference]  +
+https://oceangliderscommunity.github.io/OG-format-user-manual/vocabularyCollection/tableOfControlledVocab.html[Vocabulary collections]  +
 
 |===========================================================================================
 
@@ -756,7 +762,7 @@ Note 1: PARAMETER information is highly desirable to avoid ERDDAP configuration 
 * [[geophysical-variables]]
 = Geophysical variables
 ////
-= Geophysical variables
+== Geophysical variables
 "The fill value should have the same data type as the variable and be outside of the range of possible data values."
 [cols=",,",options="header",]
 |==========================================================================================================================
