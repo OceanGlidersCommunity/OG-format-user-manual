@@ -7,7 +7,7 @@ A discussion section is also available for any question or comment related to OG
 
 The homepage of OG format is at [https://github.com/OceanGlidersCommunity/OG-format-user-manual](https://github.com/OceanGlidersCommunity/OG-format-user-manual)
 
-[Here](https://oceangliderscommunity.github.io/OG-format-user-manual/) is the most recent version of the user manual.
+[Here](https://oceangliderscommunity.github.io/OG-format-user-manual/OG_Format.html) is the most recent version of the user manual.
 
 
 Vocabulary guidance for the OG format is [here](https://oceangliderscommunity.github.io/OG-format-user-manual/vocabularyCollection/tableOfControlledVocab.html)
