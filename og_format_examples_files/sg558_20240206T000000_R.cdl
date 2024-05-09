@@ -326,7 +326,7 @@ variables:
 		PLATFORM_MODEL:platform_model_vocabulary = "" ;
 	string WMO_IDENTIFIER ;
 		WMO_IDENTIFIER:long_name = "wmo id" ;
-	string DEPLOYMENT_TIME ;
+	double DEPLOYMENT_TIME ;
 		DEPLOYMENT_TIME:long_name = "Date of deployment" ;
 		DEPLOYMENT_TIME:calendar = "gregorian" ;
 		DEPLOYMENT_TIME:standard_name = "time" ;
@@ -351,15 +351,15 @@ variables:
 		:geospatial_vertical_units = "m" ;
 		:time_coverage_start = "2024-02-06T17:05Z" ;
 		:time_coverage_end = "2024-02-23T20:50Z" ;
-		:agency = "UEA" ;
-		:agency_role = "contact point" ;
-		:agency_role_vocabulary = "https://edmo.seadatanet.org/" ;
-		:agency_id = "" ;
-		:agency_id_vocabulary = "EDMO" ;
+		:institution = "UEA" ;
+		:institution_role = "contact point" ;
+		:institution_role_vocabulary = "https://edmo.seadatanet.org/" ;
+		:institution_id = "" ;
+		:institution_id_vocabulary = "EDMO" ;
 		:contributor_name = "Karen Heywood" ;
 		:contributor_email = "k.heywood@uea.ac.uk" ;
-		:contributor_role = "Principal investigator" ;
-		:contributor_role_vocabulary = "BODC person database" ;
+		:contributor_role = "principal investigator" ;
+		:contributor_role_vocabulary = "https://vocab.nerc.ac.uk/collection/C86/current/SDNPR008/" ;
 		:contributor_id = "" ;
 		:publisher_name = "NOC" ;
 		:publisher_email = "glidersbodc@bodc.ac.uk" ;
@@ -374,16 +374,11 @@ variables:
 		:wmoid = "8901054" ;
 		:institution = "" ;
 		:comment = "" ;
-		:history = "" ;
-		:keywords = "" ;
 		:doi = "" ;
-		:ctd_make_model = "" ;
-		:product_version = "" ;
 		:program = "" ;
 		:network = "" ;
 		:site_vocabulary = "" ;
 		:site = "" ;
-		:keywords_vocabulary = "" ;
 		:web_link = "" ;
 		:title = "OceanGliders trajectory file" ;
 		:platform = "sub-surface gliders" ;
@@ -402,10 +397,10 @@ variables:
 		:mission = "PICCOLO" ;
 		string :instrument = "WET Labs {Sea-Bird WETLabs} ECO Puck Triplet BBFL2-IRB scattering fluorescence sensor", "Oxygen optode 4831", "Unpumped CT sail CTD", "Seaglider M1 Glider data logger" ;
 		:metadata_link = "https://api.linked-systems.uk/api/meta/v2/deployments/info/626" ;
-		:trajectory = "Bella_20240206" ;
+		:trajectory = "sg558_20240206" ;
 		:date_created = "2024-03-05T13:08:28.708143" ;
 		:date_modified = "2024-03-05T13:08:28.708154" ;
-		:id = "Bella_20240206T000000_R" ;
+		:id = "sg558_20240206T000000_R" ;
 		:_NCProperties = "version=2,netcdf=4.9.3-development,hdf5=1.12.2" ;
 data:
 
@@ -533,7 +528,7 @@ data:
 
  INSTRUMENT_DATA\ LOGGERS_sg558 = _ ;
 
- TRAJECTORY = "Bella_20240206" ;
+ TRAJECTORY = "sg558_20240206" ;
 
  PLATFORM_TYPE = "seaglider" ;
 

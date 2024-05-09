@@ -227,7 +227,7 @@ variables:
 		PLATFORM_MODEL:platform_model_vocabulary = "" ;
 	string WMO_IDENTIFIER ;
 		WMO_IDENTIFIER:long_name = "wmo id" ;
-	string DEPLOYMENT_TIME ;
+	double DEPLOYMENT_TIME ;
 		DEPLOYMENT_TIME:long_name = "Date of deployment" ;
 		DEPLOYMENT_TIME:calendar = "gregorian" ;
 		DEPLOYMENT_TIME:standard_name = "time" ;
@@ -252,15 +252,15 @@ variables:
 		:geospatial_vertical_units = "m" ;
 		:time_coverage_start = "2023-11-12T10:10Z" ;
 		:time_coverage_end = "2024-02-05T09:08Z" ;
-		:agency = "NOCS" ;
-		:agency_role = "contact point" ;
-		:agency_role_vocabulary = "https://edmo.seadatanet.org/" ;
-		:agency_id = "" ;
-		:agency_id_vocabulary = "EDMO" ;
+		:institution = "NOCS" ;
+		:institution_role = "contact point" ;
+		:institution_role_vocabulary = "https://edmo.seadatanet.org/" ;
+		:institution_id = "" ;
+		:institution_id_vocabulary = "EDMO" ;
 		:contributor_name = "Phil Bagley" ;
 		:contributor_email = "phil.bagley@noc.ac.uk" ;
-		:contributor_role = "Principal investigator" ;
-		:contributor_role_vocabulary = "BODC person database" ;
+		:contributor_role = "principal investigator" ;
+		:contributor_role_vocabulary = "https://vocab.nerc.ac.uk/collection/C86/current/SDNPR008/" ;
 		:contributor_id = "" ;
 		:publisher_name = "NOC" ;
 		:publisher_email = "glidersbodc@bodc.ac.uk" ;
@@ -275,11 +275,7 @@ variables:
 		:wmoid = "6800986" ;
 		:institution = "" ;
 		:comment = "" ;
-		:history = "" ;
-		:keywords = "" ;
 		:doi = "" ;
-		:ctd_make_model = "" ;
-		:product_version = "" ;
 		:program = "" ;
 		:network = "" ;
 		:site_vocabulary = "" ;
@@ -303,10 +299,10 @@ variables:
 		:mission = "Met Office Winter 2023 Deployment (MOGli 5)" ;
 		string :instrument = "Unpumped CT sail CTD", "Slocum G1+G2 Glider Navigation data logger" ;
 		:metadata_link = "https://api.linked-systems.uk/api/meta/v2/deployments/info/617" ;
-		:trajectory = "Cabot_20231112" ;
+		:trajectory = "unit_345_20231112" ;
 		:date_created = "2024-02-05T12:09:19.444793" ;
 		:date_modified = "2024-02-05T12:09:19.444804" ;
-		:id = "Cabot_20231112T000000_R" ;
+		:id = "unit_345_20231112T000000_R" ;
 		:_NCProperties = "version=2,netcdf=4.9.3-development,hdf5=1.12.2" ;
 data:
 
