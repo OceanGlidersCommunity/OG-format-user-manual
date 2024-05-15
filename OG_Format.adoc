@@ -5,7 +5,7 @@ OceanGliders 1.0 format - Terms of References +
 
 Navigation: +
 
-https://github.com/OceanGlidersCommunity/OG-format-user-manual[Github repository]  +
+https://github.com/OceanGlidersCommunity/OG-format-user-manual[GitHub repository]  +
 https://oceangliderscommunity.github.io/OG-format-user-manual/OG_Format.html[Terms of reference]  +
 https://oceangliderscommunity.github.io/OG-format-user-manual/vocabularyCollection/tableOfControlledVocab.html[Vocabulary collections]  +
 
@@ -297,7 +297,7 @@ OG1.0 requirements cover the GPS variables delivered by the glider when at the s
  |mandatory
 |============================================================
 
-Note: TIME_GPS is a legacy channel kept to ensure interoperbility with EGO formats theat preceded OceanGliders format.
+Note: TIME_GPS is a legacy channel kept to ensure interoperability with EGO formats that preceded OceanGliders format.
 
 ////
 * [[along-track-positioning-variables]]
@@ -305,7 +305,7 @@ Note: TIME_GPS is a legacy channel kept to ensure interoperbility with EGO forma
 ////
 == Along track positioning variables
 
-OG1.0 requirements cover positioning variables and geolocating any scientific measurements made by the glider during its mission.
+OG1.0 requirements cover positioning variables and geolocation of any scientific measurements made by the glider during its mission.
 
 * OG1.0 requirement for positioning variable: The table below describes the mandatory positioning variables and their attributes.
 
@@ -317,7 +317,7 @@ OG1.0 requirements cover positioning variables and geolocating any scientific me
 * data type: double
 * dimension: N_MEASUREMENTS |
 
-* long_name = “latitude of each measurements and GPS location”;
+* long_name = “latitude of each measurement and GPS location”;
 * standard_name = “latitude”;
 * units = “degrees_north”;
 * _FillValue = -9999.9;
@@ -335,7 +335,7 @@ OG1.0 requirements cover positioning variables and geolocating any scientific me
 * data type: double
 * dimension: N_MEASUREMENTS |
 
-* long_name = “longitude of each measurements and GPS location”;
+* long_name = “longitude of each measurement and GPS location”;
 * standard_name = “longitude”;
 * units = “degrees_east”;
 * _FillValue = -9999.9;
@@ -368,7 +368,7 @@ OG1.0 requirements cover positioning variables and geolocating any scientific me
 
 Interpolation methodologies need publishing as a best practice document separately to the OG1.0 terms of reference.
 
-See parameters section for guidance on attributes and convetions on _QC channels.
+See parameters section for guidance on attributes and conventions on _QC channels.
 
 ////
 * [[general-information]]
@@ -764,16 +764,16 @@ Note 1: PARAMETER information is highly desirable to avoid ERDDAP configuration 
 = Geophysical variables
 ////
 == Geophysical variables
-"The fill value should have the same data type as the variable and be outside of the range of possible data values."
+"The fill value should have the same data type as the variable and be outside the range of possible data values."
 [cols=",,",options="header",]
 |==========================================================================================================================
 |*VARIABLE NAME* |*variable attributes* |*requirement status*
 |<PARAM> a|
 float <PARAM>(N_MEASUREMENT);
 
-<PARAM>:long_name = "<X>"; <PARAM>:standard_name = “<X>";
+<PARAM>:long_name = "<X>"; <PARAM>:standard_name = "<X>";
 
-<PARAM>:vocabulary = “_https://vocab.nerc.ac.uk/collection/OG1/current/_";
+<PARAM>:vocabulary = "_https://vocab.nerc.ac.uk/collection/OG1/current/_";
 
 <PARAM>:_FillValue = <X>;
 
@@ -822,11 +822,11 @@ and use the GOOS networks 0-4 flagging convention.
 ////
 == Vocabulary Collections
 
-Series of concept of the https://github.com/OceanGlidersCommunity/OG1.0-user-manual[OG1.0 format] are controlled by a collection of vocabularies managed by the OceanGliders data management team and other governance boddy. +
+Series of concept of the https://github.com/OceanGlidersCommunity/OG1.0-user-manual[OG1.0 format] are controlled by a collection of vocabularies managed by the OceanGliders data management team and other governance body. +
 These concepts are listed in the table below. Each concept is linked to its collection of vocabularies. Each element of the collection has a status attribute. +
 [square]
 * The *validated* entries have been validated by the vocabulary working group and can be used in the OG1.0 format. +
-* The *published* entries have been published by the host when it exist. +
+* The *published* entries have been published by the host when it exists. +
 * The *pending* entries are being discussed by the community and are not yet supported by the OG1.0 format. +
 
 Vocabularies that are not governed by OceanGliders do not follow the *status* convention described above.
@@ -848,7 +848,7 @@ While a continuous update of the controlled vocabularies is anticipated, the wor
 The aim is to update the collection on the host server at least once a year.
 
 === Non synchronised list
-It is expected that the vocabulary collections will not always been synchronized between this repository and the host services. There will be a lag between validating a entry here and this entry being published in the host. This lag is due to different governance and validation rules between governance and host. +
+It is expected that the vocabulary collections will not always been synchronized between this repository and the host services. There will be a lag between validating an entry here and this entry being published in the host. This lag is due to different governance and validation rules between governance and host. +
 
 `*The reference lists are the lists available below.*`
 
@@ -917,7 +917,7 @@ Example 1:
 * platform (i.e. glider mission): kraken_20210205
 * Program: MOOSE glider program
 * Site: MOOSE_T00, MOOSET_02
-* Networks: Mediterranean Ocean Observing Systems for the Environment (MOOSE), Boundary Ocean Observing Network (BOON), OceanGliders Water Transformation task team”
+* Networks: Mediterranean Ocean Observing Systems for the Environment (MOOSE), Boundary Ocean Observing Network (BOON), OceanGliders Water Transformation task team
 
 Example 2:
 
