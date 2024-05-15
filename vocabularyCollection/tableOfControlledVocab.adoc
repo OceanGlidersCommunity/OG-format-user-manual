@@ -28,52 +28,72 @@ Vocabulary collections that are not governed by OceanGliders do not follow the *
 **host** : The host is the entity that is serving the *published* vocabulary collections and enable machine to machine communication. +
 **governance** :  Governance refers to the entity in charge of the maintenance, evolution and publication of the vocabulary collection.
 
-=== Request a new entry
-**TO BE UPDATED WITH EMMA and NVS TEAM**
+=== Requesting a new term
+To request a new term for an existing vocabularly collection please create an new issue in the OceanGliders repository including the label 'vocab'.
 
-To request a new entry in the table below, one should submit an issue to this repository entitle `*_new entry for table <name of the vocabulary>_*` . 
-The issue must indicate the value of the new entry and all its relevant attributes described in the corresponding table.
+New terms may also be requested via the 'Request new term' URLs in the table below. Please clearly indicate in the ticket 'for approval by OceanGliders vocabularly working group' and include as much detail as possible. 
+
+=== Requesting a new collection
+If you are unsure where a new term fits and believe a new collection is needed, please create an issue in the OceanGliders repository clearly including the title 'vocab'. 
+
                                                                                         
 === Validation process
   
-A working group on controlled vocabulary collections will review the requests regularly.
-While a continuous update of the controlled vocabularies is anticipated, the working group will update the vocabulary collection at least twice a year.
+A working group for controlled vocabulary collections will review the requests regularly to approve new terms. Simple terms adding to existing collections will have a quick turnaround. 
+Requests for new vocabularly collections will take longer to review and approve. 
 
-=== Table of controlled vocabularies
+
+=== Table of controlled vocabularies for "mandatory" metadata in the OG 1.0 format 
   
 |===
-|OceanGliders reference name | Collection name | OceanGliders subset | Request new terms | Governance 
+|OceanGliders reference name | Collection URL or Scheme URL | Examples | Request new terms | Governance 
 
-  | platform | https://vocab.nerc.ac.uk/collection/L06/current/[L06 - SeaVoX Platform Categories] |  https://vocab.nerc.ac.uk/collection/L06/current/27/[OceanGliders vocabulary subset] | https://github.com/nvs-vocabs/L06/issues | OceanGliders 
-  | institution | https://edmo.seadatanet.org/[EDMO code] |  No subset available for this collection | *tbd* | SeaDataNet 
-  | platform_serial_number_prefix | *tbd* | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/serial_number_prefix.md[pending list] | *tbd* | OceanGliders
-  | program | *tbd* |  *tbd* | *tbd* | OceanOPS 
+  | platform | https://vocab.nerc.ac.uk/collection/L06/current/[L06 - SeaVoX Platform Categories] |   | https://github.com/nvs-vocabs/L06/issues | SeaDataNet and MarineXML Vocabulary Content Governance Group
+  | contributors_role | https://vocab.nerc.ac.uk/search_nvs/C86/[C86 - SeaDataNet contact and security access roles] | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/contributors_role.md[contributors_role] |  | SeaDataNet 
+    | institution_role* | *pending* |  https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/agencies_role.md[institution_role] | | SeaDataNet 
+  | institution_id | https://edmo.seadatanet.org/[EDMO] |     |  | SeaDataNet 
+ | rtqc_method** | *pending*| https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/rtqc_method.md[Real Time Quality Control methods]  |  |OceanGliders 
+  | platform_model | https://vocab.nerc.ac.uk/search_nvs/B76/[B76 - BODC Platform Models] |    | https://github.com/nvs-vocabs/B76/issues | British Oceanographic Data Centre 
+  | sensor_model | https://vocab.nerc.ac.uk/search_nvs/L22/[L22 - SeaVoX Device Catalogue]  and subset https://vocabdev.nerc.ac.uk/scheme/GLIDER_SENSORS/current/[GLIDER_SENSORS] |   | https://github.com/nvs-vocabs/L22/issues | OceanGliders 
+  | data_mode** | *pending* | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/data_mode.md[data_mode] |   | OceanGliders 
+  | parameter | https://vocab.nerc.ac.uk/search_nvs/OG1/[OG1 - OceanGliders Parameter Usage Vocabulary] |  | https://github.com/nvs-vocabs/OG1/issues | OceanGliders 
+  | sensor type|  http://vocab.nerc.ac.uk/collection/L05/current/[L05 - SeaDataNet device categories] |  | https://github.com/nvs-vocabs/L05/issues | SeaDataNet
+
+
+|===
+*only operating institution is mandatory 
+**still in development
+
+
+
+=== Table of controlled vocabularies for "highly desirable" or "suggested" metadata in the OG 1.0 format 
+
+|===
+|OceanGliders reference name | Collection name | OceanGliders subset | Request new terms | Governance 
+ 
+  | platform_serial_number_prefix_*** | *tbd* | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/serial_number_prefix.md[pending list] | *tbd* | OceanGliders
+  | program** | *tbd* |  *tbd* | *tbd* | OceanOPS 
   | oceangliders_site | *tbd* |  *tbd* | *tbd* | OceanOPS 
-  | contributors_role | *tbd* |  *OceanGliders vocabulary subset tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/contributors_role.md[pending list] | *tbd* | OceanGliders 
-  | agencies_role | https://vocab.nerc.ac.uk/search_nvs/C86/[C86 - SeaDataNet contact and security access roles] | *OceanGliders vocabulary subset tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/agencies_role.md[pending list] | *tbd* | OceanGliders 
-  | agencies_id | https://edmo.seadatanet.org/[EDMO code] | No subset available for this collection | *tbd* | SeaDataNet 
   | naming_authority | https://edmo.seadatanet.org/[EDMO code] | No subset available for this collection | *tbd* | SeaDataNet 
-  | institution | https://edmo.seadatanet.org/[EDMO code] | No subset available for this collection | *tbd* | SeaDataNet 
-  | rtqc_method | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/rtqc_method.md[Real Time Quality Control methods] | *tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/rtqc_method.md[pending list] | *tbd* | OceanGliders 
-  | phase_calculation_methodology | Phase calculation methods | *tbd* | *tbd* |OceanGliders 
-  | platform_model | https://vocab.nerc.ac.uk/search_nvs/B76/[B76 - BODC Platform Models] | *OceanGliders vocabulary subset tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/platform_model.md[pending list] | *tbd* | OceanGliders 
   | ICES_code | https://vocab.ices.dk/?codetypeguid=7f9a91e1-fb57-464a-8eb0-697e4b0235b5[ICES reference table] | No subset available for this collection  | *tbd* | ICES 
   | platform_maker |  http://vocab.nerc.ac.uk/collection/L35/current/[L35 - SenseOcean device developers and manufacturers] | *OceanGliders vocabulary subset tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/platform_maker.md[pending list] |  *tbd* | OceanGliders 
-  | battery_type | *tbd* | *tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/battery_type.md[pending list] |  *tbd* | OceanGliders 
-  | telecom_type |  https://vocab.nerc.ac.uk/search_nvs/R10/[*_e.g. R10 - Argo transmission systems_*]  | *tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/telecom_type.md[pending list] |  *tbd* | OceanGliders 
-  | tracking_system | *tbd* | *tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/tracking_system.md[pending list] |  *tbd* | OceanGliders 
-  | sensor_model | https://vocab.nerc.ac.uk/search_nvs/L22/[L22 - Seavox Device Catalog] |  https://vocabdev.nerc.ac.uk/scheme/GLIDER_SENSORS/current/[OceanGliders vocabulary subset] | https://github.com/nvs-vocabs/L22/issues | OceanGliders 
-  | data_mode | *tbd* | *tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/data_mode.md[pending list] |  *tbd* | OceanGliders 
+  | battery_type** | *tbd* | *tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/battery_type.md[pending list] |  *tbd* | OceanGliders 
+  | telecom_type** |  https://vocab.nerc.ac.uk/search_nvs/R10/[*_e.g. R10 - Argo transmission systems_*]  | *tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/telecom_type.md[pending list] |  *tbd* | OceanGliders 
+  | tracking_system** | *tbd* | *tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/tracking_system.md[pending list] |  *tbd* | OceanGliders 
   | phase | *tbd* | *tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/phase.md[pending list] |  *tbd* | OceanGliders 
-  | variable names | https://vocab.nerc.ac.uk/search_nvs/OG1/[OG1 - OceanGliders Parameter Usage Vocabulary] | https://vocab.nerc.ac.uk/search_nvs/OG1/ | https://github.com/nvs-vocabs/OG1/issues | OceanGliders 
-  | sensor type |  	http://vocab.nerc.ac.uk/collection/R25/current/[*_e.g. R25 - Argo sensor types_*]  | http://vocab.nerc.ac.uk/collection/R25/current/ | *tbd* | OceanGliders 
+
 
 
 |===
 
-* sensor type will be added to the list of control vocab in the format following emma exemplar.
+**still in development
 
-# Exemplars
+
+
+===Examples 
+Examles of how vocabularies are implemented in the OG file are in the og_format_examples. 
+
+
 
 ## Global attributes
 
