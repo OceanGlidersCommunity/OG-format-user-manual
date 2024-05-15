@@ -34,7 +34,7 @@ To request a new term for an existing vocabularly collection please create an ne
 New terms may also be requested via the 'Request new term' URLs in the table below. Please clearly indicate in the ticket 'for approval by OceanGliders vocabularly working group' and include as much detail as possible. 
 
 === Requesting a new collection
-If you are unsure where a new term fits and believe a new collection is needed, please create an an issue in the OceanGliders repository clearly including the title 'vocab'. 
+If you are unsure where a new term fits and believe a new collection is needed, please create an issue in the OceanGliders repository clearly including the title 'vocab'. 
 
                                                                                         
 === Validation process
