@@ -439,7 +439,7 @@ PLATFORM_SERIAL_NUMBER:long_name = “glider serial number”;
 string PLATFORM_NAME
 
 PLATFORM_NAME:long_name = “Local or nickname of the glider”;
-The  platform name should be constructed from the manufacturer prefix and the platform serial number e.g. "sea001" (seaglider), unit_001 (slocum), sea001 (seaexplorer), sp001 (spray). Where the serial number of the platform is not known, a local nickname can be used e.g. "orca", "sverdrup", "ammonite".
+The  platform name should be constructed from the manufacturer prefix and the platform serial number e.g. "sg638" (seaglider), unit_001 (slocum), sea001 (seaexplorer), sp001 (spray). Where the serial number of the platform is not known, a local nickname can be used e.g. "orca", "sverdrup", "ammonite".
  |highly desirable
 |PLATFORM_DEPTH_RATING a|
 integer PLATFORM_DEPTH_RATING
