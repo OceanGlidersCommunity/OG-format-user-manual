@@ -55,13 +55,13 @@ Several organisations were instrumental in the development of this format. Ocean
 ////
 == Background
 
-The OceanGliders program brings together marine scientists and glider operators from all over the world who observe the long-term physical, biogeochemical, biological ocean processes, and phenomena relevant for societal applications. It allows active coordination and strengthening the roles of gliders in the ocean observation programs worldwide and contributes to the present international efforts for ocean observation for climate, ocean health and real-time services.
+The https://www.oceangliders.org/[OceanGliders] program brings together marine scientists and glider operators from all over the world who observe the long-term physical, biogeochemical, biological ocean processes, and phenomena relevant for societal applications. It allows active coordination and strengthening the roles of gliders in the ocean observation programs worldwide and contributes to the present international efforts for ocean observation for climate, ocean health and real-time services.
 
 The program oversees the monitoring of global glider activity, a prerequisite for active coordination. By sharing requirements, efforts and scientific knowledge needed for glider data collection OceanGliders aims to continuously develop the network by supporting the dissemination of glider data in global databases, in real-time and delayed mode, for a wider community.
 
-The OceanGliders program was created about 10 years after the popularization of the use of gliders by ocean scientists. With no common rules on format, data managers from Australia, the USA, and Europe processed 3 regional formats that are not interoperable.
+The OceanGliders program was created about 10 years after the popularization of the use of gliders by ocean scientists. With no common rules on format, data managers from Australia (https://imos.org.au/[IMOS]), the USA (https://gliders.ioos.us/[IOOS]), and Europe (https://www.coriolis.eu.org/[Coriolis]) processed 3 regional formats that are not interoperable.
 
-Harmonization toward interoperability within the existing formats and many national/regional glider networks is a recommendation from the OceanGliders steering team to strengthen the program and reach the FAIR principles (Findable, Accessible, Interoperable, Reusable) adopted by GOOS (Global Ocean Observing System), and better monitor the program activity.
+Harmonization toward interoperability within the existing formats and many national/regional glider networks is a recommendation from the OceanGliders steering team to strengthen the program and reach the https://www.go-fair.org/fair-principles/[FAIR principles] (Findable, Accessible, Interoperable, Reusable) adopted by https://goosocean.org/[GOOS] (Global Ocean Observing System), and better monitor the program activity.
 
 ////
 * [[objectives]]
