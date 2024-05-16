@@ -48,16 +48,16 @@ Requests for new vocabularly collections will take longer to review and approve.
 |===
 |OceanGliders reference name | Collection URL or Scheme URL | Examples | Request new terms | Governance 
 
-  | platform | https://vocab.nerc.ac.uk/collection/L06/current/[L06 - SeaVoX Platform Categories] |   | https://github.com/nvs-vocabs/L06/issues | SeaDataNet and MarineXML Vocabulary Content Governance Group
-  | contributors_role | https://vocab.nerc.ac.uk/search_nvs/C86/[C86 - SeaDataNet contact and security access roles] | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/contributors_role.md[contributors_role] |  | SeaDataNet 
-    | institution_role* | *pending* |  https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/agencies_role.md[institution_role] | | SeaDataNet 
-  | institution_id | https://edmo.seadatanet.org/[EDMO] |     |  | SeaDataNet 
+ | platform | https://vocab.nerc.ac.uk/collection/L06/current/[L06 - SeaVoX Platform Categories] |   | https://github.com/nvs-vocabs/L06/issues | SeaDataNet and MarineXML Vocabulary Content Governance Group
+ | contributors_role | https://vocab.nerc.ac.uk/search_nvs/C86/[C86 - SeaDataNet contact and security access roles] | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/contributors_role.md[contributors_role] |  | SeaDataNet 
+ | institution_role* | *pending* |  https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/agencies_role.md[institution_role] | | SeaDataNet 
+ | institution_id | https://edmo.seadatanet.org/[EDMO] |     |  | SeaDataNet 
  | rtqc_method** | *pending*| https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/rtqc_method.md[Real Time Quality Control methods]  |  |OceanGliders 
   | platform_model | https://vocab.nerc.ac.uk/search_nvs/B76/[B76 - BODC Platform Models] |    | https://github.com/nvs-vocabs/B76/issues | British Oceanographic Data Centre 
+  | sensor type|  http://vocab.nerc.ac.uk/collection/L05/current/[L05 - SeaDataNet device categories] |  | https://github.com/nvs-vocabs/L05/issues | SeaDataNet
   | sensor_model | https://vocab.nerc.ac.uk/search_nvs/L22/[L22 - SeaVoX Device Catalogue]  and subset https://vocabdev.nerc.ac.uk/scheme/GLIDER_SENSORS/current/[GLIDER_SENSORS] |   | https://github.com/nvs-vocabs/L22/issues | OceanGliders 
   | data_mode** | *pending* | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/data_mode.md[data_mode] |   | OceanGliders 
   | parameter | https://vocab.nerc.ac.uk/search_nvs/OG1/[OG1 - OceanGliders Parameter Usage Vocabulary] |  | https://github.com/nvs-vocabs/OG1/issues | OceanGliders 
-  | sensor type|  http://vocab.nerc.ac.uk/collection/L05/current/[L05 - SeaDataNet device categories] |  | https://github.com/nvs-vocabs/L05/issues | SeaDataNet
 
 
 |===
