@@ -11,8 +11,24 @@ https://oceangliderscommunity.github.io/OG-format-user-manual/vocabularyCollecti
 
 |===========================================================================================
 ////
-* [[Vocabulary Collections]]
+* [[Guidelines for controlled vocabularies]]
 ////
+== Controlled vocabulary
+Controlled vocabulary, is a curated list of terms that have been pre-defined and approved for use within a specific context, such as data management. This type of vocabulary serves as a standardized set of terms used to monitor content consistently, ensuring uniformity, precision and analysis.
+
+== Use controlled vocabulary
+Each OG1.0 controlled vocabulary (list of terms) is referenced in this document. 
+To find the appropriate term, click on the link to the list and find the term that suits your needs. 
+
+Each attribute or variable controlled by a vocabulary is associated with a attribute called **_vocabulary* in the format. This attribute refers to the uri of the term.
+
+For instance global attribute *platform* is a controlled vocabulary. In the format description it is followed by the global attribute *platform_vocabulary*. 
+
+In this case:
+
+* platform = "sub-surface gliders" ;
+* platform_vocabulary = "https://vocab.nerc.ac.uk/collection/L06/current/27/" ;
+
 == Vocabulary Collections
 The series of concepts of the https://github.com/OceanGlidersCommunity/OG1.0-user-manual[OG1.0 format] are controlled by a set of vocabulary collections managed by the OceanGliders data management team and other governance bodies. +
 These concepts are listed in the table below. Each concept is linked to its collection of vocabularies. Each collection has a status attribute. +
