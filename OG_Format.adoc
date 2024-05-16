@@ -135,6 +135,7 @@ The global attribute section is used for data discovery. The following global at
 Name of the platform(s) that supported the sensors data used to create this data set or product.
 
 
+
  |mandatory |**ex.:** "sub-surface gliders"
 |platform_vocabulary |Controlled vocabulary for the names used in the "platform" attribute. https://vocab.nerc.ac.uk/collection/L06/current/[_https://vocab.nerc.ac.uk/collection/L06/current/_]
 |mandatory |**ex.:** https://vocab.nerc.ac.uk/collection/L06/current/27/[_https://vocab.nerc.ac.uk/collection/L06/current/27/_]
@@ -143,10 +144,11 @@ Formatted mission name: <platform_serial>_<start_date>_<data_mode>
 
 |mandatory |
 **ex.:**
+* unit_1032_20230512T001245_delayed
+* sea008_20180715T012451_delayed
+* sp032_20150923T150451_R
+* sg041_20381221T000032_R
 
-* unit127_20200512T001245_delayed
-* sg287_20180715T012451_delayed
-* sea022_20150923T150451_R
 
 |naming_authority a|
 A unique name that identifies the institution who provided the id.
@@ -178,7 +180,7 @@ The mission identifier used by the institution principally responsible for origi
 
 * sverdrup_20200512_delayed
 * Forster20201109
-* Estoc_2015
+* Estoc_2015_01
 
 |geospatial_lat_min |Describes a simple lower latitude limit |suggested |**format:** decimal degree
 |geospatial_lat_max |Describes a simple upper latitude limit |suggested |**format:** decimal degree
@@ -401,15 +403,10 @@ mandatory
 
 Value: <platform_serial>_<start_date>
 
-Where <platform_serial> refers to the serial number of the glider, with the manufacturer prefix (e.g. sea637), <start_date> refers to the deployment start UTC date under iso 8601,
+Where <platform_serial> is defined below , <start_date> refers to the deployment start UTC date under iso 8601. *Ex : sp041_20210909T160556* 
 
-Ex : sg637_20210909T1605
+|============================================================
 
-If the glider has no <platform_serial> use <platform_serial_number> instead to create the TRAJECTORY
-
-Ex.: sp042_20210218T2325
-
-|===========================================================================================================================
 
 ////
 * [[platform-information]]
@@ -446,7 +443,7 @@ PLATFORM_SERIAL_NUMBER:long_name = “glider serial number”;
 string PLATFORM_NAME
 
 PLATFORM_NAME:long_name = “Local or nickname of the glider”;
-
+The  platform name should be constructed from the manufacturer prefix and the platform serial number e.g. "sg638" (seaglider), unit_001 (slocum), sea001 (seaexplorer), sp001 (spray). Where the serial number of the platform is not known, a local nickname can be used e.g. "orca", "sverdrup", "ammonite".
  |highly desirable
 |PLATFORM_DEPTH_RATING a|
 integer PLATFORM_DEPTH_RATING
