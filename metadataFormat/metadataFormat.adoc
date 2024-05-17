@@ -29,4 +29,24 @@ Where <id> = "<platform_serial>_<start_date>" (ex : "sp065_20210616T143025.json"
 "0G_metadata_format_version": "1.0",
 
 = Global attribute
-The following attributes should appear in the global attribute section of the OG1.O.json. 
+The following attributes should appear in the global attribute section of the OG1.O.json.
+
+[%"header",cols="1,3,1,2a"]
+|====
+|*Global attribute* |*Definition* |*Requirement status* |*Format, fixed value or example*
+|platform_name | Local or nickname of the glider; The platform name should be constructed from the manufacturer prefix and the platform serial number e.g. "sg638" (seaglider), unit_001 (slocum), sea001 (seaexplorer), sp001 (spray). Where the serial number of the platform is not known, a local nickname can be used e.g. "orca", "sverdrup", "ammonite"|mandatory | *ex.*: "platform_name":"sg638"
+| wmo_indentifier | 
+
+*TO BE CONTINUED*
+
+| "platform_code": "aaGliderTest",
+        "wmo_platform_code": "00001",
+        "comment": "",
+        "title": "aaGliderTest glider data on testTest deployment",
+        "summary": "toto",
+        "abstract": "before meeting monday morning",
+        "keywords": "",
+        "area": "ANT-Rutgers",
+        "institution": "LOCEAN",
+        "institution_references": "",
+        "sdn_edmo_code": "",
