@@ -14,7 +14,7 @@ https://oceangliderscommunity.github.io/OG-format-user-manual/vocabularyCollecti
 * [[Guidelines for controlled vocabularies]]
 ////
 == Controlled vocabulary
-Controlled vocabulary, is a curated list of terms that have been pre-defined and approved for use within a specific context, such as data management. This type of vocabulary serves as a standardized set of terms used to monitor content consistently, ensuring uniformity, precision and analysis.
+A controlled vocabulary is a curated list of terms that have been pre-defined and approved for use within a specific context, such as data management. This type of vocabulary serves as a standardized set of terms used to monitor content consistently, ensuring uniformity, precision and analysis.
 
 == Use controlled vocabulary
 Each OG1.0 controlled vocabulary (list of terms) is referenced in this document. 
