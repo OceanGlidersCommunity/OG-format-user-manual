@@ -1,0 +1,407 @@
+netcdf unit_345_20231112T000000_R {
+dimensions:
+	N_MEASUREMENTS = 10 ;
+	N_PARAM = 12 ;
+variables:
+	double TIME(N_MEASUREMENTS) ;
+		TIME:_FillValue = NaN ;
+		TIME:long_name = "time of measurement and gps location" ;
+		TIME:units = "seconds since 1970-01-01T00:00:00Z" ;
+		TIME:standard_name = "time" ;
+		TIME:valid_min = 1000000000. ;
+		TIME:valid_max = 4000000000. ;
+		TIME:interpolation_methodology = "" ;
+		TIME:interpolation_methodology_vocabulary = "" ;
+		TIME:interpolation_methodology_doi = "" ;
+		TIME:calendar = "gregorian" ;
+		TIME:sensor = "" ;
+	double TIME_GPS(N_MEASUREMENTS) ;
+		TIME_GPS:_FillValue = NaN ;
+		TIME_GPS:long_name = "time of each gps locations" ;
+		TIME_GPS:units = "seconds since 1970-01-01T00:00:00Z" ;
+		TIME_GPS:valid_min = 1000000000. ;
+		TIME_GPS:valid_max = 4000000000. ;
+		TIME_GPS:ancillary_variables = "TIME_GPS_QC" ;
+		TIME_GPS:standard_name = "" ;
+		TIME_GPS:calendar = "gregorian" ;
+		TIME_GPS:sensor = "" ;
+	float PHASE(N_MEASUREMENTS) ;
+		PHASE:_FillValue = NaNf ;
+		PHASE:long_name = "behaviour of the glider at sea" ;
+		PHASE:phase_vocabulary = "" ;
+		PHASE:phase_calculation_method = "" ;
+		PHASE:phase_calculation_method_vocabulary = "" ;
+		PHASE:phase_calculation_method_doi = "" ;
+		PHASE:ancillary_variables = "PHASE_QC" ;
+	float PHASE_QC(N_MEASUREMENTS) ;
+		PHASE_QC:_FillValue = NaNf ;
+		PHASE_QC:long_name = "quality flag" ;
+	float CNDC(N_MEASUREMENTS) ;
+		CNDC:_FillValue = NaNf ;
+		CNDC:long_name = "Electrical conductivity of the water body by CTD" ;
+		CNDC:units = "mhos/m" ;
+		CNDC:standard_name = "sea_water_electrical_conductivity" ;
+		CNDC:vocabulary = "https://vocab.nerc.ac.uk/collection/OG1/current/" ;
+		CNDC:ancillary_variables = "CNDC_QC" ;
+		CNDC:sensor = "INSTRUMENT_WATER TEMPERATURE SENSOR_0221" ;
+	float PRES(N_MEASUREMENTS) ;
+		PRES:_FillValue = NaNf ;
+		PRES:long_name = "Pressure (spatial coordinate) exerted by the water body by profiling pressure sensor and correction to read zero at sea level" ;
+		PRES:units = "decibar" ;
+		PRES:standard_name = "sea_water_pressure" ;
+		PRES:vocabulary = "https://vocab.nerc.ac.uk/collection/OG1/current/" ;
+		PRES:ancillary_variables = "PRES_QC" ;
+		PRES:sensor = "INSTRUMENT_WATER TEMPERATURE SENSOR_0221" ;
+	float TEMP(N_MEASUREMENTS) ;
+		TEMP:_FillValue = NaNf ;
+		TEMP:long_name = "Temperature of the water body by CTD or STD" ;
+		TEMP:units = "degree_Celsius" ;
+		TEMP:standard_name = "sea_water_temperature" ;
+		TEMP:vocabulary = "https://vocab.nerc.ac.uk/collection/OG1/current/" ;
+		TEMP:ancillary_variables = "TEMP_QC" ;
+		TEMP:sensor = "INSTRUMENT_WATER TEMPERATURE SENSOR_0221" ;
+	float LATITUDE_GPS(N_MEASUREMENTS) ;
+		LATITUDE_GPS:_FillValue = NaNf ;
+		LATITUDE_GPS:long_name = "Latitude north relative to WGS84 by unspecified GPS system" ;
+		LATITUDE_GPS:units = "degree_north" ;
+		LATITUDE_GPS:valid_min = -90L ;
+		LATITUDE_GPS:valid_max = 90L ;
+		LATITUDE_GPS:ancillary_variables = "LATITUDE_GPS_QC" ;
+		LATITUDE_GPS:standard_name = "" ;
+		LATITUDE_GPS:sensor = "INSTRUMENT_DATA LOGGERS_unit 345" ;
+	float LONGITUDE_GPS(N_MEASUREMENTS) ;
+		LONGITUDE_GPS:_FillValue = NaNf ;
+		LONGITUDE_GPS:long_name = "Longitude east relative to WGS84 by unspecified GPS system" ;
+		LONGITUDE_GPS:units = "degree_east" ;
+		LONGITUDE_GPS:valid_min = -180L ;
+		LONGITUDE_GPS:valid_max = 180L ;
+		LONGITUDE_GPS:ancillary_variables = "LONGITUDE_GPS_QC" ;
+		LONGITUDE_GPS:standard_name = "" ;
+		LONGITUDE_GPS:sensor = "INSTRUMENT_DATA LOGGERS_unit 345" ;
+	float WATERCURRENTS_U(N_MEASUREMENTS) ;
+		WATERCURRENTS_U:_FillValue = NaNf ;
+		WATERCURRENTS_U:long_name = "Eastward velocity of water current in the water body" ;
+		WATERCURRENTS_U:units = "cm/s" ;
+		WATERCURRENTS_U:standard_name = "" ;
+		WATERCURRENTS_U:vocabulary = "https://vocab.nerc.ac.uk/collection/OG1/current/" ;
+		WATERCURRENTS_U:ancillary_variables = "WATERCURRENTS_U_QC" ;
+		WATERCURRENTS_U:sensor = "INSTRUMENT_DATA LOGGERS_unit 345" ;
+	float ALTITUDE(N_MEASUREMENTS) ;
+		ALTITUDE:_FillValue = NaNf ;
+		ALTITUDE:long_name = "Height (spatial coordinate) relative to bed surface in the water body" ;
+		ALTITUDE:units = "m" ;
+		ALTITUDE:standard_name = "" ;
+		ALTITUDE:vocabulary = "https://vocab.nerc.ac.uk/collection/OG1/current/" ;
+		ALTITUDE:ancillary_variables = "ALTITUDE_QC" ;
+		ALTITUDE:sensor = "INSTRUMENT_DATA LOGGERS_unit 345" ;
+	float LATITUDE(N_MEASUREMENTS) ;
+		LATITUDE:_FillValue = NaNf ;
+		LATITUDE:long_name = "Latitude north" ;
+		LATITUDE:units = "degree_north" ;
+		LATITUDE:valid_min = -90L ;
+		LATITUDE:valid_max = 90L ;
+		LATITUDE:ancillary_variables = "LATITUDE_QC" ;
+		LATITUDE:standard_name = "" ;
+		LATITUDE:sensor = "INSTRUMENT_DATA LOGGERS_unit 345" ;
+		LATITUDE:interpolation_methodology = "" ;
+		LATITUDE:interpolation_methodology_vocabulary = "" ;
+		LATITUDE:interpolation_methodology_doi = "" ;
+	float LONGITUDE(N_MEASUREMENTS) ;
+		LONGITUDE:_FillValue = NaNf ;
+		LONGITUDE:long_name = "Longitude east" ;
+		LONGITUDE:units = "degree_east" ;
+		LONGITUDE:valid_min = -180L ;
+		LONGITUDE:valid_max = 180L ;
+		LONGITUDE:ancillary_variables = "LONGITUDE_QC" ;
+		LONGITUDE:standard_name = "" ;
+		LONGITUDE:sensor = "INSTRUMENT_DATA LOGGERS_unit 345" ;
+		LONGITUDE:interpolation_methodology = "" ;
+		LONGITUDE:interpolation_methodology_vocabulary = "" ;
+		LONGITUDE:interpolation_methodology_doi = "" ;
+	float WATERCURRENTS_V(N_MEASUREMENTS) ;
+		WATERCURRENTS_V:_FillValue = NaNf ;
+		WATERCURRENTS_V:long_name = "Northward velocity of water current in the water body" ;
+		WATERCURRENTS_V:units = "cm/s" ;
+		WATERCURRENTS_V:standard_name = "" ;
+		WATERCURRENTS_V:vocabulary = "https://vocab.nerc.ac.uk/collection/OG1/current/" ;
+		WATERCURRENTS_V:ancillary_variables = "WATERCURRENTS_V_QC" ;
+		WATERCURRENTS_V:sensor = "INSTRUMENT_DATA LOGGERS_unit 345" ;
+	float GLIDER_PITCH(N_MEASUREMENTS) ;
+		GLIDER_PITCH:_FillValue = NaNf ;
+		GLIDER_PITCH:long_name = "Orientation (pitch) of measurement platform by triaxial fluxgate compass" ;
+		GLIDER_PITCH:units = "deg" ;
+		GLIDER_PITCH:standard_name = "" ;
+		GLIDER_PITCH:vocabulary = "https://vocab.nerc.ac.uk/collection/OG1/current/" ;
+		GLIDER_PITCH:ancillary_variables = "GLIDER_PITCH_QC" ;
+		GLIDER_PITCH:sensor = "INSTRUMENT_DATA LOGGERS_unit 345" ;
+	float GLIDER_ROLL(N_MEASUREMENTS) ;
+		GLIDER_ROLL:_FillValue = NaNf ;
+		GLIDER_ROLL:long_name = "Orientation (roll angle) of measurement platform by triaxial fluxgate compass" ;
+		GLIDER_ROLL:units = "deg" ;
+		GLIDER_ROLL:standard_name = "" ;
+		GLIDER_ROLL:vocabulary = "https://vocab.nerc.ac.uk/collection/OG1/current/" ;
+		GLIDER_ROLL:ancillary_variables = "GLIDER_ROLL_QC" ;
+		GLIDER_ROLL:sensor = "INSTRUMENT_DATA LOGGERS_unit 345" ;
+	float TIME_GPS_QC(N_MEASUREMENTS) ;
+		TIME_GPS_QC:_FillValue = NaNf ;
+		TIME_GPS_QC:long_name = "quality flag" ;
+	float CNDC_QC(N_MEASUREMENTS) ;
+		CNDC_QC:_FillValue = NaNf ;
+		CNDC_QC:long_name = "quality flag" ;
+		CNDC_QC:vocabulary = "" ;
+		CNDC_QC:RTQC_methodology = "" ;
+		CNDC_QC:RTQC_methodology_vocabulary = "" ;
+		CNDC_QC:RTQC_methodology_doi = "" ;
+	float PRES_QC(N_MEASUREMENTS) ;
+		PRES_QC:_FillValue = NaNf ;
+		PRES_QC:long_name = "quality flag" ;
+	float TEMP_QC(N_MEASUREMENTS) ;
+		TEMP_QC:_FillValue = NaNf ;
+		TEMP_QC:long_name = "quality flag" ;
+	float LATITUDE_GPS_QC(N_MEASUREMENTS) ;
+		LATITUDE_GPS_QC:_FillValue = NaNf ;
+		LATITUDE_GPS_QC:long_name = "quality flag" ;
+	float LONGITUDE_GPS_QC(N_MEASUREMENTS) ;
+		LONGITUDE_GPS_QC:_FillValue = NaNf ;
+		LONGITUDE_GPS_QC:long_name = "quality flag" ;
+	float WATERCURRENTS_U_QC(N_MEASUREMENTS) ;
+		WATERCURRENTS_U_QC:_FillValue = NaNf ;
+		WATERCURRENTS_U_QC:long_name = "quality flag" ;
+	float ALTITUDE_QC(N_MEASUREMENTS) ;
+		ALTITUDE_QC:_FillValue = NaNf ;
+		ALTITUDE_QC:long_name = "quality flag" ;
+	float LATITUDE_QC(N_MEASUREMENTS) ;
+		LATITUDE_QC:_FillValue = NaNf ;
+		LATITUDE_QC:long_name = "quality flag" ;
+	float LONGITUDE_QC(N_MEASUREMENTS) ;
+		LONGITUDE_QC:_FillValue = NaNf ;
+		LONGITUDE_QC:long_name = "quality flag" ;
+	float WATERCURRENTS_V_QC(N_MEASUREMENTS) ;
+		WATERCURRENTS_V_QC:_FillValue = NaNf ;
+		WATERCURRENTS_V_QC:long_name = "quality flag" ;
+	float GLIDER_PITCH_QC(N_MEASUREMENTS) ;
+		GLIDER_PITCH_QC:_FillValue = NaNf ;
+		GLIDER_PITCH_QC:long_name = "quality flag" ;
+	float GLIDER_ROLL_QC(N_MEASUREMENTS) ;
+		GLIDER_ROLL_QC:_FillValue = NaNf ;
+		GLIDER_ROLL_QC:long_name = "quality flag" ;
+	string PARAMETER(N_PARAM) ;
+		PARAMETER:long_name = "name of parameter computed from glider measurements" ;
+		PARAMETER:parameter_vocabulary = "https://vocab.nerc.ac.uk/collection/OG1/current/" ;
+	string PARAMETER_SENSOR(N_PARAM) ;
+		PARAMETER_SENSOR:long_name = "" ;
+	string PARAMETER_UNITS(N_PARAM) ;
+		PARAMETER_UNITS:long_name = "" ;
+		PARAMETER_UNITS:parameter_units_vocabulary = "" ;
+	int64 INSTRUMENT_WATER\ TEMPERATURE\ SENSOR_0221 ;
+		INSTRUMENT_WATER\ TEMPERATURE\ SENSOR_0221:_FillValue = -1L ;
+		INSTRUMENT_WATER\ TEMPERATURE\ SENSOR_0221:long_name = "Seaglider CT sail 0221" ;
+		INSTRUMENT_WATER\ TEMPERATURE\ SENSOR_0221:type = "water temperature sensor" ;
+		INSTRUMENT_WATER\ TEMPERATURE\ SENSOR_0221:type_vocabulary = "http://vocab.nerc.ac.uk/collection/L05/current/" ;
+		INSTRUMENT_WATER\ TEMPERATURE\ SENSOR_0221:maker = "Sea-Bird Scientific" ;
+		INSTRUMENT_WATER\ TEMPERATURE\ SENSOR_0221:maker_vocabulary = "http://vocab.nerc.ac.uk/collection/L35/current/MAN0013/" ;
+		INSTRUMENT_WATER\ TEMPERATURE\ SENSOR_0221:model = "Unpumped CT sail CTD" ;
+		INSTRUMENT_WATER\ TEMPERATURE\ SENSOR_0221:model_vocabulary = "https://vocab.nerc.ac.uk/collection/L22/current/TOOL1188" ;
+		INSTRUMENT_WATER\ TEMPERATURE\ SENSOR_0221:serial_number = "0221" ;
+		INSTRUMENT_WATER\ TEMPERATURE\ SENSOR_0221:calibration_date = "" ;
+	int64 INSTRUMENT_DATA\ LOGGERS_unit\ 345 ;
+		INSTRUMENT_DATA\ LOGGERS_unit\ 345:_FillValue = -1L ;
+		INSTRUMENT_DATA\ LOGGERS_unit\ 345:long_name = "Slocum G1+G2 Glider unit 345" ;
+		INSTRUMENT_DATA\ LOGGERS_unit\ 345:type = "data loggers" ;
+		INSTRUMENT_DATA\ LOGGERS_unit\ 345:type_vocabulary = "http://vocab.nerc.ac.uk/collection/L05/current/DLOG/" ;
+		INSTRUMENT_DATA\ LOGGERS_unit\ 345:maker = "Teledyne Webb Research" ;
+		INSTRUMENT_DATA\ LOGGERS_unit\ 345:maker_vocabulary = "http://vocab.nerc.ac.uk/collection/L35/current/MAN0020/" ;
+		INSTRUMENT_DATA\ LOGGERS_unit\ 345:model = "Slocum G1+G2 Glider Navigation data logger" ;
+		INSTRUMENT_DATA\ LOGGERS_unit\ 345:model_vocabulary = "https://vocab.nerc.ac.uk/collection/L22/current/TOOL1183" ;
+		INSTRUMENT_DATA\ LOGGERS_unit\ 345:serial_number = "unit 345" ;
+		INSTRUMENT_DATA\ LOGGERS_unit\ 345:calibration_date = "" ;
+	string TRAJECTORY ;
+		TRAJECTORY:cf_role = "trajectory_id" ;
+		TRAJECTORY:long_name = "trajectory name" ;
+		TRAJECTORY:data_mode_vocabulary = "" ;
+	string PLATFORM_TYPE ;
+		PLATFORM_TYPE:long_name = "type of glider" ;
+		PLATFORM_TYPE:platform_type_vocabulary = "" ;
+	string PLATFORM_MODEL ;
+		PLATFORM_MODEL:long_name = "model of the glider" ;
+		PLATFORM_MODEL:platform_model_vocabulary = "" ;
+	string WMO_IDENTIFIER ;
+		WMO_IDENTIFIER:long_name = "wmo id" ;
+	double DEPLOYMENT_TIME ;
+		DEPLOYMENT_TIME:long_name = "Date of deployment" ;
+		DEPLOYMENT_TIME:calendar = "gregorian" ;
+		DEPLOYMENT_TIME:standard_name = "time" ;
+		DEPLOYMENT_TIME:units = "seconds since 1970-01-01T00:00:00Z" ;
+		DEPLOYMENT_TIME:axis = "T" ;
+	string DEPLOYMENT_LATITUDE ;
+		DEPLOYMENT_LATITUDE:long_name = "latitude of deployment" ;
+	string DEPLOYMENT_LONGITUDE ;
+		DEPLOYMENT_LONGITUDE:long_name = "longitude of deployment" ;
+
+// global attributes:
+		:geospatial_bounds_crs = "EPSG:4326" ;
+		:geospatial_bounds_vertical_crs = "EPSG:5831" ;
+		:geospatial_lat_min = 58.99865f ;
+		:geospatial_lat_max = 59.44963f ;
+		:geospatial_lon_min = -2.370675f ;
+		:geospatial_lon_max = 0.5186067f ;
+		:geospatial_bounds = "POLYGON ((-2.3706750869750977, 0.5186066627502441, 58.9986457824707, 59.44963073730469))" ;
+		:geospatial_vertical_min = 0.f ;
+		:geospatial_vertical_max = 95.79487f ;
+		:geospatial_vertical_positive = "down" ;
+		:geospatial_vertical_units = "m" ;
+		:time_coverage_start = "2023-11-12T10:10Z" ;
+		:time_coverage_end = "2024-02-05T09:08Z" ;
+		:institution = "NOCS" ;
+		:institution_role = "contact point" ;
+		:institution_role_vocabulary = "https://edmo.seadatanet.org/" ;
+		:institution_id = "" ;
+		:institution_id_vocabulary = "EDMO" ;
+		:contributor_name = "Phil Bagley" ;
+		:contributor_email = "phil.bagley@noc.ac.uk" ;
+		:contributor_role = "principal investigator" ;
+		:contributor_role_vocabulary = "https://vocab.nerc.ac.uk/collection/C86/current/SDNPR008/" ;
+		:contributor_id = "" ;
+		:publisher_name = "NOC" ;
+		:publisher_email = "glidersbodc@bodc.ac.uk" ;
+		:publisher_url = "https://www.bodc.ac.uk" ;
+		:publisher_type = "DAC" ;
+		:publisher_institution = "NOC" ;
+		:creator_name = "NOC" ;
+		:creator_email = "glidersbodc@bodc.ac.uk" ;
+		:creator_url = "https://www.noc.ac.uk" ;
+		:creator_type = "DAC" ;
+		:creator_institution = "NOC" ;
+		:wmoid = "6800986" ;
+		:institution = "" ;
+		:comment = "" ;
+		:doi = "" ;
+		:program = "" ;
+		:network = "" ;
+		:site_vocabulary = "" ;
+		:site = "" ;
+		:keywords_vocabulary = "" ;
+		:web_link = "" ;
+		:title = "OceanGliders trajectory file" ;
+		:platform = "Autonomous Underwater Vehicle" ;
+		:platform_vocabulary = "https://vocab.nerc.ac.uk/collection/L06/current/25/" ;
+		:Conventions = "CF-1.8, ACDD-1.3, OG-1.0" ;
+		:naming_authority = "BODC" ;
+		:standard_name_vocabulary = "https://cfconventions.org/Data/cf-standard-names/current/build/cf-standard-name-table.html" ;
+		:processing_level = "No quality control applied to the data." ;
+		:featureType = "trajectory" ;
+		:xglider_type = "trajectoryObs" ;
+		:rtqc_method = "Raw data, no QC applied." ;
+		:rtqc_method_doi = "Raw data, no QC applied." ;
+		:data_url = "https://gliders.bodc.ac.uk/inventory/" ;
+		:project = "MOGli" ;
+		:internal_mission_identifier = 617L ;
+		:mission = "Met Office Winter 2023 Deployment (MOGli 5)" ;
+		string :instrument = "Unpumped CT sail CTD", "Slocum G1+G2 Glider Navigation data logger" ;
+		:metadata_link = "https://api.linked-systems.uk/api/meta/v2/deployments/info/617" ;
+		:trajectory = "unit_345_20231112" ;
+		:date_created = "2024-02-05T12:09:19.444793" ;
+		:date_modified = "2024-02-05T12:09:19.444804" ;
+		:id = "unit_345_20231112T000000_R" ;
+		:_NCProperties = "version=2,netcdf=4.9.3-development,hdf5=1.12.2" ;
+data:
+
+ TIME = 1699783816.54788, 1699783873.30688, 1699783897.90527, 
+    1699783899.69052, 1699783907.93582, 1699783917.96301, 1699783919.01404, 
+    1699783927.98334, 1699783928.69443, 1699783938.00561 ;
+
+ TIME_GPS = 1699783816.54788, 1699783873.30688, 1699783897.90527, 
+    1699783899.69052, 1699783907.93582, 1699783917.96301, 1699783919.01404, 
+    1699783927.98334, 1699783928.69443, 1699783938.00561 ;
+
+ PHASE = _, _, _, _, _, _, _, _, _, _ ;
+
+ PHASE_QC = _, _, _, _, _, _, _, _, _, _ ;
+
+ CNDC = 0, _, -3e-05, _, -4e-05, -4e-05, _, -4e-05, _, -4e-05 ;
+
+ PRES = 0, _, 0.03, _, 0.03, 0.03, _, 0.03, _, 0.03 ;
+
+ TEMP = 0, _, 9.7336, _, 9.7416, 9.818, _, 9.9044, _, 9.9709 ;
+
+ LATITUDE_GPS = _, _, _, _, _, _, _, _, _, _ ;
+
+ LONGITUDE_GPS = _, _, _, _, _, _, _, _, _, _ ;
+
+ WATERCURRENTS_U = _, _, _, _, _, _, _, _, _, _ ;
+
+ ALTITUDE = _, 0, _, _, _, _, _, _, _, _ ;
+
+ LATITUDE = _, 59.07066, _, _, _, _, _, _, _, _ ;
+
+ LONGITUDE = _, -2.348372, _, _, _, _, _, _, _, _ ;
+
+ WATERCURRENTS_V = _, _, _, _, _, _, _, _, _, _ ;
+
+ GLIDER_PITCH = _, _, _, _, _, _, _, _, _, _ ;
+
+ GLIDER_ROLL = _, _, _, _, _, _, _, _, -0.1343904, _ ;
+
+ TIME_GPS_QC = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ;
+
+ CNDC_QC = 0, _, 0, _, 0, 0, _, 0, _, 0 ;
+
+ PRES_QC = 0, _, 0, _, 0, 0, _, 0, _, 0 ;
+
+ TEMP_QC = 0, _, 0, _, 0, 0, _, 0, _, 0 ;
+
+ LATITUDE_GPS_QC = _, 0, _, 0, _, _, 0, _, 0, _ ;
+
+ LONGITUDE_GPS_QC = _, 0, _, 0, _, _, 0, _, 0, _ ;
+
+ WATERCURRENTS_U_QC = _, _, _, _, _, _, _, _, _, _ ;
+
+ ALTITUDE_QC = _, 0, _, 0, _, _, 0, _, 0, _ ;
+
+ LATITUDE_QC = _, 0, _, 0, _, _, 0, _, 0, _ ;
+
+ LONGITUDE_QC = _, 0, _, 0, _, _, 0, _, 0, _ ;
+
+ WATERCURRENTS_V_QC = _, _, _, _, _, _, _, _, _, _ ;
+
+ GLIDER_PITCH_QC = _, 0, _, 0, _, _, 0, _, 0, _ ;
+
+ GLIDER_ROLL_QC = _, 0, _, 0, _, _, 0, _, 0, _ ;
+
+ PARAMETER = "CNDC", "PRES", "TEMP", "LATITUDE_GPS", "LONGITUDE_GPS", 
+    "WATERCURRENTS_U", "ALTITUDE", "LATITUDE", "LONGITUDE", 
+    "WATERCURRENTS_V", "GLIDER_PITCH", "GLIDER_ROLL" ;
+
+ PARAMETER_SENSOR = "Unpumped CT sail CTD", "Unpumped CT sail CTD", 
+    "Unpumped CT sail CTD", "Slocum G1+G2 Glider Navigation data logger", 
+    "Slocum G1+G2 Glider Navigation data logger", 
+    "Slocum G1+G2 Glider Navigation data logger", 
+    "Slocum G1+G2 Glider Navigation data logger", 
+    "Slocum G1+G2 Glider Navigation data logger", 
+    "Slocum G1+G2 Glider Navigation data logger", 
+    "Slocum G1+G2 Glider Navigation data logger", 
+    "Slocum G1+G2 Glider Navigation data logger", 
+    "Slocum G1+G2 Glider Navigation data logger" ;
+
+ PARAMETER_UNITS = "mhos/m", "decibar", "degree_Celsius", "degree_north", 
+    "degree_east", "cm/s", "m", "degree_north", "degree_east", "cm/s", "deg", 
+    "deg" ;
+
+ INSTRUMENT_WATER\ TEMPERATURE\ SENSOR_0221 = _ ;
+
+ INSTRUMENT_DATA\ LOGGERS_unit\ 345 = _ ;
+
+ TRAJECTORY = "Cabot_20231112" ;
+
+ PLATFORM_TYPE = "slocum" ;
+
+ PLATFORM_MODEL = "G2" ;
+
+ WMO_IDENTIFIER = "830" ;
+
+ DEPLOYMENT_TIME = "20231112" ;
+
+ DEPLOYMENT_LATITUDE = "nan" ;
+
+ DEPLOYMENT_LONGITUDE = "nan" ;
+}

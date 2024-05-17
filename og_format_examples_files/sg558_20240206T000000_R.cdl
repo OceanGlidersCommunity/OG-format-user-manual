@@ -1,0 +1,544 @@
+netcdf sg558_20240206_R {
+dimensions:
+	N_MEASUREMENTS = 10 ;
+	N_PARAM = 19 ;
+variables:
+	double TIME(N_MEASUREMENTS) ;
+		TIME:_FillValue = NaN ;
+		TIME:long_name = "time of measurement and gps location" ;
+		TIME:units = "seconds since 1970-01-01T00:00:00Z" ;
+		TIME:standard_name = "time" ;
+		TIME:valid_min = 1000000000. ;
+		TIME:valid_max = 4000000000. ;
+		TIME:interpolation_methodology = "" ;
+		TIME:interpolation_methodology_vocabulary = "" ;
+		TIME:interpolation_methodology_doi = "" ;
+		TIME:calendar = "gregorian" ;
+		TIME:sensor = "" ;
+	double TIME_GPS(N_MEASUREMENTS) ;
+		TIME_GPS:_FillValue = NaN ;
+		TIME_GPS:long_name = "time of each gps locations" ;
+		TIME_GPS:units = "seconds since 1970-01-01T00:00:00Z" ;
+		TIME_GPS:valid_min = 1000000000. ;
+		TIME_GPS:valid_max = 4000000000. ;
+		TIME_GPS:ancillary_variables = "TIME_GPS_QC" ;
+		TIME_GPS:standard_name = "" ;
+		TIME_GPS:calendar = "gregorian" ;
+		TIME_GPS:sensor = "" ;
+	float PHASE(N_MEASUREMENTS) ;
+		PHASE:_FillValue = NaNf ;
+		PHASE:long_name = "behaviour of the glider at sea" ;
+		PHASE:phase_vocabulary = "" ;
+		PHASE:phase_calculation_method = "" ;
+		PHASE:phase_calculation_method_vocabulary = "" ;
+		PHASE:phase_calculation_method_doi = "" ;
+		PHASE:ancillary_variables = "PHASE_QC" ;
+	float PHASE_QC(N_MEASUREMENTS) ;
+		PHASE_QC:_FillValue = NaNf ;
+		PHASE_QC:long_name = "quality flag" ;
+	float TEMP_CPU_CHLA(N_MEASUREMENTS) ;
+		TEMP_CPU_CHLA:_FillValue = NaNf ;
+		TEMP_CPU_CHLA:long_name = "Raw signal (counts) of CPU temperature determination" ;
+		TEMP_CPU_CHLA:units = "count" ;
+		TEMP_CPU_CHLA:standard_name = "" ;
+		TEMP_CPU_CHLA:vocabulary = "https://vocab.nerc.ac.uk/collection/OG1/current/" ;
+		TEMP_CPU_CHLA:ancillary_variables = "TEMP_CPU_CHLA_QC" ;
+		TEMP_CPU_CHLA:sensor = "INSTRUMENT_RADIOMETERS_8519" ;
+	float FLUORESCENCE_CHLA(N_MEASUREMENTS) ;
+		FLUORESCENCE_CHLA:_FillValue = NaNf ;
+		FLUORESCENCE_CHLA:long_name = "Raw signal (counts) of instrument output by in-situ chlorophyll fluorometer" ;
+		FLUORESCENCE_CHLA:units = "count" ;
+		FLUORESCENCE_CHLA:standard_name = "" ;
+		FLUORESCENCE_CHLA:vocabulary = "https://vocab.nerc.ac.uk/collection/OG1/current/" ;
+		FLUORESCENCE_CHLA:ancillary_variables = "FLUORESCENCE_CHLA_QC" ;
+		FLUORESCENCE_CHLA:sensor = "INSTRUMENT_RADIOMETERS_8519" ;
+	float DPHASE_DOXY(N_MEASUREMENTS) ;
+		DPHASE_DOXY:_FillValue = NaNf ;
+		DPHASE_DOXY:long_name = "Phase angle of D phase by optode" ;
+		DPHASE_DOXY:units = "degree" ;
+		DPHASE_DOXY:standard_name = "" ;
+		DPHASE_DOXY:vocabulary = "https://vocab.nerc.ac.uk/collection/OG1/current/" ;
+		DPHASE_DOXY:ancillary_variables = "DPHASE_DOXY_QC" ;
+		DPHASE_DOXY:sensor = "INSTRUMENT_DISSOLVED GAS SENSORS_590" ;
+	float MOLAR_DOXY(N_MEASUREMENTS) ;
+		MOLAR_DOXY:_FillValue = NaNf ;
+		MOLAR_DOXY:long_name = "Concentration of oxygen {O2 CAS 7782-44-7} per unit volume of the water body [dissolved plus reactive particulate phase] by optode" ;
+		MOLAR_DOXY:units = "micromole/l" ;
+		MOLAR_DOXY:standard_name = "mole_concentration_of_dissolved_molecular_oxygen_in_sea_water" ;
+		MOLAR_DOXY:vocabulary = "https://vocab.nerc.ac.uk/collection/OG1/current/" ;
+		MOLAR_DOXY:ancillary_variables = "MOLAR_DOXY_QC" ;
+		MOLAR_DOXY:sensor = "INSTRUMENT_DISSOLVED GAS SENSORS_590" ;
+	float TPHASE_DOXY(N_MEASUREMENTS) ;
+		TPHASE_DOXY:_FillValue = NaNf ;
+		TPHASE_DOXY:long_name = "Phase angle (temperature compensated) of D phase by optode" ;
+		TPHASE_DOXY:units = "degree" ;
+		TPHASE_DOXY:standard_name = "" ;
+		TPHASE_DOXY:vocabulary = "https://vocab.nerc.ac.uk/collection/OG1/current/" ;
+		TPHASE_DOXY:ancillary_variables = "TPHASE_DOXY_QC" ;
+		TPHASE_DOXY:sensor = "INSTRUMENT_DISSOLVED GAS SENSORS_590" ;
+	float TEMP_DOXY(N_MEASUREMENTS) ;
+		TEMP_DOXY:_FillValue = NaNf ;
+		TEMP_DOXY:long_name = "Temperature of oxygen determination by optode" ;
+		TEMP_DOXY:units = "degree_Celsius" ;
+		TEMP_DOXY:standard_name = "temperature_of_sensor_for_oxygen_in_sea_water" ;
+		TEMP_DOXY:vocabulary = "https://vocab.nerc.ac.uk/collection/OG1/current/" ;
+		TEMP_DOXY:ancillary_variables = "TEMP_DOXY_QC" ;
+		TEMP_DOXY:sensor = "INSTRUMENT_DISSOLVED GAS SENSORS_590" ;
+	float OXYSAT_DOXY(N_MEASUREMENTS) ;
+		OXYSAT_DOXY:_FillValue = NaNf ;
+		OXYSAT_DOXY:long_name = "Saturation of oxygen {O2 CAS 7782-44-7} in the water body [dissolved plus reactive particulate phase] by in-situ oxygen optode and computation from concentration" ;
+		OXYSAT_DOXY:units = "%" ;
+		OXYSAT_DOXY:standard_name = "" ;
+		OXYSAT_DOXY:vocabulary = "https://vocab.nerc.ac.uk/collection/OG1/current/" ;
+		OXYSAT_DOXY:ancillary_variables = "OXYSAT_DOXY_QC" ;
+		OXYSAT_DOXY:sensor = "INSTRUMENT_DISSOLVED GAS SENSORS_590" ;
+	float PRES(N_MEASUREMENTS) ;
+		PRES:_FillValue = NaNf ;
+		PRES:long_name = "Pressure (spatial coordinate) exerted by the water body by profiling pressure sensor and correction to read zero at sea level" ;
+		PRES:units = "decibar" ;
+		PRES:standard_name = "sea_water_pressure" ;
+		PRES:vocabulary = "https://vocab.nerc.ac.uk/collection/OG1/current/" ;
+		PRES:ancillary_variables = "PRES_QC" ;
+		PRES:sensor = "INSTRUMENT_WATER TEMPERATURE SENSOR_0363" ;
+	float SIGMA_T(N_MEASUREMENTS) ;
+		SIGMA_T:_FillValue = NaNf ;
+		SIGMA_T:long_name = "Sigma-T of the water body by computation from salinity and temperature using UNESCO algorithm" ;
+		SIGMA_T:units = "kg/m^3" ;
+		SIGMA_T:standard_name = "sea_water_sigma_t" ;
+		SIGMA_T:vocabulary = "https://vocab.nerc.ac.uk/collection/OG1/current/" ;
+		SIGMA_T:ancillary_variables = "SIGMA_T_QC" ;
+		SIGMA_T:sensor = "INSTRUMENT_WATER TEMPERATURE SENSOR_0363" ;
+	float CNDC(N_MEASUREMENTS) ;
+		CNDC:_FillValue = NaNf ;
+		CNDC:long_name = "Electrical conductivity of the water body by CTD" ;
+		CNDC:units = "mhos/m" ;
+		CNDC:standard_name = "sea_water_electrical_conductivity" ;
+		CNDC:vocabulary = "https://vocab.nerc.ac.uk/collection/OG1/current/" ;
+		CNDC:ancillary_variables = "CNDC_QC" ;
+		CNDC:sensor = "INSTRUMENT_WATER TEMPERATURE SENSOR_0363" ;
+	float TEMP(N_MEASUREMENTS) ;
+		TEMP:_FillValue = NaNf ;
+		TEMP:long_name = "Temperature of the water body by CTD or STD" ;
+		TEMP:units = "degree_Celsius" ;
+		TEMP:standard_name = "sea_water_temperature" ;
+		TEMP:vocabulary = "https://vocab.nerc.ac.uk/collection/OG1/current/" ;
+		TEMP:ancillary_variables = "TEMP_QC" ;
+		TEMP:sensor = "INSTRUMENT_WATER TEMPERATURE SENSOR_0363" ;
+	float PSAL(N_MEASUREMENTS) ;
+		PSAL:_FillValue = NaNf ;
+		PSAL:long_name = "Practical salinity of the water body by CTD and computation using UNESCO 1983 algorithm" ;
+		PSAL:units = "psu" ;
+		PSAL:standard_name = "sea_water_practical_salinity" ;
+		PSAL:vocabulary = "https://vocab.nerc.ac.uk/collection/OG1/current/" ;
+		PSAL:ancillary_variables = "PSAL_QC" ;
+		PSAL:sensor = "INSTRUMENT_WATER TEMPERATURE SENSOR_0363" ;
+	float LATITUDE_GPS(N_MEASUREMENTS) ;
+		LATITUDE_GPS:_FillValue = NaNf ;
+		LATITUDE_GPS:long_name = "Latitude north relative to WGS84 by unspecified GPS system" ;
+		LATITUDE_GPS:units = "degree_north" ;
+		LATITUDE_GPS:valid_min = -90L ;
+		LATITUDE_GPS:valid_max = 90L ;
+		LATITUDE_GPS:ancillary_variables = "LATITUDE_GPS_QC" ;
+		LATITUDE_GPS:standard_name = "" ;
+		LATITUDE_GPS:sensor = "INSTRUMENT_DATA LOGGERS_sg558" ;
+	float LONGITUDE_GPS(N_MEASUREMENTS) ;
+		LONGITUDE_GPS:_FillValue = NaNf ;
+		LONGITUDE_GPS:long_name = "Longitude east relative to WGS84 by unspecified GPS system" ;
+		LONGITUDE_GPS:units = "degree_east" ;
+		LONGITUDE_GPS:valid_min = -180L ;
+		LONGITUDE_GPS:valid_max = 180L ;
+		LONGITUDE_GPS:ancillary_variables = "LONGITUDE_GPS_QC" ;
+		LONGITUDE_GPS:standard_name = "" ;
+		LONGITUDE_GPS:sensor = "INSTRUMENT_DATA LOGGERS_sg558" ;
+	float GLIDER_ROLL(N_MEASUREMENTS) ;
+		GLIDER_ROLL:_FillValue = NaNf ;
+		GLIDER_ROLL:long_name = "Orientation (roll angle) of measurement platform by triaxial fluxgate compass" ;
+		GLIDER_ROLL:units = "deg" ;
+		GLIDER_ROLL:standard_name = "" ;
+		GLIDER_ROLL:vocabulary = "https://vocab.nerc.ac.uk/collection/OG1/current/" ;
+		GLIDER_ROLL:ancillary_variables = "GLIDER_ROLL_QC" ;
+		GLIDER_ROLL:sensor = "INSTRUMENT_DATA LOGGERS_sg558" ;
+	float LATITUDE(N_MEASUREMENTS) ;
+		LATITUDE:_FillValue = NaNf ;
+		LATITUDE:long_name = "Latitude north" ;
+		LATITUDE:units = "degree_north" ;
+		LATITUDE:valid_min = -90L ;
+		LATITUDE:valid_max = 90L ;
+		LATITUDE:ancillary_variables = "LATITUDE_QC" ;
+		LATITUDE:standard_name = "" ;
+		LATITUDE:sensor = "INSTRUMENT_DATA LOGGERS_sg558" ;
+		LATITUDE:interpolation_methodology = "" ;
+		LATITUDE:interpolation_methodology_vocabulary = "" ;
+		LATITUDE:interpolation_methodology_doi = "" ;
+	float GLIDER_PITCH(N_MEASUREMENTS) ;
+		GLIDER_PITCH:_FillValue = NaNf ;
+		GLIDER_PITCH:long_name = "Orientation (pitch) of measurement platform by triaxial fluxgate compass" ;
+		GLIDER_PITCH:units = "deg" ;
+		GLIDER_PITCH:standard_name = "" ;
+		GLIDER_PITCH:vocabulary = "https://vocab.nerc.ac.uk/collection/OG1/current/" ;
+		GLIDER_PITCH:ancillary_variables = "GLIDER_PITCH_QC" ;
+		GLIDER_PITCH:sensor = "INSTRUMENT_DATA LOGGERS_sg558" ;
+	float LONGITUDE(N_MEASUREMENTS) ;
+		LONGITUDE:_FillValue = NaNf ;
+		LONGITUDE:long_name = "Longitude east" ;
+		LONGITUDE:units = "degree_east" ;
+		LONGITUDE:valid_min = -180L ;
+		LONGITUDE:valid_max = 180L ;
+		LONGITUDE:ancillary_variables = "LONGITUDE_QC" ;
+		LONGITUDE:standard_name = "" ;
+		LONGITUDE:sensor = "INSTRUMENT_DATA LOGGERS_sg558" ;
+		LONGITUDE:interpolation_methodology = "" ;
+		LONGITUDE:interpolation_methodology_vocabulary = "" ;
+		LONGITUDE:interpolation_methodology_doi = "" ;
+	float GLIDER_DEPTH(N_MEASUREMENTS) ;
+		GLIDER_DEPTH:_FillValue = NaNf ;
+		GLIDER_DEPTH:long_name = "Depth (spatial coordinate) relative to water surface in the water body" ;
+		GLIDER_DEPTH:units = "m" ;
+		GLIDER_DEPTH:standard_name = "" ;
+		GLIDER_DEPTH:vocabulary = "https://vocab.nerc.ac.uk/collection/OG1/current/" ;
+		GLIDER_DEPTH:ancillary_variables = "GLIDER_DEPTH_QC" ;
+		GLIDER_DEPTH:sensor = "INSTRUMENT_DATA LOGGERS_sg558" ;
+	float TIME_GPS_QC(N_MEASUREMENTS) ;
+		TIME_GPS_QC:_FillValue = NaNf ;
+		TIME_GPS_QC:long_name = "quality flag" ;
+	float TEMP_CPU_CHLA_QC(N_MEASUREMENTS) ;
+		TEMP_CPU_CHLA_QC:_FillValue = NaNf ;
+		TEMP_CPU_CHLA_QC:long_name = "quality flag" ;
+	float FLUORESCENCE_CHLA_QC(N_MEASUREMENTS) ;
+		FLUORESCENCE_CHLA_QC:_FillValue = NaNf ;
+		FLUORESCENCE_CHLA_QC:long_name = "quality flag" ;
+	float DPHASE_DOXY_QC(N_MEASUREMENTS) ;
+		DPHASE_DOXY_QC:_FillValue = NaNf ;
+		DPHASE_DOXY_QC:long_name = "quality flag" ;
+	float MOLAR_DOXY_QC(N_MEASUREMENTS) ;
+		MOLAR_DOXY_QC:_FillValue = NaNf ;
+		MOLAR_DOXY_QC:long_name = "quality flag" ;
+	float TPHASE_DOXY_QC(N_MEASUREMENTS) ;
+		TPHASE_DOXY_QC:_FillValue = NaNf ;
+		TPHASE_DOXY_QC:long_name = "quality flag" ;
+	float TEMP_DOXY_QC(N_MEASUREMENTS) ;
+		TEMP_DOXY_QC:_FillValue = NaNf ;
+		TEMP_DOXY_QC:long_name = "quality flag" ;
+	float OXYSAT_DOXY_QC(N_MEASUREMENTS) ;
+		OXYSAT_DOXY_QC:_FillValue = NaNf ;
+		OXYSAT_DOXY_QC:long_name = "quality flag" ;
+	float PRES_QC(N_MEASUREMENTS) ;
+		PRES_QC:_FillValue = NaNf ;
+		PRES_QC:long_name = "quality flag" ;
+	float SIGMA_T_QC(N_MEASUREMENTS) ;
+		SIGMA_T_QC:_FillValue = NaNf ;
+		SIGMA_T_QC:long_name = "quality flag" ;
+	float CNDC_QC(N_MEASUREMENTS) ;
+		CNDC_QC:_FillValue = NaNf ;
+		CNDC_QC:long_name = "quality flag" ;
+		CNDC_QC:vocabulary = "" ;
+		CNDC_QC:RTQC_methodology = "" ;
+		CNDC_QC:RTQC_methodology_vocabulary = "" ;
+		CNDC_QC:RTQC_methodology_doi = "" ;
+	float TEMP_QC(N_MEASUREMENTS) ;
+		TEMP_QC:_FillValue = NaNf ;
+		TEMP_QC:long_name = "quality flag" ;
+	float PSAL_QC(N_MEASUREMENTS) ;
+		PSAL_QC:_FillValue = NaNf ;
+		PSAL_QC:long_name = "quality flag" ;
+	float LATITUDE_GPS_QC(N_MEASUREMENTS) ;
+		LATITUDE_GPS_QC:_FillValue = NaNf ;
+		LATITUDE_GPS_QC:long_name = "quality flag" ;
+	float LONGITUDE_GPS_QC(N_MEASUREMENTS) ;
+		LONGITUDE_GPS_QC:_FillValue = NaNf ;
+		LONGITUDE_GPS_QC:long_name = "quality flag" ;
+	float GLIDER_ROLL_QC(N_MEASUREMENTS) ;
+		GLIDER_ROLL_QC:_FillValue = NaNf ;
+		GLIDER_ROLL_QC:long_name = "quality flag" ;
+	float LATITUDE_QC(N_MEASUREMENTS) ;
+		LATITUDE_QC:_FillValue = NaNf ;
+		LATITUDE_QC:long_name = "quality flag" ;
+	float GLIDER_PITCH_QC(N_MEASUREMENTS) ;
+		GLIDER_PITCH_QC:_FillValue = NaNf ;
+		GLIDER_PITCH_QC:long_name = "quality flag" ;
+	float LONGITUDE_QC(N_MEASUREMENTS) ;
+		LONGITUDE_QC:_FillValue = NaNf ;
+		LONGITUDE_QC:long_name = "quality flag" ;
+	float GLIDER_DEPTH_QC(N_MEASUREMENTS) ;
+		GLIDER_DEPTH_QC:_FillValue = NaNf ;
+		GLIDER_DEPTH_QC:long_name = "quality flag" ;
+	string PARAMETER(N_PARAM) ;
+		PARAMETER:long_name = "name of parameter computed from glider measurements" ;
+		PARAMETER:parameter_vocabulary = "https://vocab.nerc.ac.uk/collection/OG1/current/" ;
+	string PARAMETER_SENSOR(N_PARAM) ;
+		PARAMETER_SENSOR:long_name = "" ;
+	string PARAMETER_UNITS(N_PARAM) ;
+		PARAMETER_UNITS:long_name = "" ;
+		PARAMETER_UNITS:parameter_units_vocabulary = "" ;
+	int64 INSTRUMENT_RADIOMETERS_8519 ;
+		INSTRUMENT_RADIOMETERS_8519:_FillValue = -1L ;
+		INSTRUMENT_RADIOMETERS_8519:long_name = "ECO Puck BBFL2-IRB 8519" ;
+		INSTRUMENT_RADIOMETERS_8519:type = "radiometers" ;
+		INSTRUMENT_RADIOMETERS_8519:type_vocabulary = "http://vocab.nerc.ac.uk/collection/L05/current/" ;
+		INSTRUMENT_RADIOMETERS_8519:maker = "WET Labs" ;
+		INSTRUMENT_RADIOMETERS_8519:maker_vocabulary = "http://vocab.nerc.ac.uk/collection/L35/current/MAN0026/" ;
+		INSTRUMENT_RADIOMETERS_8519:model = "WET Labs {Sea-Bird WETLabs} ECO Puck Triplet BBFL2-IRB scattering fluorescence sensor" ;
+		INSTRUMENT_RADIOMETERS_8519:model_vocabulary = "https://vocab.nerc.ac.uk/collection/L22/current/TOOL1311" ;
+		INSTRUMENT_RADIOMETERS_8519:serial_number = "8519" ;
+		INSTRUMENT_RADIOMETERS_8519:calibration_date = "" ;
+	int64 INSTRUMENT_DISSOLVED\ GAS\ SENSORS_590 ;
+		INSTRUMENT_DISSOLVED\ GAS\ SENSORS_590:_FillValue = -1L ;
+		INSTRUMENT_DISSOLVED\ GAS\ SENSORS_590:long_name = "Aanderaa optode 4831 590" ;
+		INSTRUMENT_DISSOLVED\ GAS\ SENSORS_590:type = "dissolved gas sensors" ;
+		INSTRUMENT_DISSOLVED\ GAS\ SENSORS_590:type_vocabulary = "http://vocab.nerc.ac.uk/collection/L05/current/351/" ;
+		INSTRUMENT_DISSOLVED\ GAS\ SENSORS_590:maker = "Aanderaa" ;
+		INSTRUMENT_DISSOLVED\ GAS\ SENSORS_590:maker_vocabulary = "http://vocab.nerc.ac.uk/collection/L35/current/MAN0007/" ;
+		INSTRUMENT_DISSOLVED\ GAS\ SENSORS_590:model = "Oxygen optode 4831" ;
+		INSTRUMENT_DISSOLVED\ GAS\ SENSORS_590:model_vocabulary = "https://vocab.nerc.ac.uk/collection/L22/current/TOOL1239" ;
+		INSTRUMENT_DISSOLVED\ GAS\ SENSORS_590:serial_number = "590" ;
+		INSTRUMENT_DISSOLVED\ GAS\ SENSORS_590:calibration_date = "" ;
+	int64 INSTRUMENT_WATER\ TEMPERATURE\ SENSOR_0363 ;
+		INSTRUMENT_WATER\ TEMPERATURE\ SENSOR_0363:_FillValue = -1L ;
+		INSTRUMENT_WATER\ TEMPERATURE\ SENSOR_0363:long_name = "Seaglider CT sail 0363" ;
+		INSTRUMENT_WATER\ TEMPERATURE\ SENSOR_0363:type = "water temperature sensor" ;
+		INSTRUMENT_WATER\ TEMPERATURE\ SENSOR_0363:type_vocabulary = "http://vocab.nerc.ac.uk/collection/L05/current/" ;
+		INSTRUMENT_WATER\ TEMPERATURE\ SENSOR_0363:maker = "Sea-Bird Scientific" ;
+		INSTRUMENT_WATER\ TEMPERATURE\ SENSOR_0363:maker_vocabulary = "http://vocab.nerc.ac.uk/collection/L35/current/MAN0013/" ;
+		INSTRUMENT_WATER\ TEMPERATURE\ SENSOR_0363:model = "Unpumped CT sail CTD" ;
+		INSTRUMENT_WATER\ TEMPERATURE\ SENSOR_0363:model_vocabulary = "https://vocab.nerc.ac.uk/collection/L22/current/TOOL1188" ;
+		INSTRUMENT_WATER\ TEMPERATURE\ SENSOR_0363:serial_number = "0363" ;
+		INSTRUMENT_WATER\ TEMPERATURE\ SENSOR_0363:calibration_date = "" ;
+	int64 INSTRUMENT_DATA\ LOGGERS_sg558 ;
+		INSTRUMENT_DATA\ LOGGERS_sg558:_FillValue = -1L ;
+		INSTRUMENT_DATA\ LOGGERS_sg558:long_name = "Seaglider logger sg558" ;
+		INSTRUMENT_DATA\ LOGGERS_sg558:type = "data loggers" ;
+		INSTRUMENT_DATA\ LOGGERS_sg558:type_vocabulary = "http://vocab.nerc.ac.uk/collection/L05/current/DLOG/" ;
+		INSTRUMENT_DATA\ LOGGERS_sg558:maker = "Kongsberg Maritime" ;
+		INSTRUMENT_DATA\ LOGGERS_sg558:maker_vocabulary = "http://vocab.nerc.ac.uk/collection/L35/current/MAN0015/" ;
+		INSTRUMENT_DATA\ LOGGERS_sg558:model = "Seaglider M1 Glider data logger" ;
+		INSTRUMENT_DATA\ LOGGERS_sg558:model_vocabulary = "https://vocab.nerc.ac.uk/collection/L22/current/TOOL1185" ;
+		INSTRUMENT_DATA\ LOGGERS_sg558:serial_number = "sg558" ;
+		INSTRUMENT_DATA\ LOGGERS_sg558:calibration_date = "" ;
+	string TRAJECTORY ;
+		TRAJECTORY:cf_role = "trajectory_id" ;
+		TRAJECTORY:long_name = "trajectory name" ;
+		TRAJECTORY:data_mode_vocabulary = "" ;
+	string PLATFORM_TYPE ;
+		PLATFORM_TYPE:long_name = "type of glider" ;
+		PLATFORM_TYPE:platform_type_vocabulary = "" ;
+	string PLATFORM_MODEL ;
+		PLATFORM_MODEL:long_name = "model of the glider" ;
+		PLATFORM_MODEL:platform_model_vocabulary = "" ;
+	string WMO_IDENTIFIER ;
+		WMO_IDENTIFIER:long_name = "wmo id" ;
+	double DEPLOYMENT_TIME ;
+		DEPLOYMENT_TIME:long_name = "Date of deployment" ;
+		DEPLOYMENT_TIME:calendar = "gregorian" ;
+		DEPLOYMENT_TIME:standard_name = "time" ;
+		DEPLOYMENT_TIME:units = "seconds since 1970-01-01T00:00:00Z" ;
+		DEPLOYMENT_TIME:axis = "T" ;
+	string DEPLOYMENT_LATITUDE ;
+		DEPLOYMENT_LATITUDE:long_name = "latitude of deployment" ;
+	string DEPLOYMENT_LONGITUDE ;
+		DEPLOYMENT_LONGITUDE:long_name = "longitude of deployment" ;
+
+// global attributes:
+		:geospatial_bounds_crs = "EPSG:4326" ;
+		:geospatial_bounds_vertical_crs = "EPSG:5831" ;
+		:geospatial_lat_min = -63.72288f ;
+		:geospatial_lat_max = -63.34504f ;
+		:geospatial_lon_min = -53.3449f ;
+		:geospatial_lon_max = -51.54048f ;
+		:geospatial_bounds = "POLYGON ((-53.34490203857422, -51.54047775268555, -63.72288131713867, -63.34503936767578))" ;
+		:geospatial_vertical_min = -0.1495176f ;
+		:geospatial_vertical_max = 751.8447f ;
+		:geospatial_vertical_positive = "down" ;
+		:geospatial_vertical_units = "m" ;
+		:time_coverage_start = "2024-02-06T17:05Z" ;
+		:time_coverage_end = "2024-02-23T20:50Z" ;
+		:institution = "UEA" ;
+		:institution_role = "contact point" ;
+		:institution_role_vocabulary = "https://edmo.seadatanet.org/" ;
+		:institution_id = "" ;
+		:institution_id_vocabulary = "EDMO" ;
+		:contributor_name = "Karen Heywood" ;
+		:contributor_email = "k.heywood@uea.ac.uk" ;
+		:contributor_role = "principal investigator" ;
+		:contributor_role_vocabulary = "https://vocab.nerc.ac.uk/collection/C86/current/SDNPR008/" ;
+		:contributor_id = "" ;
+		:publisher_name = "NOC" ;
+		:publisher_email = "glidersbodc@bodc.ac.uk" ;
+		:publisher_url = "https://www.bodc.ac.uk" ;
+		:publisher_type = "DAC" ;
+		:publisher_institution = "NOC" ;
+		:creator_name = "NOC" ;
+		:creator_email = "glidersbodc@bodc.ac.uk" ;
+		:creator_url = "https://www.noc.ac.uk" ;
+		:creator_type = "DAC" ;
+		:creator_institution = "NOC" ;
+		:wmoid = "8901054" ;
+		:institution = "" ;
+		:comment = "" ;
+		:doi = "" ;
+		:program = "" ;
+		:network = "" ;
+		:site_vocabulary = "" ;
+		:site = "" ;
+		:web_link = "" ;
+		:title = "OceanGliders trajectory file" ;
+		:platform = "sub-surface gliders" ;
+		:platform_vocabulary = "https://vocab.nerc.ac.uk/collection/L06/current/27/" ;
+		:Conventions = "CF-1.8, ACDD-1.3, OG-1.0" ;
+		:naming_authority = "BODC" ;
+		:standard_name_vocabulary = "https://cfconventions.org/Data/cf-standard-names/current/build/cf-standard-name-table.html" ;
+		:processing_level = "No quality control applied to the data." ;
+		:featureType = "trajectory" ;
+		:xglider_type = "trajectoryObs" ;
+		:rtqc_method = "Raw data, no QC applied." ;
+		:rtqc_method_doi = "Raw data, no QC applied." ;
+		:data_url = "https://gliders.bodc.ac.uk/inventory/" ;
+		:project = "PICCOLO" ;
+		:internal_mission_identifier = 626L ;
+		:mission = "PICCOLO" ;
+		string :instrument = "WET Labs {Sea-Bird WETLabs} ECO Puck Triplet BBFL2-IRB scattering fluorescence sensor", "Oxygen optode 4831", "Unpumped CT sail CTD", "Seaglider M1 Glider data logger" ;
+		:metadata_link = "https://api.linked-systems.uk/api/meta/v2/deployments/info/626" ;
+		:trajectory = "sg558_20240206" ;
+		:date_created = "2024-03-05T13:08:28.708143" ;
+		:date_modified = "2024-03-05T13:08:28.708154" ;
+		:id = "sg558_20240206T000000_R" ;
+		:_NCProperties = "version=2,netcdf=4.9.3-development,hdf5=1.12.2" ;
+data:
+
+ TIME = 1707239105, 1707239353, 1707239420.366, 1707239426.961, 
+    1707239434.672, 1707239441.268, 1707239447.832, 1707239454.441, 
+    1707239461.631, 1707239468.236 ;
+
+ TIME_GPS = 1707239105, 1707239353, 1707239420.366, 1707239426.961, 
+    1707239434.672, 1707239441.268, 1707239447.832, 1707239454.441, 
+    1707239461.631, 1707239468.236 ;
+
+ PHASE = _, _, _, _, _, _, _, _, _, _ ;
+
+ PHASE_QC = _, _, _, _, _, _, _, _, _, _ ;
+
+ TEMP_CPU_CHLA = _, _, 575, 575, 575, 575, 574, 575, 575, 575 ;
+
+ FLUORESCENCE_CHLA = _, _, 51, 51, 52, 51, 51, 52, 51, 51 ;
+
+ DPHASE_DOXY = _, _, _, _, _, _, _, _, _, _ ;
+
+ MOLAR_DOXY = _, _, _, _, _, _, _, _, _, _ ;
+
+ TPHASE_DOXY = _, _, _, _, _, _, _, _, _, _ ;
+
+ TEMP_DOXY = _, _, _, _, _, _, _, _, _, _ ;
+
+ OXYSAT_DOXY = _, _, _, _, _, _, _, _, _, _ ;
+
+ PRES = _, _, 0.3522869, 0.5837896, 0.4227442, 0.2818295, 0.3120255, 
+    0.4730709, 0.6039203, 0.9159458 ;
+
+ SIGMA_T = _, _, _, _, _, _, _, _, _, _ ;
+
+ CNDC = _, _, _, _, _, _, _, _, _, _ ;
+
+ TEMP = _, _, -1.122527, -1.117795, -1.117839, -1.117702, -1.117606, 
+    -1.11826, -1.116697, -1.118232 ;
+
+ PSAL = _, _, _, _, _, _, _, _, _, _ ;
+
+ LATITUDE_GPS = -63.68122, -63.68102, _, _, _, _, _, _, _, _ ;
+
+ LONGITUDE_GPS = -52.11595, -52.11629, _, _, _, _, _, _, _, _ ;
+
+ GLIDER_ROLL = _, _, -2, 6, 5.7, 6.7, 6.3, -1.1, 0.4, 10.7 ;
+
+ LATITUDE = _, _, -63.68102, -63.68102, -63.68102, -63.68102, -63.68102, 
+    -63.68102, -63.68102, -63.68102 ;
+
+ GLIDER_PITCH = _, _, -33.8, -28.4, -23, -22.3, -19, -23, -50.8, -49.5 ;
+
+ LONGITUDE = _, _, -52.11629, -52.1163, -52.11633, -52.11635, -52.11637, 
+    -52.11639, -52.11642, -52.11644 ;
+
+ GLIDER_DEPTH = _, _, 0.3488664, 0.5781212, 0.4186396, 0.2790932, 0.308996, 
+    0.4684776, 0.5980563, 0.9070514 ;
+
+ TIME_GPS_QC = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ;
+
+ TEMP_CPU_CHLA_QC = _, _, 0, 0, 0, 0, 0, 0, 0, 0 ;
+
+ FLUORESCENCE_CHLA_QC = _, _, 0, 0, 0, 0, 0, 0, 0, 0 ;
+
+ DPHASE_DOXY_QC = _, _, _, _, _, _, _, _, _, _ ;
+
+ MOLAR_DOXY_QC = _, _, _, _, _, _, _, _, _, _ ;
+
+ TPHASE_DOXY_QC = _, _, _, _, _, _, _, _, _, _ ;
+
+ TEMP_DOXY_QC = _, _, _, _, _, _, _, _, _, _ ;
+
+ OXYSAT_DOXY_QC = _, _, _, _, _, _, _, _, _, _ ;
+
+ PRES_QC = _, _, 0, 0, 0, 0, 0, 0, 0, 0 ;
+
+ SIGMA_T_QC = _, _, 0, 0, 0, 0, 0, 0, 0, 0 ;
+
+ CNDC_QC = _, _, 0, 0, 0, 0, 0, 0, 0, 0 ;
+
+ TEMP_QC = _, _, 0, 0, 0, 0, 0, 0, 0, 0 ;
+
+ PSAL_QC = _, _, 0, 0, 0, 0, 0, 0, 0, 0 ;
+
+ LATITUDE_GPS_QC = 0, 0, _, _, _, _, _, _, _, _ ;
+
+ LONGITUDE_GPS_QC = 0, 0, _, _, _, _, _, _, _, _ ;
+
+ GLIDER_ROLL_QC = _, _, 0, 0, 0, 0, 0, 0, 0, 0 ;
+
+ LATITUDE_QC = _, _, 0, 0, 0, 0, 0, 0, 0, 0 ;
+
+ GLIDER_PITCH_QC = _, _, 0, 0, 0, 0, 0, 0, 0, 0 ;
+
+ LONGITUDE_QC = _, _, 0, 0, 0, 0, 0, 0, 0, 0 ;
+
+ GLIDER_DEPTH_QC = _, _, 0, 0, 0, 0, 0, 0, 0, 0 ;
+
+ PARAMETER = "TEMP_CPU_CHLA", "FLUORESCENCE_CHLA", "DPHASE_DOXY", 
+    "MOLAR_DOXY", "TPHASE_DOXY", "TEMP_DOXY", "OXYSAT_DOXY", "PRES", 
+    "SIGMA_T", "CNDC", "TEMP", "PSAL", "LATITUDE_GPS", "LONGITUDE_GPS", 
+    "GLIDER_ROLL", "LATITUDE", "GLIDER_PITCH", "LONGITUDE", "GLIDER_DEPTH" ;
+
+ PARAMETER_SENSOR = 
+    "WET Labs {Sea-Bird WETLabs} ECO Puck Triplet BBFL2-IRB scattering fluorescence sensor", 
+    "WET Labs {Sea-Bird WETLabs} ECO Puck Triplet BBFL2-IRB scattering fluorescence sensor", 
+    "Oxygen optode 4831", "Oxygen optode 4831", "Oxygen optode 4831", 
+    "Oxygen optode 4831", "Oxygen optode 4831", "Unpumped CT sail CTD", 
+    "Unpumped CT sail CTD", "Unpumped CT sail CTD", "Unpumped CT sail CTD", 
+    "Unpumped CT sail CTD", "Seaglider M1 Glider data logger", 
+    "Seaglider M1 Glider data logger", "Seaglider M1 Glider data logger", 
+    "Seaglider M1 Glider data logger", "Seaglider M1 Glider data logger", 
+    "Seaglider M1 Glider data logger", "Seaglider M1 Glider data logger" ;
+
+ PARAMETER_UNITS = "count", "count", "degree", "micromole/l", "degree", 
+    "degree_Celsius", "%", "decibar", "kg/m^3", "mhos/m", "degree_Celsius", 
+    "psu", "degree_north", "degree_east", "deg", "degree_north", "deg", 
+    "degree_east", "m" ;
+
+ INSTRUMENT_RADIOMETERS_8519 = _ ;
+
+ INSTRUMENT_DISSOLVED\ GAS\ SENSORS_590 = _ ;
+
+ INSTRUMENT_WATER\ TEMPERATURE\ SENSOR_0363 = _ ;
+
+ INSTRUMENT_DATA\ LOGGERS_sg558 = _ ;
+
+ TRAJECTORY = "sg558_20240206" ;
+
+ PLATFORM_TYPE = "seaglider" ;
+
+ PLATFORM_MODEL = "M1" ;
+
+ WMO_IDENTIFIER = "830" ;
+
+ DEPLOYMENT_TIME = "20240206" ;
+
+ DEPLOYMENT_LATITUDE = "-63.681217193603516" ;
+
+ DEPLOYMENT_LONGITUDE = "-52.11595153808594" ;
+}
