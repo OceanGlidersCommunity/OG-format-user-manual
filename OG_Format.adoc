@@ -232,9 +232,6 @@ Some examples are provided in <<ProgramNetworkSite-example>>.
 |=================================================================================================================================================================================================================================================================
 |*Name* |*Definition* |*Comment*
 |N_MEASUREMENTS |N_MEASUREMENTS = unlimited; |Number of recorded locations.
-| N_SENSOR| N_SENSOR = <int value>; | Number of sensors mounted on the glider and used to measure the parameters. 
-Example for a glider with CTD, ECO_FLBBCD and OPTODE: CTD_TEMP, CTD_PRES, CTD_CNDC, OPTODE_DOXY, FLUOROMETER_CHLA, FLUOROMETER_CDOM, BACKSCATTERINGMETER_BBP700 ; N_SENSOR = 7
-|N_PARAM |N_PARAM = <int value>; |Number of parameters measured or calculated for a pressure sample. Examples for a glider with CTD, ECO_FLBBCD and OPTODE : PRES, TEMP, CNDC, PSAL,  MOLAR_DOXY, TEMP_DOXY, CHLA, CDOM, BETA700) : N_PARAM = 9
 |=================================================================================================================================================================================================================================================================
 
 ////
@@ -371,14 +368,6 @@ OG1.0 requirements cover positioning variables and geolocation of any scientific
 Interpolation methodologies need publishing as a best practice document separately to the OG1.0 terms of reference.
 
 See parameters section for guidance on attributes and conventions on _QC channels.
-
-////
-* [[general-information]]
-= General information
-////
-== General Information
-
-In this following section, two options, “encapsulate variable” and “individual variable” are proposed to store the general information.
 
 ////
 * [[trajectory-name]]
@@ -659,109 +648,52 @@ Note 2: PHASE is used to derive data product (profile, trajectory profiles, grid
 ////
 == Sensor information
 
-This section contains information about the sensors of the glider. Each ocean state variable to be recorded must be described with its sensor. Gears with multiple sensors (i.e. CTD) should consider separated sensors in particular if there is not a unique serial number and calibration date for the sensors.
+Each geophysical variable to be recorded must be described with its sensor. Sensor information are stored in an empty and dimensionless variable filled with variable attributes.
 
-A sensor is a device used to measure a physical parameter. Sensor outputs are provided in parameter counts and need to be converted into parameter physical units using a calibration equation. This conversion can be done onboard the glider or during the decoding process.
+=== Naming convention of the sensor variables
 
-[cols=",,",options="header",]
+Sensor variables are named as follow: *SENSOR_<sensor_type>_<sensor_serial_number>*
+
+Where <sensor_type> is a controlled vocabulary: see vocabulary guidelines
+
+
+[cols=",",options="header",]
 |=============================================================
-|*VARIABLE NAME* |*variable attributes* |*requirement status*
-|SENSOR a|
+|*VARIABLE NAME* |*variable attributes* and *requirement status*
 
-string SENSOR(N_SENSOR)
+|SENSOR_<sensor_type>_<sensor_serial_number> a|
 
-SENSOR:long_name: “type of sensor”;
+string SENSOR_<sensor_type>_<sensor_serial_number>
 
-SENSOR:sensor_vocabulary = “”; | highly desirable 
+SENSOR_<sensor_type>_<sensor_serial_number>:sensor_type_vocabulary = “” - mandatory
 
-|SENSOR_MODEL a|
+SENSOR_<sensor_type>_<sensor_serial_number>:long_name: “” - mandatory 
 
-string SENSOR_MODEL(N_SENSOR)
+SENSOR_<sensor_type>_<sensor_serial_number>:sensor_model: “” - mandatory 
 
-SENSOR_MODEL:long_name: “model of sensor”;
+SENSOR_<sensor_type>_<sensor_serial_number>:sensor_model_vocabulary: “” - mandatory 
 
-SENSOR_MODEL:sensor_model_vocabulary = “”; | highly desirable 
+SENSOR_<sensor_type>_<sensor_serial_number>:sensor_maker: “” - highly desirable 
 
-|SENSOR_MAKER a|
+SENSOR_<sensor_type>_<sensor_serial_number>:sensor_maker_vocabulary: “” - highly desirable 
 
-string SENSOR_MAKER(N_SENSOR)
+SENSOR_<sensor_type>_<sensor_serial_number>:sensor_serial_number: “” - highly desirable 
 
-SENSOR_MAKER:long_name: “manufacturer of the sensor”;
+SENSOR_<sensor_type>_<sensor_serial_number>:sensor_calibration_date: “” - highly desirable - Format iso8601 ("YYYY-MM-DD")
 
-| highly desirable 
-
-|SENSOR_SERIAL_NUMBER a|
-
-string SENSOR_SERIAL_NUMBER(N_SENSOR)
-
-SENSOR_SERIAL_NUMBER:long_name: “serial number of the sensor”; | highly desirable 
-
-|SENSOR_CALIBRATION_DATE a|
-
-string SENSOR_CALIBRATION_DATE(N_SENSOR)
-
-SENSOR_CALIBRATION_DATE:long_name: “date of calibration of the sensor”;
-
-SENSOR_CALIBRATION_DATE:format: “iso8601”;
-
-SENSOR_CALIBRATION_DATE:comment: “YYYY-MM-DD”; 
-
-SENSOR_CALIBRATION_DATE:calibration_link | highly desirable 
-
-| SENSOR_UUID a|  
-
-string SENSOR_UUID(N_SENSOR)
-
-SENSOR_UUID:long_name: "Universal Unique Identifier", 
-
-SENSOR_UUID:exemplar: "TOOL0669_75" <concept>_<serial_number>" | suggested  
 |=============================================================
 
-Note 1: SENSOR information is highly desirable to avoid ERDDAP configuration difficulties. When those difficulties will be overcome, some of the SENSOR information will become mandatory.
-////
-* [[parameters-information]]
-= Parameter’s information
-////
-== Parameter’s information
-
-A parameter is a measurement of a physical phenomenon; it can be provided by a sensor (in sensor counts or in physical units) or computed (derived) from other parameters. A sensor can measure 1 to N parameter(s). A parameter can be measured by 1 or N sensor(s).
-
-This section contains information about the parameters measured by the glider or derived from glider measurements. The section is based on the approach used in
-Argo formats and enables parameter information interoperability with major stakeholders such as CMEMS.
-
-[cols=",,",options="header",]
-|=======================================================================================================================================
-|*VARIABLE NAME* |*variable attributes* |*requirement status*
-|PARAMETER a|
-string PARAMETER(N_PARAM)
-
-PARAMETER:long_name = “name of parameter computed from glider measurements”;
-
-PARAMETER:parameter_vocabulary = “_https://vocab.nerc.ac.uk/collection/OG1/current/_”;
-
- |highly desirable
-|PARAMETER_SENSOR a|
-string PARAMETER_SENSOR(N_PARAM)
-
-PARAMETER_SENSOR:long_name = “”;
-
- |highly desirable
-|PARAMETER_UNITS a|
-string PARAMETER_UNITS(N_PARAM) PARAMETER_UNITS:long_name = “”;
-
-PARAMETER_UNITS:parameter_units_vocabulary = “”;
-
- |highly desirable
-|=======================================================================================================================================
-
-Note 1: PARAMETER information is highly desirable to avoid ERDDAP configuration difficulties. When those difficulties will be overcome, some of the PARAMETER information will become mandatory.
 
 ////
 * [[geophysical-variables]]
 = Geophysical variables
 ////
 == Geophysical variables
+
+Geophysical variables are measurements of a physical phenomenon (or an intermediate variable needed to measure a physical phenomenon); It is provided directly by a sensor (in sensor counts or in physical units) or computed (derived) from other parameters (i. e. intermediate parameters). A sensor can measure multiple variables(s). A variables can be measured by multiple sensor(s).
+
 "The fill value should have the same data type as the variable and be outside the range of possible data values."
+
 [cols=",,",options="header",]
 |==========================================================================================================================
 |*VARIABLE NAME* |*variable attributes* |*requirement status*
@@ -772,13 +704,15 @@ float <PARAM>(N_MEASUREMENT);
 
 <PARAM>:vocabulary = "_https://vocab.nerc.ac.uk/collection/OG1/current/_";
 
-<PARAM>:_FillValue = <X>;
+<PARAM>:_FillValue = <X>; Note: The fill value should have the same data type as the variable and be outside of the range of possible data values.
 
 <PARAM>:units = "<X>";
 
 <PARAM>:ancillary_variables = "PARAM_QC";
 
 <PARAM>:coordinates = "LATITUDE, LONGITUDE, DEPTH, TIME"
+
+<PARAM>:sensor = "SENSOR_<sensor_type>_<sensor_serial_number>"
 
  a|
 mandatory
