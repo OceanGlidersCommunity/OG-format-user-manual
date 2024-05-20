@@ -369,6 +369,7 @@ Interpolation methodologies need publishing as a best practice document separate
 
 See parameters section for guidance on attributes and conventions on _QC channels.
 
+Ligne 384
 ////
 * [[trajectory-name]]
 == Trajectory name
@@ -376,7 +377,7 @@ See parameters section for guidance on attributes and conventions on _QC channel
 == Trajectory Name
 
 [cols=",,",options="header",]
-|===========================================================================================================================
+|========================================================================================
 |*VARIABLE NAME* |*variable attributes* |*requirement status*
 |TRAJECTORY a|
 string TRAJECTORY
@@ -385,16 +386,16 @@ TRAJECTORY:cf_role = "trajectory_id"
 
 TRAJECTORY:long_name = “trajectory name”;
 
-TRAJECTORY:data_mode_vocabulary = “”;
+TRAJECTORY:format = "<platform_serial>_<start_date>"
+
+Where <platform_serial> is defined below +
+Where <start_date> refers to the deployment start UTC date under iso 8601. + 
+*Ex : sp041_20210909T160556*
 
  a|
 mandatory
 
-Value: <platform_serial>_<start_date>
-
-Where <platform_serial> is defined below , <start_date> refers to the deployment start UTC date under iso 8601. *Ex : sp041_20210909T160556* 
-
-|============================================================
+|========================================================================================
 
 
 ////
