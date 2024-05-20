@@ -369,7 +369,6 @@ Interpolation methodologies need publishing as a best practice document separate
 
 See parameters section for guidance on attributes and conventions on _QC channels.
 
-Ligne 384
 ////
 * [[trajectory-name]]
 == Trajectory name
