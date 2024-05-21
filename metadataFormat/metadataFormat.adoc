@@ -35,9 +35,24 @@ The following attributes should appear in the global attribute section of the OG
 |====
 |*Global attribute* |*Definition* |*Requirement status* |*Format, fixed value or example*
 |platform_name | Local or nickname of the glider; The platform name should be constructed from the manufacturer prefix and the platform serial number e.g. "sg638" (seaglider), unit_001 (slocum), sea001 (seaexplorer), sp001 (spray). Where the serial number of the platform is not known, a local nickname can be used e.g. "orca", "sverdrup", "ammonite"|mandatory | *ex.*: "platform_name":"sg638"
-| wmo_indentifier | 
+| wmo_indentifier | WMO id | mandatory | **ex.:** “6800980“
+| comment | Miscellaneous information about the data or methods used to produce it. | suggest | **ex.:** "deployment and recovery in Skagerrak"
+| title | A short phrase or sentence describing the dataset. | mandatory | **ex.:** "OceanGliders trajectory file"
+| site | The name of the regular sample line or area.| highly desirable | **ex.:** "Canales"
+| institution | The name of the institution where the original data was produced | highly desirable | **ex.:** "C-PROOF; Univserity of Victoria"
+| contributing_institution | Name of institutions involved in the glider mission. Multiple institutions are separated by commas. | Operator is mandatory | **ex.:** "Rutgers University, US IOOS, US IOOS, NOAA "
+| contributing_institution_role | Role of the institutions involved in the glider mission. Multiple institutions' roles are separated by a comma. | Operator is mandatory | **ex.:** "operator, data assembly center, global data assembly centre, funding agency"
+| contributing_institution_vocabulary | controlled vocabulary of the institution involved in the glider mission. Multiple ids are separated by a comma. | Highly suggested | **ex.:** "https://edmo.seadatanet.org/report/1435, https://edmo.seadatanet.org/report/3853, https://edmo.seadatanet.org/report/3853, https://edmo.seadatanet.org/report/4755"
+| contributors_name | Name of the contributors to the glider mission. Multiple contributors are separated by commas. | PI name is mandatory | **ex.:** "Louise Biddle, Callum Rolo"
+| contribtors_role | Role of the contributors to the glider mission. Multiple contributors’ roles are separated by commas. | PI is mandatory | **ex.:** "principal investigator, "
+| contributor_email | Email of the contributors to the glider mission. Multiple contributors' emails are separated by commas. | PI email is mandatory |  **ex.:** "louise.biddle@voiceoftheocean.org, callum.rolo@voiceoftheocean.org"
+| contributor_id | Unique id of the contributors to the glider mission. Multiple contributors’ ids are separated by commas.  | highly desirable | **ex.:** "https://orcid.org/0000-0002-4785-1959, "
+| data_url | A URL link to the source of this OG1.0 data file. | mandatory | https://linkedsystems.uk/erddap/files/Public_OG1_Data_001/Kelvin_20231205/Kelvin_620_R.nc
+|  | | |
 
-*TO BE CONTINUED*
+
+
+*TO BE CONTINUED and reorganized*
 
 | "platform_code": "aaGliderTest",
         "wmo_platform_code": "00001",
