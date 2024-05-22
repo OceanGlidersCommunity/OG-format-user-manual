@@ -103,9 +103,13 @@ The following attributes should appear in the sensor attribute section of the OG
 [%"header",cols="1,3,1,2a"]
 |====
 |*Global attribute* |*Definition* |*Requirement status* |*Format, fixed value or example*
-| | | | "SENSOR_MODEL_NAME": "SEABIRD_SBE41CP",
-| | | | "SENSOR_SERIAL_NO": "0000",
-| | | | "SENSOR_CALIBRATION_DATE": "2002-08-04"
+| sensor_type | type of the sensor | highly desirable | **ex.:** "CTD"
+| sensor_maker | sensor manufacturer of the sensor | highly desirable | **ex.:** "Sea-Bird Scientific"
+| sensor_model |  model of the sensor | mandatory | **ex.:** "SBE 41 CTD"
+| sensor_serial_number | serial number of the sensor  | highly desirable | **ex.:** "0865"
+| sensor_calibration_date | calibration date of the sensor  | highly desirable | **format:** iso 8601 - YYYYMMDD
+
+**ex.:** "20210412"
 
 |====
 
