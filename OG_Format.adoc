@@ -144,6 +144,7 @@ Formatted mission name: <platform_serial>_<start_date>_<data_mode>
 
 |mandatory |
 **ex.:**
+
 * unit_1032_20230512T001245_delayed
 * sea008_20180715T012451_delayed
 * sp032_20150923T150451_R
