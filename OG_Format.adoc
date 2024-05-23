@@ -144,6 +144,7 @@ Formatted mission name: <platform_serial>_<start_date>_<data_mode>
 
 |mandatory |
 **ex.:**
+
 * unit_1032_20230512T001245_delayed
 * sea008_20180715T012451_delayed
 * sp032_20150923T150451_R
@@ -207,8 +208,8 @@ The mission identifier used by the institution principally responsible for origi
 |contributing_institutions_id |code of the institution involved in the glider mission. Multiple ids are separated by a comma. |highly desirable |
 |contributing_institutions_id_vocabulary |url to the repository of the id |highly desirable | **ex.:** EDMO, ROR
 |uri |Other universal resource identifiers relevant to be linked to this dataset. Multiple uris are separated by a comma. |suggested | **ex.:** EDIOS, CSR, EDMERP, EDMED, CDI, ICES, etc.
-|data_url |url link to where the OG1.0 data file is hosted |highly desirable|
-|doi |The digital object identifier of the OG1.0 data file |highly desirable |
+|data_url |url link to where the OG1.0 data file is hosted |highly desirable| **ex.:** https://linkedsystems.uk/erddap/files/Public_OG1_Data_001/Kelvin_20231205/Kelvin_620_R.nc
+|doi |The digital object identifier of the OG1.0 data file |highly desirable |  **ex.:** https://doi.org/10.17882/56366
 |rtqc_method |The method used by DAC to apply real-time quality control to the data set |mandatory | **ex.:** "Quality control performed with IOOS QARTOD toolbox v2.1", "No QC applied"
 |rtqc_method_doi |The digital object identifier of the methodology used to apply real-time quality control to the data set. |highly desirable | **ex.**: "n/a"
 |web_link |url that provides useful information about anything related to the glider mission. Multiple urls are separated by commas. |suggested |
