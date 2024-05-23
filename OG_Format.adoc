@@ -208,8 +208,8 @@ The mission identifier used by the institution principally responsible for origi
 |institution_id |code of the institution involved in the glider mission. Multiple ids are separated by a comma. |highly desirable |
 |institution_id_vocabulary |url to the repository of the id |highly desirable | **ex.:** EDMO, ROR
 |uri |Other universal resource identifiers relevant to be linked to this dataset. Multiple uris are separated by a comma. |suggested | **ex.:** EDIOS, CSR, EDMERP, EDMED, CDI, ICES, etc.
-|data_url |url link to OG1.0 data file |mandatory |
-|doi |The digital object identifier of the OG1.0 data file |highly desirable |
+|data_url |A URL link to the source of this OG1.0 data file. |mandatory | **ex.:** https://linkedsystems.uk/erddap/files/Public_OG1_Data_001/Kelvin_20231205/Kelvin_620_R.nc
+|doi |The digital object identifier of the OG1.0 data file |highly desirable | **ex.:** https://doi.org/10.17882/56366
 |rtqc_method |The method used by DAC to apply real-time quality control to the data set |mandatory |
 |rtqc_method_doi |The digital object identifier of the methodology used to apply real-time quality control to the data set. |mandatory |
 |web_link |url that provides useful information about anything related to the glider mission. Multiple urls are separated by commas. |suggested |
