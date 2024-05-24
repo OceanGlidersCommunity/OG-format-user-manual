@@ -738,9 +738,6 @@ Byte <PARAM>_QC(N_MEASUREMENT); <PARAM>_QC:long_name = "quality flag";
  |higly desirable
 |==========================================================================================================================
 
-Note: It is anticipated to upgrade the ancillary variable related to QC by refining the ancillary variable name like < PARAM >_qc_generic, < PARAM >_qc_spike_test, <PARAM>_qc_land_test, etc. Current _QC attributes based on CF guidance (http://cfconventions.org/Data/cf-conventions/cf-conventions-1.10/cf-conventions.html#flags)
-and use the GOOS networks 0-4 flagging convention.
-
 
 ////
 * [[best-practices]]
