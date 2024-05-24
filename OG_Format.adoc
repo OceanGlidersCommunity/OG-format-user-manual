@@ -389,78 +389,68 @@ mandatory |
 * [[platform-information]]
 == Platform information
 ////
-=== Platform information
+== Platform information
 
-[cols=",,,",options="header",]
-|========================================================================================
-|*VARIABLE NAME* |*variable attributes* |*requirement status* | *Format, fixed value or example*
-|WMO_IDENTIFIER a|
-string WMO_IDENTIFIER
+Platform information are stored in an empty and dimensionless variable filled with variable attributes.
 
-WMO_IDENTIFIER:long_name = “wmo id”;
+[cols=",a,a",options="header",]
+|=============================================================
+|*VARIABLE NAME* |*variable attributes* and *requirement status* | *Format, fixed value or example*
+|PLATFORM |
+string PLATFORM
 
- |mandatory
-| *ex.:*  '6801706'
+attributes:
 
-|PLATFORM_MODEL a|
-string PLATFORM_MODEL
+:wmo_identifier = "WMO identifier of the platform" - mandatory;
 
-PLATFORM_MODEL:long_name: “model of the glider”;
+:platform_model = "model of the platform" - mandatory ;
 
-PLATFORM_MODEL:platform_model_vocabulary = “https://vocab.nerc.ac.uk/collection/B76/current/”;
+:platform_model_vocabulary = "controlled vocabulary uri of platform_model" - mandatory ;
 
- |mandatory
-| **ex.:** "Kongsberg Maritime Seaglider M1 glider"
+:platform_model_serial_number = "The  platform serial should be constructed from the manufacturer prefix and the platform serial number *ex.:* "sg001" (seaglider), "unit_001" (slocum), "sea001" (seaexplorer), "sp001" (spray)" - mandatory ;
 
-|PLATFORM_SERIAL_NUMBER a|
-string PLATFORM_SERIAL_NUMBER
+:platform_maker = "manufacturer of the platform" - suggested;
 
-PLATFORM_SERIAL_NUMBER:long_name = “glider serial number”;
+:platform_maker_vocabulary = "controlled vocabulary uri of platform_maker"  - suggested;
 
- |mandatory
-| The  platform serial should be constructed from the manufacturer prefix and the platform serial number *ex.:* "sg001" (seaglider), "unit_001" (slocum), "sea001" (seaexplorer), "sp001" (spray). Where the serial number of the platform is not known, a local nickname can be used e.g. "orca", "sverdrup", "ammonite".
-|PLATFORM_NAME a|
+:platform_name = "Local name or nickname of the glider" - highly desirable ;
 
-string PLATFORM_NAME
+:platform_depth_rating = "depth limit in meters of the glider for this mission" - highly desirable ;
 
-PLATFORM_NAME:long_name = “Local or nickname of the glider”;
- |highly desirable
-|  a local nickname for the glider *ex.:*  "orca", "sverdrup", "ammonite".
+:ices_code = "ICES platform code of the glider" - highly desirable;
 
-|PLATFORM_DEPTH_RATING a|
-integer PLATFORM_DEPTH_RATING
+:ices_code_vocabulary = "controlled vocabulary uri of  the ices_code" - highly desirable;
 
-PLATFORM_DEPTH_RATING:long_name = “depth limit in meters of the glider for this mission”;
+| 
+**ex.:** 
 
-PLATFORM_DEPTH_RATING:convention = “positive value expected - e.g. 100m depth = 100”;
+:wmo_identifier = "8967343"
 
- |highly desirable
-| *ex.:*  1000
-|ICES_CODE a|
-string ICES_CODE
+:platform_model = "Kongsberg Maritime Seaglider M1 glider"
 
-ICES_CODE:long_name = “ICES platform code of the glider”;
+:platform_model_vocabulary = "https://vocab.nerc.ac.uk/collection/B76/current/B7600001/"
 
-ICES_CODE:ices_code_vocabulary = “https://vocab.ices.dk/”;
+:platform_model_serial_number = "sg555"
 
- |highly desirable
-| *ex.:* "7460"
-|PLATFORM_MAKER a|
-string PLATFORM_MAKER
+:platform_maker = "Kongsberg Maritime AS"
 
-PLATFORM_MAKER:long_name = “glider manufacturer”;
+:platform_maker_vocabulary = "https://vocab.nerc.ac.uk/collection/B75/current/ORG00360/"
 
-PLATFORM_MAKER:platform_maker_vocabulary = “https://vocab.nerc.ac.uk/collection/B75/current/”;
+:platform_name = "Orca"
 
- |suggested
-| *ex.:* "Teledyne Webb Research"
-|========================================================================================
+:platform_depth_rating = "1000";
+
+:ices_code ="31OR"
+
+:ices_code_vocabulary = "https://vocab.ices.dk/?codeguid=d4f3f5a1-ff8e-4271-aeb3-17e2db9ccd27" 
+
+|=============================================================
 
 ////
 * [[deployment-information]]
 == Deployment information
 ////
-=== Deployment information
+== Deployment information
 
 [cols=",,",options="header",]
 |============================================================
@@ -517,64 +507,77 @@ Note: FIELD_COMPARISON_REFERENCE is applicable to deployment, recovery, and dela
 * [[hardware-information]]
 == Hardware information
 ////
-=== Hardware information
+== Hardware information
+Hardware information are stored in an empty and dimensionless variable filled with variable attributes.
 
-[cols=",,",options="header",]
-|=============================================================================
-|*VARIABLE NAME* |*variable attributes* |*requirement status*
-|GLIDER_FIRMWARE_VERSION a|
+[cols=",a,a",options="header",]
+|=============================================================
+|*VARIABLE NAME* |*variable attributes* and *requirement status* | *Format, fixed value or example*
+|HARDWARE| 
 string GLIDER_FIRMWARE_VERSION
 
-GLIDER_FIRMWARE_VERSION:long_name = “version of the internal glider firmware”;
+attributes:
 
- |highly desirable
-|LANDSTATION_VERSION a|
-string LANDSTATION_VERSION
+:glider_firmware_version = "version of the internal glider firmware" - highly desirable;
 
-LANDSTATION_VERSION:long_name = “version of the server onshore”;
+:landstation_version = "version of the server onshore" - highly desirable;
 
- |highly desirable
-|BATTERY_TYPE a|
-string BATTERY_TYPE
+:battery_type = “type of the battery” - suggested;
 
-BATTERY_TYPE:long_name = “type of the battery”;
+:battery_type_vocabulary = “controlled vocabulary uri of battery_type” - suggested;
 
-BATTERY_TYPE:battery_type_vocabulary = “”;
+:battery_pack = "battery packaging" - suggested
 
- |suggested
-|BATTERY_PACK a|
-string BATTERY_PACK
+| 
+**ex.:** 
 
-BATTERY_PACK:long_name = “battery packaging”;
+:glider_firmware_version = "V1.3.22"
 
- |suggested
-|=============================================================================
+:landstation_version = "dockserver V3.42"
+
+:battery_type = "lithium rechargeable"
+
+:battery_type_vocabulary = "https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/battery_type.md"
+
+:battery_pack = "2X12 12V battery"
+
+|=============================================================
 
 ////
 * [[telecom-information]]
 == Telecom information
 ////
-=== Telecom information
+== Telecom information
+Telecom information are stored in an empty and dimensionless variable filled with variable attributes.
 
-[cols=",,",options="header",]
-|===============================================================================
-|*VARIABLE NAME* |*variable attributes* |*requirement status*
-|TELECOM_TYPE a|
-string TELECOM_TYPE
+[cols=",a,a",options="header",]
+|=============================================================
+|*VARIABLE NAME* |*variable attributes* and *requirement status* | *Format, fixed value or example*
+|TELECOM |
+string TELECOM
 
-TELECOM_TYPE:long_name = “type of telecommunication systems used by the glider”;
+attributes: 
 
-TELECOM_TYPE:telecom_type_vocabulary = “”;
+:telecom_type = “type of telecommunication systems used by the glider” - highly desirable;
 
- |highly desirable
-|TRACKING_SYSTEM a|
-string TRACKING_SYSTEM
+:telecom_type_vocabulary = “controlled vocabulary uri of the telecom_type” - highly desirable;
 
-TRACKING_SYSTEM:long_name = “type of tracking systems used by the glider”;
+:tracking_system = "type of tracking systems used by the glider" - highly desirable;
 
-TRACKING_SYSTEM:tracking_system_vocabulary = “”;
+:tracking_system_vocabulary = “controlled vocabulary uri of the tracking_system” - highly desirable;
 
- |highly desirable
+|
+
+**ex.:** 
+:telecom_type = “iridium”
+
+:telecom_type_vocabulary = “https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/telecom_type.md”
+
+:tracking_system = "gps, accoustic"
+
+:tracking_system_vocabulary = “https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/tracking_system.md, https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/tracking_system.md”
+
+
 |===============================================================================
 
 ////
