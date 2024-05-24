@@ -750,7 +750,7 @@ mandatory
 
 attributes:
 
-long_name = " "Electrical conductivity of the water body by CTD"
+long_name = "Electrical conductivity of the water body by CTD"
 
 standard_name = "<X>";
 
