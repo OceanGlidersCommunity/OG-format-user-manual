@@ -80,8 +80,6 @@ This document defines the common OceanGliders data format, hereafter OG1.0.
 * The required granularity of the data set is the glider mission, starting from deployment at sea to recovery.
 * Data are recorded as a trajectory Discrete Geometry, using NetCDFfootnote:[NetCDF-3 does not satisfy the requirements of OG1.0 format] system and following CF 1.10footnote:[http://cfconventions.org/Data/cf-conventions/cf-conventions-1.10/cf-conventions.html] (Climate and Forecast) specifications. Each data file contains a series of dive cycles representing the mission of the glider. It can be produced in near real time after every glider transmission and revised later into a recovery-mode (when glider on shore and any data gaps filled in) or a delayed-mode (after rigorous QC) version.
 * Format follows the ACDD 1.3footnote:[https://wiki.esipfed.org/Attribute_Convention_for_Data_Discovery_1-3] convention where possible.
-* Variables are identified in capital letters.
-* Attributes are identified in lower case.
 * Vocabulary collections will be hosted in different places (NERC Vocabulary Server - NVS, OceanOPS, ICES, etc). The OceanGliders data management team will manage (additions, updates, etc.) the collections. Treatment of vocabularies is detailed in the https://oceangliderscommunity.github.io/OG-format-user-manual/vocabularyCollection/tableOfControlledVocab.html[vocabularies document].
 * OG1.0 defines some variables and definitions, as described in this document. Other types of measurements (e.g. intermediate parameters, technical measurements, other variables) not framed by OG1.0 can be included in OG1.0 data files. No control will be applied to those measurements.
 * Geospatial variables and along-track positioning variables are mandatory.
@@ -137,7 +135,7 @@ Name of the platform(s) that supported the sensors data used to create this data
 
 
  |mandatory |**ex.:** "sub-surface gliders"
-|platform_vocabulary |Controlled vocabulary for the names used in the "platform" attribute. https://vocab.nerc.ac.uk/collection/L06/current/[_https://vocab.nerc.ac.uk/collection/L06/current/_]
+|platform_vocabulary |Controlled vocabulary for the names used in the "platform" attribute.
 |mandatory |**ex.:** https://vocab.nerc.ac.uk/collection/L06/current/27/[_https://vocab.nerc.ac.uk/collection/L06/current/27/_]
 |id a|
 Formatted mission name: <platform_serial>_<start_date>_<data_mode>
@@ -191,20 +189,20 @@ The mission identifier used by the institution principally responsible for origi
 |geospatial_ vertical_max |Describes the numerically larger vertical limit |suggested |**format:** meter depth
 |time_coverage_start | | |**format:** iso 8601
 |time_coverage_end | | |**format:** iso 8601
-|site |The name of the regular sample line or area. |highly desirable |
+|site |The name of the regular sample line or area. |highly desirable | **ex.:**  MOOSE_T00, MOOSE_02
 |site_vocabulary |Controlled vocabulary of the names used in the “site” attribute |highly desirable |To be defined
-|program |The overarching program(s) of which the dataset is a part. A program consists of a set (or portfolio) of related and possibly interdependent projects that meet an overarching objective. |Highly desirable |
+|program |The overarching program(s) of which the dataset is a part. A program consists of a set (or portfolio) of related and possibly interdependent projects that meet an overarching objective. |Highly desirable |**ex.:**  MOOSE glider program
 |program_vocabulary | Controlled vocabulary of the program attribute| highly desirable | To be defined
-|project |The name of the project(s) principally responsible for originating this data. Multiple projects can be separated by commas |suggested |
-|network |A network is a group of platforms crossing the boundaries of a single program. It can represent a mutual scientific objective, a geographical focus, an array and/or a project. Multiple networks shall be separated by commas. |suggested |
-|contributor_name |Name of the contributors to the glider mission. Multiple contributors are separated by commas. |PI name is mandatory |
-|contributor_email |Email of the contributors to the glider mission. Multiple contributors' emails are separated by commas. |PI email is mandatory |
+|project |The name of the project(s) principally responsible for originating this data. Multiple projects can be separated by commas |suggested | **ex.:** SAMBA
+|network |A network is a group of platforms crossing the boundaries of a single program. It can represent a mutual scientific objective, a geographical focus, an array and/or a project. Multiple networks shall be separated by commas. |suggested | **ex.:** Integrated Ocean Observing System (IOOS), Southern California Coastal Ocean Observing System (SCCOOS), Boundary Ocean Observing Network (BOON)
+|contributor_name |Name of the contributors to the glider mission. Multiple contributors are separated by commas. |PI name is mandatory | **ex.:** "Victor Turpin, Callum Rollo"
+|contributor_email |Email of the contributors to the glider mission. Multiple contributors' emails are separated by commas. |PI email is mandatory | **ex.:** "victor@eample.com, callum@example.com"
 |contributor_id |Unique id of the contributors to the glider mission. Multiple contributors’ ids are separated by commas. |highly desirable |
-|contributor_role |Role of the contributors to the glider mission. Multiple contributors’ roles are separated by commas. |PI vocabulary is mandatory |
-|contributor_role_vocabulary |Controlled vocabulary for the roles used in the "contributors_role". Multiple contributors’ roles and vocabularies are separated by commas. |PI vocabulary is mandatory |**ex.:** http://vocab.nerc.ac.uk/search_nvs/W08/[_http://vocab.nerc.ac.uk/search_nvs/W08/_]
-|contributing_institutions |Names of institutions involved in the glider mission. Multiple institutions are separated by commas. |Operator is mandatory |
-|contributing_institutions_role |Role of the institutions involved in the glider mission. Multiple institutions' roles are separated by a comma. |Operator role is mandatory |
-|contributing_institutions_role_vocabulary |The controlled vocabulary of the role used in the institution's role. Multiple vocabularies are separated by commas. |Operator vocabulary is mandatory |**ex.:** https://vocab.nerc.ac.uk/collection/W08/current/[_https://vocab.nerc.ac.uk/collection/W08/current/_]
+|contributor_role |Role of the contributors to the glider mission. Multiple contributors’ roles are separated by commas. |PI vocabulary is mandatory | **ex.:** "PI, Data scientist"
+|contributor_role_vocabulary |Controlled vocabulary for the roles used in the "contributors_role". Multiple contributors’ roles and vocabularies are separated by commas. |PI vocabulary is mandatory |**ex.:** "https://vocab.nerc.ac.uk/collection/W08/current/CONT0004/, https://vocab.nerc.ac.uk/collection/W08/current/CONT0006/"
+|contributing_institutions |Names of institutions involved in the glider mission. Multiple institutions are separated by commas. |Operator is mandatory | **ex.:** Voice of the Ocean
+|contributing_institutions_role |Role of the institutions involved in the glider mission. Multiple institutions' roles are separated by a comma. |Operator role is mandatory | **ex.:** Operator
+|contributing_institutions_role_vocabulary |The controlled vocabulary of the role used in the institution's role. Multiple vocabularies are separated by commas. |Operator vocabulary is mandatory | **ex.:** https://vocab.nerc.ac.uk/collection/W08/current/CONT0003/
 |contributing_institutions_id |code of the institution involved in the glider mission. Multiple ids are separated by a comma. |highly desirable |
 |contributing_institutions_id_vocabulary |url to the repository of the id |highly desirable | **ex.:** EDMO, ROR
 |uri |Other universal resource identifiers relevant to be linked to this dataset. Multiple uris are separated by a comma. |suggested | **ex.:** EDIOS, CSR, EDMERP, EDMED, CDI, ICES, etc.
@@ -212,8 +210,8 @@ The mission identifier used by the institution principally responsible for origi
 |doi |The digital object identifier of the OG1.0 data file |highly desirable |  **ex.:** https://doi.org/10.17882/56366
 |rtqc_method |The method used by DAC to apply real-time quality control to the data set |mandatory | **ex.:** "Quality control performed with IOOS QARTOD toolbox v2.1", "No QC applied"
 |rtqc_method_doi |The digital object identifier of the methodology used to apply real-time quality control to the data set. |highly desirable | **ex.**: "n/a"
-|web_link |url that provides useful information about anything related to the glider mission. Multiple urls are separated by commas. |suggested |
-|comment |Miscellaneous information about the data or methods used to produce it. |suggested |
+|web_link |url that provides useful information about anything related to the glider mission. Multiple urls are separated by commas. |suggested | **ex.:** https://observations.voiceoftheocean.org/SEA078/M25
+|comment |Miscellaneous information about the glider mission, data or methods used to produce it. |suggested | **ex.:** "glider recovered after 5 days due to leak"
 |start_date | Datetime of glider deployment |mandatory |**format:**  Formatted string: YYYYmmddTHHMMss **ex.:** 20240425T145805
 |date_created |date of creation of this data set |mandatory |**format:**  Formatted string: YYYYmmddTHHMMss **ex.:** 20240425T145805
 |featureType |Description of a single feature with this discrete sampling geometry |mandatory |**fixed value:** "trajectory"
@@ -407,10 +405,13 @@ string PLATFORM_MODEL
 
 PLATFORM_MODEL:long_name: “model of the glider”;
 
-PLATFORM_MODEL:platform_model_vocabulary = “https://vocab.nerc.ac.uk/collection/B76/current/”;
+PLATFORM_MODEL:platform_model_vocabulary = “”;
 
  |mandatory
 | **ex.:** "Kongsberg Maritime Seaglider M1 glider"
+
+PLATFORM_MODEL: platform_model_vocabulary = “https://vocab.nerc.ac.uk/
+collection/B76/current/B7600002/”;
 
 |PLATFORM_SERIAL_NUMBER a|
 string PLATFORM_SERIAL_NUMBER
@@ -441,19 +442,27 @@ string ICES_CODE
 
 ICES_CODE:long_name = “ICES platform code of the glider”;
 
-ICES_CODE:ices_code_vocabulary = “https://vocab.ices.dk/”;
+ICES_CODE:ices_code_vocabulary = “”;
 
  |highly desirable
 | *ex.:* "7460"
+
+ICES_CODE:ices_code_vocabulary =
+“https://vocab.ices.dk/?
+codeguid=690d82e2
+-b4e2-4e30-9772-7499c66144c6”;
 |PLATFORM_MAKER a|
 string PLATFORM_MAKER
 
 PLATFORM_MAKER:long_name = “glider manufacturer”;
 
-PLATFORM_MAKER:platform_maker_vocabulary = “https://vocab.nerc.ac.uk/collection/B75/current/”;
+PLATFORM_MAKER:platform_maker_vocabulary = “”;
 
  |suggested
 | *ex.:* "Teledyne Webb Research"
+
+PLATFORM_MAKER: platform_maker_vocabulary = “https://vocab.nerc.ac.uk/
+collection/B75/current/ORG01077/”;
 |========================================================================================
 
 ////
@@ -648,31 +657,54 @@ Sensor variables are named as follows: *SENSOR_<sensor_type>_<sensor_serial_numb
 Where <sensor_type> is a controlled vocabulary: see vocabulary guidelines
 
 
-[cols=",",options="header",]
+[cols=",,",options="header",]
 |=============================================================
-|*VARIABLE NAME* |*variable attributes* and *requirement status*
+|*VARIABLE NAME* |*variable attributes* and *requirement status* | *example*
 
-|SENSOR_<sensor_type>_<sensor_serial_number> a|
+|SENSOR_<sensor_type>_
+<sensor_serial_number> a|
 
 string SENSOR_<sensor_type>_<sensor_serial_number>
 
 attributes:
 
-sensor_type_vocabulary: “https://vocab.nerc.ac.uk/collection/L05/current/” - mandatory
+sensor_type_vocabulary: “” - mandatory
 
 long_name: “” - mandatory
 
 sensor_model: “” - mandatory
 
-sensor_model_vocabulary: “https://vocab.nerc.ac.uk/collection/L22/current” - mandatory
+sensor_model_vocabulary: “” - mandatory
 
 sensor_maker: “” - highly desirable
 
-sensor_maker_vocabulary: “https://vocab.nerc.ac.uk/collection/L35/current” - highly desirable
+sensor_maker_vocabulary: “” - highly desirable
 
 sensor_serial_number: “” - highly desirable
 
 sensor_calibration_date: “” - highly desirable - Format iso8601 ("YYYY-MM-DD")
+|
+
+SENSOR_CTD_206523
+
+attributes:
+
+sensor_type_vocabulary: "https://vocab.nerc.ac.uk/collection/L05/current/130”
+
+long_name: “RBR Legato3 CTD”
+
+sensor_model: “RBR Legato3 CTD”
+
+sensor_model_vocabulary: “https://vocab.nerc.ac.uk/collection/L22/current/TOOL1745”
+
+sensor_maker: “RBR”
+
+sensor_maker_vocabulary: “https://vocab.nerc.ac.uk/collection/L35/current/MAN0049”
+
+sensor_serial_number: “206523”
+
+sensor_calibration_date: “2021-03-01”
+
 
 |=============================================================
 
@@ -683,25 +715,25 @@ sensor_calibration_date: “” - highly desirable - Format iso8601 ("YYYY-MM-DD
 ////
 == Geophysical variables
 
-Geophysical variables are measurements of a physical phenomenon (or an intermediate variable needed to measure a physical phenomenon); It is provided directly by a sensor (in sensor counts or in physical units) or computed (derived) from other parameters (i.e. intermediate parameters). A sensor can measure multiple variables(s). A variables can be measured by multiple sensor(s).
+Geophysical variables are measurements of a physical phenomenon (or an intermediate variable needed to measure a physical phenomenon); It is provided directly by a sensor (in sensor counts or in physical units) or computed (derived) from other parameters (i.e. intermediate parameters).
 
-"The fill value should have the same data type as the variable and be outside the range of possible data values."
+The fill value should have the same data type as the variable and be outside the range of possible data values.
 
-[cols=",,",options="header",]
+[cols=",,,",options="header",]
 |==========================================================================================================================
-|*VARIABLE NAME* |*variable attributes* |*requirement status*
+|*VARIABLE NAME* |*variable attributes* |*requirement status* | *example*
 |<PARAM> a|
 float <PARAM>(N_MEASUREMENT);
 
 <PARAM>:long_name = "<X>"; <PARAM>:standard_name = "<X>";
 
-<PARAM>:vocabulary = "_https://vocab.nerc.ac.uk/collection/OG1/current/_";
+<PARAM>:vocabulary = "";
 
 <PARAM>:_FillValue = <X>; Note: The fill value should have the same data type as the variable and be outside the range of possible data values.
 
 <PARAM>:units = "<X>";
 
-<PARAM>:ancillary_variables = "PARAM_QC";
+<PARAM>:ancillary_variables = "<PARAM>_QC";
 
 <PARAM>:coordinates = "LATITUDE, LONGITUDE, DEPTH, TIME"
 
@@ -713,6 +745,26 @@ mandatory
 <PARAM> contains the values of a parameter listed in the control vocabulary related to OceanGliders parameters.
 
 <X>: these fields are specified in the control vocabularies.
+
+| CNDC(N_MEASUREMENT);
+
+attributes:
+
+long_name = " "Electrical conductivity of the water body by CTD"
+
+standard_name = "<X>";
+
+vocabulary = "https://vocab.nerc.ac.uk/collection/OG1/current/CNDC/";
+
+_FillValue = NaNf
+
+units = "mS cm-1"
+
+ancillary_variables = "CNDC_QC";
+
+coordinates = "LATITUDE, LONGITUDE, DEPTH, TIME"
+
+sensor = "SENSOR_CTD_206523"
 
 |<PARAM>_QC a|
 Byte <PARAM>_QC(N_MEASUREMENT); <PARAM>_QC:long_name = "quality flag";
@@ -735,7 +787,7 @@ Byte <PARAM>_QC(N_MEASUREMENT); <PARAM>_QC:long_name = "quality flag";
 
 <PARAM>_QC:RTQC_methodology_doi = “”;
 
- |higly desirable
+ |higly desirable |
 |==========================================================================================================================
 
 Note: It is anticipated to upgrade the ancillary variable related to QC by refining the ancillary variable name like < PARAM >_qc_generic, < PARAM >_qc_spike_test, <PARAM>_qc_land_test, etc. Current _QC attributes based on CF guidance (http://cfconventions.org/Data/cf-conventions/cf-conventions-1.10/cf-conventions.html#flags)
@@ -764,58 +816,4 @@ Methodologies should describe the computation methods used (typically by Data As
 
 Management of the evolution of the format will be organized by the OceanGliders data management team.
 
-[appendix]
-== Examples
 
-[[ProgramNetworkSite-example, Examples using program, network, and site]]
-=== Program, network, and site
-
-Example 1:
-
-* platform (i.e. glider mission): kraken_20210205
-* Program: MOOSE glider program
-* Site: MOOSE_T00, MOOSET_02
-* Networks: Mediterranean Ocean Observing Systems for the Environment (MOOSE), Boundary Ocean Observing Network (BOON), OceanGliders Water Transformation task team
-
-Example 2:
-
-* platform: sdeep09_sdeep04_20200929
-* Program: SOCIB Glider Programme
-* Site: Canales
-* Network: Boundary Ocean Observing Network (BOON)
-
-Example 3:
-
-* platform: SG669-20210617
-* Program: NOAA Hurricane Glider program
-* Site: NPR1 (North Puerto Rico 1)
-* Networks: Integrated Ocean Observing System (IOOS), Caribbean Coastal Ocean Observing System (CARICOOS), Boundary Ocean Observing Network (BOON), OceanGliders Storms, AtlantOS
-
-Example 4:
-
-* platform: sp058-20210812T1703
-* Program: Scripps glider program
-* Site: CUGN90
-* Network: Integrated Ocean Observing System (IOOS), Southern California Coastal Ocean Observing System (SCCOOS), California Network Spray Program, California Underwater Glider Network (CUGN), Boundary Ocean Observing Network (BOON)
-
-Example 5:
-
-* platform: ce_917-20210730
-* Program: OOI - Coastal and Endurance array
-* Site: OOI - Newport Harbor Inshore Line,  OOI - Newport Harbor offshore Line
-* Network: Ocean Observatories Initiative (OOI), Northwest Association of Networked Ocean Observing Systems (NANOOS), Boundary Ocean Observing Network (BOON)
-
-
-Example 6:
-
-* platform: SL287 - StormBay-15Apr21
-* Program: Integrated Marine Observing System - Glider
-* Site: no site
-* Network: IMOS
-
-Example 7:
-
-* platform: stella_20180207
-* Program: MARS Glider program
-* Site: no site
-* Network: Alter_ECO
