@@ -97,6 +97,7 @@ Requests for new vocabularly collections will take longer to review and approve.
   | telecom_type** |  https://vocab.nerc.ac.uk/search_nvs/R10/[*_e.g. R10 - Argo transmission systems_*]  | *tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/telecom_type.md[pending list] |  *tbd* | OceanGliders 
   | tracking_system** | *tbd* | *tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/tracking_system.md[pending list] |  *tbd* | OceanGliders 
   | phase | *tbd* | *tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/phase.md[pending list] |  *tbd* | OceanGliders 
+  | QC_flag | IODE Primary Level quality flags | https://vocab.nerc.ac.uk/search_nvs/L34/ | n/a | IODE
 
 
 
