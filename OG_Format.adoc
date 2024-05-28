@@ -198,13 +198,12 @@ The mission identifier used by the institution principally responsible for origi
 |contributor_name |Name of the contributors to the glider mission. Multiple contributors are separated by commas. |PI name is mandatory | **ex.:** "Victor Turpin, Callum Rollo"
 |contributor_email |Email of the contributors to the glider mission. Multiple contributors' emails are separated by commas. |PI email is mandatory | **ex.:** "victor@eample.com, callum@example.com"
 |contributor_id |Unique id of the contributors to the glider mission. Multiple contributors’ ids are separated by commas. |highly desirable |
-|contributor_role |Role of the contributors to the glider mission. Multiple contributors’ roles are separated by commas. |PI vocabulary is mandatory | **ex.:** "PI, Data scientist"
-|contributor_role_vocabulary |Controlled vocabulary for the roles used in the "contributors_role". Multiple contributors’ roles and vocabularies are separated by commas. |PI vocabulary is mandatory |**ex.:** "https://vocab.nerc.ac.uk/collection/W08/current/CONT0004/, https://vocab.nerc.ac.uk/collection/W08/current/CONT0006/"
-|contributing_institutions |Names of institutions involved in the glider mission. Multiple institutions are separated by commas. |Operator is mandatory | **ex.:** Voice of the Ocean
-|contributing_institutions_role |Role of the institutions involved in the glider mission. Multiple institutions' roles are separated by a comma. |Operator role is mandatory | **ex.:** Operator
-|contributing_institutions_role_vocabulary |The controlled vocabulary of the role used in the institution's role. Multiple vocabularies are separated by commas. |Operator vocabulary is mandatory | **ex.:** https://vocab.nerc.ac.uk/collection/W08/current/CONT0003/
-|contributing_institutions_id |code of the institution involved in the glider mission. Multiple ids are separated by a comma. |highly desirable |
-|contributing_institutions_id_vocabulary |url to the repository of the id |highly desirable | **ex.:** EDMO, ROR
+|contributor_role |Role of the contributors to the glider mission. Multiple contributors’ roles are separated by commas. |PI vocabulary is mandatory |
+|contributor_role_vocabulary |Controlled vocabulary for the roles used in the "contributors_role". Multiple contributors’ roles and vocabularies are separated by commas. |PI vocabulary is mandatory |**ex.:** http://vocab.nerc.ac.uk/search_nvs/W08/[_http://vocab.nerc.ac.uk/search_nvs/W08/_]
+|contributing_institutions |Names of institutions involved in the glider mission. Multiple institutions are separated by commas. |Operator is mandatory |
+|contributing_institutions_vocabulary |url to the repository of the id |highly desirable | **ex.:** https://edmo.seadatanet.org/report/544, https://ror.org/012tb2g32
+|contributing_institutions_role |Role of the institutions involved in the glider mission. Multiple institutions' roles are separated by a comma. |Operator role is mandatory |
+|contributing_institutions_role_vocabulary |The controlled vocabulary of the role used in the institution's role. Multiple vocabularies are separated by commas. |Operator vocabulary is mandatory |**ex.:** https://vocab.nerc.ac.uk/collection/W08/current/[_https://vocab.nerc.ac.uk/collection/W08/current/_]
 |uri |Other universal resource identifiers relevant to be linked to this dataset. Multiple uris are separated by a comma. |suggested | **ex.:** EDIOS, CSR, EDMERP, EDMED, CDI, ICES, etc.
 |data_url |url link to where the OG1.0 data file is hosted |highly desirable| **ex.:** https://linkedsystems.uk/erddap/files/Public_OG1_Data_001/Kelvin_20231205/Kelvin_620_R.nc
 |doi |The digital object identifier of the OG1.0 data file |highly desirable |  **ex.:** https://doi.org/10.17882/56366
