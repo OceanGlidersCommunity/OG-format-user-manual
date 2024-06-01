@@ -370,10 +370,10 @@ TRAJECTORY:cf_role = "trajectory_id"
 
 TRAJECTORY:long_name = “trajectory name”;
 
-TRAJECTORY:format = "<platform_serial>_<start_date>"
+Where the format is <platform_serial>_<start_date>
 
-Where <platform_serial> is defined below +
-Where <start_date> refers to the deployment start UTC date under iso 8601. + 
+  - The format for platform_serial is described in the PLATFORM_SERIAL variable documentation. 
+  - The format for start_date is the ISO 8601 representation of the deployment start UTC datetime with seconds precision. 
 
  a|
 mandatory |
