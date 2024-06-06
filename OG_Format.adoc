@@ -506,9 +506,9 @@ long_name = “longitude of deployment”;
 ////
 === Field comparison information
 
-[cols=",,",options="header",]
+[cols=",,,",options="header",]
 |=========================================================================================================================================
-|*VARIABLE NAME* |*variable attributes* |*requirement status*
+|*VARIABLE NAME* |*variable attributes* |*requirement status* | *Format, fixed value or example*
 |FIELD_COMPARISON_REFERENCE a|
 String FIELD_COMPARISON_REFERENCE:
 
@@ -516,7 +516,7 @@ FIELD_COMPARISON_REFERENCE:long_name = “links (uri or url) to supplementary da
 
 FIELD_COMPARISON_REFERENCE:comment = “multiple links are separated by a comma”
 
- |highly desirable
+ |highly desirable | 
 |=========================================================================================================================================
 
 Note: FIELD_COMPARISON_REFERENCE is applicable to deployment, recovery, and delayed versions.
@@ -525,37 +525,40 @@ Note: FIELD_COMPARISON_REFERENCE is applicable to deployment, recovery, and dela
 * [[hardware-information]]
 == Hardware information
 ////
-=== Hardware information
+== Hardware information
 
-[cols=",,",options="header",]
+[cols=",,,",options="header",]
 |=============================================================================
-|*VARIABLE NAME* |*variable attributes* |*requirement status*
+|*VARIABLE NAME* |*variable attributes* |*requirement status* | *Format, fixed value or example*
 |GLIDER_FIRMWARE_VERSION a|
 string GLIDER_FIRMWARE_VERSION
 
 GLIDER_FIRMWARE_VERSION:long_name = “version of the internal glider firmware”;
 
- |highly desirable
+ |highly desirable | *ex.:* v1.3.22 
 |LANDSTATION_VERSION a|
 string LANDSTATION_VERSION
 
 LANDSTATION_VERSION:long_name = “version of the server onshore”;
 
- |highly desirable
+ |highly desirable | *ex.:* "dockserver v3.42"
 |BATTERY_TYPE a|
 string BATTERY_TYPE
 
 BATTERY_TYPE:long_name = “type of the battery”;
 
-BATTERY_TYPE:battery_type_vocabulary = “”;
+BATTERY_TYPE:battery_type_vocabulary = “https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/battery_type.md”;
 
- |suggested
+ |suggested | *ex.:*  "lithium rechargeable"
+
+BATTERY_TYPE:battery_type_vocabulary = “https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/battery_type.md”
+
 |BATTERY_PACK a|
 string BATTERY_PACK
 
 BATTERY_PACK:long_name = “battery packaging”;
 
- |suggested
+ |suggested | *ex.:* "2X24 12V battery"
 |=============================================================================
 
 ////
@@ -564,25 +567,30 @@ BATTERY_PACK:long_name = “battery packaging”;
 ////
 === Telecom information
 
-[cols=",,",options="header",]
+[cols=",,,",options="header",]
 |===============================================================================
-|*VARIABLE NAME* |*variable attributes* |*requirement status*
+|*VARIABLE NAME* |*variable attributes* |*requirement status* | *Format, fixed value or example*
 |TELECOM_TYPE a|
 string TELECOM_TYPE
 
-TELECOM_TYPE:long_name = “type of telecommunication systems used by the glider”;
+TELECOM_TYPE:long_name = “types of telecommunication systems used by the glider, multiple telecom type are separated by a comma”;
 
-TELECOM_TYPE:telecom_type_vocabulary = “”;
+TELECOM_TYPE:telecom_type_vocabulary = “https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/telecom_type.md”;
 
- |highly desirable
+ |highly desirable | *ex.:* iridium
+
+TELECOM_TYPE:telecom_type_vocabulary = “https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/telecom_type.md”
+
 |TRACKING_SYSTEM a|
 string TRACKING_SYSTEM
 
-TRACKING_SYSTEM:long_name = “type of tracking systems used by the glider”;
+TRACKING_SYSTEM:long_name = “type of tracking systems used by the glider, multiple tracking system are separated by a comma”;
 
-TRACKING_SYSTEM:tracking_system_vocabulary = “”;
+TRACKING_SYSTEM:tracking_system_vocabulary = “https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/tracking_system.md”;
 
- |highly desirable
+ |highly desirable | *ex.:* "gps, accoustic"
+
+TRACKING_SYSTEM:tracking_system_vocabulary = "https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/tracking_system.md, https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/tracking_system.md"
 |===============================================================================
 
 ////
