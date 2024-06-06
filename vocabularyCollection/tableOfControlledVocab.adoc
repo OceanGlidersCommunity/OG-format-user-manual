@@ -65,13 +65,13 @@ Requests for new vocabularly collections will take longer to review and approve.
 |OceanGliders reference name | Collection URL or Scheme URL | Examples | Request new terms | Governance 
 
  | platform | https://vocab.nerc.ac.uk/collection/L06/current/[L06 - SeaVoX Platform Categories] |   | https://github.com/nvs-vocabs/L06/issues | SeaDataNet and MarineXML Vocabulary Content Governance Group
- | contributors_role | https://vocab.nerc.ac.uk/search_nvs/C86/[C86 - SeaDataNet contact and security access roles] | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/contributors_role.md[contributors_role] |  | SeaDataNet 
- | institution_role* | *pending* |  https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/agencies_role.md[institution_role] | | SeaDataNet 
+ | contributors_role  | http://vocab.nerc.ac.uk/search_nvs/W08/[SensorML Contacts] | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/contributors_role.md[contributors_role] |  | Sensor Web Enablement Marine Profiles
+ | contributing_institutions_role | http://vocab.nerc.ac.uk/search_nvs/W08/[SensorML Contacts] |  https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/agencies_role.md[institution_role] | | Sensor Web Enablement Marine Profiles
  | institution_id | https://edmo.seadatanet.org/[EDMO] |     |  | SeaDataNet 
  | rtqc_method** | *pending*| https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/rtqc_method.md[Real Time Quality Control methods]  |  |OceanGliders 
   | platform_model | https://vocab.nerc.ac.uk/search_nvs/B76/[B76 - BODC Platform Models] |    | https://github.com/nvs-vocabs/B76/issues | British Oceanographic Data Centre 
   | sensor type|  http://vocab.nerc.ac.uk/collection/L05/current/[L05 - SeaDataNet device categories] |  | https://github.com/nvs-vocabs/L05/issues | SeaDataNet
-  | sensor_model | https://vocab.nerc.ac.uk/search_nvs/L22/[L22 - SeaVoX Device Catalogue]  and subset https://vocabdev.nerc.ac.uk/scheme/GLIDER_SENSORS/current/[GLIDER_SENSORS] |   | https://github.com/nvs-vocabs/L22/issues | OceanGliders 
+  | sensor_model | https://vocab.nerc.ac.uk/scheme/OG_SENSORS/current/[GLIDER_SENSORS] from collection https://vocab.nerc.ac.uk/search_nvs/L22/[L22 - SeaVoX Device Catalogue] |   | https://github.com/nvs-vocabs/L22/issues | OceanGliders 
   | data_mode** | *pending* | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/data_mode.md[data_mode] |   | OceanGliders 
   | parameter | https://vocab.nerc.ac.uk/search_nvs/OG1/[OG1 - OceanGliders Parameter Usage Vocabulary] |  | https://github.com/nvs-vocabs/OG1/issues | OceanGliders 
 
@@ -92,7 +92,7 @@ Requests for new vocabularly collections will take longer to review and approve.
   | oceangliders_site | *tbd* |  *tbd* | *tbd* | OceanOPS 
   | naming_authority | https://edmo.seadatanet.org/[EDMO code] | No subset available for this collection | *tbd* | SeaDataNet 
   | ICES_code | https://vocab.ices.dk/?codetypeguid=7f9a91e1-fb57-464a-8eb0-697e4b0235b5[ICES reference table] | No subset available for this collection  | *tbd* | ICES 
-  | platform_maker |  http://vocab.nerc.ac.uk/collection/L35/current/[L35 - SenseOcean device developers and manufacturers] | *OceanGliders vocabulary subset tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/platform_maker.md[pending list] |  *tbd* | OceanGliders 
+  | platform_maker & sensor_maker |  http://vocab.nerc.ac.uk/collection/L35/current/[L35 - SenseOcean device developers and manufacturers] | *OceanGliders vocabulary subset tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/platform_maker.md[pending list] |  *tbd* | OceanGliders 
   | battery_type** | *tbd* | *tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/battery_type.md[pending list] |  *tbd* | OceanGliders 
   | telecom_type** |  https://vocab.nerc.ac.uk/search_nvs/R10/[*_e.g. R10 - Argo transmission systems_*]  | *tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/telecom_type.md[pending list] |  *tbd* | OceanGliders 
   | tracking_system** | *tbd* | *tbd* https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/vturpin-patch-3-VocabularyCollectionSection/vocabularyCollection/tracking_system.md[pending list] |  *tbd* | OceanGliders 
