@@ -573,7 +573,7 @@ BATTERY_PACK:long_name = “battery packaging”;
 |TELECOM_TYPE a|
 string TELECOM_TYPE
 
-TELECOM_TYPE:long_name = “type of telecommunication systems used by the glider, multiple telecom type are separated by a comma”;
+TELECOM_TYPE:long_name = “types of telecommunication systems used by the glider, multiple telecom type are separated by a comma”;
 
 TELECOM_TYPE:telecom_type_vocabulary = “https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/telecom_type.md”;
 
