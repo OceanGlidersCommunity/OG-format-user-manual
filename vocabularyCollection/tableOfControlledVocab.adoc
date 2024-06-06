@@ -65,8 +65,8 @@ Requests for new vocabularly collections will take longer to review and approve.
 |OceanGliders reference name | Collection URL or Scheme URL | Examples | Request new terms | Governance 
 
  | platform | https://vocab.nerc.ac.uk/collection/L06/current/[L06 - SeaVoX Platform Categories] |   | https://github.com/nvs-vocabs/L06/issues | SeaDataNet and MarineXML Vocabulary Content Governance Group
- | contributors_role  | http://vocab.nerc.ac.uk/search_nvs/W08/[SensorML Contacts] | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/contributors_role.md[contributors_role] |  | Sensor Web Enablement Marine Profiles
- | contributing_institutions_role | http://vocab.nerc.ac.uk/search_nvs/W08/[SensorML Contacts] |  https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/agencies_role.md[institution_role] | | Sensor Web Enablement Marine Profiles
+ | contributors_role  | https://vocab.nerc.ac.uk/search_nvs/W08/[SensorML Contacts] | https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/contributors_role.md[contributors_role] |  | Sensor Web Enablement Marine Profiles
+ | contributing_institutions_role | https://vocab.nerc.ac.uk/search_nvs/W08/[SensorML Contacts] |  https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/agencies_role.md[institution_role] | | Sensor Web Enablement Marine Profiles
  | institution_id | https://edmo.seadatanet.org/[EDMO] |     |  | SeaDataNet 
  | rtqc_method** | *pending*| https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/rtqc_method.md[Real Time Quality Control methods]  |  |OceanGliders 
   | platform_model | https://vocab.nerc.ac.uk/search_nvs/B76/[B76 - BODC Platform Models] |    | https://github.com/nvs-vocabs/B76/issues | British Oceanographic Data Centre 
