@@ -535,13 +535,13 @@ string GLIDER_FIRMWARE_VERSION
 
 GLIDER_FIRMWARE_VERSION:long_name = “version of the internal glider firmware”;
 
- |highly desirable | *ex.:* V1.3.22 
+ |highly desirable | *ex.:* v1.3.22 
 |LANDSTATION_VERSION a|
 string LANDSTATION_VERSION
 
 LANDSTATION_VERSION:long_name = “version of the server onshore”;
 
- |highly desirable | *ex.:* "dockserver V3.42"
+ |highly desirable | *ex.:* "dockserver v3.42"
 |BATTERY_TYPE a|
 string BATTERY_TYPE
 
