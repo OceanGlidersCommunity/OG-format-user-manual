@@ -742,7 +742,7 @@ float <PARAM>(N_MEASUREMENT);
 
 <PARAM>:ancillary_variables = "<PARAM>_QC";
 
-<PARAM>:coordinates = "LATITUDE, LONGITUDE, DEPTH, TIME"
+<PARAM>:coordinates = "TIME, LONGITUDE, LATITUDE, DEPTH"
 
 <PARAM>:sensor = "SENSOR_<sensor_type>_<sensor_serial_number>"
 
@@ -769,7 +769,7 @@ units = "mS cm-1"
 
 ancillary_variables = "CNDC_QC";
 
-coordinates = "LATITUDE, LONGITUDE, DEPTH, TIME"
+coordinates = "TIME, LONGITUDE, LATITUDE, DEPTH"
 
 sensor = "SENSOR_CTD_206523"
 
