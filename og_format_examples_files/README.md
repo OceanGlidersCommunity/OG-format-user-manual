@@ -1,5 +1,7 @@
 # OG format example files
 
+
+- **sea076_20230906T0852_R.cdl**: example SeaExplorer dataset from VOTO
 - **sp041_20191205T1757_R.cdl**: example Spray dataset from Scripps
 
 
