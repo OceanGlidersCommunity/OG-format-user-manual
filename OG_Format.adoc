@@ -235,6 +235,87 @@ The mission identifier used by the institution principally responsible for origi
 = Location variables
 ////
 == Location variables
+
+////
+* [[along-track-positioning-variables]]
+== Along track positioning variables
+////
+=== Coordinates
+
+OG1.0 requirements cover positioning variables and geolocation of any scientific measurements made by the glider during its mission, described in the table below.
+
+[cols="1a,2a,1",options="header",]
+|============================================================
+|*VARIABLE NAME* |*variable attributes* |*requirement status*
+|TIME
+
+* data type: double
+* dimension: N_MEASUREMENTS |
+
+* long_name = “Time elapsed since 1970-01-01T00:00:00Z”;
+* calendar = "gregorian" ;
+* units = “seconds since 1970-01-01T00:00:00Z”;
+* _FillValue = -1.0 ;
+* valid_min = 1e9 ;
+* valid_max = 4e9 ;
+* ancillary_variables = “TIME_QC”;
+* interpolation_methodology = “”;
+* time_vocabulary = “https://vocab.nerc.ac.uk/collection/OG1/current/TIME/”;
+ |mandatory
+
+|LONGITUDE
+
+* data type: double
+* dimension: N_MEASUREMENTS |
+
+* long_name = “longitude of each measurement and GPS location”;
+* standard_name = “longitude”;
+* units = “degrees_east”;
+* _FillValue = -9999.9;
+* valid_min = -180.0;
+* valid_max = 180.0;
+* ancillary_variables = "LONGITUDE_QC";
+* interpolation_methodology = “”;
+* longitude_vocabulary = “https://vocab.nerc.ac.uk/collection/OG1/current/LON/”;
+ |mandatory
+
+|LATITUDE
+
+* data type: double
+* dimension: N_MEASUREMENTS |
+
+* long_name = “Latitude north (WGS84)”;
+* standard_name = “latitude”;
+* units = “degrees_north”;
+* _FillValue = -9999.9;
+* valid_min = -90.0;
+* valid_max = 90.0;
+* ancillary_variables = "LATITUDE_QC"
+* interpolation_methodology = “”;
+* latitude_vocabulary = “https://vocab.nerc.ac.uk/collection/OG1/current/LAT/”;
+ |mandatory
+
+|DEPTH
+
+* data type: double
+* dimension: N_MEASUREMENTS |
+
+* long_name = “Depth below surface of the water body by unknown instrument and correction to zero at sea level using unspecified algorithm.”;
+* standard_name = “depth”;
+* units = “metres”;
+* _FillValue = -9999.9;
+* valid_min = 0.0;
+* valid_max = 10000.0;
+* ancillary_variables = "DEPTH_QC"
+* interpolation_methodology = “”;
+* depth_vocabulary = “https://vocab.nerc.ac.uk/collection/OG1/current/DEPTH/”;
+|mandatory
+
+|============================================================
+
+
+See parameters section for guidance on attributes and conventions on _QC channels.
+
 ////
 ** [[gps-variables]]
 == GPS variables
@@ -290,69 +371,6 @@ OG1.0 requirements cover the GPS variables delivered by the glider when at the s
 
  |mandatory
 |============================================================
-
-
-////
-* [[along-track-positioning-variables]]
-== Along track positioning variables
-////
-== Along track positioning variables
-
-OG1.0 requirements cover positioning variables and geolocation of any scientific measurements made by the glider during its mission, described in the table below.
-
-[cols="1a,2a,1",options="header",]
-|============================================================
-|*VARIABLE NAME* |*variable attributes* |*requirement status*
-|LATITUDE
-
-* data type: double
-* dimension: N_MEASUREMENTS |
-
-* long_name = “latitude of each measurement and GPS location”;
-* standard_name = “latitude”;
-* units = “degrees_north”;
-* _FillValue = -9999.9;
-* valid_min = -90.0;
-* valid_max = 90.0;
-* ancillary_variables = "LATITUDE_GPS_QC"
-* interpolation_methodology = “”;
-
-
- |mandatory
-|LONGITUDE
-
-* data type: double
-* dimension: N_MEASUREMENTS |
-
-* long_name = “longitude of each measurement and GPS location”;
-* standard_name = “longitude”;
-* units = “degrees_east”;
-* _FillValue = -9999.9;
-* valid_min = -180.0;
-* valid_max = 180.0;
-* ancillary_variables = "LONGITUDE_GPS_QC";
-* interpolation_methodology = “”;
-
- |mandatory
-|TIME
-
-* data type: double
-* dimension: N_MEASUREMENTS |
-
-* long_name = “time of measurement”;
-* calendar = "gregorian" ;
-* units = “seconds since 1970-01-01T00:00:00Z”;
-* _FillValue = -1.0 ;
-* valid_min = 1e9 ;
-* valid_max = 4e9 ;
-* ancillary_variables = “TIME_GPS_QC”;
-* interpolation_methodology = “”;
-
- |mandatory
-|============================================================
-
-
-See parameters section for guidance on attributes and conventions on _QC channels.
 
 ////
 * [[trajectory-name]]
