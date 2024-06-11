@@ -360,11 +360,12 @@ See parameters section for guidance on attributes and conventions on _QC channel
 ////
 == Trajectory Name
 
-[cols=",,,",options="header",]
+[cols="1a,1a,,",options="header",]
 |========================================================================================
 |*VARIABLE NAME* |*variable attributes* |*requirement status* | *Format, fixed value or example*
-|TRAJECTORY a|
-string TRAJECTORY
+|TRAJECTORY 
+
+* data type: TRAJECTORY |
 
 TRAJECTORY:cf_role = "trajectory_id"
 
@@ -372,8 +373,9 @@ TRAJECTORY:long_name = “trajectory name”;
 
 Where the format is <platform_serial>_<start_date>
 
-  - The format for platform_serial is described in the PLATFORM_SERIAL variable documentation. 
-  - The format for start_date is the ISO 8601 representation of the deployment start UTC datetime with seconds precision. 
+The format for platform_serial is described in the PLATFORM_SERIAL variable documentation. 
+
+The format for start_date is the ISO 8601 representation of the deployment start UTC datetime with seconds precision. 
 
  a|
 mandatory |
@@ -388,19 +390,21 @@ mandatory |
 ////
 === Platform information
 
-[cols=",,,",options="header",]
+[cols="1a,1a,,",options="header",]
 |========================================================================================
 |*VARIABLE NAME* |*variable attributes* |*requirement status* | *Format, fixed value or example*
-|WMO_IDENTIFIER a|
-string WMO_IDENTIFIER
+|WMO_IDENTIFIER 
+
+* data type: string |
 
 WMO_IDENTIFIER:long_name = “wmo id”;
 
  |mandatory
 | *ex.:*  '6801706'
 
-|PLATFORM_MODEL a|
-string PLATFORM_MODEL
+|PLATFORM_MODEL 
+
+* data type: string |
 
 PLATFORM_MODEL:long_name: “model of the glider”;
 
@@ -412,23 +416,25 @@ PLATFORM_MODEL:platform_model_vocabulary = “”;
 PLATFORM_MODEL: platform_model_vocabulary = “https://vocab.nerc.ac.uk/
 collection/B76/current/B7600002/”;
 
-|PLATFORM_SERIAL_NUMBER a|
-string PLATFORM_SERIAL_NUMBER
+|PLATFORM_SERIAL_NUMBER 
+
+* data type: string |
 
 PLATFORM_SERIAL_NUMBER:long_name = “glider serial number”;
 
  |mandatory
 | The  platform serial should be constructed from the manufacturer prefix and the platform serial number *ex.:* "sg001" (seaglider), "unit_001" (slocum), "sea001" (seaexplorer), "sp001" (spray). Where the serial number of the platform is not known, a local nickname can be used e.g. "orca", "sverdrup", "ammonite".
-|PLATFORM_NAME a|
+|PLATFORM_NAME 
 
-string PLATFORM_NAME
+* data type: string |
 
 PLATFORM_NAME:long_name = “Local or nickname of the glider”;
  |highly desirable
 |  a local nickname for the glider *ex.:*  "orca", "sverdrup", "ammonite".
 
-|PLATFORM_DEPTH_RATING a|
-integer PLATFORM_DEPTH_RATING
+|PLATFORM_DEPTH_RATING 
+
+* data type: integer |
 
 PLATFORM_DEPTH_RATING:long_name = “depth limit in meters of the glider for this mission”;
 
@@ -436,8 +442,9 @@ PLATFORM_DEPTH_RATING:convention = “positive value expected - e.g. 100m depth 
 
  |highly desirable
 | *ex.:*  1000
-|ICES_CODE a|
-string ICES_CODE
+|ICES_CODE 
+
+* data type: string |
 
 ICES_CODE:long_name = “ICES platform code of the glider”;
 
@@ -450,8 +457,9 @@ ICES_CODE:ices_code_vocabulary =
 “https://vocab.ices.dk/?
 codeguid=690d82e2
 -b4e2-4e30-9772-7499c66144c6”;
-|PLATFORM_MAKER a|
-string PLATFORM_MAKER
+|PLATFORM_MAKER 
+
+* data type: string |
 
 PLATFORM_MAKER:long_name = “glider manufacturer”;
 
@@ -470,11 +478,12 @@ collection/B75/current/ORG01077/”;
 ////
 === Deployment information
 
-[cols=",,",options="header",]
+[cols="1a,,",options="header",]
 |============================================================
 |*VARIABLE NAME* |*variable attributes* |*requirement status*
-|DEPLOYMENT_TIME a|
-double DEPLOYMENT_TIME
+|DEPLOYMENT_TIME 
+
+* data type: double |
 
 DEPLOYMENT_TIME:long_name = “date of deployment”;
 
@@ -485,14 +494,16 @@ DEPLOYMENT_TIME:calendar = "gregorian";
 DEPLOYMENT_TIME:units = "seconds since 1970-01-01T00:00:00Z";
 
  |mandatory
-|DEPLOYMENT_LATITUDE a|
-double DEPLOYMENT_LATITUDE
+|DEPLOYMENT_LATITUDE 
+
+* data type: double |
 
 DEPLOYMENT_LATITUDE:long_name = “latitude of deployment”;
 
  |mandatory
-|DEPLOYMENT_LONGITUDE a|
-double DEPLOYMENT_LONGITUDE
+|DEPLOYMENT_LONGITUDE
+
+* data type: double |
 
 long_name = “longitude of deployment”;
 
@@ -506,11 +517,12 @@ long_name = “longitude of deployment”;
 ////
 === Field comparison information
 
-[cols=",,,",options="header",]
+[cols="1a,,,",options="header",]
 |=========================================================================================================================================
 |*VARIABLE NAME* |*variable attributes* |*requirement status* | *Format, fixed value or example*
-|FIELD_COMPARISON_REFERENCE a|
-String FIELD_COMPARISON_REFERENCE:
+|FIELD_COMPARISON_REFERENCE 
+
+* data type: string |
 
 FIELD_COMPARISON_REFERENCE:long_name = “links (uri or url) to supplementary data that can provide field comparison for platform sensors.”;
 
@@ -527,23 +539,26 @@ Note: FIELD_COMPARISON_REFERENCE is applicable to deployment, recovery, and dela
 ////
 == Hardware information
 
-[cols=",,,",options="header",]
+[cols="1a,,,",options="header",]
 |=============================================================================
 |*VARIABLE NAME* |*variable attributes* |*requirement status* | *Format, fixed value or example*
-|GLIDER_FIRMWARE_VERSION a|
-string GLIDER_FIRMWARE_VERSION
+|GLIDER_FIRMWARE_VERSION 
+
+* data type: string |
 
 GLIDER_FIRMWARE_VERSION:long_name = “version of the internal glider firmware”;
 
  |highly desirable | *ex.:* v1.3.22 
-|LANDSTATION_VERSION a|
-string LANDSTATION_VERSION
+|LANDSTATION_VERSION 
+
+* data type: string |
 
 LANDSTATION_VERSION:long_name = “version of the server onshore”;
 
  |highly desirable | *ex.:* "dockserver v3.42"
-|BATTERY_TYPE a|
-string BATTERY_TYPE
+|BATTERY_TYPE 
+
+* data type: string |
 
 BATTERY_TYPE:long_name = “type of the battery”;
 
@@ -553,8 +568,9 @@ BATTERY_TYPE:battery_type_vocabulary = “https://github.com/OceanGlidersCommuni
 
 BATTERY_TYPE:battery_type_vocabulary = “https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/battery_type.md”
 
-|BATTERY_PACK a|
-string BATTERY_PACK
+|BATTERY_PACK 
+
+* data type: string |
 
 BATTERY_PACK:long_name = “battery packaging”;
 
@@ -567,11 +583,12 @@ BATTERY_PACK:long_name = “battery packaging”;
 ////
 === Telecom information
 
-[cols=",,,",options="header",]
+[cols="1a,,,",options="header",]
 |===============================================================================
 |*VARIABLE NAME* |*variable attributes* |*requirement status* | *Format, fixed value or example*
-|TELECOM_TYPE a|
-string TELECOM_TYPE
+|TELECOM_TYPE 
+
+* data type: string |
 
 TELECOM_TYPE:long_name = “types of telecommunication systems used by the glider, multiple telecom type are separated by a comma”;
 
@@ -581,8 +598,9 @@ TELECOM_TYPE:telecom_type_vocabulary = “https://github.com/OceanGlidersCommuni
 
 TELECOM_TYPE:telecom_type_vocabulary = “https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/telecom_type.md”
 
-|TRACKING_SYSTEM a|
-string TRACKING_SYSTEM
+|TRACKING_SYSTEM 
+
+* data type: string |
 
 TRACKING_SYSTEM:long_name = “type of tracking systems used by the glider, multiple tracking system are separated by a comma”;
 
@@ -605,13 +623,13 @@ Note that the vocabulary will be fully described and implemented in the control 
 
 Phase calculation methodologies need publishing as a best practice document separately to the OG1.0 terms of reference.
 
-The tables below describe the mandatory information to PHASE stored in two ways.
-
-[cols=",,",options="header",]
+[cols="1a,,"options="header",]
 |=============================================================
 |*VARIABLES NAME* |*variable attributes* |*requirement status*
-|PHASE a|
-Byte PHASE(N_MEASUREMENTS)
+|PHASE 
+
+* data type: byte
+* dimension: N_MEASUREMENTS |
 
 PHASE:long_name = “behavior of the glider at sea”;
 
@@ -626,8 +644,10 @@ PHASE:phase_calculation_method_vocabulary = “”;
 PHASE: ancillary_variables = "PHASE_QC"
 
  |Highly desirable
-|PHASE_QC a|
-Byte PHASE_QC(N_MEASUREMENTS)
+|PHASE_QC 
+
+* data type: byte 
+* dimension: N_MEASUREMENTS |
 
 PHASE_QC:long_name = "quality flag";
 
@@ -726,11 +746,13 @@ Geophysical variables are measurements of a physical phenomenon (or an intermedi
 
 The fill value should have the same data type as the variable and be outside the range of possible data values.
 
-[cols=",,,",options="header",]
+[cols="1a,,,",options="header",]
 |==========================================================================================================================
 |*VARIABLE NAME* |*variable attributes* |*requirement status* | *example*
-|<PARAM> a|
-float <PARAM>(N_MEASUREMENT);
+|<PARAM> 
+
+* data type: float
+* dimension: N_MEASUREMENT |
 
 <PARAM>:long_name = "<X>"; <PARAM>:standard_name = "<X>";
 
@@ -773,8 +795,12 @@ coordinates = "TIME, LONGITUDE, LATITUDE, DEPTH"
 
 sensor = "SENSOR_CTD_206523"
 
-|<PARAM>_QC a|
-Byte <PARAM>_QC(N_MEASUREMENT); <PARAM>_QC:long_name = "quality flag";
+|<PARAM>_QC 
+
+* data type: byte 
+* dimension: N_MEASUREMENT | 
+
+<PARAM>_QC:long_name = "quality flag";
 
 <PARAM>_QC:_FillValue = " ";
 
