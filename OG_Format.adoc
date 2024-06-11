@@ -187,8 +187,8 @@ The mission identifier used by the institution principally responsible for origi
 |geospatial_lon_max |Describes a simple longitude limit |suggested |**format:** decimal degree
 |geospatial_vertical_min |Describes the numerically smaller vertical limit. |suggested |**format:** meter depth
 |geospatial_ vertical_max |Describes the numerically larger vertical limit |suggested |**format:** meter depth
-|time_coverage_start | | |**format:** iso 8601
-|time_coverage_end | | |**format:** iso 8601
+|time_coverage_start | Datetime of the first measurement in this dataset | highly desirable |**format**: Formatted string: YYYYmmddTHHMMss ex.: 20240425T145805
+|time_coverage_end | Datetime of the last measurement in this dataset | highly desirable |**format:** Formatted string: YYYYmmddTHHMMss ex.: 20240425T145805
 |site |The name of the regular sample line or area. |highly desirable | **ex.:**  MOOSE_T00, MOOSE_02
 |site_vocabulary |Controlled vocabulary of the names used in the “site” attribute |highly desirable |To be defined
 |program |The overarching program(s) of which the dataset is a part. A program consists of a set (or portfolio) of related and possibly interdependent projects that meet an overarching objective. |Highly desirable |**ex.:**  MOOSE glider program
@@ -227,7 +227,7 @@ The mission identifier used by the institution principally responsible for origi
 [cols=",,",options="header",]
 |=================================================================================================================================================================================================================================================================
 |*Name* |*Definition* |*Comment*
-|N_MEASUREMENTS |N_MEASUREMENTS = unlimited; |Number of recorded locations.
+|N_MEASUREMENTS |N_MEASUREMENTS = unlimited; |Number of recorded measurements.
 |=================================================================================================================================================================================================================================================================
 
 ////
@@ -328,18 +328,18 @@ OG1.0 requirements cover the GPS variables delivered by the glider when at the s
 [cols="1a,2a,1",options="header",]
 |============================================================
 |*VARIABLE NAME* |*variable attributes* |*requirement status*
-|LATITUDE_GPS
+|TIME_GPS
 
 * data type: double
 * dimension: N_MEASUREMENTS |
 
-* long_name = “latitude of each GPS location”;
-* standard_name = “latitude”;
-* units = “degrees_north”;
-* _FillValue = -9999.9;
-* valid_min = -90.0;
-* valid_max = 90.0;
-* ancillary_variables = "LATITUDE_GPS_QC"
+* long_name = “time of each GPS location”;
+* calendar = "gregorian" ;
+* units = “seconds since 1970-01-01T00:00:00Z”;
+* _FillValue = -1.0 ;
+* valid_min = 1e9 ;
+* valid_max = 4e9 ;
+* ancillary_variables = “TIME_GPS_QC”
 
  |mandatory
 |LONGITUDE_GPS
@@ -356,18 +356,18 @@ OG1.0 requirements cover the GPS variables delivered by the glider when at the s
 * ancillary_variables = "LONGITUDE_GPS_QC"
 
  |mandatory
-|TIME_GPS
+|LATITUDE_GPS
 
 * data type: double
 * dimension: N_MEASUREMENTS |
 
-* long_name = “time of each GPS location”;
-* calendar = "gregorian" ;
-* units = “seconds since 1970-01-01T00:00:00Z”;
-* _FillValue = -1.0 ;
-* valid_min = 1e9 ;
-* valid_max = 4e9 ;
-* ancillary_variables = “TIME_GPS_QC”
+* long_name = “latitude of each GPS location”;
+* standard_name = “latitude”;
+* units = “degrees_north”;
+* _FillValue = -9999.9;
+* valid_min = -90.0;
+* valid_max = 90.0;
+* ancillary_variables = "LATITUDE_GPS_QC"
 
  |mandatory
 |============================================================
@@ -383,7 +383,7 @@ OG1.0 requirements cover the GPS variables delivered by the glider when at the s
 |*VARIABLE NAME* |*variable attributes* |*requirement status* | *Format, fixed value or example*
 |TRAJECTORY 
 
-* data type: TRAJECTORY |
+* data type: string |
 
 TRAJECTORY:cf_role = "trajectory_id"
 
