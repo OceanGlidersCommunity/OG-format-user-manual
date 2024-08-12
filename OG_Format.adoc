@@ -82,7 +82,7 @@ This document defines the common OceanGliders data format, hereafter OG1.0.
 * Format follows the ACDD 1.3footnote:[https://wiki.esipfed.org/Attribute_Convention_for_Data_Discovery_1-3] convention where possible.
 * Vocabulary collections will be hosted in different places (NERC Vocabulary Server - NVS, OceanOPS, ICES, etc). The OceanGliders data management team will manage (additions, updates, etc.) the collections. Treatment of vocabularies is detailed in the https://oceangliderscommunity.github.io/OG-format-user-manual/vocabularyCollection/tableOfControlledVocab.html[vocabularies document].
 * OG1.0 defines some variables and definitions, as described in this document. Other types of measurements (e.g. intermediate parameters, technical measurements, other variables) not framed by OG1.0 can be included in OG1.0 data files. No control will be applied to those measurements.
-* OG1.0 follows the IODE quality control, IODE_QCfootnote:[https://vocab.nerc.ac.uk/collection/L27/current/IODE_QC/], flagging schemafootnote:[https://repository.oceanbestpractices.org/handle/11329/413] 
+* OG1.0 follows the IODE quality control, IODE_QCfootnote:[https://vocab.nerc.ac.uk/collection/L27/current/IODE_QC/], flagging schemafootnote:[http://dx.doi.org/10.25607/OBP-6] 
 * Geospatial variables and along-track positioning variables are mandatory.
 * Methodologies used to interpolate data, compute along-track positioning variables, apply QC etc. Should be linked and, where possible, follow community best practices. It is encouraged to use unique resource identifiers (uris) to link to these resources.
 * 3 recommendations level have been defined for OG1.0:
