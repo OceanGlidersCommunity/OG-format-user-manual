@@ -6,5 +6,5 @@
 | 3 | surfacing | the platform is at the surface for communication, recovery or safety purpose | pending |
 | 4 | parking | the platform is maintained at a parking or hover depth | pending |
 | 5 | inflexion | the platform is changing from dive to climb or climb to dive | pending |
-| 6 | propelled | the platform momentum is increased by the propeller(s) or thruster(s) | pending |
+| 6 | propelled | the platform is underway using propeller(s) or thruster(s) | pending |
 | 7 | transition | the platform is changing from one phase to another | pending |
