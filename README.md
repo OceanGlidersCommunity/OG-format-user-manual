@@ -9,10 +9,11 @@ The homepage of OG format is at [https://github.com/OceanGlidersCommunity/OG-for
 
 [Here](https://oceangliderscommunity.github.io/OG-format-user-manual/OG_Format.html) is the most recent version of the user manual.
 
-
 Vocabulary guidance for the OG format is [here](https://oceangliderscommunity.github.io/OG-format-user-manual/vocabularyCollection/tableOfControlledVocab.html)
 
 The history of the format is documented on the [history page](https://oceangliderscommunity.github.io/OG-format-user-manual/history.html)
+
+A [format checker](http://conventions.castelao.net/OG/validate) has been developed to reproduce the current state of the OG-1.0 format. This checker is still experimental, so it should not be used as ground truth but as guidance.
 
 ### Example files
 
