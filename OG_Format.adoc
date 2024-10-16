@@ -268,8 +268,8 @@ OG1.0 requirements cover positioning variables and geolocation of any scientific
 * data type: double
 * dimension: N_MEASUREMENTS |
 
-* long_name = “longitude east”;
-* standard_name = “longitude”;
+* long_name = “Longitude east”;
+* standard_name = “Longitude”;
 * units = “degrees_east”;
 * _FillValue = -9999.9;
 * valid_min = -180.0;
@@ -285,7 +285,7 @@ OG1.0 requirements cover positioning variables and geolocation of any scientific
 * dimension: N_MEASUREMENTS |
 
 * long_name = “Latitude north”;
-* standard_name = “latitude”;
+* standard_name = “Latitude”;
 * units = “degrees_north”;
 * _FillValue = -9999.9;
 * valid_min = -90.0;
@@ -347,7 +347,7 @@ OG1.0 requirements cover the GPS variables delivered by the glider when at the s
 * data type: double
 * dimension: N_MEASUREMENTS |
 
-* long_name = “longitude east by unspecified GPS system”;
+* long_name = “Longitude east by unspecified GPS system”;
 * standard_name = “GPS fixed longitude”;
 * units = “degrees_east”;
 * _FillValue = -9999.9;
