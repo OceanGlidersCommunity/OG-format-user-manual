@@ -269,7 +269,7 @@ OG1.0 requirements cover positioning variables and geolocation of any scientific
 * dimension: N_MEASUREMENTS |
 
 * long_name = “Longitude east”;
-* standard_name = “Longitude”;
+* standard_name = “Longitude east”;
 * units = “degrees_east”;
 * _FillValue = -9999.9;
 * valid_min = -180.0;
@@ -285,7 +285,7 @@ OG1.0 requirements cover positioning variables and geolocation of any scientific
 * dimension: N_MEASUREMENTS |
 
 * long_name = “Latitude north”;
-* standard_name = “Latitude”;
+* standard_name = “Latitude north”;
 * units = “degrees_north”;
 * _FillValue = -9999.9;
 * valid_min = -90.0;
