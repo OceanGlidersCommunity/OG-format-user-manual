@@ -702,7 +702,7 @@ SEGMENT_NUMBER:_FillValue = -9999 ;
 * data type: integer
 * dimension: N_MEASUREMENTS |
 
-PROFILE_NUMBER:long_name = “Identifier of numbered segment within the dataset”;
+PROFILE_NUMBER:long_name = “Identifier of numbered profile within the dataset”;
 
 PROFILE_NUMBER:profile_number_calculation_method = "PROFILE_NUMBER is 1 at the start of a deployment. PROFILE_NUMBER increments by 1 each time a glider enters a dive or climb phase (PHASE = [1,2])”;
 
