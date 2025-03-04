@@ -683,6 +683,34 @@ PHASE_QC:flag_meanings = "No QC has been applied,
 			Bad data" ;
 
  |Highly desirable
+
+ |SEGMENT
+
+* data type: integer
+* dimension: N_MEASUREMENTS |
+
+SEGMENT_NUMBER:long_name = “Identifier of numbered segment within the dataset”;
+
+SEGMENT_NUMBER:segment_number_calculation_method = SEGMENT_NUMBER is 1 at the start of a deployment. SEGMENT_NUMBER increments by 1 each time the glider enters the surface phase (PHASE=3)”;
+
+SEGMENT_NUMBER:_FillValue = -9999 ;
+
+|Highly desirable
+
+ |PROFILE_NUMBER
+
+* data type: integer
+* dimension: N_MEASUREMENTS |
+
+PROFILE_NUMBER:long_name = “Identifier of numbered profile within the dataset”;
+
+PROFILE_NUMBER:profile_number_calculation_method = "PROFILE_NUMBER is 1 at the start of a deployment. PROFILE_NUMBER increments by 1 each time a glider enters a dive or climb phase (PHASE = [1,2])”;
+
+PROFILE_NUMBER:_FillValue = -9999 ;
+
+|Highly desirable
+
+
 |=============================================================
 
 
