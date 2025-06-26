@@ -636,7 +636,7 @@ TRACKING_SYSTEM:tracking_system_vocabulary = "https://github.com/OceanGlidersCom
 ////
 == Phase variable
 
-PHASE describes the glider behaviors when at sea. The different behaviors are described in the phase vocabulary (ascent, descent, surfacing, parking, inflection, etc.) PHASE is derived from the glider's engineering state, so describes what the glider is attempting to do. So, when the glider is on the surface and starts to adjust its pitch and ballast to begin its next descent, the PHASE will be 1 (descent) even though the glider is stationary on the surface. In this way, PHASE can be considerd a normalisation table for engineering behavious of the various glider platforms.
+PHASE describes a glider’s behavior using a defined vocabulary of states—such as ascent, descent, surfacing, parking, and inflection—and serves as a normalization layer for interpreting engineering behaviors across different glider platforms. It is derived from the glider’s engineering state and reflects what the glider is attempting to do. Sometimes, the observed behavior may lag behind the engineering state—for example, when the glider adjusts its ballast and pitch in preparation for descent, the PHASE will be set to 1 (descent), even though the glider may not begin sinking immediately.```
 
 Normalisation tables to translate from the nav states of several glider models into the OG PHASE variable can be found at https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/phase_translation_tables.md
 
