@@ -642,6 +642,9 @@ Note that the vocabulary will be fully described and implemented in the control 
 
 Phase calculation methodologies need publishing as a best practice document separately to the OG1.0 terms of reference.
 
+PHASE is used to derive data product (profile, trajectory profiles, gridded product) from OG1.0 data sets. It is recommended to include PHASE when possible.
+
+
 [cols="1a,,"options="header",]
 |=============================================================
 |*VARIABLES NAME* |*variable attributes* |*requirement status*
@@ -710,11 +713,23 @@ PROFILE_NUMBER:_FillValue = -9999 ;
 
 |Highly desirable
 
+ |PROFILE_DIRECTION
+
+* data type: integer
+* dimension: N_MEASUREMENTS |
+
+PROFILE_DIRECTION:long_name = “Vertical direction of profile”;
+
+PROFILE_DIRECTION:profile_direction_calculation_method = "PROFILE_DIRECTION is -1 when a glider is descending and 1 when the glider is ascending.”;
+
+PROFILE_DIRECTION:_FillValue = -9999 ;
+
+|Highly desirable
+
 
 |=============================================================
 
 
-PHASE is used to derive data product (profile, trajectory profiles, gridded product) from OG1.0 data sets. It is recommended to include PHASE when possible.
 
 ////
 * [[sensor-information]]
