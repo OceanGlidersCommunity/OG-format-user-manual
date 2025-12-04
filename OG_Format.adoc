@@ -715,14 +715,14 @@ PROFILE_NUMBER:_FillValue = -9999 ;
 
  |PROFILE_DIRECTION
 
-* data type: integer
+* data type: byte
 * dimension: N_MEASUREMENTS |
 
 PROFILE_DIRECTION:long_name = “Vertical direction of profile”;
 
-PROFILE_DIRECTION:profile_direction_calculation_method = "PROFILE_DIRECTION is -1 when a glider is descending and 1 when the glider is ascending.”;
+PROFILE_DIRECTION:profile_direction_calculation_method = "PROFILE_DIRECTION is 1 when a glider is descending and -1 when the glider is ascending. Otherwise it is 0”;
 
-PROFILE_DIRECTION:_FillValue = -9999 ;
+PROFILE_DIRECTION:_FillValue = 0b ;
 
 |Highly desirable
 
