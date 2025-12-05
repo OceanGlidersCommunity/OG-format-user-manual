@@ -254,6 +254,7 @@ OG1.0 requirements cover positioning variables and geolocation of any scientific
 * dimension: N_MEASUREMENTS |
 
 * long_name = “Time elapsed since 1970-01-01T00:00:00Z”;
+* standard_name = “time”;
 * calendar = "gregorian" ;
 * units = “seconds since 1970-01-01T00:00:00Z”;
 * _FillValue = -1.0 ;
@@ -261,7 +262,7 @@ OG1.0 requirements cover positioning variables and geolocation of any scientific
 * valid_max = 4e9 ;
 * ancillary_variables = “TIME_QC”;
 * interpolation_methodology = “”;
-* time_vocabulary = “https://vocab.nerc.ac.uk/collection/OG1/current/TIME/”;
+* vocabulary = “http://vocab.nerc.ac.uk/collection/OG1/current/TIME/”;
  |mandatory
 
 |LONGITUDE
@@ -277,7 +278,7 @@ OG1.0 requirements cover positioning variables and geolocation of any scientific
 * valid_max = 180.0;
 * ancillary_variables = "LONGITUDE_QC";
 * interpolation_methodology = “”;
-* longitude_vocabulary = “https://vocab.nerc.ac.uk/collection/OG1/current/LON/”;
+* vocabulary = “http://vocab.nerc.ac.uk/collection/OG1/current/LON/”;
  |mandatory
 
 |LATITUDE
@@ -293,7 +294,7 @@ OG1.0 requirements cover positioning variables and geolocation of any scientific
 * valid_max = 90.0;
 * ancillary_variables = "LATITUDE_QC"
 * interpolation_methodology = “”;
-* latitude_vocabulary = “https://vocab.nerc.ac.uk/collection/OG1/current/LAT/”;
+* vocabulary = “http://vocab.nerc.ac.uk/collection/OG1/current/LAT/”;
  |mandatory
 
 |DEPTH
@@ -309,7 +310,7 @@ OG1.0 requirements cover positioning variables and geolocation of any scientific
 * valid_max = 10000.0;
 * ancillary_variables = "DEPTH_QC"
 * interpolation_methodology = “”;
-* depth_vocabulary = “https://vocab.nerc.ac.uk/collection/OG1/current/DEPTH/”;
+* vocabulary = “http://vocab.nerc.ac.uk/collection/OG1/current/DEPTH/”;
 |mandatory
 
 |============================================================
