@@ -1,0 +1,66 @@
+{
+"name": "OG-1.0",
+"metadata": {
+    "global_attributes": {
+        "Conventions": "CF-1.8, ACDD-1.3, OG-1.0",
+        "featureType": "trajectory",
+        "date_created": "{HIGHLY_DESIRABLE}",
+        "title": "{MANDATORY}",
+        "platform": "{MANDATORY}",
+        "platform_vocabulary": "{MANDATORY}",
+        "id": "{MANDATORY}",
+        "naming_authority": "{HIGHLY_DESIRABLE}",
+        "institution": "{MANDATORY}",
+        "institution_role": "{MANDATORY}",
+        "institution_role_vocabulary": "{MANDATORY}",
+        "institution_id": "{HIGHLY_DESIRABLE}",
+        "internal_mission_identifier": "{HIGHLY_DESIRABLE}",
+        "site": "{HIGHLY_DESIRABLE}",
+        "site_vocabulary": "{HIGHLY_DESIRABLE}",
+        "program": "{HIGHLY_DESIRABLE}",
+        "contributor_name": "{MANDATORY}",
+        "contributor_email": "{MANDATORY}",
+        "contributor_id": "{HIGHLY_DESIRABLE}",
+        "contributor_role": "{MANDATORY}",
+        "contributor_role_vocabulary": "{MANDATORY}",
+        "data_url": "{MANDATORY}",
+        "doi": "{HIGHLY_DESIRABLE}",
+        "rtqc_method": "{MANDATORY}",
+        "rtqc_method_doi": "{MANDATORY}"
+    },
+    "variables": {
+        "TIME_GPS": {
+            "attributes": {
+                "long_name": "time of each GPS location",
+                "units": "seconds since 1970-01-01T00:00:00Z",
+                "_FillValue": "-1.0",
+                "valid_min": "1e9",
+                "valid_max": "4e9",
+                "ancillary_variables": "TIME_GPS_QC"
+            }
+        },
+        "LATITUDE_GPS": {
+            "attributes": {
+                "long_name": "latitude of each GPS location",
+                "standard_name": "latitude",
+                "units": "degrees_north",
+                "_FillValue": "-9999.9",
+                "valid_min": "-90.0",
+                "valid_max": "90.0",
+                "ancillary_variables": "LATITUDE_GPS_QC"
+            }
+        },
+        "LONGITUDE_GPS": {
+            "attributes": {
+                "long_name": "longitude of each GPS location",
+                "standard_name": "longitude",
+                "units": "degrees_east",
+                "_FillValue": "-9999.9",
+                "valid_min": "-180.0",
+                "valid_max": "180.0",
+                "ancillary_variables": "LONGITUDE_GPS_QC"
+            }
+        }
+    }
+}
+}
