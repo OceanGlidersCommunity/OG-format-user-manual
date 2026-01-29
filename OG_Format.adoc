@@ -137,7 +137,7 @@ Name of the platform(s) that supported the sensors data used to create this data
 
  |mandatory |**ex.:** "sub-surface gliders"
 |platform_vocabulary |Controlled vocabulary for the names used in the "platform" attribute.
-|mandatory |**ex.:**  http://vocab.nerc.ac.uk/collection/L06/current/27/[_ http://vocab.nerc.ac.uk/collection/L06/current/27/_]
+|mandatory |**ex.:** http://vocab.nerc.ac.uk/collection/L06/current/27/[_http://vocab.nerc.ac.uk/collection/L06/current/27/_]
 |id a|
 Formatted mission name: <platform_serial>_<start_date>_<data_mode>
 
@@ -200,11 +200,11 @@ The mission identifier used by the institution principally responsible for origi
 |contributor_email |Email of the contributors to the glider mission. Multiple contributors' emails are separated by commas. |PI email is mandatory | **ex.:** "victor@eample.com, callum@example.com"
 |contributor_id |Unique id of the contributors to the glider mission. Multiple contributors’ ids are separated by commas. |highly desirable |
 |contributor_role |Role of the contributors to the glider mission. Multiple contributors’ roles are separated by commas. |PI vocabulary is mandatory |
-|contributor_role_vocabulary |Controlled vocabulary for the roles used in the "contributors_role". Multiple contributors’ roles and vocabularies are separated by commas. |PI vocabulary is mandatory |**ex.:** http://vocab.nerc.ac.uk/search_nvs/W08/[_http://vocab.nerc.ac.uk/search_nvs/W08/_]
+|contributor_role_vocabulary |Controlled vocabulary for the roles used in the "contributors_role". Multiple contributors’ roles and vocabularies are separated by commas. |PI vocabulary is mandatory |**ex.:**http://vocab.nerc.ac.uk/search_nvs/W08/[_http://vocab.nerc.ac.uk/search_nvs/W08/_]
 |contributing_institutions |Names of institutions involved in the glider mission. Multiple institutions are separated by commas. |Operator is mandatory |
 |contributing_institutions_vocabulary |url to the repository of the id |highly desirable | **ex.:** https://edmo.seadatanet.org/report/544, https://ror.org/012tb2g32
 |contributing_institutions_role |Role of the institutions involved in the glider mission. Multiple institutions' roles are separated by a comma. |Operator role is mandatory |
-|contributing_institutions_role_vocabulary |The controlled vocabulary of the role used in the institution's role. Multiple vocabularies are separated by commas. |Operator vocabulary is mandatory |**ex.:**  http://vocab.nerc.ac.uk/collection/W08/current/[_ http://vocab.nerc.ac.uk/collection/W08/current/_]
+|contributing_institutions_role_vocabulary |The controlled vocabulary of the role used in the institution's role. Multiple vocabularies are separated by commas. |Operator vocabulary is mandatory |**ex.:** http://vocab.nerc.ac.uk/collection/W08/current/[_http://vocab.nerc.ac.uk/collection/W08/current/_]
 |uri |Other universal resource identifiers relevant to be linked to this dataset. Multiple uris are separated by a comma. |suggested | **ex.:** EDIOS, CSR, EDMERP, EDMED, CDI, ICES, etc.
 |data_url |url link to where the OG1.0 data file is hosted |highly desirable| **ex.:** https://linkedsystems.uk/erddap/files/Public_OG1_Data_001/Kelvin_20231205/Kelvin_620_R.nc
 |doi |The digital object identifier of the OG1.0 data file |highly desirable |  **ex.:** https://doi.org/10.17882/56366
@@ -433,7 +433,7 @@ PLATFORM_MODEL:platform_model_vocabulary = “”;
  |mandatory
 | **ex.:** "Kongsberg Maritime Seaglider M1 glider"
 
-PLATFORM_MODEL: platform_model_vocabulary = “ http://vocab.nerc.ac.uk/
+PLATFORM_MODEL: platform_model_vocabulary = “http://vocab.nerc.ac.uk/
 collection/B76/current/B7600002/”;
 
 |PLATFORM_SERIAL_NUMBER 
@@ -488,7 +488,7 @@ PLATFORM_MAKER:platform_maker_vocabulary = “”;
  |suggested
 | *ex.:* "Teledyne Webb Research"
 
-PLATFORM_MAKER: platform_maker_vocabulary = “ http://vocab.nerc.ac.uk/
+PLATFORM_MAKER: platform_maker_vocabulary = “http://vocab.nerc.ac.uk/
 collection/B75/current/ORG01077/”;
 |========================================================================================
 
@@ -781,17 +781,17 @@ SENSOR_CTD_206523
 
 attributes:
 
-sensor_type_vocabulary: " http://vocab.nerc.ac.uk/collection/L05/current/130”
+sensor_type_vocabulary: "http://vocab.nerc.ac.uk/collection/L05/current/130”
 
 long_name: “RBR Legato3 CTD”
 
 sensor_model: “RBR Legato3 CTD”
 
-sensor_model_vocabulary: “ http://vocab.nerc.ac.uk/collection/L22/current/TOOL1745”
+sensor_model_vocabulary: “http://vocab.nerc.ac.uk/collection/L22/current/TOOL1745”
 
 sensor_maker: “RBR”
 
-sensor_maker_vocabulary: “ http://vocab.nerc.ac.uk/collection/L35/current/MAN0049”
+sensor_maker_vocabulary: “http://vocab.nerc.ac.uk/collection/L35/current/MAN0049”
 
 sensor_serial_number: “206523”
 
@@ -848,7 +848,7 @@ long_name = "Electrical conductivity of the water body by CTD"
 
 standard_name = "<X>";
 
-vocabulary = " http://vocab.nerc.ac.uk/collection/OG1/current/CNDC/";
+vocabulary = "http://vocab.nerc.ac.uk/collection/OG1/current/CNDC/";
 
 _FillValue = NaNf
 
