@@ -748,6 +748,8 @@ Sensor variables are named as follows: *SENSOR_<sensor_type>_<sensor_serial_numb
 
 Where <sensor_type> is a controlled vocabulary: see vocabulary guidelines
 
+To retain comlpliance with https://cfconventions.org/Data/cf-conventions/cf-conventions-1.10/cf-conventions.html#_naming_conventions[CF variable naming conventions] and the OG1 convention of all variables being upper case, the name of the sensor variable should be all upper-case and replace any characters other than letters and numbers with underscores. e.g. a dissolved gas sensor (https://vocab.nerc.ac.uk/collection/L05/current/351/[L05/351]) with sensor serial number 2025-0123 would have the variable name SENSOR_DISSOLVED_GAS_SENSORS_2025_0123.
+
 
 [cols=",,",options="header",]
 |=============================================================
