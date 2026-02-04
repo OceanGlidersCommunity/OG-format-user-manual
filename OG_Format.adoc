@@ -690,7 +690,7 @@ PHASE_QC:flag_meanings = "No QC has been applied,
 
  |Highly desirable
 
- |SEGMENT
+ |SEGMENT_NUMBER
 
 * data type: integer
 * dimension: N_MEASUREMENTS |
@@ -710,7 +710,7 @@ SEGMENT_NUMBER:_FillValue = -9999 ;
 
 PROFILE_NUMBER:long_name = “Identifier of numbered profile within the dataset”;
 
-PROFILE_NUMBER:profile_number_calculation_method = "PROFILE_NUMBER is 1 at the start of a deployment. PROFILE_NUMBER increments by 1 each time a glider enters a dive or climb phase (PHASE = [1,2])”;
+PROFILE_NUMBER:profile_number_calculation_method = "PROFILE_NUMBER increments by one each time the glider starts an ascending or descending profile. PROFILE_NUMBER is one at the start of the first ascending or descending profile in the datasets. When the glider is not in one of these states, PROFILE_NUMBER is NaN”;
 
 PROFILE_NUMBER:_FillValue = -9999 ;
 
