@@ -13,3 +13,5 @@ jobs:
         fetch-depth: 0
     - name: asciidoctor-ghpages
       uses: manoelcampos/asciidoctor-ghpages-action@v2.3.0
+      with:
+        asciidoctor_params:  -a sectanchors 
