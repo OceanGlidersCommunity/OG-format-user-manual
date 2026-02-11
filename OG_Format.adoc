@@ -890,8 +890,7 @@ highly desirable
 
 |==========================================================================================================================
 
-
-standard_name to be selected from the https://cfconventions.org/Data/cf-standard-names/current/build/cf-standard-name-table.html[CF standard names table] where available. vocabulary to be selected from the https://vocab.nerc.ac.uk/collection/OG1/current/[OG1 vocabulary].
+The possible values for `vocabulary` are defined in https://vocab.nerc.ac.uk/collection/OG1/current/[OG1 vocabulary].The possible values for `standard_name` are defined in https://cfconventions.org/Data/cf-standard-names/current/build/cf-standard-name-table.html[CF standard names table]. Where an appropriate `standard_name` exists for a variable, it is mandatory to include it in the `standard_name` attribute.
 
 ////
 * [[best-practices]]
