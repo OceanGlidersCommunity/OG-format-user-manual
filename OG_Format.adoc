@@ -228,7 +228,7 @@ The mission identifier used by the institution principally responsible for origi
 [cols=",,",options="header",]
 |=================================================================================================================================================================================================================================================================
 |*Name* |*Definition* |*Comment*
-|N_MEASUREMENTS |N_MEASUREMENTS = unlimited; |Number of recorded measurements.
+|N_MEASUREMENTS |N_MEASUREMENTS = unlimited; | The sole dimension of the file. the length of N_MEASUREMENTS is equal to the total number of unique timestamps contained in the dataset.
 |=================================================================================================================================================================================================================================================================
 
 ////
@@ -817,7 +817,7 @@ The fill value should have the same data type as the variable and be outside the
 |<PARAM> 
 
 * data type: float
-* dimension: N_MEASUREMENT |
+* dimension: N_MEASUREMENTS |
 
 <PARAM>:long_name = "<X>"; <PARAM>:standard_name = "<X>";
 
@@ -840,7 +840,7 @@ mandatory
 
 <X>: these fields are specified in the control vocabularies.
 
-| CNDC(N_MEASUREMENT);
+| CNDC(N_MEASUREMENTS);
 
 attributes:
 
@@ -863,7 +863,7 @@ sensor = "SENSOR_CTD_206523"
 |<PARAM>_QC 
 
 * data type: byte 
-* dimension: N_MEASUREMENT | 
+* dimension: N_MEASUREMENTS |
 
 <PARAM>_QC:long_name = "quality flag";
 
