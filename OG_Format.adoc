@@ -821,7 +821,7 @@ The fill value should have the same data type as the variable and be outside the
 
 <PARAM>:long_name; - mandatory
 
-<PARAM>:standard_name; - mandatory
+<PARAM>:standard_name; - highly desirable
 
 <PARAM>:vocabulary; - mandatory
 
@@ -829,7 +829,7 @@ The fill value should have the same data type as the variable and be outside the
 
 <PARAM>:units; - mandatory
 
-<PARAM>:ancillary_variables = "<PARAM>_QC"; - highly recommended
+<PARAM>:ancillary_variables = "<PARAM>_QC"; - highly desirable
 
 <PARAM>:coordinates = "TIME, LONGITUDE, LATITUDE, DEPTH" - mandatory
 
