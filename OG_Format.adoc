@@ -744,9 +744,7 @@ Each geophysical variable to be recorded must be described with its sensor. Sens
 
 === Naming convention of the sensor variables
 
-Sensor variables are named as follows: *SENSOR_<sensor_type>_<sensor_serial_number>*
-
-Where <sensor_type> is a controlled vocabulary: see vocabulary guidelines
+Sensor variables are named as follows: *SENSOR_<sensor_type>_<sensor_serial_number>*. Where <sensor_type> is taken from the L05 vocabulary (see https://oceangliderscommunity.github.io/OG-format-user-manual/vocabularyCollection/tableOfControlledVocab.html[vocabulary guidelines]). The variable name contains only uppercase letters and underscores, with other characters replaces by underscores to maintain CF compliance. e.g. an oxygen optode (sensor type "dissolved gas sensors") with serial number 0048 would be named SENSOR_DISSOLVED_GAS_SENSORS_0038.
 
 
 [cols=",,",options="header",]
