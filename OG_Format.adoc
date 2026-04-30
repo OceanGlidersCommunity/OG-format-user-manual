@@ -838,8 +838,6 @@ The fill value should have the same data type as the variable and be outside the
 
 <PARAM> contains the values of a parameter listed in the control vocabulary related to OceanGliders parameters.
 
-<X>: these fields are specified in the control vocabularies.
-
 | CNDC(N_MEASUREMENT);
 
 attributes:
