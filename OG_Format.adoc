@@ -822,7 +822,8 @@ The fill value should have the same data type as the variable and be outside the
 * data type: float
 * dimension: N_MEASUREMENTS |
 
-<PARAM>:long_name = "<X>"; <PARAM>:standard_name = "<X>";
+<PARAM>:long_name = The long_name is the Definition field of the variable as defined in the OG1 vocabulary.;
+<PARAM>:standard_name = "<X>";
 
 <PARAM>:vocabulary = "";
 
