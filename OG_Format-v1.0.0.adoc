@@ -11,6 +11,11 @@ https://oceangliderscommunity.github.io/OG-format-user-manual/vocabularyCollecti
 
 |===========================================================================================
 
+== OceanGliders format v1.0.0
+
+WARNING: This is an older release of the OG format. For the most recent version, see 
+https://oceangliderscommunity.github.io/OG-format-user-manual/OG_Format.html[OceanGliders format current version] 
+
 ////
 * [[Methodology]]
 ////
