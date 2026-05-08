@@ -82,6 +82,7 @@ This document defines the common OceanGliders data format, hereafter OG1.0.
 * Format follows the ACDD 1.3footnote:[https://wiki.esipfed.org/Attribute_Convention_for_Data_Discovery_1-3] convention where possible.
 * Vocabulary collections will be hosted in different places (NERC Vocabulary Server - NVS, OceanOPS, ICES, etc). The OceanGliders data management team will manage (additions, updates, etc.) the collections. Treatment of vocabularies is detailed in the https://oceangliderscommunity.github.io/OG-format-user-manual/vocabularyCollection/tableOfControlledVocab.html[vocabularies document].
 * OG1.0 defines some variables and definitions, as described in this document. Other types of measurements (e.g. intermediate parameters, technical measurements, other variables) not framed by OG1.0 can be included in OG1.0 data files. No control will be applied to those measurements.
+* OG1.0 follows the IODE quality control, IODE_QCfootnote:[https://vocab.nerc.ac.uk/collection/L27/current/IODE_QC/], flagging schemafootnote:[http://dx.doi.org/10.25607/OBP-6] 
 * Geospatial variables and along-track positioning variables are mandatory.
 * Variables use the standard_name attribute following CF 1.10 taken from the CF standard names tablefootnote:[https://cfconventions.org/Data/cf-standard-names/current/src/cf-standard-name-table.xml].
 * Methodologies used to interpolate data, compute along-track positioning variables, apply QC etc. Should be linked and, where possible, follow community best practices. It is encouraged to use unique resource identifiers (uris) to link to these resources.
@@ -228,7 +229,7 @@ The mission identifier used by the institution principally responsible for origi
 [cols=",,",options="header",]
 |=================================================================================================================================================================================================================================================================
 |*Name* |*Definition* |*Comment*
-|N_MEASUREMENTS |N_MEASUREMENTS = unlimited; |Number of recorded measurements.
+|N_MEASUREMENTS |N_MEASUREMENTS = unlimited; | The sole dimension of the file. the length of N_MEASUREMENTS is equal to the total number of unique timestamps contained in the dataset.
 |=================================================================================================================================================================================================================================================================
 
 ////
@@ -746,7 +747,9 @@ Each geophysical variable to be recorded must be described with its sensor. Sens
 
 Sensor variables are named as follows: *SENSOR_<sensor_type>_<sensor_serial_number>*
 
-Where <sensor_type> is a controlled vocabulary: see vocabulary guidelines
+Where <sensor_type> is a controlled vocabulary. See the https://oceangliderscommunity.github.io/OG-format-user-manual/vocabularyCollection/tableOfControlledVocab.html[vocabulary guidance] for more information. A list of sensor types can be found at http://vocab.nerc.ac.uk/collection/L05/current/[NERC L05 collection] and more can be requested via the https://github.com/nvs-vocabs/L05/issues[corresponding GitHub repository].
+
+To retain compliance with https://cfconventions.org/Data/cf-conventions/cf-conventions-1.10/cf-conventions.html#_naming_conventions[CF variable naming conventions] and the OG1 convention of all variables being upper case, the name of the sensor variable should be all upper-case and replace any characters other than letters and numbers with underscores. e.g. a dissolved gas sensor (https://vocab.nerc.ac.uk/collection/L05/current/351/[L05/351]) with sensor serial number 2025-0123 would have the variable name SENSOR_DISSOLVED_GAS_SENSORS_2025_0123. 
 
 
 [cols=",,",options="header",]
@@ -817,9 +820,9 @@ The fill value should have the same data type as the variable and be outside the
 |<PARAM> 
 
 * data type: float
-* dimension: N_MEASUREMENT |
+* dimension: N_MEASUREMENTS |
 
-<PARAM>:long_name; - mandatory
+<PARAM>:long_name = The long_name is the Definition field of the variable as defined in the OG1 vocabulary.; - mandatory
 
 <PARAM>:standard_name; - highly desirable
 
@@ -838,7 +841,7 @@ The fill value should have the same data type as the variable and be outside the
 
 <PARAM> contains the values of a parameter listed in the control vocabulary related to OceanGliders parameters.
 
-| CNDC(N_MEASUREMENT);
+| CNDC(N_MEASUREMENTS);
 
 attributes:
 
@@ -861,7 +864,7 @@ sensor = "SENSOR_CTD_206523"
 |<PARAM>_QC 
 
 * data type: byte 
-* dimension: N_MEASUREMENT |
+* dimension: N_MEASUREMENTS |
 
 highly desirable
 
