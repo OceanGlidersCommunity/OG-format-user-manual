@@ -820,35 +820,32 @@ Geophysical variables are measurements of a physical phenomenon (or an intermedi
 
 The fill value should have the same data type as the variable and be outside the range of possible data values.
 
-[cols="1a,,,",options="header",]
+[cols="1a,,",options="header",]
 |==========================================================================================================================
-|*VARIABLE NAME* |*variable attributes* |*requirement status* | *example*
+|*VARIABLE NAME* |*Variable attributes* and *requirement status* | *Example*
 |<PARAM> 
 
 * data type: float
 * dimension: N_MEASUREMENTS |
 
-<PARAM>:long_name = The long_name is the Definition field of the variable as defined in the OG1 vocabulary.;
-<PARAM>:standard_name = "<X>";
+<PARAM>:long_name = The long_name is the Definition field of the variable as defined in the OG1 vocabulary.; - mandatory
 
-<PARAM>:vocabulary = "";
+<PARAM>:standard_name; - highly desirable
 
-<PARAM>:_FillValue = <X>; Note: The fill value should have the same data type as the variable and be outside the range of possible data values.
+<PARAM>:vocabulary; - mandatory
 
-<PARAM>:units = "<X>";
+<PARAM>:_FillValue; - Highly desirable (Note: The fill value should have the same data type as the variable and be outside the range of possible data values.)
 
-<PARAM>:ancillary_variables = "<PARAM>_QC";
+<PARAM>:units; - mandatory
 
-<PARAM>:coordinates = "TIME, LONGITUDE, LATITUDE, DEPTH"
+<PARAM>:ancillary_variables = "<PARAM>_QC"; - highly desirable
 
-<PARAM>:sensor = "SENSOR_<sensor_type>_<sensor_serial_number>"
+<PARAM>:coordinates = "TIME, LONGITUDE, LATITUDE, DEPTH" - mandatory
 
- a|
-mandatory
+<PARAM>:sensor = "SENSOR_<sensor_type>_<sensor_serial_number>" - mandatory
+
 
 <PARAM> contains the values of a parameter listed in the control vocabulary related to OceanGliders parameters.
-
-<X>: these fields are specified in the control vocabularies.
 
 | CNDC(N_MEASUREMENTS);
 
@@ -856,7 +853,7 @@ attributes:
 
 long_name = "Electrical conductivity of the water body by CTD"
 
-standard_name = "<X>";
+standard_name = "sea_water_electrical_conductivity";
 
 vocabulary = "http://vocab.nerc.ac.uk/collection/OG1/current/CNDC/";
 
@@ -874,6 +871,8 @@ sensor = "SENSOR_CTD_206523"
 
 * data type: byte 
 * dimension: N_MEASUREMENTS |
+
+highly desirable
 
 <PARAM>_QC:long_name = "quality flag";
 
@@ -894,10 +893,11 @@ sensor = "SENSOR_CTD_206523"
 <PARAM>_QC:RTQC_methodology_vocabulary = “”;
 
 <PARAM>_QC:RTQC_methodology_doi = “”;
+|
 
- |higly desirable |
 |==========================================================================================================================
 
+The possible values for `vocabulary` are defined in https://vocab.nerc.ac.uk/collection/OG1/current/[OG1 vocabulary]. The possible values for `standard_name` are defined in https://cfconventions.org/Data/cf-standard-names/current/build/cf-standard-name-table.html[CF standard names table]. Where an appropriate `standard_name` exists for a variable, it is mandatory to include it in the `standard_name` attribute.
 
 ////
 * [[best-practices]]
