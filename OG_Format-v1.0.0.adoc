@@ -10,12 +10,11 @@ https://oceangliderscommunity.github.io/OG-format-user-manual/OG_Format.html[Ter
 https://oceangliderscommunity.github.io/OG-format-user-manual/vocabularyCollection/tableOfControlledVocab.html[Vocabulary collections]  +
 
 |===========================================================================================
-== OceanGliders format
 
-This is the current version of the format. Previous versions:
+== OceanGliders format v1.0.0
 
-
-*  https://oceangliderscommunity.github.io/OG-format-user-manual/OG_Format-v1.0.0.html[v1.0.0]. The initial working release of the OceanGliders format, as presented at the IUGC2024 conference.
+WARNING: This is an older release of the OG format. For the most recent version, see 
+https://oceangliderscommunity.github.io/OG-format-user-manual/OG_Format.html[OceanGliders format current version] 
 
 ////
 * [[Methodology]]
@@ -88,9 +87,7 @@ This document defines the common OceanGliders data format, hereafter OG1.0.
 * Format follows the ACDD 1.3footnote:[https://wiki.esipfed.org/Attribute_Convention_for_Data_Discovery_1-3] convention where possible.
 * Vocabulary collections will be hosted in different places (NERC Vocabulary Server - NVS, OceanOPS, ICES, etc). The OceanGliders data management team will manage (additions, updates, etc.) the collections. Treatment of vocabularies is detailed in the https://oceangliderscommunity.github.io/OG-format-user-manual/vocabularyCollection/tableOfControlledVocab.html[vocabularies document].
 * OG1.0 defines some variables and definitions, as described in this document. Other types of measurements (e.g. intermediate parameters, technical measurements, other variables) not framed by OG1.0 can be included in OG1.0 data files. No control will be applied to those measurements.
-* OG1.0 follows the IODE quality control, IODE_QCfootnote:[https://vocab.nerc.ac.uk/collection/L27/current/IODE_QC/], flagging schemafootnote:[http://dx.doi.org/10.25607/OBP-6] 
 * Geospatial variables and along-track positioning variables are mandatory.
-* Variables use the standard_name attribute following CF 1.10 taken from the CF standard names tablefootnote:[https://cfconventions.org/Data/cf-standard-names/current/src/cf-standard-name-table.xml].
 * Methodologies used to interpolate data, compute along-track positioning variables, apply QC etc. Should be linked and, where possible, follow community best practices. It is encouraged to use unique resource identifiers (uris) to link to these resources.
 * 3 recommendations level have been defined for OG1.0:
 
@@ -144,7 +141,7 @@ Name of the platform(s) that supported the sensors data used to create this data
 
  |mandatory |**ex.:** "sub-surface gliders"
 |platform_vocabulary |Controlled vocabulary for the names used in the "platform" attribute.
-|mandatory |**ex.:** http://vocab.nerc.ac.uk/collection/L06/current/27/[_http://vocab.nerc.ac.uk/collection/L06/current/27/_]
+|mandatory |**ex.:** https://vocab.nerc.ac.uk/collection/L06/current/27/[_https://vocab.nerc.ac.uk/collection/L06/current/27/_]
 |id a|
 Formatted mission name: <platform_serial>_<start_date>_<data_mode>
 
@@ -207,11 +204,11 @@ The mission identifier used by the institution principally responsible for origi
 |contributor_email |Email of the contributors to the glider mission. Multiple contributors' emails are separated by commas. |PI email is mandatory | **ex.:** "victor@eample.com, callum@example.com"
 |contributor_id |Unique id of the contributors to the glider mission. Multiple contributors’ ids are separated by commas. |highly desirable |
 |contributor_role |Role of the contributors to the glider mission. Multiple contributors’ roles are separated by commas. |PI vocabulary is mandatory |
-|contributor_role_vocabulary |Controlled vocabulary for the roles used in the "contributors_role". Multiple contributors’ roles and vocabularies are separated by commas. |PI vocabulary is mandatory |**ex.:**http://vocab.nerc.ac.uk/search_nvs/W08/[_http://vocab.nerc.ac.uk/search_nvs/W08/_]
+|contributor_role_vocabulary |Controlled vocabulary for the roles used in the "contributors_role". Multiple contributors’ roles and vocabularies are separated by commas. |PI vocabulary is mandatory |**ex.:** http://vocab.nerc.ac.uk/search_nvs/W08/[_http://vocab.nerc.ac.uk/search_nvs/W08/_]
 |contributing_institutions |Names of institutions involved in the glider mission. Multiple institutions are separated by commas. |Operator is mandatory |
 |contributing_institutions_vocabulary |url to the repository of the id |highly desirable | **ex.:** https://edmo.seadatanet.org/report/544, https://ror.org/012tb2g32
 |contributing_institutions_role |Role of the institutions involved in the glider mission. Multiple institutions' roles are separated by a comma. |Operator role is mandatory |
-|contributing_institutions_role_vocabulary |The controlled vocabulary of the role used in the institution's role. Multiple vocabularies are separated by commas. |Operator vocabulary is mandatory |**ex.:** http://vocab.nerc.ac.uk/collection/W08/current/[_http://vocab.nerc.ac.uk/collection/W08/current/_]
+|contributing_institutions_role_vocabulary |The controlled vocabulary of the role used in the institution's role. Multiple vocabularies are separated by commas. |Operator vocabulary is mandatory |**ex.:** https://vocab.nerc.ac.uk/collection/W08/current/[_https://vocab.nerc.ac.uk/collection/W08/current/_]
 |uri |Other universal resource identifiers relevant to be linked to this dataset. Multiple uris are separated by a comma. |suggested | **ex.:** EDIOS, CSR, EDMERP, EDMED, CDI, ICES, etc.
 |data_url |url link to where the OG1.0 data file is hosted |highly desirable| **ex.:** https://linkedsystems.uk/erddap/files/Public_OG1_Data_001/Kelvin_20231205/Kelvin_620_R.nc
 |doi |The digital object identifier of the OG1.0 data file |highly desirable |  **ex.:** https://doi.org/10.17882/56366
@@ -235,7 +232,7 @@ The mission identifier used by the institution principally responsible for origi
 [cols=",,",options="header",]
 |=================================================================================================================================================================================================================================================================
 |*Name* |*Definition* |*Comment*
-|N_MEASUREMENTS |N_MEASUREMENTS = unlimited; | The sole dimension of the file. the length of N_MEASUREMENTS is equal to the total number of unique timestamps contained in the dataset.
+|N_MEASUREMENTS |N_MEASUREMENTS = unlimited; |Number of recorded measurements.
 |=================================================================================================================================================================================================================================================================
 
 ////
@@ -261,7 +258,6 @@ OG1.0 requirements cover positioning variables and geolocation of any scientific
 * dimension: N_MEASUREMENTS |
 
 * long_name = “Time elapsed since 1970-01-01T00:00:00Z”;
-* standard_name = “time”;
 * calendar = "gregorian" ;
 * units = “seconds since 1970-01-01T00:00:00Z”;
 * _FillValue = -1.0 ;
@@ -269,7 +265,7 @@ OG1.0 requirements cover positioning variables and geolocation of any scientific
 * valid_max = 4e9 ;
 * ancillary_variables = “TIME_QC”;
 * interpolation_methodology = “”;
-* vocabulary = “http://vocab.nerc.ac.uk/collection/OG1/current/TIME/”;
+* time_vocabulary = “https://vocab.nerc.ac.uk/collection/OG1/current/TIME/”;
  |mandatory
 
 |LONGITUDE
@@ -285,7 +281,7 @@ OG1.0 requirements cover positioning variables and geolocation of any scientific
 * valid_max = 180.0;
 * ancillary_variables = "LONGITUDE_QC";
 * interpolation_methodology = “”;
-* vocabulary = “http://vocab.nerc.ac.uk/collection/OG1/current/LON/”;
+* longitude_vocabulary = “https://vocab.nerc.ac.uk/collection/OG1/current/LON/”;
  |mandatory
 
 |LATITUDE
@@ -301,7 +297,7 @@ OG1.0 requirements cover positioning variables and geolocation of any scientific
 * valid_max = 90.0;
 * ancillary_variables = "LATITUDE_QC"
 * interpolation_methodology = “”;
-* vocabulary = “http://vocab.nerc.ac.uk/collection/OG1/current/LAT/”;
+* latitude_vocabulary = “https://vocab.nerc.ac.uk/collection/OG1/current/LAT/”;
  |mandatory
 
 |DEPTH
@@ -317,7 +313,7 @@ OG1.0 requirements cover positioning variables and geolocation of any scientific
 * valid_max = 10000.0;
 * ancillary_variables = "DEPTH_QC"
 * interpolation_methodology = “”;
-* vocabulary = “http://vocab.nerc.ac.uk/collection/OG1/current/DEPTH/”;
+* depth_vocabulary = “https://vocab.nerc.ac.uk/collection/OG1/current/DEPTH/”;
 |mandatory
 
 |============================================================
@@ -440,7 +436,7 @@ PLATFORM_MODEL:platform_model_vocabulary = “”;
  |mandatory
 | **ex.:** "Kongsberg Maritime Seaglider M1 glider"
 
-PLATFORM_MODEL: platform_model_vocabulary = “http://vocab.nerc.ac.uk/
+PLATFORM_MODEL: platform_model_vocabulary = “https://vocab.nerc.ac.uk/
 collection/B76/current/B7600002/”;
 
 |PLATFORM_SERIAL_NUMBER 
@@ -495,7 +491,7 @@ PLATFORM_MAKER:platform_maker_vocabulary = “”;
  |suggested
 | *ex.:* "Teledyne Webb Research"
 
-PLATFORM_MAKER: platform_maker_vocabulary = “http://vocab.nerc.ac.uk/
+PLATFORM_MAKER: platform_maker_vocabulary = “https://vocab.nerc.ac.uk/
 collection/B75/current/ORG01077/”;
 |========================================================================================
 
@@ -644,16 +640,11 @@ TRACKING_SYSTEM:tracking_system_vocabulary = "https://github.com/OceanGlidersCom
 ////
 == Phase variable
 
-PHASE describes a glider’s behavior using a defined vocabulary of states—such as ascent, descent, surfacing, parking, and inflection—and serves as a normalization layer for interpreting engineering behaviors across different glider platforms. It is derived from the glider’s engineering state and reflects what the glider is attempting to do. Sometimes, the observed behavior may lag behind the engineering state—for example, when the glider adjusts its ballast and pitch in preparation for descent, the PHASE will be set to 1 (descent), even though the glider may not begin sinking immediately.```
-
-Normalisation tables to translate from the nav states of several glider models into the OG PHASE variable can be found at https://github.com/OceanGlidersCommunity/OG-format-user-manual/blob/main/vocabularyCollection/phase_translation_tables.md
+PHASE describes the glider behaviors when at sea. The different behaviors are described in the phase vocabulary (ascent, descent, surfacing, parking, inflection, etc.)
 
 Note that the vocabulary will be fully described and implemented in the control vocabulary tool during the implementation phase.
 
 Phase calculation methodologies need publishing as a best practice document separately to the OG1.0 terms of reference.
-
-PHASE is used to derive data product (profile, trajectory profiles, gridded product) from OG1.0 data sets. It is recommended to include PHASE when possible.
-
 
 [cols="1a,,"options="header",]
 |=============================================================
@@ -696,50 +687,10 @@ PHASE_QC:flag_meanings = "No QC has been applied,
 			Bad data" ;
 
  |Highly desirable
-
- |SEGMENT_NUMBER
-
-* data type: integer
-* dimension: N_MEASUREMENTS |
-
-SEGMENT_NUMBER:long_name = “Identifier of numbered segment within the dataset”;
-
-SEGMENT_NUMBER:segment_number_calculation_method = SEGMENT_NUMBER is 1 at the start of a deployment. SEGMENT_NUMBER increments by 1 each time the glider enters the surface phase (PHASE=3)”;
-
-SEGMENT_NUMBER:_FillValue = -9999 ;
-
-|Highly desirable
-
- |PROFILE_NUMBER
-
-* data type: integer
-* dimension: N_MEASUREMENTS |
-
-PROFILE_NUMBER:long_name = “Identifier of numbered profile within the dataset”;
-
-PROFILE_NUMBER:profile_number_calculation_method = "PROFILE_NUMBER increments by one each time the glider starts an ascending or descending profile. PROFILE_NUMBER is one at the start of the first ascending or descending profile in the datasets. When the glider is not in one of these states, PROFILE_NUMBER is NaN”;
-
-PROFILE_NUMBER:_FillValue = -9999 ;
-
-|Highly desirable
-
- |PROFILE_DIRECTION
-
-* data type: byte
-* dimension: N_MEASUREMENTS |
-
-PROFILE_DIRECTION:long_name = “Vertical direction of profile”;
-
-PROFILE_DIRECTION:profile_direction_calculation_method = "PROFILE_DIRECTION is 1 when a glider is descending and -1 when the glider is ascending. Otherwise it is 0”;
-
-PROFILE_DIRECTION:_FillValue = 0b ;
-
-|Highly desirable
-
-
 |=============================================================
 
 
+PHASE is used to derive data product (profile, trajectory profiles, gridded product) from OG1.0 data sets. It is recommended to include PHASE when possible.
 
 ////
 * [[sensor-information]]
@@ -753,9 +704,7 @@ Each geophysical variable to be recorded must be described with its sensor. Sens
 
 Sensor variables are named as follows: *SENSOR_<sensor_type>_<sensor_serial_number>*
 
-Where <sensor_type> is a controlled vocabulary. See the https://oceangliderscommunity.github.io/OG-format-user-manual/vocabularyCollection/tableOfControlledVocab.html[vocabulary guidance] for more information. A list of sensor types can be found at http://vocab.nerc.ac.uk/collection/L05/current/[NERC L05 collection] and more can be requested via the https://github.com/nvs-vocabs/L05/issues[corresponding GitHub repository].
-
-To retain compliance with https://cfconventions.org/Data/cf-conventions/cf-conventions-1.10/cf-conventions.html#_naming_conventions[CF variable naming conventions] and the OG1 convention of all variables being upper case, the name of the sensor variable should be all upper-case and replace any characters other than letters and numbers with underscores. e.g. a dissolved gas sensor (https://vocab.nerc.ac.uk/collection/L05/current/351/[L05/351]) with sensor serial number 2025-0123 would have the variable name SENSOR_DISSOLVED_GAS_SENSORS_2025_0123. 
+Where <sensor_type> is a controlled vocabulary: see vocabulary guidelines
 
 
 [cols=",,",options="header",]
@@ -790,17 +739,17 @@ SENSOR_CTD_206523
 
 attributes:
 
-sensor_type_vocabulary: "http://vocab.nerc.ac.uk/collection/L05/current/130”
+sensor_type_vocabulary: "https://vocab.nerc.ac.uk/collection/L05/current/130”
 
 long_name: “RBR Legato3 CTD”
 
 sensor_model: “RBR Legato3 CTD”
 
-sensor_model_vocabulary: “http://vocab.nerc.ac.uk/collection/L22/current/TOOL1745”
+sensor_model_vocabulary: “https://vocab.nerc.ac.uk/collection/L22/current/TOOL1745”
 
 sensor_maker: “RBR”
 
-sensor_maker_vocabulary: “http://vocab.nerc.ac.uk/collection/L35/current/MAN0049”
+sensor_maker_vocabulary: “https://vocab.nerc.ac.uk/collection/L35/current/MAN0049”
 
 sensor_serial_number: “206523”
 
@@ -826,10 +775,9 @@ The fill value should have the same data type as the variable and be outside the
 |<PARAM> 
 
 * data type: float
-* dimension: N_MEASUREMENTS |
+* dimension: N_MEASUREMENT |
 
-<PARAM>:long_name = The long_name is the Definition field of the variable as defined in the OG1 vocabulary.;
-<PARAM>:standard_name = "<X>";
+<PARAM>:long_name = "<X>"; <PARAM>:standard_name = "<X>";
 
 <PARAM>:vocabulary = "";
 
@@ -850,7 +798,7 @@ mandatory
 
 <X>: these fields are specified in the control vocabularies.
 
-| CNDC(N_MEASUREMENTS);
+| CNDC(N_MEASUREMENT);
 
 attributes:
 
@@ -858,7 +806,7 @@ long_name = "Electrical conductivity of the water body by CTD"
 
 standard_name = "<X>";
 
-vocabulary = "http://vocab.nerc.ac.uk/collection/OG1/current/CNDC/";
+vocabulary = "https://vocab.nerc.ac.uk/collection/OG1/current/CNDC/";
 
 _FillValue = NaNf
 
@@ -873,7 +821,7 @@ sensor = "SENSOR_CTD_206523"
 |<PARAM>_QC 
 
 * data type: byte 
-* dimension: N_MEASUREMENTS |
+* dimension: N_MEASUREMENT | 
 
 <PARAM>_QC:long_name = "quality flag";
 
