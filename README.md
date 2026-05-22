@@ -20,7 +20,7 @@ The history of the format is documented on the [history page](https://oceanglide
 Two format checkers are currently available for the format:
 
 - http://conventions.castelao.net/OG/validate. This checker is still experimental, so it should not be used as ground truth but as guidance.
-- https://github.com/ioos/cc-plugin-og This checker works with the IOOS copmliance-checker package
+- https://github.com/ioos/cc-plugin-og This checker works with the IOOS compliance-checker package
 
 ### Example files
 
