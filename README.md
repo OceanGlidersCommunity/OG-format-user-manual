@@ -5,15 +5,22 @@
 Here we review issues related to OceanGliders (OG) format and vocabularies.
 A discussion section is also available for any question or comment related to OG format and vocabulary.
 
-The homepage of OG format is at [https://github.com/OceanGlidersCommunity/OG-format-user-manual](https://github.com/OceanGlidersCommunity/OG-format-user-manual)
+The homepage of OG format is at [github.com/OceanGlidersCommunity/OG-format-user-manual](https://github.com/OceanGlidersCommunity/OG-format-user-manual)
 
-[Here](https://oceangliderscommunity.github.io/OG-format-user-manual/OG_Format.html) is the most recent version of the user manual.
+[Here](https://oceangliderscommunity.github.io/OG-format-user-manual/OG_Format.html) is the working version of the user manual. Note that this is a constantly evolving document. Versioned releases are linked in the table below
+
+Version | Release date | Document | Release assets
+--- | --- | --- | ---
+v1.0.0 | 2024-06-11| [OG-format-v1.0.0.html](https://oceangliderscommunity.github.io/OG-format-user-manual/OG_Format-v1.0.0.html) | [release-v1.0.0](https://github.com/OceanGlidersCommunity/OG-format-user-manual/releases/tag/v1.0.0)
 
 Vocabulary guidance for the OG format is [here](https://oceangliderscommunity.github.io/OG-format-user-manual/vocabularyCollection/tableOfControlledVocab.html)
 
 The history of the format is documented on the [history page](https://oceangliderscommunity.github.io/OG-format-user-manual/history.html)
 
-A [format checker](http://conventions.castelao.net/OG/validate) has been developed to reproduce the current state of the OG-1.0 format. This checker is still experimental, so it should not be used as ground truth but as guidance.
+Two format checkers are currently available for the format:
+
+- http://conventions.castelao.net/OG/validate. This checker is still experimental, so it should not be used as ground truth but as guidance.
+- https://github.com/ioos/cc-plugin-og This checker works with the IOOS compliance-checker package
 
 ### Example files
 
