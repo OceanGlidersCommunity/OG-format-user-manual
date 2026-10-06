@@ -832,7 +832,7 @@ The fill value should have the same data type as the variable and be outside the
 
 <PARAM>:standard_name; - highly desirable
 
-<PARAM>:vocabulary; - mandatory
+<PARAM>:vocabulary; - Highly desireable
 
 <PARAM>:_FillValue; - Highly desirable (Note: The fill value should have the same data type as the variable and be outside the range of possible data values.)
 
