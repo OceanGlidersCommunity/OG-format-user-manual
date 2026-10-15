@@ -151,8 +151,8 @@ Formatted mission name: <platform_serial>_<start_date>_<data_mode>
 |mandatory |
 **ex.:**
 
-* unit_1032_20230512T001245_delayed
-* sea008_20180715T012451_delayed
+* unit_1032_20230512T001245_D
+* sea008_20180715T012451_D
 * sp032_20150923T150451_R
 * sg041_20381221T000032_R
 
@@ -185,7 +185,7 @@ The mission identifier used by the institution principally responsible for origi
 
 **ex.:**
 
-* sverdrup_20200512_delayed
+* sverdrup_20200512_D
 * Forster20201109
 * Estoc_2015_01
 
