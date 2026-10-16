@@ -1,0 +1,55 @@
+name: Request new vocab term
+description: Template to submit a new term request to the OceanGliders Parameter Usage Vocabulary (OG1)
+title: "NTR: "
+labels: [New term]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please provide the following information (all fields are mandatory unless specified otherwise). If you are unsure about a particular field, please either make an attempt or leave it blank. Queries can be discussed in the ticket comments.
+
+  - type: input
+    id: term-name
+    attributes:
+      label: "Term name (PrefLabel)"
+      description: "Please enter the label of the term you wish to request"
+      placeholder: "e.g., Raw signal from backscattering sensor at 700 nanometers"
+
+  - type: input
+    id: short-name
+    attributes:
+      label: "Short name (AltLabel)"
+      description: "Please enter an abbreviation for the parameter. This is what will be used by the community as the variable name"
+      placeholder: "e.g., RAW_BACKSCATTERING700"
+
+  - type: textarea
+    id: definition
+    attributes:
+      label: "Definition"
+      description: "Please provide a proposed definition for the parameter"
+      placeholder: "e.g., Raw backscattering sensor signal (count) at 700 nm wavelength. Volume scattering scale factor has not been applied."
+
+  - type: markdown
+    attributes:
+      value: "## Optional"
+
+  - type: textarea
+    id: mapping
+    attributes:
+      label: "Mapping to P01 terminology"
+      description: "If your submission relates to an existing term in the [BODC P01 Parameter Usage Vocabulary](http://vocab.nerc.ac.uk/collection/P01/current/), please enter the URI"
+    
+  - type: textarea
+    id: units
+    attributes:
+      label: "Expected units"
+      description: "If you know the expected output units of this parameter from the platform, please specify here"
+      
+  - type: input
+    id: orcid
+    attributes:
+      label: "ORCID"
+      description: "Optionally provide your ORCID identifier"
+      placeholder: "0000-0000-0000-0000"
