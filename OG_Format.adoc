@@ -715,9 +715,11 @@ SEGMENT_NUMBER:_FillValue = -9999 ;
 * data type: integer
 * dimension: N_MEASUREMENTS |
 
-PROFILE_NUMBER:long_name = “Identifier of numbered profile within the dataset”;
+PROFILE_NUMBER:long_name = “Identifier of numbered profile”;
 
-PROFILE_NUMBER:profile_number_calculation_method = "PROFILE_NUMBER increments by one each time the glider starts an ascending or descending profile. PROFILE_NUMBER is one at the start of the first ascending or descending profile in the datasets. When the glider is not in one of these states, PROFILE_NUMBER is NaN”;
+PROFILE_NUMBER:profile_number_calculation_method = “Uniquely identifies each ascending and descending profile of a glider dataset. PROFILE_NUMBER increments by 1 each time the glider starts an ascending or descending profile. PROFILE_NUMBER is 1 at the start of the first ascending or descending profile in the dataset. When the glider is not in one of these states, PROFILE_NUMBER is NaN”;
+
+PROFILE_NUMBER:vocabulary = “https://vocab.nerc.ac.uk/collection/OG1/current/PROFILE_NUMBER/”; 
 
 PROFILE_NUMBER:_FillValue = -9999 ;
 
