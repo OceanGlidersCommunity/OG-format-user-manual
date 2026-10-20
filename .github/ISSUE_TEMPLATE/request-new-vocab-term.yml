@@ -47,9 +47,4 @@ body:
       label: "Expected units"
       description: "If you know the expected output units of this parameter from the platform, please specify here"
       
-  - type: input
-    id: orcid
-    attributes:
-      label: "ORCID"
-      description: "Optionally provide your ORCID identifier"
-      placeholder: "0000-0000-0000-0000"
+
