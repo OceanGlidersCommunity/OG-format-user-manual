@@ -220,6 +220,7 @@ The mission identifier used by the institution principally responsible for origi
 |web_link |url that provides useful information about anything related to the glider mission. Multiple urls are separated by commas. |suggested | **ex.:** https://observations.voiceoftheocean.org/SEA078/M25
 |comment |Miscellaneous information about the glider mission, data or methods used to produce it. |suggested | **ex.:** "glider recovered after 5 days due to leak"
 |start_date | Datetime of glider deployment |mandatory |**format:**  Formatted string: YYYYmmddTHHMMss **ex.:** 20240425T145805
+|end_date | Datetime of glider recovery | highly desirable in P and D data_mode  | **format:** Formatted string: YYYYmmddTHHMMss ex.: 20240425T145805 |
 |date_created |date of creation of this data set |mandatory |**format:**  Formatted string: YYYYmmddTHHMMss **ex.:** 20240425T145805
 |featureType |Description of a single feature with this discrete sampling geometry |mandatory |**fixed value:** "trajectory"
 |Conventions |A comma-separated list of the conventions that are followed by the dataset. |mandatory |**ex.:** "CF-1.10, ACDD-1.3, OG-1.0"
